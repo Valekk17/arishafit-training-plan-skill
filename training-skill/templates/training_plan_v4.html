@@ -1227,8 +1227,10 @@ function escInfo(s) {
 function toggleInfoBox(btn) {
   const id = btn.dataset.info;
   if (!id || !INFO_BOXES[id]) return;
-  // Ищем уже созданный info-box сразу после родительского контейнера кнопки
-  const container = btn.closest('.day-top, .week-banner, .ex-header, .phase-item') || btn.parentElement;
+  // Ищем уже созданный info-box сразу после родительского контейнера кнопки.
+  // Добавил .pp-head для карточек разминки/заминки — чтобы info-box вставлялся
+  // между заголовком и содержимым карточки, а не внутрь .pp-title.
+  const container = btn.closest('.day-top, .week-banner, .ex-header, .phase-item, .pp-head') || btn.parentElement;
   const parent = container.parentElement || container;
   let box = parent.querySelector(`:scope > .info-box[data-info="${id}"]`);
   if (!box) {
@@ -1261,6 +1263,9 @@ document.addEventListener('click', (e) => {
   // Раскрытие карточки
   const head = e.target.closest('[data-pp-toggle]');
   if (head) {
+    // Клик по кнопке справки не должен сворачивать карточку —
+    // stopPropagation в info-btn handler не спасает, оба хэндлера на document
+    if (e.target.closest('.info-btn')) return;
     const card = head.closest('.pp-card');
     if (card) {
       const expanded = card.getAttribute('data-expanded') === 'true';

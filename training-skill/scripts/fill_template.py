@@ -449,18 +449,94 @@ def render_cooldown(cooldown, week_num, day_num):
     </div>"""
 
 
+def render_shared_prepost_section(plan_data):
+    """Общая секция «Разминка и заминка» с табами силовой/кардио."""
+    warmups = plan_data.get("warmups") or {}
+    cooldowns = plan_data.get("cooldowns") or {}
+    if not warmups and not cooldowns:
+        return ""
+
+    def tabs(kind, data, block_renderer):
+        if not data:
+            return ""
+        tab_labels = {"strength": "Силовой день", "cardio": "Кардио-день"}
+        tabs_html = ""
+        content_html = ""
+        first = True
+        for t, obj in data.items():
+            blocks = obj.get("blocks", [])
+            total_min = obj.get("total_min") or obj.get("duration_min") or ""
+            label = tab_labels.get(t, t)
+            active = " active" if first else ""
+            hidden = "" if first else " hidden"
+            tabs_html += f'<button class="pp-tab{active}" data-pp-kind="{kind}" data-pp-type="{t}">{label} · {total_min} мин</button>'
+            inner_blocks = "".join(block_renderer(b, 0, 0) for b in blocks)
+            content_html += (
+                f'<div class="pp-content"{hidden} data-pp-kind="{kind}" data-pp-type="{t}">'
+                f'{inner_blocks}</div>'
+            )
+            first = False
+        return f'<div class="pp-tabs">{tabs_html}</div>{content_html}'
+
+    warmup_tabs = tabs("warmup", warmups, render_warmup_block)
+    cooldown_tabs = tabs("cooldown", cooldowns, render_cooldown_block)
+
+    warmup_card = f"""
+    <div class="pp-card" data-pp-card="warmup" data-expanded="false">
+      <button class="pp-head" data-pp-toggle="warmup">
+        <span class="pp-icon">🔥</span>
+        <div class="pp-title">
+          <div class="pp-heading">Разминка перед тренировкой</div>
+          <div class="pp-sub">10–15 мин · обязательно, не пропускать</div>
+        </div>
+        <span class="pp-chevron">▼</span>
+      </button>
+      <div class="pp-body">{warmup_tabs}</div>
+    </div>""" if warmup_tabs else ""
+
+    cooldown_card = f"""
+    <div class="pp-card" data-pp-card="cooldown" data-expanded="false">
+      <button class="pp-head" data-pp-toggle="cooldown">
+        <span class="pp-icon">🧊</span>
+        <div class="pp-title">
+          <div class="pp-heading">Заминка после тренировки</div>
+          <div class="pp-sub">6–10 мин · растяжка, дыхание, снижение пульса</div>
+        </div>
+        <span class="pp-chevron">▼</span>
+      </button>
+      <div class="pp-body">{cooldown_tabs}</div>
+    </div>""" if cooldown_tabs else ""
+
+    return f'<div class="pp-cards">{warmup_card}{cooldown_card}</div>'
+
+
+def render_day_pre_post(day):
+    """Маленький блок в дне: ссылки на общую разминку/заминку."""
+    wu_type = day.get("warmup_type")
+    cd_type = day.get("cooldown_type")
+    if not wu_type and not cd_type:
+        return ""
+    type_label = {"strength": "силовой", "cardio": "кардио"}.get(wu_type or cd_type, "")
+    return f"""
+      <div class="day-prepost">
+        <a class="day-prepost-link" href="#warmup-cooldown" data-type="{wu_type or ''}">
+          <span class="dp-icon">🔥</span><span class="dp-text">Разминка ({type_label})</span><span class="dp-arrow">→</span>
+        </a>
+        <a class="day-prepost-link" href="#warmup-cooldown" data-type="{cd_type or ''}" data-section="cooldown">
+          <span class="dp-icon">🧊</span><span class="dp-text">Заминка ({type_label})</span><span class="dp-arrow">→</span>
+        </a>
+      </div>"""
+
+
 def render_day(day, week_num):
     """Рендер дня — v4 с progress ring и completion banner."""
     day_num = day.get("day_number", 1)
-    warmup = day.get("warmup", {})
-    warmup_html = render_warmup(warmup, week_num, day_num)
 
     exercises_html = ""
     for i, ex in enumerate(day.get("exercises", []), 1):
         exercises_html += render_exercise(ex, i, week_num, day_num)
 
-    cooldown = day.get("cooldown", {})
-    cooldown_html = render_cooldown(cooldown, week_num, day_num)
+    pre_post_html = render_day_pre_post(day)
 
     n_ex = len(day.get("exercises", []))
 
@@ -492,9 +568,8 @@ def render_day(day, week_num):
     </div>
     <div class="day-body">
       <button class="day-reset">↺ Сбросить день</button>
-      {warmup_html}
+      {pre_post_html}
       {exercises_html}
-      {cooldown_html}
       <div class="day-complete-banner">🎉 День выполнен! Отличная работа!</div>
     </div>
   </div>"""
@@ -605,6 +680,9 @@ def fill_template(plan_data):
     info_boxes = load_info_boxes()
     info_json = json.dumps(info_boxes, ensure_ascii=False)
     html = html.replace("{{info_boxes_json}}", info_json)
+
+    # Общая секция разминки/заминки
+    html = html.replace("{{warmup_cooldown_block}}", render_shared_prepost_section(plan_data))
 
     return html
 

@@ -311,6 +311,71 @@
   .stat-card .num { font-size:32px; font-weight:800; color:var(--orange); }
   .stat-card .label { font-size:12px; font-weight:500; text-transform:uppercase; letter-spacing:1px; color:var(--text-muted); margin-top:4px; }
 
+  /* WARMUP / COOLDOWN SHARED CARDS */
+  .pp-cards { display: flex; flex-direction: column; gap: 14px; }
+  .pp-card {
+    background: var(--bg-white); border: 1px solid var(--border-light);
+    border-radius: var(--radius); overflow: hidden;
+    box-shadow: var(--shadow-xs); transition: all .25s var(--ease);
+  }
+  .pp-card[data-expanded="true"] { box-shadow: var(--shadow-glow); border-color: var(--orange); }
+  .pp-head {
+    width: 100%; display: flex; align-items: center; gap: 14px;
+    padding: 18px 22px; background: transparent; border: none;
+    cursor: pointer; text-align: left; color: var(--text);
+    font-family: inherit; transition: background .2s var(--ease);
+  }
+  .pp-head:hover { background: rgba(255,138,61,0.05); }
+  .pp-icon { font-size: 28px; flex-shrink: 0; }
+  .pp-title { flex: 1; min-width: 0; }
+  .pp-heading { font-size: 17px; font-weight: 700; margin-bottom: 2px; }
+  .pp-sub { font-size: 12px; color: var(--text-muted); }
+  .pp-chevron {
+    font-size: 14px; color: var(--text-muted); transition: transform .25s var(--ease);
+    flex-shrink: 0;
+  }
+  .pp-card[data-expanded="true"] .pp-chevron { transform: rotate(180deg); color: var(--orange); }
+  .pp-body {
+    max-height: 0; overflow: hidden;
+    transition: max-height .35s var(--ease), padding .2s var(--ease);
+  }
+  .pp-card[data-expanded="true"] .pp-body {
+    max-height: 9999px; padding: 0 22px 22px;
+  }
+  .pp-tabs {
+    display: flex; gap: 6px; margin-bottom: 14px; border-bottom: 1px solid var(--border-light);
+    padding-bottom: 4px; flex-wrap: wrap;
+  }
+  .pp-tab {
+    padding: 8px 14px; background: transparent; border: none; cursor: pointer;
+    font-family: inherit; font-size: 13px; font-weight: 600; color: var(--text-muted);
+    border-radius: 6px 6px 0 0; position: relative; transition: color .15s;
+  }
+  .pp-tab:hover { color: var(--text); }
+  .pp-tab.active { color: var(--orange); }
+  .pp-tab.active::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: -5px; height: 3px;
+    background: var(--orange); border-radius: 2px;
+  }
+  .pp-content[hidden] { display: none !important; }
+
+  /* DAY pre/post links */
+  .day-prepost {
+    display: flex; flex-direction: column; gap: 8px;
+    background: #FFF8F2; border: 1px solid rgba(255,138,61,0.25);
+    border-radius: 8px; padding: 10px 14px; margin: 12px 0;
+  }
+  .day-prepost-link {
+    display: flex; align-items: center; gap: 10px;
+    color: var(--text); text-decoration: none; padding: 4px 0;
+    font-size: 13px;
+  }
+  .day-prepost-link:hover { color: var(--orange); }
+  .dp-icon { font-size: 18px; flex-shrink: 0; }
+  .dp-text { flex: 1; font-weight: 500; }
+  .dp-arrow { color: var(--text-muted); font-size: 14px; transition: transform .2s; }
+  .day-prepost-link:hover .dp-arrow { transform: translateX(3px); color: var(--orange); }
+
   /* WEEK TABS */
   .week-tabs {
     display:flex; gap:6px; margin-bottom:32px; padding:5px;
@@ -1027,6 +1092,13 @@
   <div class="overview-grid">{{program_overview_items}}</div>
 </section>
 
+<!-- WARMUP/COOLDOWN SHARED -->
+<section id="warmup-cooldown" class="container section">
+  <div class="section-label">Подготовка тела</div>
+  <div class="section-title">Разминка и заминка</div>
+  {{warmup_cooldown_block}}
+</section>
+
 <!-- TRAINING -->
 <section id="training" class="container section">
   <div class="section-label">Тренировки</div>
@@ -1165,6 +1237,49 @@ document.addEventListener('click', (e) => {
   e.preventDefault();
   e.stopPropagation();
   toggleInfoBox(btn);
+});
+
+// ============================================================
+// РАЗМИНКА / ЗАМИНКА — раскрытие карточек + табы типа дня
+// ============================================================
+document.addEventListener('click', (e) => {
+  // Раскрытие карточки
+  const head = e.target.closest('[data-pp-toggle]');
+  if (head) {
+    const card = head.closest('.pp-card');
+    if (card) {
+      const expanded = card.getAttribute('data-expanded') === 'true';
+      card.setAttribute('data-expanded', expanded ? 'false' : 'true');
+    }
+    return;
+  }
+  // Переключение таба силовой/кардио
+  const tab = e.target.closest('.pp-tab');
+  if (tab) {
+    const kind = tab.dataset.ppKind;
+    const type = tab.dataset.ppType;
+    const card = tab.closest('.pp-card');
+    if (!card) return;
+    card.querySelectorAll('.pp-tab').forEach(t => t.classList.toggle('active', t === tab));
+    card.querySelectorAll('.pp-content').forEach(c => {
+      c.hidden = !(c.dataset.ppKind === kind && c.dataset.ppType === type);
+    });
+    return;
+  }
+  // Клик по ссылке из карточки дня → открыть соответствующую карточку + таб
+  const link = e.target.closest('.day-prepost-link');
+  if (link) {
+    const type = link.dataset.type;
+    const section = link.dataset.section === 'cooldown' ? 'cooldown' : 'warmup';
+    const card = document.querySelector(`.pp-card[data-pp-card="${section}"]`);
+    if (card) {
+      card.setAttribute('data-expanded', 'true');
+      if (type) {
+        const tab = card.querySelector(`.pp-tab[data-pp-type="${type}"]`);
+        if (tab) tab.click();
+      }
+    }
+  }
 });
 
 function loadStore() {

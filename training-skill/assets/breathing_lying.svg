@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-label="Диафрагмальное дыхание лёжа">
+  <defs>
+    <style>
+      .stroke { fill: none; stroke: #2c2c34; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+      .fill-skin { fill: #fef3e2; }
+      .fill-belly { fill: #ffe0b3; }
+      .fill-chest { fill: #e8f1ff; }
+      .fill-mat { fill: #f4f4f6; }
+      .label { font-family: -apple-system, "Segoe UI", sans-serif; font-size: 20px; fill: #2c2c34; font-weight: 600; }
+      .label-small { font-family: -apple-system, "Segoe UI", sans-serif; font-size: 16px; fill: #6b7280; font-weight: 500; }
+      .accent { fill: #ff8a3d; }
+      .arrow { stroke: #ff8a3d; stroke-width: 3; fill: none; stroke-linecap: round; }
+    </style>
+  </defs>
+
+  <!-- Фон -->
+  <rect width="720" height="520" fill="#ffffff"/>
+
+  <!-- Коврик/пол -->
+  <rect x="60" y="380" width="600" height="26" rx="4" class="fill-mat" stroke="#d4d4d8" stroke-width="1.5"/>
+  <line x1="60" y1="406" x2="660" y2="406" stroke="#d4d4d8" stroke-width="1.5"/>
+
+  <!-- Голова -->
+  <circle cx="145" cy="340" r="32" class="fill-skin stroke"/>
+  <!-- Ухо/причёска -->
+  <path d="M 120 330 Q 113 320 118 312" class="stroke"/>
+
+  <!-- Шея -->
+  <path d="M 175 358 L 200 355 L 200 378 L 175 378 Z" class="fill-skin stroke"/>
+
+  <!-- Грудь (НЕ движется — это главный визуальный маркер) -->
+  <g>
+    <ellipse cx="260" cy="370" rx="60" ry="22" class="fill-chest stroke"/>
+    <!-- Ладонь на груди (статична) -->
+    <g transform="translate(240 338)">
+      <ellipse cx="0" cy="0" rx="28" ry="18" class="fill-skin stroke"/>
+      <!-- Пальцы -->
+      <path d="M -18 -2 Q -22 -14 -14 -16" class="stroke"/>
+      <path d="M -8 -4 Q -10 -18 -2 -19" class="stroke"/>
+      <path d="M 4 -4 Q 4 -18 12 -17" class="stroke"/>
+      <path d="M 14 -2 Q 18 -14 22 -8" class="stroke"/>
+    </g>
+    <text x="260" y="305" text-anchor="middle" class="label-small">грудь</text>
+    <text x="260" y="323" text-anchor="middle" class="label-small">не двигается</text>
+  </g>
+
+  <!-- Живот (АНИМАЦИЯ — поднимается на вдохе, опускается на выдохе) -->
+  <g>
+    <!-- 4s вдох → 6s выдох → 10s цикл -->
+    <ellipse cx="400" cy="373" rx="65" ry="18" class="fill-belly stroke">
+      <animate attributeName="ry"
+               values="18; 36; 18"
+               keyTimes="0; 0.4; 1"
+               dur="10s"
+               repeatCount="indefinite"
+               calcMode="spline"
+               keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
+      <animate attributeName="cy"
+               values="373; 355; 373"
+               keyTimes="0; 0.4; 1"
+               dur="10s"
+               repeatCount="indefinite"
+               calcMode="spline"
+               keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
+    </ellipse>
+    <!-- Ладонь на животе (АНИМАЦИЯ — движется вверх с животом) -->
+    <g>
+      <animateTransform attributeName="transform"
+                        type="translate"
+                        values="380 335; 380 305; 380 335"
+                        keyTimes="0; 0.4; 1"
+                        dur="10s"
+                        repeatCount="indefinite"
+                        calcMode="spline"
+                        keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
+      <ellipse cx="20" cy="0" rx="28" ry="18" class="fill-skin stroke" stroke="#ff8a3d" stroke-width="3"/>
+      <path d="M 2 -2 Q -2 -14 6 -16" class="stroke" stroke="#ff8a3d"/>
+      <path d="M 12 -4 Q 10 -18 18 -19" class="stroke" stroke="#ff8a3d"/>
+      <path d="M 24 -4 Q 24 -18 32 -17" class="stroke" stroke="#ff8a3d"/>
+      <path d="M 34 -2 Q 38 -14 42 -8" class="stroke" stroke="#ff8a3d"/>
+    </g>
+    <text x="400" y="460" text-anchor="middle" class="label accent">живот</text>
+    <text x="400" y="482" text-anchor="middle" class="label-small">поднимается и опускается</text>
+  </g>
+
+  <!-- Ноги (согнуты в коленях) -->
+  <g>
+    <!-- Бедро -->
+    <path d="M 460 376 L 540 370 L 560 330 L 560 330" class="fill-skin stroke"/>
+    <!-- Колено -->
+    <circle cx="565" cy="328" r="14" class="fill-skin stroke"/>
+    <!-- Голень -->
+    <path d="M 572 338 L 588 378 L 610 380" class="fill-skin stroke"/>
+    <!-- Стопа -->
+    <path d="M 605 378 Q 625 380 635 375" class="stroke"/>
+  </g>
+
+  <!-- Стрелка вверх (вдох) -->
+  <g>
+    <animate attributeName="opacity"
+             values="1; 1; 0; 0"
+             keyTimes="0; 0.4; 0.45; 1"
+             dur="10s"
+             repeatCount="indefinite"/>
+    <path d="M 500 220 L 500 170" class="arrow"/>
+    <path d="M 488 184 L 500 170 L 512 184" class="arrow"/>
+    <text x="520" y="200" class="label accent">вдох 4 сек</text>
+  </g>
+
+  <!-- Стрелка вниз (выдох) -->
+  <g>
+    <animate attributeName="opacity"
+             values="0; 0; 1; 1; 0"
+             keyTimes="0; 0.4; 0.45; 0.99; 1"
+             dur="10s"
+             repeatCount="indefinite"/>
+    <path d="M 500 170 L 500 220" class="arrow"/>
+    <path d="M 488 206 L 500 220 L 512 206" class="arrow"/>
+    <text x="520" y="200" class="label accent">выдох 6 сек</text>
+  </g>
+
+  <!-- Заголовок -->
+  <text x="360" y="60" text-anchor="middle" class="label" font-size="26">Диафрагмальное дыхание лёжа</text>
+  <text x="360" y="90" text-anchor="middle" class="label-small" font-size="15">вдох через нос → живот поднимается · выдох через рот → живот опускается</text>
+
+  <!-- Ритм-индикатор -->
+  <g transform="translate(60 460)">
+    <rect x="0" y="0" width="200" height="6" rx="3" fill="#e5e7eb"/>
+    <rect x="0" y="0" width="200" height="6" rx="3" fill="#ff8a3d">
+      <animate attributeName="width"
+               values="0; 80; 200; 80; 0"
+               keyTimes="0; 0.2; 0.4; 0.7; 1"
+               dur="10s"
+               repeatCount="indefinite"/>
+    </rect>
+    <text x="0" y="25" class="label-small" font-size="13">ритм: 4 сек вдох · 6 сек выдох</text>
+  </g>
+</svg>

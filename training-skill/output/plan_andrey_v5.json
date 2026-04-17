@@ -377,7 +377,8 @@
           "warmup_type": "strength",
           "cooldown_type": "strength"
         }
-      ]
+      ],
+      "info_box": "mesocycle_phase"
     },
     {
       "week_number": 2,
@@ -715,7 +716,8 @@
           "cooldown_type": "strength",
           "info_box": "why_lat_pulldown_as_pull_v"
         }
-      ]
+      ],
+      "info_box": "progressive_overload"
     },
     {
       "week_number": 3,
@@ -1052,7 +1054,8 @@
           "warmup_type": "strength",
           "cooldown_type": "strength"
         }
-      ]
+      ],
+      "info_box": "why_full_body_vs_split_intermediate"
     },
     {
       "week_number": 4,
@@ -1389,7 +1392,8 @@
           "cooldown_type": "strength",
           "info_box": "why_dead_bug_over_crunch"
         }
-      ]
+      ],
+      "info_box": "deload_necessity"
     }
   ],
   "legal": {
@@ -1748,5 +1752,7 @@
         }
       ]
     }
-  }
+  },
+  "warmups_info_box": "why_warmup_three_phases",
+  "cooldowns_info_box": "cooldown_stretch"
 }

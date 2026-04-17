@@ -495,29 +495,34 @@ def render_shared_prepost_section(plan_data):
     warmup_tabs = tabs("warmup", warmups, render_warmup_block)
     cooldown_tabs = tabs("cooldown", cooldowns, render_cooldown_block)
 
+    # Справки на уровне секций — берутся из plan_data
+    warmup_info_btn = render_info_btn(plan_data.get("warmups_info_box"))
+    cooldown_info_btn = render_info_btn(plan_data.get("cooldowns_info_box"))
+
+    # pp-head оставляем кликабельным div'ом (не button) — чтобы можно было вложить info-btn
     warmup_card = f"""
     <div class="pp-card" data-pp-card="warmup" data-expanded="false">
-      <button class="pp-head" data-pp-toggle="warmup">
+      <div class="pp-head" data-pp-toggle="warmup" role="button" tabindex="0">
         <span class="pp-icon">🔥</span>
         <div class="pp-title">
-          <div class="pp-heading">Разминка перед тренировкой</div>
+          <div class="pp-heading">Разминка перед тренировкой{warmup_info_btn}</div>
           <div class="pp-sub">10–15 мин · обязательно, не пропускать</div>
         </div>
         <span class="pp-chevron">▼</span>
-      </button>
+      </div>
       <div class="pp-body">{warmup_tabs}</div>
     </div>""" if warmup_tabs else ""
 
     cooldown_card = f"""
     <div class="pp-card" data-pp-card="cooldown" data-expanded="false">
-      <button class="pp-head" data-pp-toggle="cooldown">
+      <div class="pp-head" data-pp-toggle="cooldown" role="button" tabindex="0">
         <span class="pp-icon">🧊</span>
         <div class="pp-title">
-          <div class="pp-heading">Заминка после тренировки</div>
+          <div class="pp-heading">Заминка после тренировки{cooldown_info_btn}</div>
           <div class="pp-sub">6–10 мин · растяжка, дыхание, снижение пульса</div>
         </div>
         <span class="pp-chevron">▼</span>
-      </button>
+      </div>
       <div class="pp-body">{cooldown_tabs}</div>
     </div>""" if cooldown_tabs else ""
 

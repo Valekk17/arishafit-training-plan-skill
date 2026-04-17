@@ -989,6 +989,7 @@
   /* =====================
      RESPONSIVE
      ===================== */
+  /* ========= Планшет/мобильник: панель предпросмотра внизу ========= */
   @media (max-width:900px) {
     .training-layout { grid-template-columns:1fr; }
     .training-panel-wrap { position:fixed; bottom:0; left:0; right:0; top:auto; z-index:150; }
@@ -1012,21 +1013,94 @@
       z-index:149; backdrop-filter:blur(4px);
     }
     .mobile-panel-backdrop.show { display:block; }
+    /* Уплотнение основных блоков */
+    .info-box { padding:14px 16px; margin:10px 0 12px; font-size:13px; }
+    .info-btn { width:24px; height:24px; font-size:13px; }
   }
   @media (min-width:901px) {
     .mobile-panel-handle { display:none; }
     .mobile-panel-backdrop { display:none !important; }
   }
-  @media (max-width:700px) {
+
+  /* ========= Планшет портрет / большой мобильник ========= */
+  @media (max-width:768px) {
+    .container { padding:0 18px; }
+    .section { padding:36px 0; }
+    .section-title { font-size:22px; margin-bottom:18px; }
+    .hero { padding:60px 20px 44px; }
     .hero h1 { font-size:28px; }
+    .hero-sub { font-size:15px; margin-bottom:28px; }
+    .hero-stats { gap:24px; }
     .info-grid { grid-template-columns:repeat(2,1fr); }
     .overview-grid { grid-template-columns:repeat(2,1fr); }
+    .stat-card { padding:22px 16px; }
+    .stat-card .num { font-size:18px; }
+    .day-top { padding:14px 18px; }
+    .day-body { padding:16px 18px; }
+    .day-top h3 { font-size:16px; }
+    .day-ring-wrap { margin-right:10px; }
+    .week-banner { padding:20px 22px; }
+    .week-banner h2 { font-size:20px; }
+    .week-toggle { right:16px; top:18px; width:28px; height:28px; }
+    .pp-head { padding:14px 18px; gap:10px; }
+    .pp-icon { font-size:24px; }
+    .pp-heading { font-size:15px; }
+    .pp-tabs { gap:4px; }
+    .pp-tab { padding:6px 10px; font-size:12px; }
     .week-tabs { width:100%; }
     .nav-links { display:none; }
     .nav-progress-bar { width:80px; }
   }
+
+  /* ========= Маленький мобильник (<480px) ========= */
   @media (max-width:480px) {
+    .container { padding:0 14px; }
+    .section { padding:28px 0; }
+    .section-title { font-size:20px; }
+    .hero { padding:44px 16px 32px; }
+    .hero h1 { font-size:24px; }
+    .hero-sub { font-size:14px; }
+    .hero-pill { font-size:11px; padding:6px 14px; margin-bottom:16px; }
     .info-grid { grid-template-columns:1fr; }
+    .overview-grid { grid-template-columns:1fr; gap:10px; }
+    .stat-card { padding:18px 14px; }
+    .alert { padding:14px 16px; gap:10px; }
+    .alert-title { font-size:14px; }
+    .alert-body p { font-size:13px; }
+    .day-card { margin-bottom:12px; }
+    .day-top { padding:12px 14px; flex-wrap:wrap; row-gap:8px; }
+    .day-top-left { gap:8px; min-width:0; flex-wrap:wrap; }
+    .day-top h3 { font-size:15px; min-width:0; word-break:break-word; }
+    .day-body { padding:14px 14px; }
+    .day-ring-wrap { gap:4px; margin-right:6px; }
+    .day-toggle { width:28px; height:28px; font-size:16px; }
+    .week-banner { padding:18px 18px 16px; }
+    .week-banner h2 { font-size:18px; }
+    .week-banner .week-desc { font-size:13px; }
+    .week-toggle { right:12px; top:14px; width:26px; height:26px; font-size:14px; }
+    .pp-card { }
+    .pp-head { padding:12px 14px; }
+    .pp-icon { font-size:22px; }
+    .pp-heading { font-size:14px; }
+    .pp-sub { font-size:11px; }
+    .pp-card[data-expanded="true"] .pp-body { padding:0 14px 16px; }
+    .pp-tabs { padding-bottom:4px; }
+    .pp-tab { padding:6px 8px; font-size:11px; }
+    .info-box { padding:12px 14px; margin:8px 0 10px; font-size:12px; }
+    .info-box .info-title { font-size:13px; }
+    .info-btn { width:26px; height:26px; font-size:14px; margin-left:6px; }
+    .phase-item { padding:10px; gap:10px; }
+    .phase-item-name { font-size:13px; }
+    .phase-item-reps { font-size:12px; }
+    .phase-item-gif { width:48px; height:48px; }
+    .exercise { padding:12px 14px; }
+    .ex-name { font-size:14px; }
+    .ex-meta { font-size:12px; }
+    .nav { padding:0 14px; }
+    .nav-logo { font-size:16px; letter-spacing:2px; }
+    .nav-progress-bar { width:60px; }
+    .disclaimer { padding:24px 16px; }
+    .disclaimer p { font-size:12px; }
   }
 
   /* PRINT */
@@ -1621,6 +1695,14 @@ function openPhaseItem(key) {
   if (altsWrap) altsWrap.style.display = 'none';
   const swapInfo = document.getElementById('panelSwapInfo');
   if (swapInfo) swapInfo.style.display = 'none';
+
+  // Timer / notes для фаз не нужны, скрываем
+  const timerWrap = document.getElementById('panelTimerWrap');
+  if (timerWrap) timerWrap.style.display = 'none';
+
+  // На мобильном — панель выезжает снизу как drawer
+  document.getElementById('previewPanel').classList.add('mobile-open');
+  document.getElementById('backdrop').classList.add('show');
 }
 
 // ============================================================

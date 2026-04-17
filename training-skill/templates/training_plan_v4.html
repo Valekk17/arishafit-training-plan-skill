@@ -311,33 +311,6 @@
   .stat-card .num { font-size:32px; font-weight:800; color:var(--orange); }
   .stat-card .label { font-size:12px; font-weight:500; text-transform:uppercase; letter-spacing:1px; color:var(--text-muted); margin-top:4px; }
 
-  /* MESOCYCLE WAVE */
-  .meso-narrative {
-    background:var(--bg-white); border:1px solid var(--border-light);
-    border-radius:var(--radius); padding:20px 24px; margin-bottom:16px;
-    font-size:14px; line-height:1.7; color:var(--text);
-    box-shadow:var(--shadow-xs);
-  }
-  .meso-narrative strong { color:var(--orange); }
-  .meso-wave {
-    display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-    gap:12px; margin-bottom:16px;
-  }
-  .meso-phase {
-    background:var(--bg-white); border:1px solid var(--border-light);
-    border-radius:var(--radius); padding:18px 20px;
-    box-shadow:var(--shadow-xs); position:relative;
-    border-left:4px solid var(--orange);
-  }
-  .meso-phase-num { font-size:11px; font-weight:700; color:var(--orange); letter-spacing:2px; text-transform:uppercase; }
-  .meso-phase-name { font-size:17px; font-weight:700; color:var(--text); margin:4px 0 6px; }
-  .meso-phase-desc { font-size:13px; color:var(--text-light); line-height:1.5; }
-  .meso-next {
-    background:#FFF8E1; border:1px solid #FFE082; border-radius:var(--radius);
-    padding:16px 20px; font-size:13px; line-height:1.6; color:#5D4037;
-  }
-  .meso-next strong { color:#E65100; }
-
   /* WEEK TABS */
   .week-tabs {
     display:flex; gap:6px; margin-bottom:32px; padding:5px;
@@ -1052,13 +1025,6 @@
   <div class="section-label">Параметры</div>
   <div class="section-title">Обзор программы</div>
   <div class="overview-grid">{{program_overview_items}}</div>
-</section>
-
-<!-- MESOCYCLE CONTEXT -->
-<section id="mesocycle" class="container section">
-  <div class="section-label">Долгосрочный контекст</div>
-  <div class="section-title">Где мы в годовой программе</div>
-  {{mesocycle_block}}
 </section>
 
 <!-- TRAINING -->

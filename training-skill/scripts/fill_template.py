@@ -194,62 +194,6 @@ def render_overview(program, client):
     return html
 
 
-def render_mesocycle(program):
-    """Рендер блока «Долгосрочный контекст»: мезоцикл в годовой программе.
-
-    Если program.mesocycle_phases / macrocycle_context отсутствуют — возвращает пусто,
-    блок пропускается (обратная совместимость со старыми JSON).
-    """
-    phases = program.get("mesocycle_phases") or {}
-    macro = program.get("macrocycle_context", "").strip()
-    post = program.get("post_mesocycle_preview", "").strip()
-    progression = program.get("progression", "").strip()
-
-    if not (phases or macro or post):
-        return ""
-
-    # Narrative сверху — объединённый текст
-    narrative = ""
-    if macro or progression:
-        narrative = (
-            f'<div class="meso-narrative">'
-            f'<strong>Это не короткая программа.</strong> {macro or progression}'
-            f'</div>'
-        )
-
-    # Волна фаз
-    wave_html = ""
-    if phases:
-        # Разбираем: "Аккумуляция — вход в мезоцикл..."
-        wave_html = '<div class="meso-wave">'
-        for wkey in sorted(phases.keys()):
-            raw = phases[wkey]
-            # Разбить на имя и описание по " — "
-            if " — " in raw:
-                name, desc = raw.split(" — ", 1)
-            else:
-                name, desc = raw, ""
-            wave_html += (
-                f'<div class="meso-phase">'
-                f'<div class="meso-phase-num">Неделя {wkey.replace("W","")}</div>'
-                f'<div class="meso-phase-name">{name.strip()}</div>'
-                f'<div class="meso-phase-desc">{desc.strip()}</div>'
-                f'</div>'
-            )
-        wave_html += '</div>'
-
-    # Что после
-    next_html = ""
-    if post:
-        next_html = (
-            f'<div class="meso-next">'
-            f'<strong>После W4 (дилоуд):</strong> {post}'
-            f'</div>'
-        )
-
-    return narrative + wave_html + next_html
-
-
 USE_RELATIVE = False  # глобальный флаг, устанавливается в main()
 EXERCISES_DATA = {}  # накапливается при рендере, вставляется в HTML как JSON
 PHASE_DATA = {}     # данные warmup/cooldown-item-ов: { key: {name,gif,tips,warn,reps,details} }
@@ -635,9 +579,6 @@ def fill_template(plan_data):
 
     # Обзор программы
     html = html.replace("{{program_overview_items}}", render_overview(program, client))
-
-    # Долгосрочный контекст (мезоцикл в годовой программе)
-    html = html.replace("{{mesocycle_block}}", render_mesocycle(program))
 
     # Week tabs
     tabs_html = ""

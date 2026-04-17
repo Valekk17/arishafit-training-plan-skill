@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{plan_title}} — ArishaFit</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+  :root {
+    --bg: #B7EFFF;
+    --bg-light: #D4F5FF;
+    --text: #575757;
+    --text-dark: #333;
+    --accent: #2B8EAD;
+    --accent-light: #3BB8DC;
+    --warning: #E8A838;
+    --danger: #D94E4E;
+    --white: #FFFFFF;
+    --card-bg: rgba(255,255,255,0.85);
+    --shadow: 0 2px 12px rgba(0,0,0,0.08);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 15px;
+  }
+
+  /* ============================
+     ВОДЯНОЙ ЗНАК — на каждой странице
+     ============================ */
+  .watermark {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-35deg);
+    font-size: 120px;
+    font-weight: 800;
+    color: rgba(43, 142, 173, 0.04);
+    pointer-events: none;
+    z-index: 0;
+    white-space: nowrap;
+    letter-spacing: 20px;
+    user-select: none;
+  }
+
+  /* Print watermark */
+  @media print {
+    .watermark {
+      position: fixed;
+      color: rgba(43, 142, 173, 0.06);
+      font-size: 100px;
+    }
+  }
+
+  /* ============================
+     HEADER
+     ============================ */
+  .header {
+    background: linear-gradient(135deg, var(--accent), var(--accent-light));
+    color: white;
+    padding: 40px 30px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .header-logo {
+    font-size: 14px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    opacity: 0.8;
+    margin-bottom: 8px;
+  }
+
+  .header h1 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+
+  .header-meta {
+    font-size: 14px;
+    opacity: 0.85;
+  }
+
+  /* ============================
+     CLIENT INFO
+     ============================ */
+  .client-info {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .client-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(10px);
+  }
+
+  .client-card h2 {
+    color: var(--accent);
+    font-size: 18px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid var(--bg);
+    padding-bottom: 8px;
+  }
+
+  .client-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
+
+  .client-field {
+    font-size: 14px;
+  }
+
+  .client-field strong {
+    color: var(--accent);
+  }
+
+  /* Medical warning */
+  .medical-warning {
+    background: #FFF3E0;
+    border-left: 4px solid var(--warning);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 16px;
+    font-size: 13px;
+  }
+
+  .medical-warning strong {
+    color: var(--danger);
+  }
+
+  /* ============================
+     PROGRAM OVERVIEW
+     ============================ */
+  .program-overview {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .overview-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: var(--shadow);
+  }
+
+  .overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .overview-item {
+    background: var(--bg-light);
+    border-radius: 10px;
+    padding: 14px;
+    text-align: center;
+  }
+
+  .overview-item .value {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--accent);
+  }
+
+  .overview-item .label {
+    font-size: 12px;
+    color: var(--text);
+    margin-top: 4px;
+  }
+
+  /* ============================
+     WEEK / DAY
+     ============================ */
+  .week-section {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+    page-break-before: always;
+  }
+
+  .week-header {
+    background: linear-gradient(135deg, var(--accent), var(--accent-light));
+    color: white;
+    border-radius: 16px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+  }
+
+  .week-header h2 {
+    font-size: 22px;
+    font-weight: 800;
+  }
+
+  .week-header .week-focus {
+    font-size: 14px;
+    opacity: 0.85;
+    margin-top: 4px;
+  }
+
+  .day-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 16px;
+    box-shadow: var(--shadow);
+    page-break-inside: avoid;
+  }
+
+  .day-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--bg);
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+  }
+
+  .day-header h3 {
+    color: var(--accent);
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .day-header .day-type {
+    background: var(--accent);
+    color: white;
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+  }
+
+  /* ============================
+     WARMUP / COOLDOWN
+     ============================ */
+  .warmup-block, .cooldown-block {
+    background: var(--bg-light);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 14px;
+    font-size: 13px;
+  }
+
+  .warmup-block strong, .cooldown-block strong {
+    color: var(--accent);
+  }
+
+  /* ============================
+     EXERCISE ROW
+     ============================ */
+  .exercise-row {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    page-break-inside: avoid;
+  }
+
+  .exercise-row:last-child {
+    border-bottom: none;
+  }
+
+  .exercise-gif {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    background: var(--bg-light);
+  }
+
+  .exercise-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .exercise-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-dark);
+  }
+
+  .exercise-params {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-size: 13px;
+  }
+
+  .exercise-params .param {
+    background: var(--bg-light);
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-weight: 600;
+  }
+
+  .exercise-tips {
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 4px;
+  }
+
+  .exercise-warning {
+    background: #FFF3E0;
+    border-left: 3px solid var(--warning);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    margin-top: 4px;
+    color: #8B6914;
+  }
+
+  .exercise-alternatives {
+    font-size: 12px;
+    color: #888;
+    margin-top: 4px;
+  }
+
+  .exercise-alternatives strong {
+    color: var(--accent);
+  }
+
+  /* ============================
+     DISCLAIMER
+     ============================ */
+  .disclaimer {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .disclaimer-card {
+    background: rgba(255,255,255,0.6);
+    border-radius: 16px;
+    padding: 24px;
+    font-size: 12px;
+    color: #888;
+    line-height: 1.8;
+  }
+
+  .disclaimer-card h3 {
+    color: var(--text);
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  /* ============================
+     FOOTER
+     ============================ */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 11px;
+    color: #999;
+    position: relative;
+    z-index: 1;
+  }
+
+  .footer-logo {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+
+  /* ============================
+     RESPONSIVE
+     ============================ */
+  @media (max-width: 600px) {
+    .exercise-row {
+      grid-template-columns: 80px 1fr;
+      gap: 10px;
+    }
+    .exercise-gif {
+      width: 80px;
+      height: 80px;
+    }
+    .header h1 {
+      font-size: 22px;
+    }
+    .client-grid {
+      grid-template-columns: 1fr;
+    }
+    .overview-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* ============================
+     PRINT
+     ============================ */
+  @media print {
+    body { background: white; font-size: 12px; }
+    .header { padding: 20px; }
+    .week-section { page-break-before: always; }
+    .day-card { page-break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
+    .exercise-row { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ВОДЯНОЙ ЗНАК -->
+<div class="watermark">ARISHAFIT</div>
+
+<!-- ШАПКА -->
+<div class="header">
+  <div class="header-logo">A R I S H A F I T</div>
+  <h1>{{plan_title}}</h1>
+  <div class="header-meta">{{client_name}} · {{plan_weeks}} недель · {{training_days}} дней/неделю · {{goal_ru}}</div>
+</div>
+
+<!-- ИНФОРМАЦИЯ О КЛИЕНТЕ -->
+<div class="client-info">
+  <div class="client-card">
+    <h2>Данные клиента</h2>
+    <div class="client-grid">
+      {{client_fields}}
+    </div>
+    {{medical_warning}}
+  </div>
+</div>
+
+<!-- ОБЗОР ПРОГРАММЫ -->
+<div class="program-overview">
+  <div class="overview-card">
+    <h2>Параметры программы</h2>
+    <div class="overview-grid">
+      {{program_overview_items}}
+    </div>
+  </div>
+</div>
+
+<!-- ТРЕНИРОВОЧНЫЕ НЕДЕЛИ -->
+{{weeks_content}}
+
+<!-- ДИСКЛЕЙМЕР -->
+<div class="disclaimer">
+  <div class="disclaimer-card">
+    <h3>Важная информация</h3>
+    <p>⛔ Перед началом программы обязательна консультация врача (невролог/ортопед).</p>
+    <p>Данная программа является информационно-консультационной услугой и не является медицинской рекомендацией. Автор — сертифицированный персональный тренер, не врач. Результаты индивидуальны и зависят от множества факторов. При появлении острой боли немедленно прекратите упражнение и обратитесь к врачу.</p>
+    <p>Программа составлена на основе рекомендаций ACSM 2026 Position Stand и NSCA Essentials of Strength Training and Conditioning.</p>
+    <p style="margin-top:8px; font-size:11px; color:#aaa;">Не является публичной офертой (ст. 437 ГК РФ) · ФЗ-323 · ФЗ-152 · ФЗ-2300-1</p>
+  </div>
+</div>
+
+<!-- ФУТЕР -->
+<div class="footer">
+  <div class="footer-logo">ARISHAFIT</div>
+  <div>© {{year}} ArishaFit · Все права защищены · {{date}}</div>
+</div>
+
+</body>
+</html>

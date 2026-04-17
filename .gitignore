@@ -1,0 +1,38 @@
+# Большие медиа — не попадают в git (лимит 100 МБ на файл + 500 МБ × 1300 × 3 = ~3 ГБ)
+exercisedb_data/mp4/
+exercisedb_data/mp4_paused/
+exercisedb_data/gifs_hd/
+exercisedb_data/gifs/
+
+# Бэкапы и автогенерируемые артефакты
+*.bak
+*.bak.json
+*_backup.*
+
+# Рендеры планов с embedded base64 (десятки мегабайт)
+training-skill/output/*.html
+training-skill/output/andrey_*.html
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp annotator
+annotator/_frames/
+
+# node_modules (не используются, но на всякий случай)
+node_modules/
+
+# Logs
+*.log

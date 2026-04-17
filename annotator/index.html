@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>ArishaFit · Разметка кадров</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --panel: #1a1d25;
+    --text: #e6e8ed;
+    --muted: #8a93a5;
+    --accent: #ff8a3d;
+    --green: #3fcf8e;
+    --yellow: #ffd54f;
+    --red: #ff6b6b;
+    --border: #2a2f3a;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; height: 100%; }
+  body { display: flex; flex-direction: column; }
+
+  .top {
+    display: flex; align-items: center; gap: 16px; padding: 12px 20px;
+    background: var(--panel); border-bottom: 1px solid var(--border);
+  }
+  .top h1 { font-size: 15px; margin: 0; font-weight: 600; }
+  .progress { flex: 1; display: flex; align-items: center; gap: 8px; }
+  .progress .bar { flex: 1; height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
+  .progress .bar > div { height: 100%; background: var(--green); transition: width .2s; }
+  .progress .num { font-size: 13px; color: var(--muted); min-width: 120px; text-align: right; font-variant-numeric: tabular-nums; }
+  .filter { display: flex; gap: 6px; }
+  .filter button {
+    background: var(--panel); color: var(--muted); border: 1px solid var(--border);
+    padding: 6px 12px; border-radius: 6px; font-size: 12px; cursor: pointer;
+  }
+  .filter button.active { background: var(--accent); color: #000; border-color: var(--accent); }
+
+  .main { flex: 1; display: grid; grid-template-columns: 320px 1fr; min-height: 0; }
+
+  .sidebar {
+    background: var(--panel); border-right: 1px solid var(--border);
+    overflow-y: auto;
+  }
+  .ex-item {
+    padding: 10px 14px; border-bottom: 1px solid var(--border);
+    cursor: pointer; font-size: 13px; display: flex; gap: 10px; align-items: center;
+  }
+  .ex-item:hover { background: #232734; }
+  .ex-item.active { background: #2b3142; border-left: 3px solid var(--accent); padding-left: 11px; }
+  .ex-item .dot {
+    width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+    background: var(--border);
+  }
+  .ex-item.manual .dot { background: var(--green); }
+  .ex-item.low-conf:not(.manual) .dot { background: var(--red); }
+  .ex-item.mid-conf:not(.manual) .dot { background: var(--yellow); }
+  .ex-item .name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .ex-item .id { font-size: 10px; color: var(--muted); font-family: ui-monospace, Menlo, monospace; }
+
+  .workspace {
+    padding: 24px 28px; overflow-y: auto; display: flex; flex-direction: column; gap: 16px;
+    min-width: 0;
+  }
+  .meta {
+    display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap;
+  }
+  .meta h2 { margin: 0; font-size: 20px; font-weight: 600; }
+  .meta .id { color: var(--muted); font-size: 12px; font-family: ui-monospace, Menlo, monospace; }
+  .meta .conf { font-size: 12px; color: var(--muted); margin-left: auto; }
+  .meta .conf b { color: var(--text); font-weight: 600; }
+  .meta .tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .meta .tag { padding: 2px 8px; background: var(--border); border-radius: 4px; font-size: 11px; color: var(--muted); }
+
+  /* Names block: Opus new name vs. old name */
+  .names { display: flex; flex-direction: column; gap: 6px; padding: 14px 16px; background: var(--panel); border-radius: 8px; border: 1px solid var(--border); }
+  .names .row { display: flex; gap: 10px; align-items: baseline; font-size: 14px; }
+  .names .tag { font-size: 10px; font-weight: 700; letter-spacing: 0.5px; padding: 2px 6px; border-radius: 3px; min-width: 52px; text-align: center; flex-shrink: 0; }
+  .names .tag.new { background: rgba(63,207,142,0.2); color: var(--green); }
+  .names .tag.old { background: var(--border); color: var(--muted); }
+  .names .val { flex: 1; }
+  .names .val.new-val { font-weight: 600; }
+  .names .val.old-val { color: var(--muted); text-decoration: line-through; text-decoration-color: rgba(138,147,165,0.4); }
+
+  /* Description block */
+  .desc { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+  .desc .title { font-size: 10px; font-weight: 700; letter-spacing: 0.5px; color: var(--muted); margin-bottom: 6px; text-transform: uppercase; }
+  .desc .text { font-size: 13px; line-height: 1.6; color: var(--text); }
+  .desc .text + .text { margin-top: 6px; padding-top: 6px; border-top: 1px dashed var(--border); }
+
+  .video-row { display: grid; grid-template-columns: 480px 1fr; gap: 24px; align-items: start; }
+  .video-wrap { position: relative; width: 480px; height: 480px; background: #000; border-radius: 8px; overflow: hidden; }
+  video { width: 100%; height: 100%; display: block; background: #000; }
+
+  .controls { display: flex; flex-direction: column; gap: 14px; }
+  .frame-info { font-size: 48px; font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: -0.5px; }
+  .frame-info span { color: var(--muted); font-weight: 400; font-size: 24px; }
+
+  .scrubber { width: 100%; appearance: none; height: 6px; background: var(--border); border-radius: 3px; outline: none; }
+  .scrubber::-webkit-slider-thumb { appearance: none; width: 16px; height: 16px; background: var(--accent); border-radius: 50%; cursor: pointer; }
+  .scrubber::-moz-range-thumb { width: 16px; height: 16px; background: var(--accent); border-radius: 50%; cursor: pointer; border: none; }
+
+  .frame-markers {
+    position: relative; width: 100%; height: 24px; font-size: 10px; color: var(--muted);
+  }
+  .marker {
+    position: absolute; top: 0; transform: translateX(-50%);
+    display: flex; flex-direction: column; align-items: center;
+  }
+  .marker .bar { width: 2px; height: 10px; background: var(--accent); }
+  .marker .lbl { font-size: 9px; margin-top: 2px; font-weight: 700; color: var(--accent); }
+  .marker.is-zero .bar { background: var(--green); }
+  .marker.is-zero .lbl { color: var(--green); }
+
+  .key-chips { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; padding: 8px 0; }
+  .key-chips .chip {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 4px 4px 4px 10px; background: rgba(255,138,61,0.15);
+    color: var(--accent); border: 1px solid var(--accent);
+    border-radius: 4px; font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums;
+    cursor: pointer;
+  }
+  .key-chips .chip.is-zero { background: rgba(63,207,142,0.15); color: var(--green); border-color: var(--green); }
+  .key-chips .chip .x {
+    width: 18px; height: 18px; display: inline-flex; align-items: center; justify-content: center;
+    margin-left: 4px; border-radius: 3px; cursor: pointer; opacity: 0.7; font-size: 14px;
+  }
+  .key-chips .chip .x:hover { background: rgba(0,0,0,0.3); opacity: 1; }
+  .key-chips .add-chip {
+    padding: 4px 10px; background: transparent; color: var(--muted);
+    border: 1px dashed var(--border); border-radius: 4px; font-size: 12px; cursor: pointer;
+  }
+  .key-chips .add-chip:hover { border-color: var(--accent); color: var(--accent); }
+
+  .step-btns { display: flex; gap: 8px; }
+  .step-btns button {
+    background: var(--panel); color: var(--text); border: 1px solid var(--border);
+    padding: 8px 14px; border-radius: 6px; font-size: 13px; cursor: pointer;
+  }
+  .step-btns button:hover { background: #2a2f3a; }
+
+  .mark-btns { display: flex; gap: 10px; }
+  .mark-btns button {
+    flex: 1; padding: 12px; border-radius: 6px; font-size: 14px; font-weight: 600;
+    border: 2px solid; cursor: pointer; transition: all .15s;
+  }
+  .mark-btns .start-btn { background: transparent; color: var(--green); border-color: var(--green); }
+  .mark-btns .start-btn:hover { background: rgba(63,207,142,0.15); }
+  .mark-btns .peak-btn { background: transparent; color: var(--accent); border-color: var(--accent); }
+  .mark-btns .peak-btn:hover { background: rgba(255,138,61,0.15); }
+
+  .values { display: flex; gap: 20px; padding: 12px 16px; background: var(--panel); border-radius: 6px; font-size: 14px; }
+  .values span { color: var(--muted); }
+  .values b { font-variant-numeric: tabular-nums; }
+
+  .nav-btns { display: flex; gap: 10px; margin-top: 4px; }
+  .nav-btns button {
+    padding: 10px 18px; border-radius: 6px; font-size: 13px; font-weight: 600;
+    border: 1px solid var(--border); background: var(--panel); color: var(--text); cursor: pointer;
+  }
+  .nav-btns .save-next { background: var(--green); color: #000; border-color: var(--green); flex: 1; }
+  .nav-btns .skip { color: var(--muted); }
+  .nav-btns .delete { color: var(--red); border-color: var(--red); }
+
+  .hint { font-size: 12px; color: var(--muted); line-height: 1.6; padding-top: 8px; border-top: 1px solid var(--border); }
+  .hint kbd {
+    display: inline-block; padding: 1px 6px; background: var(--border); border-radius: 3px;
+    font-family: ui-monospace, Menlo, monospace; font-size: 11px; color: var(--text); margin: 0 2px;
+  }
+</style>
+</head>
+<body>
+
+<div class="top">
+  <h1>⦿ Разметка кадров</h1>
+  <div class="progress">
+    <div class="num" id="progressNum">—</div>
+    <div class="bar"><div id="progressBar" style="width:0%"></div></div>
+  </div>
+  <div class="filter" id="filter">
+    <button data-f="all" class="active">Все</button>
+    <button data-f="todo">Неразмечено</button>
+    <button data-f="unreliable">Сомнительные (нужна проверка)</button>
+    <button data-f="manual">Размечено</button>
+  </div>
+</div>
+
+<div class="main">
+  <div class="sidebar" id="sidebar"></div>
+
+  <div class="workspace" id="ws">
+    <div class="meta">
+      <h2 id="exName">—</h2>
+      <span class="id" id="exId">—</span>
+      <span class="conf" id="exConf">—</span>
+    </div>
+    <div class="meta">
+      <div class="tags" id="exTags"></div>
+    </div>
+
+    <div class="names">
+      <div class="row"><span class="tag new">OPUS</span><span class="val new-val" id="nameNew">—</span></div>
+      <div class="row"><span class="tag old">БЫЛО</span><span class="val old-val" id="nameOld">—</span></div>
+      <div class="row"><span class="tag" style="background:var(--border);color:var(--muted)">EN</span><span class="val" id="nameEn" style="color:var(--muted);font-size:13px;font-style:italic">—</span></div>
+    </div>
+
+    <div class="desc">
+      <div class="title">Описание (из базы)</div>
+      <div class="text" id="desc1">—</div>
+      <div class="text" id="desc2" style="display:none">—</div>
+    </div>
+
+    <div class="video-row">
+      <div class="video-wrap">
+        <video id="vid" muted playsinline></video>
+      </div>
+
+      <div class="controls">
+        <div class="frame-info">
+          <span id="curFrame">0</span> <span>/</span> <span id="totalFrames">0</span>
+        </div>
+
+        <input type="range" class="scrubber" id="scrub" min="0" max="11" step="1" value="0">
+        <div class="frame-markers" id="markers"></div>
+
+        <div class="step-btns">
+          <button id="prevF">◄ Кадр</button>
+          <button id="play">▶ Play</button>
+          <button id="nextF">Кадр ►</button>
+        </div>
+
+        <div class="key-chips" id="keyChips"></div>
+
+        <div class="mark-btns">
+          <button class="start-btn" id="addKey">+ Добавить ключевой кадр (текущий)</button>
+        </div>
+
+        <div class="nav-btns">
+          <button id="prevEx">◄ Назад</button>
+          <button class="save-next" id="saveNext">Сохранить и далее ↵</button>
+          <button class="skip" id="skip">Пропустить</button>
+          <button class="delete" id="delete">✕</button>
+        </div>
+
+        <div class="hint">
+          <kbd>←</kbd> <kbd>→</kbd> шаг кадра ·
+          <kbd>Shift</kbd>+<kbd>←/→</kbd> предыдущее/следующее упражнение ·
+          <kbd>1</kbd>/<kbd>A</kbd> добавить ключевой кадр ·
+          <kbd>2</kbd>/<kbd>D</kbd> удалить ближайший ·
+          <kbd>Enter</kbd> сохранить и далее ·
+          <kbd>Space</kbd> play/pause ·
+          <kbd>Delete</kbd> сбросить разметку
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+let exercises = [];    // весь список
+let filtered = [];     // текущий фильтр
+let cur = 0;           // индекс в filtered
+let state = {};        // {id, total_frames, fps, key_frames: [int]}
+
+const vid = document.getElementById('vid');
+const scrub = document.getElementById('scrub');
+
+async function load() {
+  const r = await fetch('/api/exercises');
+  exercises = await r.json();
+  applyFilter('all');
+  renderSidebar();
+  updateProgress();
+  if (filtered.length) show(0);
+}
+
+function applyFilter(f) {
+  document.querySelectorAll('.filter button').forEach(b => b.classList.toggle('active', b.dataset.f === f));
+  switch(f) {
+    case 'todo':       filtered = exercises.filter(e => !e.manual); break;
+    case 'unreliable': filtered = exercises.filter(e => !e.manual && !e.reliable); break;
+    case 'manual':     filtered = exercises.filter(e => e.manual); break;
+    default:           filtered = exercises.slice();
+  }
+  cur = 0;
+  renderSidebar();
+  if (filtered.length) show(0);
+}
+
+function renderSidebar() {
+  const sb = document.getElementById('sidebar');
+  sb.innerHTML = '';
+  filtered.forEach((e, i) => {
+    const div = document.createElement('div');
+    div.className = 'ex-item';
+    if (i === cur) div.classList.add('active');
+    if (e.manual) div.classList.add('manual');
+    else if (!e.reliable) div.classList.add('low-conf');
+    div.innerHTML = `
+      <div class="dot"></div>
+      <div class="name">${esc(e.nameRu || e.nameEn || e.id)}</div>
+      <div class="id">${esc(e.id)}</div>
+    `;
+    div.onclick = () => show(i);
+    sb.appendChild(div);
+  });
+  const active = sb.querySelector('.active');
+  if (active) active.scrollIntoView({ block: 'nearest' });
+}
+
+function updateProgress() {
+  const total = exercises.length;
+  const done = exercises.filter(e => e.manual).length;
+  document.getElementById('progressNum').textContent = `${done} / ${total}`;
+  document.getElementById('progressBar').style.width = `${(done/total*100).toFixed(1)}%`;
+}
+
+function esc(s) { return String(s || '').replace(/[<>&]/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;'}[c])); }
+
+function show(i) {
+  if (i < 0 || i >= filtered.length) return;
+  cur = i;
+  const e = filtered[i];
+
+  state = {
+    id: e.id,
+    total_frames: e.total_frames || 12,
+    fps: e.fps || 10,
+    key_frames: Array.isArray(e.key_frames) && e.key_frames.length
+      ? e.key_frames.slice()
+      : [0, Math.min(6, (e.total_frames || 12) - 1)],
+  };
+
+  document.getElementById('exName').textContent = e.nameRu || e.nameEn || e.id;
+  document.getElementById('exId').textContent = e.id;
+  const statusTxt = e.manual
+    ? '✓ РАЗМЕЧЕНО'
+    : (e.reliable ? `чистый сигнал (×${(e.ratio || 0).toFixed(1)})` : `⚠ слабый сигнал (×${(e.ratio || 0).toFixed(1)})`);
+  document.getElementById('exConf').textContent = statusTxt;
+
+  // Names block
+  document.getElementById('nameNew').textContent = e.nameRu_new || '(нет, не в батче)';
+  document.getElementById('nameOld').textContent = e.nameRu_old || '—';
+  document.getElementById('nameEn').textContent = e.nameEn || '—';
+
+  // Description
+  const d1 = document.getElementById('desc1');
+  const d2 = document.getElementById('desc2');
+  d1.textContent = e.instruction_1 || '(описание отсутствует)';
+  if (e.instruction_2) {
+    d2.textContent = e.instruction_2;
+    d2.style.display = '';
+  } else {
+    d2.style.display = 'none';
+  }
+
+  const tagsEl = document.getElementById('exTags');
+  tagsEl.innerHTML = '';
+  const tagList = (e.bodyParts || []).concat(e.targetMuscles || []).concat(e.equipments || []);
+  // Уникализируем
+  const seen = new Set();
+  tagList.forEach(t => {
+    if (!t || seen.has(t)) return;
+    seen.add(t);
+    const s = document.createElement('span');
+    s.className = 'tag';
+    s.textContent = t;
+    tagsEl.appendChild(s);
+  });
+
+  vid.src = `/mp4/${e.id}.mp4`;
+  vid.loop = false;
+  vid.onloadedmetadata = () => {
+    scrub.min = 0;
+    scrub.max = state.total_frames - 1;
+    scrub.step = 1;
+    scrub.value = 0;
+    seekToFrame(0);
+    renderKeyFrames();
+  };
+
+  renderSidebar();
+}
+
+function seekToFrame(frameIdx) {
+  if (!isFinite(vid.duration)) return;
+  const t = (frameIdx + 0.5) / state.total_frames * vid.duration;  // центр кадра
+  try { vid.currentTime = t; } catch(e) {}
+  document.getElementById('curFrame').textContent = frameIdx;
+  document.getElementById('totalFrames').textContent = state.total_frames;
+  scrub.value = frameIdx;
+}
+
+function getCurrentFrame() {
+  return parseInt(scrub.value, 10);
+}
+
+function toggleKeyFrame(frame) {
+  const idx = state.key_frames.indexOf(frame);
+  if (idx >= 0) {
+    state.key_frames.splice(idx, 1);
+  } else {
+    state.key_frames.push(frame);
+    state.key_frames.sort((a, b) => a - b);
+  }
+  renderKeyFrames();
+}
+
+function addCurrentFrame() {
+  const f = getCurrentFrame();
+  if (!state.key_frames.includes(f)) {
+    state.key_frames.push(f);
+    state.key_frames.sort((a, b) => a - b);
+    renderKeyFrames();
+  }
+}
+
+function renderKeyFrames() {
+  // Маркеры на шкале
+  const m = document.getElementById('markers');
+  m.innerHTML = '';
+  const total = state.total_frames;
+  state.key_frames.forEach(f => {
+    const pos = ((f + 0.5) / total) * 100;
+    const el = document.createElement('div');
+    el.className = 'marker' + (f === 0 ? ' is-zero' : '');
+    el.style.left = pos + '%';
+    el.innerHTML = `<div class="bar"></div><div class="lbl">${f}</div>`;
+    m.appendChild(el);
+  });
+
+  // Чипы под шкалой
+  const chips = document.getElementById('keyChips');
+  chips.innerHTML = '';
+  state.key_frames.forEach(f => {
+    const c = document.createElement('span');
+    c.className = 'chip' + (f === 0 ? ' is-zero' : '');
+    c.innerHTML = `${f}<span class="x" data-f="${f}">×</span>`;
+    c.addEventListener('click', (e) => {
+      if (e.target.classList.contains('x')) {
+        toggleKeyFrame(parseInt(e.target.dataset.f, 10));
+      } else {
+        seekToFrame(f);
+      }
+    });
+    chips.appendChild(c);
+  });
+
+  // Добавить «+»
+  const add = document.createElement('button');
+  add.className = 'add-chip';
+  add.textContent = '+ текущий кадр';
+  add.onclick = addCurrentFrame;
+  chips.appendChild(add);
+}
+
+async function save() {
+  const r = await fetch('/api/save', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({
+      id: state.id,
+      total_frames: state.total_frames,
+      fps: state.fps,
+      key_frames: state.key_frames,
+    }),
+  });
+  if (r.ok) {
+    const e = exercises.find(x => x.id === state.id);
+    if (e) { e.manual = true; e.key_frames = state.key_frames.slice(); }
+    updateProgress();
+    renderSidebar();
+  }
+}
+
+async function del() {
+  const r = await fetch('/api/save', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({ id: state.id, delete: true }),
+  });
+  if (r.ok) {
+    const e = exercises.find(x => x.id === state.id);
+    if (e) e.manual = false;
+    updateProgress();
+    renderSidebar();
+  }
+}
+
+function next() {
+  if (cur + 1 < filtered.length) show(cur + 1);
+}
+function prev() {
+  if (cur > 0) show(cur - 1);
+}
+
+// ======== Controls ========
+
+scrub.addEventListener('input', () => seekToFrame(parseInt(scrub.value, 10)));
+
+document.getElementById('prevF').onclick = () => seekToFrame(Math.max(0, getCurrentFrame() - 1));
+document.getElementById('nextF').onclick = () => seekToFrame(Math.min(state.total_frames - 1, getCurrentFrame() + 1));
+document.getElementById('play').onclick = () => {
+  if (vid.paused) vid.play().catch(()=>{});
+  else vid.pause();
+};
+
+document.getElementById('addKey').onclick = addCurrentFrame;
+
+document.getElementById('saveNext').onclick = async () => { await save(); next(); };
+document.getElementById('skip').onclick = next;
+document.getElementById('prevEx').onclick = prev;
+document.getElementById('delete').onclick = del;
+
+document.querySelectorAll('.filter button').forEach(b => {
+  b.onclick = () => applyFilter(b.dataset.f);
+});
+
+// Keyboard
+document.addEventListener('keydown', async (e) => {
+  if (e.target.matches('input, textarea')) return;
+  switch(e.key) {
+    case 'ArrowLeft':
+      if (e.shiftKey) prev();
+      else seekToFrame(Math.max(0, getCurrentFrame() - 1));
+      e.preventDefault(); break;
+    case 'ArrowRight':
+      if (e.shiftKey) next();
+      else seekToFrame(Math.min(state.total_frames - 1, getCurrentFrame() + 1));
+      e.preventDefault(); break;
+    case '1':
+    case 'a':
+    case 'A':
+      addCurrentFrame(); e.preventDefault(); break;
+    case '2':
+    case 'd':
+    case 'D':
+      // удалить ближайший ключевой кадр к текущему
+      const cf = getCurrentFrame();
+      if (state.key_frames.length > 1) {
+        const nearest = state.key_frames.slice().sort((a, b) => Math.abs(a-cf) - Math.abs(b-cf))[0];
+        toggleKeyFrame(nearest);
+      }
+      e.preventDefault(); break;
+    case 'Enter': await save(); next(); e.preventDefault(); break;
+    case ' ':
+      if (vid.paused) vid.play().catch(()=>{});
+      else vid.pause();
+      e.preventDefault(); break;
+    case 'Delete': del(); e.preventDefault(); break;
+  }
+});
+
+// Во время воспроизведения — обновляем индикатор текущего кадра
+vid.addEventListener('timeupdate', () => {
+  if (!isFinite(vid.duration) || vid.paused) return;
+  const frame = Math.min(state.total_frames - 1, Math.floor(vid.currentTime / vid.duration * state.total_frames));
+  document.getElementById('curFrame').textContent = frame;
+  scrub.value = frame;
+});
+
+load();
+</script>
+</body>
+</html>

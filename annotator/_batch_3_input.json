@@ -1,0 +1,7502 @@
+[
+ {
+  "id": "e25F58f",
+  "en": "dumbbell one arm reverse fly (with support)",
+  "ru_current": "Разведение с гантелями одной рукой",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Sit on a bench with your feet flat on the ground and your back straight."
+ },
+ {
+  "id": "e4aFmFY",
+  "en": "weighted front raise",
+  "ru_current": "Подъём перед собой с отягощением",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "weighted"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a dumbbell in each hand with your palms facing your thighs."
+ },
+ {
+  "id": "osdXT3K",
+  "en": "kettlebell one arm push press",
+  "ru_current": "Жим с гирей одной рукой",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "kettlebell"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a kettlebell in one hand at shoulder level."
+ },
+ {
+  "id": "kTbSH9h",
+  "en": "barbell seated overhead press",
+  "ru_current": "Жим со штангой над головой сидя",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Sit on a bench with your back straight and feet flat on the ground."
+ },
+ {
+  "id": "903mzG8",
+  "en": "smith shoulder press",
+  "ru_current": "Жим в Смите",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the smith machine with your feet shoulder-width apart."
+ },
+ {
+  "id": "laVRfDf",
+  "en": "dumbbell standing front raise above head",
+  "ru_current": "Подъём перед собой с гантелями стоя",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a dumbbell in each hand with an overhand grip."
+ },
+ {
+  "id": "Kyd9Rz5",
+  "en": "barbell standing wide military press",
+  "ru_current": "Жим со штангой стоя",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold the barbell with an overhand grip, slightly wider than shoulder-width."
+ },
+ {
+  "id": "myfUsKf",
+  "en": "lever seated reverse fly",
+  "ru_current": "Разведение в рычажном тренажёре сидя",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the machine with your chest against the pad and your feet flat on the floor."
+ },
+ {
+  "id": "EKXOMEh",
+  "en": "dumbbell rear delt row_shoulder",
+  "ru_current": "Задняя дельта с гантелями",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and knees slightly bent."
+ },
+ {
+  "id": "xiHiJcA",
+  "en": "lever seated reverse fly (parallel grip)",
+  "ru_current": "Разведение в рычажном тренажёре сидя",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the machine with your chest against the pad and your feet flat on the floor."
+ },
+ {
+  "id": "4Leypho",
+  "en": "barbell skier",
+  "ru_current": "со штангой",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a barbell in front of your thighs with an overhand grip."
+ },
+ {
+  "id": "Gpn4ADc",
+  "en": "smith behind neck press",
+  "ru_current": "Жим в Смите за голову",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Adjust the seat height of the smith machine so that the bar is at shoulder level."
+ },
+ {
+  "id": "dRTfGZT",
+  "en": "lever lateral raise",
+  "ru_current": "Разведение в стороны в рычажном тренажёре",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the machine with your back against the pad."
+ },
+ {
+  "id": "mu5Guxt",
+  "en": "dumbbell rear delt raise",
+  "ru_current": "Задняя дельта с гантелями",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a dumbbell in each hand, palms facing your body."
+ },
+ {
+  "id": "1TkiAFK",
+  "en": "dumbbell one arm shoulder press v. 2",
+  "ru_current": "Жим с гантелями одной рукой",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a dumbbell in one hand at shoulder level, palm facing forward."
+ },
+ {
+  "id": "xDh0lJr",
+  "en": "standing behind neck press",
+  "ru_current": "Жим за голову стоя",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold the barbell behind your neck with an overhand grip."
+ },
+ {
+  "id": "ZfyAGhK",
+  "en": "cable standing rear delt row (with rope)",
+  "ru_current": "Задняя дельта на блоке стоя",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Stand facing a cable machine with your feet shoulder-width apart."
+ },
+ {
+  "id": "fprd84i",
+  "en": "ez barbell anti gravity press",
+  "ru_current": "Жим с EZ-грифом",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "ez barbell"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Start by standing with your feet shoulder-width apart and holding the ez barbell with an overhand grip."
+ },
+ {
+  "id": "yWxMvB5",
+  "en": "kettlebell thruster",
+  "ru_current": "Трастер с гирей",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "kettlebell"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Start by standing with your feet shoulder-width apart, holding a kettlebell in front of your chest with both hands, palms facing each other."
+ },
+ {
+  "id": "S93zLTG",
+  "en": "resistance band seated shoulder press",
+  "ru_current": "Жим с эспандером сидя",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "resistance band"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Sit on a chair or bench with your back straight and feet flat on the ground."
+ },
+ {
+  "id": "KwFGiEP",
+  "en": "dumbbell lying one arm rear lateral raise",
+  "ru_current": "Разведение в стороны с гантелями одной рукой лёжа",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Lie face down on a flat bench with a dumbbell in one hand, hanging towards the floor."
+ },
+ {
+  "id": "izMnLqz",
+  "en": "dumbbell alternate side press",
+  "ru_current": "Жим с гантелями попеременные",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a dumbbell in each hand at shoulder height."
+ },
+ {
+  "id": "MRaFiZP",
+  "en": "inverted style smith seated shoulder press",
+  "ru_current": "Жим в Смите сидя",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Adjust the seat height so that the handles are at shoulder level."
+ },
+ {
+  "id": "eZ79rbI",
+  "en": "cable kneeling rear delt row (with rope) (male) expanded",
+  "ru_current": "Задняя дельта на блоке",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Attach a rope handle to a low cable pulley and kneel down facing the machine."
+ },
+ {
+  "id": "V7rWsT5",
+  "en": "lever military press with strength",
+  "ru_current": "Жим в рычажном тренажёре",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the machine with your back against the backrest."
+ },
+ {
+  "id": "1RIkUHT",
+  "en": "dumbbell iron cross - improved variation",
+  "ru_current": "с гантелями",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a dumbbell in each hand at your sides."
+ },
+ {
+  "id": "hTLtkXL",
+  "en": "resistance band seated shoulder press with declined",
+  "ru_current": "Жим с эспандером на скамье с отриц. наклоном сидя",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "resistance band"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Sit on a chair or bench with your back straight and feet flat on the ground."
+ },
+ {
+  "id": "1oE78pm",
+  "en": "core barbell upright row v. 2",
+  "ru_current": "Тяга со штангой",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a barbell with an overhand grip, hands slightly wider than shoulder-width apart."
+ },
+ {
+  "id": "u1iHcoD",
+  "en": "prone dumbbell upright shoulder external rotation",
+  "ru_current": "Вращение с гантелями лицом вниз",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a dumbbell in each hand with your palms facing your body."
+ },
+ {
+  "id": "VRBGPHB",
+  "en": "single smith shoulder press",
+  "ru_current": "Жим в Смите",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the smith machine with your feet shoulder-width apart."
+ },
+ {
+  "id": "hVzPY5j",
+  "en": "athletic style battling ropes",
+  "ru_current": "с канатом",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "rope"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and knees slightly bent."
+ },
+ {
+  "id": "Mr8d4KA",
+  "en": "kettlebell arnold press - beginner variation",
+  "ru_current": "Жим с гирей",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "kettlebell"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a kettlebell in each hand at shoulder height with your palms facing towards you."
+ },
+ {
+  "id": "89HVjEp",
+  "en": "kettlebell seated press with high",
+  "ru_current": "Жим с гирей сидя",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "kettlebell"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Sit on a bench with your back straight and feet flat on the ground."
+ },
+ {
+  "id": "myJeTAe",
+  "en": "tough cable one arm lateral raise",
+  "ru_current": "Разведение в стороны на блоке одной рукой",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, facing the cable machine."
+ },
+ {
+  "id": "gWcZD4q",
+  "en": "horizontal dumbbell standing alternate overhead press",
+  "ru_current": "Жим с гантелями попеременные стоя над головой",
+  "target": [
+   "delts"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "shoulders"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a dumbbell in each hand at shoulder level with your palms facing forward."
+ },
+ {
+  "id": "H1PESYI",
+  "en": "stationary bike run",
+  "ru_current": "Бег",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "stationary bike"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Adjust the seat height and position to ensure proper alignment."
+ },
+ {
+  "id": "f9lVSSI",
+  "en": "astride jumps (male)",
+  "ru_current": "Прыжок",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart."
+ },
+ {
+  "id": "oLrKqDH",
+  "en": "run",
+  "ru_current": "Бег",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Start by standing upright with your feet hip-width apart."
+ },
+ {
+  "id": "CcWEoWV",
+  "en": "short stride run",
+  "ru_current": "Бег",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Find an open space or a treadmill to perform the exercise."
+ },
+ {
+  "id": "5MRH8H2",
+  "en": "ski step",
+  "ru_current": "Лыжный шаг",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart."
+ },
+ {
+  "id": "y5p0H8a",
+  "en": "run (equipment)",
+  "ru_current": "Бег",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Start by standing upright with your feet hip-width apart."
+ },
+ {
+  "id": "tnaj0mT",
+  "en": "swing 360",
+  "ru_current": "Свинг (мах)",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and knees slightly bent."
+ },
+ {
+  "id": "PrQbjvB",
+  "en": "push to run",
+  "ru_current": "Бег",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Start in a push-up position with your hands shoulder-width apart and your body in a straight line."
+ },
+ {
+  "id": "6FMU51h",
+  "en": "semi squat jump (male)",
+  "ru_current": "Приседание",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart."
+ },
+ {
+  "id": "j9Q5crt",
+  "en": "walking on stepmill",
+  "ru_current": "Ходьба",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "stepmill machine"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Adjust the stepmill machine to a comfortable level."
+ },
+ {
+  "id": "zfNHMN9",
+  "en": "skater hops",
+  "ru_current": "Прыжки конькобежца",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart."
+ },
+ {
+  "id": "mr7pkqP",
+  "en": "jack burpee",
+  "ru_current": "Бёрпи с прыжком ноги врозь",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Start in a standing position with your feet shoulder-width apart."
+ },
+ {
+  "id": "ealLwvX",
+  "en": "high knee against wall",
+  "ru_current": null,
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Stand facing a wall with your feet hip-width apart."
+ },
+ {
+  "id": "rjiM4L3",
+  "en": "walking on incline treadmill",
+  "ru_current": "Ходьба на наклонной скамье",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Adjust the incline level on the treadmill to your desired intensity."
+ },
+ {
+  "id": "RJgzwny",
+  "en": "mountain climber",
+  "ru_current": "Альпинист",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Start in a high plank position with your hands directly under your shoulders and your body in a straight line."
+ },
+ {
+  "id": "dK9394r",
+  "en": "burpee",
+  "ru_current": "Бёрпи",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Start in a standing position with your feet shoulder-width apart."
+ },
+ {
+  "id": "Eh2v5Iu",
+  "en": "scissor jumps (male)",
+  "ru_current": "Прыжок",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart."
+ },
+ {
+  "id": "e1e76I2",
+  "en": "jump rope",
+  "ru_current": "Скакалка",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "rope"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Hold the handles of the jump rope with your hands, palms facing inward."
+ },
+ {
+  "id": "0Yz8WdV",
+  "en": "bear crawl",
+  "ru_current": "Медвежья походка",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Start on all fours with your hands directly under your shoulders and your knees directly under your hips."
+ },
+ {
+  "id": "km2Ljzj",
+  "en": "wheel run",
+  "ru_current": "Бег",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Start in a plank position with your hands on the wheel and your body straight."
+ },
+ {
+  "id": "1g5bPpA",
+  "en": "jack jump (male)",
+  "ru_current": "Прыжок",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Stand with your feet together and your arms by your sides."
+ },
+ {
+  "id": "XSCHmiI",
+  "en": "cycle cross trainer",
+  "ru_current": "Кросс-тренажёр",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the cycle cross trainer."
+ },
+ {
+  "id": "0JtKWum",
+  "en": "dumbbell burpee",
+  "ru_current": "с гантелями",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Start in a standing position with your feet shoulder-width apart and a dumbbell in each hand."
+ },
+ {
+  "id": "ia6kIIl",
+  "en": "half knee bends (male)",
+  "ru_current": null,
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart."
+ },
+ {
+  "id": "fNGumX0",
+  "en": "back and forth step",
+  "ru_current": null,
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart."
+ },
+ {
+  "id": "a8VDgLw",
+  "en": "stationary bike walk",
+  "ru_current": "Ходьба",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Adjust the seat height and position on the stationary bike to ensure proper alignment."
+ },
+ {
+  "id": "rjtuP6X",
+  "en": "walk elliptical cross trainer",
+  "ru_current": "Ходьба",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "elliptical machine"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Adjust the resistance level and incline of the elliptical machine to your desired settings."
+ },
+ {
+  "id": "HtfCpfi",
+  "en": "star jump (male)",
+  "ru_current": "Прыжок",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and your arms by your sides."
+ },
+ {
+  "id": "J9zIWig",
+  "en": "walking high knees lunge",
+  "ru_current": "Выпад",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Stand with your feet hip-width apart."
+ },
+ {
+  "id": "v6EKk0O",
+  "en": "half knee bends (male) with blunt",
+  "ru_current": null,
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart."
+ },
+ {
+  "id": "gTGciXz",
+  "en": "alternating bear crawl",
+  "ru_current": "попеременные",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Start on all fours with your hands directly under your shoulders and your knees directly under your hips."
+ },
+ {
+  "id": "PCUYOMs",
+  "en": "pulse style walk elliptical cross trainer",
+  "ru_current": "Ходьба",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "elliptical machine"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Adjust the resistance level and incline of the elliptical machine to your desired settings."
+ },
+ {
+  "id": "pFuK3by",
+  "en": "walk elliptical cross trainer - expanded variation",
+  "ru_current": "Ходьба",
+  "target": [
+   "cardiovascular system"
+  ],
+  "equipment": [
+   "elliptical machine"
+  ],
+  "body": [
+   "cardio"
+  ],
+  "instr": "Step:1 Adjust the resistance level and incline of the elliptical machine to your desired settings."
+ },
+ {
+  "id": "MrgP9L6",
+  "en": "lever rotary calf",
+  "ru_current": "в рычажном тренажёре",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Adjust the seat height so that your knees are slightly bent and your feet are flat on the footplate."
+ },
+ {
+  "id": "VW88JNd",
+  "en": "dumbbell seated one leg calf raise - palm up",
+  "ru_current": "Подъём на носки с гантелями одной ногой сидя",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Sit on a bench or chair with your back straight and your feet flat on the ground."
+ },
+ {
+  "id": "6HiHHe0",
+  "en": "barbell standing rocking leg calf raise",
+  "ru_current": "Подъём на носки со штангой стоя",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a barbell across your upper back."
+ },
+ {
+  "id": "ipvgBnC",
+  "en": "barbell seated calf raise",
+  "ru_current": "Подъём на носки со штангой сидя",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Sit on a bench with your feet flat on the floor and a barbell resting on your thighs."
+ },
+ {
+  "id": "17bqEXD",
+  "en": "seated calf stretch (male)",
+  "ru_current": "Растяжка сидя",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Sit on the edge of a chair or bench with your feet flat on the ground."
+ },
+ {
+  "id": "8ozhUIZ",
+  "en": "barbell standing calf raise",
+  "ru_current": "Подъём на носки со штангой стоя",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and place a barbell across your upper back."
+ },
+ {
+  "id": "2IHEa2T",
+  "en": "barbell floor calf raise",
+  "ru_current": "Подъём на носки со штангой",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Place a barbell on the floor in front of you."
+ },
+ {
+  "id": "LmaFNZS",
+  "en": "weighted donkey calf raise",
+  "ru_current": "Подъём на носки с отягощением",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "weighted"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand on a raised platform with your toes on the edge and your heels hanging off."
+ },
+ {
+  "id": "jl6uxZV",
+  "en": "band two legs calf raise - (band under both legs) v. 2",
+  "ru_current": "Подъём на носки с лентой",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and place a resistance band under both feet."
+ },
+ {
+  "id": "AxFoqAD",
+  "en": "hack one leg calf raise",
+  "ru_current": "Подъём на носки одной ногой",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "sled machine"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Adjust the sled machine to an appropriate weight."
+ },
+ {
+  "id": "7B4F5nZ",
+  "en": "lever calf press",
+  "ru_current": "Жим в рычажном тренажёре",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Adjust the seat of the leverage machine so that your shoulders are aligned with the lever pad."
+ },
+ {
+  "id": "XDOiFns",
+  "en": "sled forward angled calf raise",
+  "ru_current": "Подъём на носки на санях",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "sled machine"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Adjust the sled machine to a comfortable weight and position yourself on the machine with your toes on the platform and your heels hanging off."
+ },
+ {
+  "id": "XhfS1DZ",
+  "en": "peroneals stretch",
+  "ru_current": "Растяжка",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "rope"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Sit on the ground with your legs extended in front of you."
+ },
+ {
+  "id": "ykHcWme",
+  "en": "sled calf press on leg press",
+  "ru_current": "Жим ногами на санях",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "sled machine"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Adjust the seat of the leg press machine so that your knees are slightly bent when your feet are on the sled."
+ },
+ {
+  "id": "0S75mYG",
+  "en": "smith seated one leg calf raise",
+  "ru_current": "Подъём на носки в Смите одной ногой сидя",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Sit on the machine with your back against the pad and your feet on the footrest."
+ },
+ {
+  "id": "FxhcxUW",
+  "en": "dumbbell seated one leg calf raise - hammer grip",
+  "ru_current": "Подъём на носки с гантелями одной ногой сидя",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Sit on a bench or chair with your feet flat on the ground and a dumbbell resting on your thighs."
+ },
+ {
+  "id": "u0pLNgz",
+  "en": "sled one leg calf press on leg press",
+  "ru_current": "Жим ногами на санях одной ногой",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "sled machine"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Adjust the seat of the leg press machine so that your knees are slightly bent when your feet are on the sled."
+ },
+ {
+  "id": "1LVFcEn",
+  "en": "calf stretch with rope",
+  "ru_current": "Растяжка с канатом",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "rope"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand facing a wall or sturdy object with your feet hip-width apart."
+ },
+ {
+  "id": "j74M6Zn",
+  "en": "exercise ball on the wall calf raise (tennis ball between knees)",
+  "ru_current": "Подъём на носки",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand with your back against a wall and place an exercise ball between your lower back and the wall."
+ },
+ {
+  "id": "6HmFgmx",
+  "en": "standing calf raise (on a staircase)",
+  "ru_current": "Подъёмы на носки стоя",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand on the edge of a step or a sturdy platform with your heels hanging off and your toes on the step."
+ },
+ {
+  "id": "DEEqoI2",
+  "en": "posterior tibialis stretch",
+  "ru_current": "Растяжка",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "rope"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Sit on the ground with your legs extended in front of you."
+ },
+ {
+  "id": "2ORFMoR",
+  "en": "hack calf raise",
+  "ru_current": "Подъём на носки",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "sled machine"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Adjust the sled machine to a comfortable weight."
+ },
+ {
+  "id": "1kB3Wmk",
+  "en": "dumbbell single leg calf raise",
+  "ru_current": "Подъём на носки с гантелями одной ногой",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand on the edge of a step or platform with your heels hanging off and your toes on the step."
+ },
+ {
+  "id": "QsSQWbf",
+  "en": "band single leg reverse calf raise",
+  "ru_current": "Подъём на носки с лентой одной ногой",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand with your feet hip-width apart and place the band around the ball of your foot."
+ },
+ {
+  "id": "bOOdeyc",
+  "en": "lever seated calf raise",
+  "ru_current": "Подъёмы на носки сидя в тренажёре",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Adjust the seat height so that your knees are slightly bent and your feet are flat on the footplate."
+ },
+ {
+  "id": "rGwhJ5o",
+  "en": "barbell standing leg calf raise",
+  "ru_current": "Подъём на носки со штангой стоя",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and place a barbell across your upper back."
+ },
+ {
+  "id": "yl2IYyy",
+  "en": "cable standing calf raise",
+  "ru_current": "Подъём на носки на блоке стоя",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand facing a cable machine with your feet shoulder-width apart."
+ },
+ {
+  "id": "g376LuL",
+  "en": "sled lying calf press",
+  "ru_current": "Жим на санях лёжа",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "sled machine"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Adjust the sled machine to a comfortable weight."
+ },
+ {
+  "id": "FY3UdNT",
+  "en": "exercise ball on the wall calf raise (tennis ball between ankles)",
+  "ru_current": "Подъём на носки",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand facing a wall with your feet shoulder-width apart."
+ },
+ {
+  "id": "xo6sENf",
+  "en": "exercise ball on the wall calf raise",
+  "ru_current": "Подъём на носки",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand with your back against a wall and place an exercise ball between your lower back and the wall."
+ },
+ {
+  "id": "m0tCHqc",
+  "en": "calf stretch with hands against wall",
+  "ru_current": "Растяжка",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand facing a wall with your feet hip-width apart."
+ },
+ {
+  "id": "u5ESqzH",
+  "en": "donkey calf raise",
+  "ru_current": "Подъём на носки",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand with your toes on an elevated surface, such as a step or block."
+ },
+ {
+  "id": "Lsqrgh4",
+  "en": "smith reverse calf raises",
+  "ru_current": "Подъём на носки в Смите",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Adjust the smith machine bar to a height just below your shoulders."
+ },
+ {
+  "id": "fKZgDEO",
+  "en": "single leg calf raise (on a dumbbell)",
+  "ru_current": "Подъём на носки с гантелями одной ногой",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand with your feet hip-width apart and hold a dumbbell in one hand."
+ },
+ {
+  "id": "r29jP7S",
+  "en": "dumbbell seated calf raise",
+  "ru_current": "Подъём на носки с гантелями сидя",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Sit on a bench or chair with your feet flat on the ground and a dumbbell resting on your thighs."
+ },
+ {
+  "id": "IeDEXTe",
+  "en": "lever seated squat calf raise on leg press machine",
+  "ru_current": "Подъём на носки в тренажёре сидя",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Adjust the seat of the leg press machine so that your knees are slightly bent when your feet are on the footplate."
+ },
+ {
+  "id": "Ia7tumC",
+  "en": "dumbbell seated one leg calf raise",
+  "ru_current": "Подъём на носки с гантелями одной ногой сидя",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Sit on a bench or chair with your feet flat on the ground and a dumbbell resting on your right thigh."
+ },
+ {
+  "id": "C9LuR4A",
+  "en": "lever donkey calf raise",
+  "ru_current": "Подъём на носки в рычажном тренажёре",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Adjust the leverage machine to the appropriate height for your body."
+ },
+ {
+  "id": "PzNxakt",
+  "en": "calf push stretch with hands against wall",
+  "ru_current": "Растяжка",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand facing a wall with your feet hip-width apart."
+ },
+ {
+  "id": "Y4QlY8z",
+  "en": "smith toe raise",
+  "ru_current": "Подъём в Смите",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Adjust the smith machine bar to a height that allows you to comfortably stand with your feet flat on the ground."
+ },
+ {
+  "id": "qOKcgVP",
+  "en": "standing calves calf stretch",
+  "ru_current": "Растяжка стоя",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand facing a wall or sturdy object, about an arm's length away."
+ },
+ {
+  "id": "GxDwDX0",
+  "en": "assisted lying calves stretch",
+  "ru_current": "Растяжка в гравитроне лёжа",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "assisted"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Lie on your back with your legs extended."
+ },
+ {
+  "id": "A2upspL",
+  "en": "one leg donkey calf raise",
+  "ru_current": "Подъём на носки одной ногой",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, toes pointing forward."
+ },
+ {
+  "id": "bJYHBIN",
+  "en": "bodyweight standing calf raise",
+  "ru_current": "Подъём на носки стоя",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, toes pointing forward."
+ },
+ {
+  "id": "ktsFQAZ",
+  "en": "barbell seated calf raise",
+  "ru_current": "Подъём на носки со штангой сидя",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Sit on a bench with your feet flat on the floor and a barbell resting on your thighs."
+ },
+ {
+  "id": "dPmaUaU",
+  "en": "dumbbell standing calf raise",
+  "ru_current": "Подъём на носки с гантелями стоя",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a dumbbell in each hand."
+ },
+ {
+  "id": "6MaEjVA",
+  "en": "smith standing leg calf raise",
+  "ru_current": "Подъём на носки в Смите стоя",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Adjust the smith machine bar to a height that allows you to stand with your feet flat on the ground and your shoulders under the bar."
+ },
+ {
+  "id": "X7jbxra",
+  "en": "circles knee stretch",
+  "ru_current": "Растяжка",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and your hands on your hips."
+ },
+ {
+  "id": "0jp9Rlz",
+  "en": "one leg floor calf raise",
+  "ru_current": "Подъём на носки одной ногой",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand with your feet hip-width apart and place your hands on a wall or sturdy object for balance."
+ },
+ {
+  "id": "XIHEoCG",
+  "en": "standing calves",
+  "ru_current": "стоя",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, toes pointing forward."
+ },
+ {
+  "id": "9GXrTE6",
+  "en": "smith one leg floor calf raise",
+  "ru_current": "Подъём на носки в Смите одной ногой",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Position yourself on the floor under the smith machine bar, facing away from the machine."
+ },
+ {
+  "id": "qCNVnaU",
+  "en": "sled 45в° calf press",
+  "ru_current": "Жим на санях",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "sled machine"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Adjust the sled machine to a 45-degree angle."
+ },
+ {
+  "id": "uL9CsKm",
+  "en": "ankle circles",
+  "ru_current": "Круговые вращения стопой",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Sit on the ground with your legs extended in front of you."
+ },
+ {
+  "id": "iPm26QU",
+  "en": "box jump down with one leg stabilization",
+  "ru_current": "Прыжок одной ногой",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand in front of a box or platform with your feet shoulder-width apart."
+ },
+ {
+  "id": "ykUOVze",
+  "en": "lever standing calf raise",
+  "ru_current": "Подъёмы на носки стоя в тренажёре",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Adjust the machine to your height and stand with your feet shoulder-width apart."
+ },
+ {
+  "id": "fgc9Xdl",
+  "en": "cable standing one leg calf raise",
+  "ru_current": "Подъём на носки на блоке стоя одной ногой",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand facing a cable machine with your feet shoulder-width apart."
+ },
+ {
+  "id": "9JprnPh",
+  "en": "band single leg calf raise",
+  "ru_current": "Подъём на носки с лентой одной ногой",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand with your feet hip-width apart and place the band around the ball of your left foot."
+ },
+ {
+  "id": "ywaNfuh",
+  "en": "smith reverse calf raises",
+  "ru_current": "Подъём на носки в Смите",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Adjust the smith machine bar to a height just below your shoulders."
+ },
+ {
+  "id": "Ie9UGty",
+  "en": "lever seated calf press",
+  "ru_current": "Жим в рычажном тренажёре сидя",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Adjust the seat of the machine so that your shoulders are aligned with the lever pad."
+ },
+ {
+  "id": "vobtVkm",
+  "en": "calf push stretch with hands against wall elite",
+  "ru_current": "Растяжка",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand facing a wall with your feet hip-width apart."
+ },
+ {
+  "id": "Dx2RIva",
+  "en": "triple style sled one leg calf press on leg press",
+  "ru_current": "Жим ногами на санях одной ногой",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "sled machine"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Adjust the seat of the leg press machine so that your knees are slightly bent when your feet are on the sled."
+ },
+ {
+  "id": "UoX77uR",
+  "en": "dumbbell seated one leg calf raise - hammer grip deep",
+  "ru_current": "Подъём на носки с гантелями одной ногой сидя",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Sit on a bench or chair with your feet flat on the ground and a dumbbell resting on your thighs."
+ },
+ {
+  "id": "DICPHtq",
+  "en": "targeted style single leg calf raise (on a dumbbell)",
+  "ru_current": "Подъём на носки с гантелями одной ногой",
+  "target": [
+   "calves"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "lower legs"
+  ],
+  "instr": "Step:1 Stand with your feet hip-width apart and hold a dumbbell in one hand."
+ },
+ {
+  "id": "a4F9Oyc",
+  "en": "kettlebell double alternating hang clean",
+  "ru_current": "Подъём на грудь с гирей попеременные",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "kettlebell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a kettlebell in each hand with an overhand grip."
+ },
+ {
+  "id": "gVlnLIJ",
+  "en": "cable reverse one arm curl",
+  "ru_current": "Сгибание на блоке одной рукой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand facing a cable machine with your feet shoulder-width apart."
+ },
+ {
+  "id": "F3xgbjF",
+  "en": "dumbbell incline biceps curl",
+  "ru_current": "Сгибание с гантелями на наклонной скамье",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on an incline bench with a dumbbell in each hand, palms facing forward, and arms fully extended."
+ },
+ {
+  "id": "KXyoEtA",
+  "en": "dumbbell seated inner biceps curl",
+  "ru_current": "Сгибание с гантелями сидя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your feet flat on the ground and hold a dumbbell in each hand, palms facing up."
+ },
+ {
+  "id": "OeL23VY",
+  "en": "dumbbell seated biceps curl to shoulder press",
+  "ru_current": "Жим с гантелями сидя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your back straight and feet flat on the ground."
+ },
+ {
+  "id": "GNhAeJ0",
+  "en": "dumbbell hammer curls (with arm blaster)",
+  "ru_current": "Сгибание с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with a dumbbell in each hand, palms facing your torso."
+ },
+ {
+  "id": "ye84CTU",
+  "en": "lever preacher curl v. 2",
+  "ru_current": "Сгибание в рычажном тренажёре",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the machine with your upper arms resting on the pad and your chest against the support."
+ },
+ {
+  "id": "bWxq4op",
+  "en": "dumbbell one arm reverse preacher curl",
+  "ru_current": "Сгибание с гантелями одной рукой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a preacher bench with your chest against the pad and your arm extended over the edge of the bench, holding a dumbbell with an underhand grip."
+ },
+ {
+  "id": "F1KxjBa",
+  "en": "dumbbell peacher hammer curl",
+  "ru_current": "Сгибание с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with a dumbbell in each hand, palms facing your torso."
+ },
+ {
+  "id": "lyKCLmK",
+  "en": "dumbbell seated revers grip concentration curl",
+  "ru_current": "Сгибание с гантелями сидя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your feet flat on the ground and hold a dumbbell in one hand, palm facing up."
+ },
+ {
+  "id": "4dUn2iv",
+  "en": "barbell standing close grip curl",
+  "ru_current": "Сгибание со штангой узким хватом стоя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with your feet shoulder-width apart and hold a barbell with an underhand grip, hands close together."
+ },
+ {
+  "id": "OVTZ65k",
+  "en": "ez-barbell standing wide grip biceps curl",
+  "ru_current": "Сгибание со штангой широким хватом стоя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "ez barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with your feet shoulder-width apart and hold the ez barbell with an underhand grip, hands wider than shoulder-width apart."
+ },
+ {
+  "id": "kXaIn5A",
+  "en": "dumbbell zottman curl",
+  "ru_current": "Сгибание с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with a dumbbell in each hand, palms facing your body."
+ },
+ {
+  "id": "2JCuFTU",
+  "en": "dumbbell kneeling bicep curl exercise ball",
+  "ru_current": "Сгибание с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Kneel on the floor with an exercise ball in front of you."
+ },
+ {
+  "id": "uSkDMYl",
+  "en": "dumbbell bicep curl with stork stance",
+  "ru_current": "Сгибание с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a dumbbell in each hand, palms facing forward."
+ },
+ {
+  "id": "QLRmNeT",
+  "en": "dumbbell seated alternate hammer curl on exercise ball",
+  "ru_current": "Сгибание с гантелями попеременные сидя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with your feet flat on the ground and your back straight."
+ },
+ {
+  "id": "jK2hZ6n",
+  "en": "dumbbell one arm seated hammer curl",
+  "ru_current": "Сгибание с гантелями одной рукой сидя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your back straight and feet flat on the ground."
+ },
+ {
+  "id": "KOpzGBL",
+  "en": "dumbbell waiter biceps curl",
+  "ru_current": "Сгибание с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with a dumbbell in each hand, palms facing forward."
+ },
+ {
+  "id": "q6y3OhV",
+  "en": "lever bicep curl",
+  "ru_current": "Сгибание в рычажном тренажёре",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the machine with your back against the pad."
+ },
+ {
+  "id": "IvV6C9M",
+  "en": "dumbbell over bench one arm neutral wrist curl",
+  "ru_current": "Сгибание с гантелями одной рукой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with a dumbbell in one hand and your arm extended over the bench, palm facing up."
+ },
+ {
+  "id": "hacCyUv",
+  "en": "ez barbell close grip preacher curl",
+  "ru_current": "Сгибание с EZ-грифом узким хватом",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "ez barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a preacher curl bench and place your upper arms on the pad, gripping the ez barbell with an underhand grip."
+ },
+ {
+  "id": "k5IpyHg",
+  "en": "dumbbell one arm concentration curl (on stability ball)",
+  "ru_current": "Сгибание на фитболе одной рукой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a stability ball with your feet flat on the ground and your knees bent at a 90-degree angle."
+ },
+ {
+  "id": "J74XlNf",
+  "en": "dumbbell alternating seated bicep curl on exercise ball",
+  "ru_current": "Сгибание с гантелями попеременные сидя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with your feet flat on the ground and your back straight."
+ },
+ {
+  "id": "SYJ4Bkt",
+  "en": "barbell lying preacher curl",
+  "ru_current": "Сгибание со штангой лёжа",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a preacher bench with your chest against the pad and your arms extended over the edge, holding a barbell with an underhand grip."
+ },
+ {
+  "id": "LCtQPn8",
+  "en": "dumbbell incline inner biceps curl",
+  "ru_current": "Сгибание с гантелями на наклонной скамье",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on an incline bench with a dumbbell in each hand, palms facing each other."
+ },
+ {
+  "id": "VdLZ3nB",
+  "en": "dumbbell one arm reverse spider curl",
+  "ru_current": "Сгибание с гантелями одной рукой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with a dumbbell in one hand, palm facing down and arm fully extended."
+ },
+ {
+  "id": "UNAB8ak",
+  "en": "band one arm overhead biceps curl",
+  "ru_current": "Сгибание с лентой над головой одной рукой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and place one end of the band under your foot."
+ },
+ {
+  "id": "wDUqY2u",
+  "en": "cable overhead curl",
+  "ru_current": "Сгибание на блоке над головой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Attach a straight bar to a high pulley cable machine."
+ },
+ {
+  "id": "QTXKWPh",
+  "en": "cable pulldown bicep curl",
+  "ru_current": "Тяга сверху на блоке",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Attach a straight bar to the cable machine at the highest setting."
+ },
+ {
+  "id": "kj3hy6W",
+  "en": "lever reverse grip preacher curl",
+  "ru_current": "Сгибание в рычажном тренажёре обратным хватом",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the leverage machine."
+ },
+ {
+  "id": "ffQsyBj",
+  "en": "dumbbell one arm standing curl",
+  "ru_current": "Сгибание с гантелями стоя одной рукой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with a dumbbell in one hand, palm facing forward and arm fully extended."
+ },
+ {
+  "id": "ZXnjcOQ",
+  "en": "cable one arm reverse preacher curl",
+  "ru_current": "Сгибание на блоке одной рукой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Adjust the cable machine so that the pulley is at the lowest position."
+ },
+ {
+  "id": "XFc3vpY",
+  "en": "resistance band seated biceps curl",
+  "ru_current": "Сгибание с эспандером сидя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "resistance band"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a chair or bench with your back straight and feet flat on the ground."
+ },
+ {
+  "id": "xiA6lRr",
+  "en": "dumbbell seated bicep curl",
+  "ru_current": "Сгибание с гантелями сидя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your feet flat on the ground and hold a dumbbell in each hand, palms facing up."
+ },
+ {
+  "id": "3s4NnTh",
+  "en": "dumbbell standing biceps curl",
+  "ru_current": "Сгибание с гантелями стоя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with a dumbbell in each hand, palms facing forward and arms fully extended."
+ },
+ {
+  "id": "CvPn9WV",
+  "en": "cable standing pulldown (with rope)",
+  "ru_current": "Тяга сверху на блоке стоя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Attach a rope to the cable machine at the highest setting."
+ },
+ {
+  "id": "6sMAmNv",
+  "en": "dumbbell reverse spider curl",
+  "ru_current": "Сгибание с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with a dumbbell in each hand, palms facing your body and arms fully extended."
+ },
+ {
+  "id": "BIb1tGo",
+  "en": "dumbbell standing one arm curl (over incline bench)",
+  "ru_current": "Сгибание с гантелями стоя на наклонной скамье одной рукой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a dumbbell in one hand with your palm facing forward."
+ },
+ {
+  "id": "OAguZoG",
+  "en": "lever hammer grip preacher curl",
+  "ru_current": "Сгибание в рычажном тренажёре",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the leverage machine."
+ },
+ {
+  "id": "CfKsRbG",
+  "en": "dumbbell alternate biceps curl (with arm blaster)",
+  "ru_current": "Сгибание с гантелями попеременные",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with your feet shoulder-width apart and hold a dumbbell in each hand, palms facing forward."
+ },
+ {
+  "id": "b6hQYMb",
+  "en": "lever preacher curl",
+  "ru_current": "Сгибание в рычажном тренажёре",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the leverage machine."
+ },
+ {
+  "id": "nFc4FyV",
+  "en": "dumbbell biceps curl reverse",
+  "ru_current": "Сгибание с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with a dumbbell in each hand, palms facing down and arms fully extended."
+ },
+ {
+  "id": "niXESDw",
+  "en": "dumbbell biceps curl squat",
+  "ru_current": "Приседание с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a dumbbell in each hand with your palms facing forward."
+ },
+ {
+  "id": "aee2Fcj",
+  "en": "barbell biceps curl (with arm blaster)",
+  "ru_current": "Сгибание со штангой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with your feet shoulder-width apart and hold a barbell with an underhand grip, palms facing up."
+ },
+ {
+  "id": "4LIG9xr",
+  "en": "barbell reverse preacher curl",
+  "ru_current": "Сгибание со штангой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a preacher bench with your chest against the pad and your arms extended straight down, holding a barbell with an overhand grip."
+ },
+ {
+  "id": "H1XAdpk",
+  "en": "dumbbell biceps curl v sit on bosu ball",
+  "ru_current": "Сгибание на BOSU",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bosu ball with your feet flat on the ground and your knees bent at a 90-degree angle."
+ },
+ {
+  "id": "XVzF3iZ",
+  "en": "dumbbell lying supine biceps curl",
+  "ru_current": "Сгибание с гантелями лицом вверх лёжа",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your back and head supported, and your feet flat on the ground."
+ },
+ {
+  "id": "84sESNy",
+  "en": "dumbbell seated one arm bicep curl on exercise ball with leg raised",
+  "ru_current": "Подъём с гантелями одной рукой сидя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with your feet flat on the ground and your back straight."
+ },
+ {
+  "id": "EmlJR2y",
+  "en": "dumbbell standing one arm curl over incline bench",
+  "ru_current": "Сгибание с гантелями стоя на наклонной скамье одной рукой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a dumbbell in one hand."
+ },
+ {
+  "id": "IENzBdA",
+  "en": "barbell drag curl",
+  "ru_current": "Сгибание со штангой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a barbell with an underhand grip, palms facing up."
+ },
+ {
+  "id": "Y5X65IB",
+  "en": "ez barbell reverse grip curl",
+  "ru_current": "Сгибание с EZ-грифом обратным хватом",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "ez barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with your feet shoulder-width apart and hold the ez barbell with an underhand grip."
+ },
+ {
+  "id": "kmVVAfu",
+  "en": "band concentration curl",
+  "ru_current": "Сгибание с лентой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench or chair with your legs spread apart and your feet flat on the ground."
+ },
+ {
+  "id": "BU15nH4",
+  "en": "dumbbell alternate biceps curl",
+  "ru_current": "Сгибание с гантелями попеременные",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with a dumbbell in each hand, palms facing forward and arms fully extended."
+ },
+ {
+  "id": "LWuA3aZ",
+  "en": "barbell standing reverse grip curl",
+  "ru_current": "Сгибание со штангой обратным хватом стоя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with your feet shoulder-width apart and hold a barbell with an underhand grip, palms facing up."
+ },
+ {
+  "id": "TiaZTxx",
+  "en": "dumbbell seated curl",
+  "ru_current": "Сгибание с гантелями сидя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your feet flat on the ground and a dumbbell in each hand, palms facing forward."
+ },
+ {
+  "id": "s999Hdo",
+  "en": "dumbbell one arm seated bicep curl on exercise ball",
+  "ru_current": "Сгибание с гантелями одной рукой сидя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with your feet flat on the ground and your back straight."
+ },
+ {
+  "id": "V4ryaZa",
+  "en": "ez barbell close-grip curl",
+  "ru_current": "Сгибание с EZ-грифом",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "ez barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with your feet shoulder-width apart and hold the ez barbell with an underhand grip, hands shoulder-width apart."
+ },
+ {
+  "id": "faHKVkK",
+  "en": "barbell standing wide grip biceps curl",
+  "ru_current": "Сгибание со штангой широким хватом стоя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a barbell with an underhand grip, hands wider than shoulder-width apart."
+ },
+ {
+  "id": "otqIxU4",
+  "en": "cable lying bicep curl",
+  "ru_current": "Сгибание на блоке лёжа",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Attach a straight bar to a low pulley cable machine."
+ },
+ {
+  "id": "eOG0r6v",
+  "en": "cable reverse curl",
+  "ru_current": "Сгибание на блоке",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Attach a straight bar to a low pulley cable machine."
+ },
+ {
+  "id": "ae9UoXQ",
+  "en": "dumbbell incline curl",
+  "ru_current": "Сгибание с гантелями на наклонной скамье",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Set an incline bench to a 45-degree angle and sit on it with a dumbbell in each hand, palms facing forward."
+ },
+ {
+  "id": "y5U5B9Y",
+  "en": "dumbbell zottman preacher curl",
+  "ru_current": "Сгибание с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a preacher bench with a dumbbell in each hand, palms facing up and elbows resting on the pad."
+ },
+ {
+  "id": "YwnI4ja",
+  "en": "cable standing inner curl",
+  "ru_current": "Сгибание на блоке стоя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand facing a cable machine with your feet shoulder-width apart."
+ },
+ {
+  "id": "BCGQ6J5",
+  "en": "cable close grip curl",
+  "ru_current": "Сгибание на блоке узким хватом",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Attach a straight bar to a low pulley cable machine."
+ },
+ {
+  "id": "gscGLOU",
+  "en": "bodyweight side lying biceps curl",
+  "ru_current": "Сгибание лёжа",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie on your side with your legs extended and your head supported by your arm."
+ },
+ {
+  "id": "8fgqP5a",
+  "en": "dumbbell standing one arm concentration curl",
+  "ru_current": "Сгибание с гантелями стоя одной рукой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with your feet shoulder-width apart and hold a dumbbell in one hand, palm facing up."
+ },
+ {
+  "id": "vBNyir7",
+  "en": "ez barbell reverse grip preacher curl",
+  "ru_current": "Сгибание с EZ-грифом обратным хватом",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "ez barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a preacher bench with your chest against the pad and your feet flat on the floor."
+ },
+ {
+  "id": "LIGZSTA",
+  "en": "dumbbell one arm prone hammer curl",
+  "ru_current": "Сгибание с гантелями одной рукой лицом вниз",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie face down on a flat bench with a dumbbell in one hand, palm facing your body and arm fully extended."
+ },
+ {
+  "id": "Mz6lLcW",
+  "en": "dumbbell lunge with bicep curl",
+  "ru_current": "Выпад с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a dumbbell in each hand with your palms facing forward."
+ },
+ {
+  "id": "2kattbR",
+  "en": "ez barbell spider curl",
+  "ru_current": "Сгибание с EZ-грифом",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "ez barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold the ez barbell with an underhand grip, palms facing up."
+ },
+ {
+  "id": "Qyk5J3p",
+  "en": "dumbbell cross body hammer curl",
+  "ru_current": "Сгибание с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with a dumbbell in each hand, palms facing your body."
+ },
+ {
+  "id": "gvsWLQw",
+  "en": "dumbbell concentration curl",
+  "ru_current": "Сгибание с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your legs spread apart and a dumbbell in one hand, resting your elbow on the inside of your thigh."
+ },
+ {
+  "id": "3XFdb1Z",
+  "en": "cable squatting curl",
+  "ru_current": "Приседание на блоке",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Attach a cable handle to the lowest setting on a cable machine."
+ },
+ {
+  "id": "1V1gj1u",
+  "en": "barbell seated close-grip concentration curl",
+  "ru_current": "Сгибание со штангой сидя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your feet flat on the floor and hold a barbell with an underhand grip, hands shoulder-width apart."
+ },
+ {
+  "id": "4hATdoB",
+  "en": "cable rope one arm hammer preacher curl",
+  "ru_current": "Сгибание на блоке одной рукой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Attach a rope handle to a low pulley cable machine."
+ },
+ {
+  "id": "61GrD55",
+  "en": "cable lying close-grip curl",
+  "ru_current": "Сгибание на блоке лёжа",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Attach a straight bar to a low pulley cable machine."
+ },
+ {
+  "id": "WLvTAv5",
+  "en": "barbell prone incline curl",
+  "ru_current": "Сгибание со штангой на наклонной скамье лицом вниз",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Set up an incline bench at a 45-degree angle."
+ },
+ {
+  "id": "b4b6afT",
+  "en": "weighted seated bicep curl (on stability ball)",
+  "ru_current": "Сгибание на фитболе сидя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "medicine ball"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a stability ball with your feet flat on the ground and your back straight."
+ },
+ {
+  "id": "YTur5nR",
+  "en": "cable one arm curl",
+  "ru_current": "Сгибание на блоке одной рукой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand facing the cable machine with your feet shoulder-width apart."
+ },
+ {
+  "id": "jivWf8n",
+  "en": "dumbbell preacher curl",
+  "ru_current": "Сгибание с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a preacher curl bench with your upper arms resting on the pad and your chest against it."
+ },
+ {
+  "id": "cWemPG8",
+  "en": "dumbbell prone incline hammer curl",
+  "ru_current": "Сгибание с гантелями на наклонной скамье лицом вниз",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Adjust the bench to a 45-degree incline."
+ },
+ {
+  "id": "vsMcDi9",
+  "en": "barbell standing concentration curl",
+  "ru_current": "Сгибание со штангой стоя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a barbell in one hand, palm facing up."
+ },
+ {
+  "id": "IwX5NqK",
+  "en": "cable reverse preacher curl",
+  "ru_current": "Сгибание на блоке",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Adjust the cable machine so that the preacher curl pad is at chest height."
+ },
+ {
+  "id": "o1ntciW",
+  "en": "olympic barbell hammer curl",
+  "ru_current": "Сгибание со штангой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "olympic barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with your feet shoulder-width apart and hold an Olympic barbell with an overhand grip."
+ },
+ {
+  "id": "IGtBdNT",
+  "en": "dumbbell seated hammer curl",
+  "ru_current": "Сгибание с гантелями сидя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with a dumbbell in each hand, palms facing your torso and arms extended straight down."
+ },
+ {
+  "id": "KUaZst7",
+  "en": "dumbbell lying supine curl",
+  "ru_current": "Сгибание с гантелями лицом вверх лёжа",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with a dumbbell in each hand, palms facing up and arms fully extended."
+ },
+ {
+  "id": "ioTf098",
+  "en": "cable overhead curl on exercise ball",
+  "ru_current": "Сгибание на блоке над головой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on an exercise ball and hold the cable handle with an underhand grip."
+ },
+ {
+  "id": "fy7Tgy4",
+  "en": "dumbbell alternate hammer preacher curl",
+  "ru_current": "Сгибание с гантелями попеременные",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a preacher bench with a dumbbell in each hand, palms facing your torso and arms fully extended."
+ },
+ {
+  "id": "hq2hyDH",
+  "en": "dumbbell standing preacher curl",
+  "ru_current": "Сгибание с гантелями стоя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand upright with your feet shoulder-width apart and hold a dumbbell in each hand, palms facing forward."
+ },
+ {
+  "id": "DpWMFP5",
+  "en": "cable seated overhead curl",
+  "ru_current": "Сгибание на блоке над головой сидя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench facing the cable machine with your feet flat on the ground."
+ },
+ {
+  "id": "JWjujiY",
+  "en": "dumbbell one arm prone curl",
+  "ru_current": "Сгибание с гантелями одной рукой лицом вниз",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie face down on a flat bench with a dumbbell in one hand, palm facing down."
+ },
+ {
+  "id": "dXz8zjF",
+  "en": "cable drag curl",
+  "ru_current": "Сгибание на блоке",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand facing a cable machine with your feet shoulder-width apart."
+ },
+ {
+  "id": "H9y3Dkr",
+  "en": "cable two arm curl on incline bench",
+  "ru_current": "Сгибание на блоке на наклонной скамье",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on an incline bench with your back against the pad and your feet flat on the ground."
+ },
+ {
+  "id": "NdIb5Z1",
+  "en": "barbell standing wide-grip curl",
+  "ru_current": "Сгибание со штангой стоя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with your feet shoulder-width apart and hold a barbell with an overhand grip, hands wider than shoulder-width apart."
+ },
+ {
+  "id": "fY68AyX",
+  "en": "dumbbell hammer curl on exercise ball",
+  "ru_current": "Сгибание с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with your feet flat on the ground and your back straight."
+ },
+ {
+  "id": "eHBlPsa",
+  "en": "cable one arm preacher curl",
+  "ru_current": "Сгибание на блоке одной рукой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Adjust the cable machine so that the preacher curl pad is at chest height."
+ },
+ {
+  "id": "RaflbWD",
+  "en": "dumbbell incline curl v. 2",
+  "ru_current": "Сгибание с гантелями на наклонной скамье",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on an incline bench with a dumbbell in each hand, palms facing forward and arms fully extended."
+ },
+ {
+  "id": "2sQGZ5b",
+  "en": "dumbbell one arm standing hammer curl",
+  "ru_current": "Сгибание с гантелями стоя одной рукой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with a dumbbell in each hand, palms facing your torso."
+ },
+ {
+  "id": "M5Y7GPg",
+  "en": "weighted standing curl",
+  "ru_current": "Сгибание с отягощением стоя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "weighted"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a dumbbell in each hand, palms facing forward."
+ },
+ {
+  "id": "guT8YnS",
+  "en": "biceps pull-up",
+  "ru_current": "Подтягивание",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Hang from a pull-up bar with your palms facing away from you and your hands shoulder-width apart."
+ },
+ {
+  "id": "Yza7XrQ",
+  "en": "barbell alternate biceps curl",
+  "ru_current": "Сгибание со штангой попеременные",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with your feet shoulder-width apart and hold a barbell in each hand, palms facing forward."
+ },
+ {
+  "id": "qOgPVf6",
+  "en": "barbell preacher curl",
+  "ru_current": "Сгибание со штангой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a preacher bench with your upper arms resting on the pad and your chest against the support."
+ },
+ {
+  "id": "rZ80Gbp",
+  "en": "cable seated one arm concentration curl",
+  "ru_current": "Сгибание на блоке одной рукой сидя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your feet flat on the floor and your back straight."
+ },
+ {
+  "id": "vKilzz3",
+  "en": "dumbbell standing inner biceps curl v. 2",
+  "ru_current": "Сгибание с гантелями стоя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with a dumbbell in each hand, palms facing your torso."
+ },
+ {
+  "id": "qm9veZw",
+  "en": "dumbbell lying wide curl",
+  "ru_current": "Сгибание с гантелями лёжа",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with a dumbbell in each hand, palms facing up and arms fully extended."
+ },
+ {
+  "id": "uJmK7Z1",
+  "en": "dumbbell seated neutral wrist curl",
+  "ru_current": "Сгибание с гантелями сидя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your feet flat on the ground and hold a dumbbell in each hand, palms facing each other."
+ },
+ {
+  "id": "NlfIbzq",
+  "en": "dumbbell alternate preacher curl",
+  "ru_current": "Сгибание с гантелями попеременные",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a preacher bench with a dumbbell in each hand, palms facing up."
+ },
+ {
+  "id": "76vfTdU",
+  "en": "dumbbell step up single leg balance with bicep curl",
+  "ru_current": "Подъём на платформу с гантелями одной ногой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand in front of a step or platform with a dumbbell in each hand, palms facing your body."
+ },
+ {
+  "id": "1VpF8db",
+  "en": "dumbbell bicep curl lunge with bowling motion",
+  "ru_current": "Выпад с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a dumbbell in each hand with your palms facing forward."
+ },
+ {
+  "id": "mwpPcr1",
+  "en": "dumbbell prone incline curl",
+  "ru_current": "Сгибание с гантелями на наклонной скамье лицом вниз",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Adjust the bench to a 45-degree incline."
+ },
+ {
+  "id": "6TG6x2w",
+  "en": "ez barbell curl",
+  "ru_current": "Сгибания с EZ-грифом",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "ez barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with your feet shoulder-width apart and hold the ez barbell with an underhand grip, palms facing up."
+ },
+ {
+  "id": "hwygydB",
+  "en": "dumbbell preacher curl over exercise ball",
+  "ru_current": "Сгибание с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with your feet flat on the ground and your back straight."
+ },
+ {
+  "id": "PcPe0P5",
+  "en": "cable rope hammer preacher curl",
+  "ru_current": "Сгибание на блоке",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Attach a rope attachment to a low pulley cable machine."
+ },
+ {
+  "id": "DU5Kkj2",
+  "en": "dumbbell standing one arm reverse curl",
+  "ru_current": "Сгибание с гантелями стоя одной рукой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with your feet shoulder-width apart and hold a dumbbell in one hand with an overhand grip."
+ },
+ {
+  "id": "sJFIDIp",
+  "en": "biceps leg concentration curl",
+  "ru_current": "Сгибание",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your legs spread apart and your feet flat on the ground."
+ },
+ {
+  "id": "2NpxjC1",
+  "en": "dumbbell hammer curl v. 2",
+  "ru_current": "Сгибание с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with a dumbbell in each hand, palms facing your torso."
+ },
+ {
+  "id": "P2lNrGL",
+  "en": "cable preacher curl",
+  "ru_current": "Сгибание на блоке",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Adjust the cable machine so that the preacher curl pad is at chest height."
+ },
+ {
+  "id": "e4ojVhP",
+  "en": "dumbbell revers grip biceps curl",
+  "ru_current": "Сгибание с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with a dumbbell in each hand, palms facing down and arms fully extended."
+ },
+ {
+  "id": "4KJEpzb",
+  "en": "kettlebell bottoms up clean from the hang position",
+  "ru_current": "Подъём на грудь с гирей",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "kettlebell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a kettlebell in one hand with an overhand grip."
+ },
+ {
+  "id": "P2nRiUa",
+  "en": "dumbbell standing zottman preacher curl",
+  "ru_current": "Сгибание с гантелями стоя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with a dumbbell in each hand, palms facing forward."
+ },
+ {
+  "id": "O8Aq69u",
+  "en": "dumbbell reverse preacher curl",
+  "ru_current": "Сгибание с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a preacher bench with your upper arms resting on the pad and your chest against the support."
+ },
+ {
+  "id": "7inpWch",
+  "en": "dumbbell standing concentration curl",
+  "ru_current": "Сгибание с гантелями стоя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a dumbbell in one hand, with your arm fully extended and palm facing inwards."
+ },
+ {
+  "id": "0IgNjSM",
+  "en": "dumbbell standing reverse curl",
+  "ru_current": "Сгибание с гантелями стоя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with your feet shoulder-width apart and hold a dumbbell in each hand, palms facing your body."
+ },
+ {
+  "id": "8oYqOt9",
+  "en": "cable seated curl",
+  "ru_current": "Сгибание на блоке сидя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a cable machine with your feet flat on the ground and your back straight."
+ },
+ {
+  "id": "ByX0WxV",
+  "en": "dumbbell incline hammer curl",
+  "ru_current": "Сгибание с гантелями на наклонной скамье",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on an incline bench with a dumbbell in each hand, palms facing your torso and arms fully extended."
+ },
+ {
+  "id": "xNrS20v",
+  "en": "barbell reverse curl",
+  "ru_current": "Сгибание со штангой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with your feet shoulder-width apart and hold a barbell with an overhand grip, palms facing down."
+ },
+ {
+  "id": "BKa8dmT",
+  "en": "dumbbell over bench neutral wrist curl",
+  "ru_current": "Сгибание с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your feet flat on the ground and hold a dumbbell in each hand, palms facing up."
+ },
+ {
+  "id": "WgJnBH5",
+  "en": "dumbbell seated biceps curl (on stability ball)",
+  "ru_current": "Сгибание на фитболе сидя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a stability ball with your feet flat on the ground and your back straight."
+ },
+ {
+  "id": "nlJsbkW",
+  "en": "dumbbell biceps curl (with arm blaster)",
+  "ru_current": "Сгибание с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with a dumbbell in each hand, palms facing forward."
+ },
+ {
+  "id": "NvfE43H",
+  "en": "cable concentration curl",
+  "ru_current": "Сгибание на блоке",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench or chair with your feet flat on the floor and your knees slightly bent."
+ },
+ {
+  "id": "3omWx6P",
+  "en": "band alternating biceps curl",
+  "ru_current": "Сгибание с лентой попеременные",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold the band with an underhand grip, palms facing up."
+ },
+ {
+  "id": "tJ5nYqo",
+  "en": "ez-bar biceps curl (with arm blaster)",
+  "ru_current": "Сгибание",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "ez barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with your feet shoulder-width apart and hold the ez barbell with an underhand grip, palms facing up."
+ },
+ {
+  "id": "LeaZOIz",
+  "en": "dumbbell standing alternate hammer curl and press",
+  "ru_current": "Жим с гантелями попеременные стоя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with a dumbbell in each hand, palms facing your body."
+ },
+ {
+  "id": "4dF3maG",
+  "en": "dumbbell one arm hammer preacher curl",
+  "ru_current": "Сгибание с гантелями одной рукой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a preacher bench with a dumbbell in one hand and your upper arm resting on the pad."
+ },
+ {
+  "id": "25GPyDY",
+  "en": "barbell curl",
+  "ru_current": "Сгибания рук со штангой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with your feet shoulder-width apart and hold a barbell with an underhand grip, palms facing forward."
+ },
+ {
+  "id": "2NImIAG",
+  "en": "dumbbell bicep curl on exercise ball with leg raised",
+  "ru_current": "Подъём с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with your feet flat on the ground and your back straight."
+ },
+ {
+  "id": "7D5bgLT",
+  "en": "dumbbell seated preacher curl",
+  "ru_current": "Сгибание с гантелями сидя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a preacher curl bench with your feet flat on the floor."
+ },
+ {
+  "id": "6em2Dxj",
+  "en": "dumbbell alternate seated hammer curl",
+  "ru_current": "Сгибание с гантелями попеременные сидя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with a dumbbell in each hand, palms facing your torso and arms extended down."
+ },
+ {
+  "id": "Dsfz0Id",
+  "en": "ez bar seated close grip concentration curl",
+  "ru_current": "Сгибание с EZ-грифом узким хватом сидя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "ez barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your feet flat on the ground and hold an EZ barbell with an underhand grip."
+ },
+ {
+  "id": "Zwiw7XR",
+  "en": "dumbbell alternating bicep curl with leg raised on exercise ball",
+  "ru_current": "Подъём с гантелями попеременные",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a dumbbell in each hand, palms facing forward."
+ },
+ {
+  "id": "jtFKbt5",
+  "en": "ez barbell seated curls",
+  "ru_current": "Сгибание с EZ-грифом сидя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "ez barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your feet flat on the ground and your back straight."
+ },
+ {
+  "id": "NbVPDMW",
+  "en": "dumbbell biceps curl",
+  "ru_current": "Сгибание с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with a dumbbell in each hand, palms facing forward and arms fully extended."
+ },
+ {
+  "id": "G08RZcQ",
+  "en": "cable curl",
+  "ru_current": "Сгибания на нижнем блоке",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand facing the cable machine with your feet shoulder-width apart."
+ },
+ {
+  "id": "Ye5Qxb0",
+  "en": "ez barbell spider curl",
+  "ru_current": "Сгибание с EZ-грифом",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "ez barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold the ez barbell with an underhand grip, palms facing up."
+ },
+ {
+  "id": "slDvUAU",
+  "en": "dumbbell hammer curl",
+  "ru_current": "Молотковые сгибания с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with a dumbbell in each hand, palms facing your torso."
+ },
+ {
+  "id": "sxY5Biu",
+  "en": "dumbbell one arm zottman preacher curl",
+  "ru_current": "Сгибание с гантелями одной рукой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a preacher curl bench and hold a dumbbell in one hand with an underhand grip."
+ },
+ {
+  "id": "50BETrz",
+  "en": "biceps narrow pull-ups",
+  "ru_current": "Подтягивание",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Hang from a pull-up bar with your palms facing towards you and your hands shoulder-width apart."
+ },
+ {
+  "id": "HDYiZcY",
+  "en": "dumbbell cross body hammer curl v. 2",
+  "ru_current": "Сгибание с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with a dumbbell in each hand, palms facing your body."
+ },
+ {
+  "id": "HPlPoQA",
+  "en": "cable hammer curl (with rope)",
+  "ru_current": "Молотковые сгибания на блоке",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand upright with your feet shoulder-width apart and a slight bend in your knees."
+ },
+ {
+  "id": "zILLZ98",
+  "en": "smith machine bicep curl",
+  "ru_current": "Сгибание в Смите",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Adjust the height of the smith machine bar to be at waist level."
+ },
+ {
+  "id": "qAmNMJY",
+  "en": "dumbbell high curl",
+  "ru_current": "Сгибание с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with a dumbbell in each hand, palms facing forward."
+ },
+ {
+  "id": "M8IolhQ",
+  "en": "ez barbell close grip preacher curl - precision variation",
+  "ru_current": "Сгибание с EZ-грифом узким хватом",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "ez barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a preacher curl bench and place your upper arms on the pad, gripping the ez barbell with an underhand grip."
+ },
+ {
+  "id": "8yBgwBS",
+  "en": "cable concentration curl tempo",
+  "ru_current": "Сгибание на блоке в темпе",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench or chair with your feet flat on the floor and your knees slightly bent."
+ },
+ {
+  "id": "EqHIIjJ",
+  "en": "barbell reverse preacher curl inclined",
+  "ru_current": "Сгибание со штангой на наклонной скамье",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a preacher bench with your chest against the pad and your arms extended straight down, holding a barbell with an overhand grip."
+ },
+ {
+  "id": "7y9JIMj",
+  "en": "lever reverse grip preacher curl with precision",
+  "ru_current": "Сгибание в рычажном тренажёре обратным хватом",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the leverage machine."
+ },
+ {
+  "id": "Um8xUAc",
+  "en": "barbell prone incline curl with intensive",
+  "ru_current": "Сгибание со штангой на наклонной скамье лицом вниз",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Set up an incline bench at a 45-degree angle."
+ },
+ {
+  "id": "AdxxqfF",
+  "en": "barbell standing reverse grip curl resistance",
+  "ru_current": "Сгибание со штангой обратным хватом стоя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with your feet shoulder-width apart and hold a barbell with an underhand grip, palms facing up."
+ },
+ {
+  "id": "XE93sQZ",
+  "en": "dumbbell step up single leg balance with bicep curl - chair variation",
+  "ru_current": "Подъём на платформу с гантелями одной ногой",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand in front of a step or platform with a dumbbell in each hand, palms facing your body."
+ },
+ {
+  "id": "xmWQIlT",
+  "en": "hold style dumbbell alternating seated bicep curl on exercise ball",
+  "ru_current": "Сгибание с гантелями попеременные сидя",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with your feet flat on the ground and your back straight."
+ },
+ {
+  "id": "QQwxa8g",
+  "en": "intermediate style dumbbell preacher curl over exercise ball",
+  "ru_current": "Сгибание с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with your feet flat on the ground and your back straight."
+ },
+ {
+  "id": "XqYQ9JA",
+  "en": "dumbbell one arm prone hammer curl - macro variation",
+  "ru_current": "Сгибание с гантелями одной рукой лицом вниз",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie face down on a flat bench with a dumbbell in one hand, palm facing your body and arm fully extended."
+ },
+ {
+  "id": "79AmJsI",
+  "en": "dumbbell hammer curl with traditional",
+  "ru_current": "Сгибание с гантелями",
+  "target": [
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand up straight with a dumbbell in each hand, palms facing your torso."
+ },
+ {
+  "id": "VO2qeJg",
+  "en": "side plank hip adduction",
+  "ru_current": "Приведение",
+  "target": [
+   "adductors"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Start by lying on your side with your legs extended and stacked on top of each other."
+ },
+ {
+  "id": "hC6oYY5",
+  "en": "assisted side lying adductor stretch",
+  "ru_current": "Растяжка в гравитроне лёжа",
+  "target": [
+   "adductors"
+  ],
+  "equipment": [
+   "assisted"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Lie on your side with your legs straight and stacked on top of each other."
+ },
+ {
+  "id": "oHsrypV",
+  "en": "lever seated hip adduction",
+  "ru_current": "Приведение в рычажном тренажёре сидя",
+  "target": [
+   "adductors"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the machine with your back against the backrest."
+ },
+ {
+  "id": "c8f5cSY",
+  "en": "side lying hip adduction (male)",
+  "ru_current": "Приведение лёжа",
+  "target": [
+   "adductors"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Lie on your side with your legs straight and stacked on top of each other."
+ },
+ {
+  "id": "bWlZvXh",
+  "en": "butterfly yoga pose",
+  "ru_current": "Разведение",
+  "target": [
+   "adductors"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Sit on the floor with your legs extended in front of you."
+ },
+ {
+  "id": "hBGWILP",
+  "en": "cable hip adduction",
+  "ru_current": "Приведение ноги на блоке",
+  "target": [
+   "adductors"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Attach the ankle cuff to your ankle and stand facing the cable machine."
+ },
+ {
+  "id": "wnEscH8",
+  "en": "barbell press sit-up",
+  "ru_current": "Подъём туловища со штангой",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back on a mat with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "IpONWYv",
+  "en": "dumbbell side bend",
+  "ru_current": "с гантелями",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand up straight with your feet shoulder-width apart and hold a dumbbell in one hand, letting it hang down by your side."
+ },
+ {
+  "id": "REXmfVC",
+  "en": "sledge hammer",
+  "ru_current": "на санях",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "hammer"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold the sledge hammer with both hands."
+ },
+ {
+  "id": "Kzg30R7",
+  "en": "band standing crunch",
+  "ru_current": "Скручивание с лентой стоя",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Attach the band to a sturdy anchor point at waist height."
+ },
+ {
+  "id": "8xUv4J7",
+  "en": "cable seated crunch",
+  "ru_current": "Скручивание на блоке сидя",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on a cable machine with your feet flat on the ground and your knees bent."
+ },
+ {
+  "id": "qFpAkpP",
+  "en": "cable standing lift",
+  "ru_current": "на блоке стоя",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand facing the cable machine with your feet shoulder-width apart."
+ },
+ {
+  "id": "CI6baTY",
+  "en": "bottoms-up",
+  "ru_current": "Подъём таза лёжа",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your legs extended and your arms by your sides."
+ },
+ {
+  "id": "VBAWRPG",
+  "en": "weighted front plank",
+  "ru_current": "Планка с отягощением",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "weighted"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start by lying face down on the floor."
+ },
+ {
+  "id": "03lzqwk",
+  "en": "assisted hanging knee raise",
+  "ru_current": "Подъём в гравитроне",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "assisted"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Hang from a pull-up bar with your arms fully extended and your palms facing away from you."
+ },
+ {
+  "id": "s8nrDXF",
+  "en": "weighted crunch",
+  "ru_current": "Скручивание с отягощением",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "weighted"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "BMMolZ3",
+  "en": "tuck crunch",
+  "ru_current": "Скручивание",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "5VXmnV5",
+  "en": "bodyweight incline side plank",
+  "ru_current": "Планка на наклонной скамье",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start by lying on your side with your legs extended and stacked on top of each other."
+ },
+ {
+  "id": "2Ryn564",
+  "en": "assisted prone rectus femoris stretch",
+  "ru_current": "Растяжка в гравитроне лицом вниз",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "assisted"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie face down on the ground with your legs straight."
+ },
+ {
+  "id": "OaE7CpD",
+  "en": "kettlebell double windmill",
+  "ru_current": "с гирей",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "kettlebell"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a kettlebell in your right hand."
+ },
+ {
+  "id": "Wgaz7pm",
+  "en": "lever seated crunch",
+  "ru_current": "Скручивание в рычажном тренажёре сидя",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on the leverage machine with your back against the pad and your feet flat on the floor."
+ },
+ {
+  "id": "9pa4H5m",
+  "en": "band horizontal pallof press",
+  "ru_current": "Жим с лентой",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Attach the band to a sturdy anchor point at waist height."
+ },
+ {
+  "id": "NKJ8o6x",
+  "en": "pelvic tilt",
+  "ru_current": "Наклон таза лёжа",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "nCU1Ekp",
+  "en": "reverse crunch",
+  "ru_current": "Обратные скручивания",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your arms extended along your sides."
+ },
+ {
+  "id": "8K0w2yA",
+  "en": "assisted hanging knee raise with throw down",
+  "ru_current": "Подъём в гравитроне",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "assisted"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Hang from a pull-up bar with your arms fully extended and your palms facing away from you."
+ },
+ {
+  "id": "YRaCa5Y",
+  "en": "full maltese",
+  "ru_current": "Мальтийский крест",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start by standing with your feet shoulder-width apart and your arms extended straight out to the sides."
+ },
+ {
+  "id": "UGhRD1A",
+  "en": "assisted lying leg raise with lateral throw down",
+  "ru_current": "Подъём в гравитроне лёжа",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "assisted"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your legs extended and your arms by your sides."
+ },
+ {
+  "id": "ZNgOYQU",
+  "en": "vertical leg raise (on parallel bars)",
+  "ru_current": "Подъём",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Hang from the parallel bars with your arms fully extended and your body straight."
+ },
+ {
+  "id": "WCAvOfC",
+  "en": "side-to-side toe touch (male)",
+  "ru_current": null,
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and your arms extended to the sides."
+ },
+ {
+  "id": "VX5YKR5",
+  "en": "assisted lying leg raise with throw down",
+  "ru_current": "Подъём в гравитроне лёжа",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "assisted"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your legs extended and your arms by your sides."
+ },
+ {
+  "id": "Qoujh3Q",
+  "en": "wind sprints",
+  "ru_current": "Спринт",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Find an open space or a track to perform the exercise."
+ },
+ {
+  "id": "fhZQPlV",
+  "en": "cable twist (up-down)",
+  "ru_current": "Скручивание с поворотом на блоке",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, facing the cable machine."
+ },
+ {
+  "id": "WW95auq",
+  "en": "cable kneeling crunch",
+  "ru_current": "Скручивание на блоке",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Attach a rope handle to a high pulley and kneel down facing away from the machine."
+ },
+ {
+  "id": "wPypxFY",
+  "en": "cable side bend",
+  "ru_current": "на блоке",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and grasp the cable handle with one hand."
+ },
+ {
+  "id": "XeMvLgE",
+  "en": "roller body saw",
+  "ru_current": "на ролике",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "roller"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start in a plank position with your forearms on the roller and your body in a straight line."
+ },
+ {
+  "id": "mbkgB44",
+  "en": "jackknife sit-up",
+  "ru_current": "Подъём туловища",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your legs extended and your arms overhead."
+ },
+ {
+  "id": "xnInPfE",
+  "en": "barbell standing ab rollerout",
+  "ru_current": "со штангой стоя",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand upright with your feet shoulder-width apart and hold the barbell with both hands in front of your thighs."
+ },
+ {
+  "id": "xmM75XG",
+  "en": "weighted overhead crunch (on stability ball)",
+  "ru_current": "Скручивание на фитболе над головой",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "weighted"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on a stability ball with your feet flat on the ground and your knees bent at a 90-degree angle."
+ },
+ {
+  "id": "KtRomty",
+  "en": "standing wheel rollerout",
+  "ru_current": "с роликом стоя",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "wheel roller"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start by standing tall with your feet shoulder-width apart and the wheel roller in front of you."
+ },
+ {
+  "id": "tZkGYZ9",
+  "en": "band bicycle crunch",
+  "ru_current": "Скручивание с лентой",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your hands behind your head and your knees bent."
+ },
+ {
+  "id": "75Bgtjy",
+  "en": "potty squat",
+  "ru_current": "Приседание",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, toes pointing slightly outward."
+ },
+ {
+  "id": "AQIhRjM",
+  "en": "lying elbow to knee",
+  "ru_current": "лёжа",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "RqOtqD7",
+  "en": "cable reverse crunch",
+  "ru_current": "Скручивание на блоке",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Attach a cable to a low pulley and lie down facing up on a mat."
+ },
+ {
+  "id": "LYJodFS",
+  "en": "lean planche",
+  "ru_current": "Наклонный планш",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start in a push-up position with your hands shoulder-width apart and your body straight."
+ },
+ {
+  "id": "9Tkqa9O",
+  "en": "kettlebell windmill",
+  "ru_current": "с гирей",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "kettlebell"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a kettlebell in your right hand overhead."
+ },
+ {
+  "id": "HfqciZF",
+  "en": "straddle maltese",
+  "ru_current": "Мальтийский крест ноги врозь",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start by hanging from a pair of rings with your arms fully extended and your body in a straight line."
+ },
+ {
+  "id": "qcNN2FN",
+  "en": "butt-ups",
+  "ru_current": "Подъём таза в планке",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "YZ4961r",
+  "en": "full planche",
+  "ru_current": "Горизонт (планш)",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start in a push-up position with your hands shoulder-width apart and your fingers pointing forward."
+ },
+ {
+  "id": "SLKj2pX",
+  "en": "cocoons",
+  "ru_current": "Группировка лёжа (кокон)",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "jTkSc6o",
+  "en": "side hip (on parallel bars)",
+  "ru_current": null,
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand between two parallel bars with your feet shoulder-width apart."
+ },
+ {
+  "id": "qaZVsGk",
+  "en": "alternate heel touchers",
+  "ru_current": "попеременные",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "TXtXc84",
+  "en": "cable tuck reverse crunch",
+  "ru_current": "Скручивание на блоке",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Attach a cable to a low pulley and lie down on a mat facing up."
+ },
+ {
+  "id": "EZeDVzO",
+  "en": "weighted decline sit-up",
+  "ru_current": "Подъём туловища с отягощением на скамье с отриц. наклоном",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "weighted"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on a decline bench with your feet secured under the foot pads."
+ },
+ {
+  "id": "AR0ig3o",
+  "en": "flexion leg sit up (bent knee)",
+  "ru_current": null,
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "eXFXCY0",
+  "en": "lever seated crunch v. 2",
+  "ru_current": "Скручивание в рычажном тренажёре сидя",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on the leverage machine with your back against the pad and your feet secured under the footpads."
+ },
+ {
+  "id": "yT9tk17",
+  "en": "twisted leg raise (female)",
+  "ru_current": "Подъём",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your legs extended and your arms by your sides."
+ },
+ {
+  "id": "s34Y4LR",
+  "en": "weighted seated twist (on stability ball)",
+  "ru_current": "Скручивание с поворотом на фитболе сидя",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "weighted"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on a stability ball with your feet flat on the ground and your knees bent at a 90-degree angle."
+ },
+ {
+  "id": "pQ0Mx1Z",
+  "en": "flag",
+  "ru_current": "Флаг (горизонтальный вис)",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start by gripping a vertical pole with both hands, palms facing each other, and arms fully extended."
+ },
+ {
+  "id": "Gxg9lDc",
+  "en": "barbell rollerout from bench",
+  "ru_current": "со штангой",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start by kneeling on the floor with a barbell placed on a bench in front of you."
+ },
+ {
+  "id": "kjJ3VoQ",
+  "en": "crunch (hands overhead)",
+  "ru_current": "Скручивания",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "RKjH6Lt",
+  "en": "side bridge v. 2",
+  "ru_current": "Мост",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie on your side with your legs extended and stacked on top of each other."
+ },
+ {
+  "id": "UVL20oz",
+  "en": "otis up",
+  "ru_current": "Подъём Отиса (с весом)",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "weighted"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "rQhGcin",
+  "en": "frog planche",
+  "ru_current": "Планш «лягушка»",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start in a push-up position with your hands shoulder-width apart and your feet together."
+ },
+ {
+  "id": "R1WYG5D",
+  "en": "suspended reverse crunch",
+  "ru_current": "Скручивание",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Hang from a pull-up bar with your arms fully extended and your palms facing away from you."
+ },
+ {
+  "id": "ZgsNQ6d",
+  "en": "inchworm",
+  "ru_current": "Гусеница (inchworm)",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start in a standing position with your feet hip-width apart."
+ },
+ {
+  "id": "H6ETwO9",
+  "en": "band v-up",
+  "ru_current": "с лентой",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your legs straight and your arms extended overhead, holding the band."
+ },
+ {
+  "id": "I3tsCnC",
+  "en": "hanging leg raise",
+  "ru_current": "Подъёмы ног в висе",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Hang from a pull-up bar with your arms fully extended and your palms facing away from you."
+ },
+ {
+  "id": "9c6T1YX",
+  "en": "bridge - mountain climber (cross body)",
+  "ru_current": "Мост",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start in a high plank position with your hands directly under your shoulders and your body in a straight line."
+ },
+ {
+  "id": "MCUhf1F",
+  "en": "crunch (on stability ball)",
+  "ru_current": "Скручивания",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "stability ball"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on the stability ball with your feet flat on the ground and your knees bent at a 90-degree angle."
+ },
+ {
+  "id": "ztAa1RK",
+  "en": "band alternating v-up",
+  "ru_current": "с лентой попеременные",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your legs straight and your arms extended overhead, holding the band."
+ },
+ {
+  "id": "6ZCiYWQ",
+  "en": "sit-up with arms on chest",
+  "ru_current": "Подъём туловища",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "PQ2AtC3",
+  "en": "lever seated leg raise crunch",
+  "ru_current": "Скручивание в рычажном тренажёре сидя",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on the leverage machine with your back against the backrest and your feet on the footrests."
+ },
+ {
+  "id": "1IG6gVF",
+  "en": "prone twist on stability ball",
+  "ru_current": "Скручивание с поворотом на фитболе лицом вниз",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "stability ball"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start by lying face down on a stability ball with your feet shoulder-width apart and your toes touching the ground."
+ },
+ {
+  "id": "1ZFqTDN",
+  "en": "air bike",
+  "ru_current": "Велосипед в воздухе (пресс)",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your hands placed behind your head."
+ },
+ {
+  "id": "euq4pwp",
+  "en": "band standing twisting crunch",
+  "ru_current": "Скручивание с лентой стоя",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and place the band around your upper back, crossing it in front of your chest."
+ },
+ {
+  "id": "Bn6TXyO",
+  "en": "sit-up v. 2",
+  "ru_current": "Подъём туловища",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "196HJGw",
+  "en": "hip raise (bent knee)",
+  "ru_current": "Подъём",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "OyoZ3Pu",
+  "en": "leg pull in flat bench",
+  "ru_current": "Подтяг ног на скамье",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on a flat bench with your legs extended straight out in front of you."
+ },
+ {
+  "id": "d9Xaxq6",
+  "en": "cable russian twists (on stability ball)",
+  "ru_current": "Скручивание с поворотом на фитболе",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on a stability ball with your feet flat on the ground and your knees bent at a 90-degree angle."
+ },
+ {
+  "id": "BaE7O6U",
+  "en": "hanging oblique knee raise",
+  "ru_current": "Подъём",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Hang from a pull-up bar with your arms fully extended and your palms facing away from you."
+ },
+ {
+  "id": "iny3m5y",
+  "en": "dead bug",
+  "ru_current": "Dead Bug (жук)",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your arms extended towards the ceiling."
+ },
+ {
+  "id": "ZuXu4Eq",
+  "en": "v-sit on floor",
+  "ru_current": "V-sit (уголок) на полу",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on the floor with your legs extended in front of you."
+ },
+ {
+  "id": "225x2Vd",
+  "en": "band kneeling twisting crunch",
+  "ru_current": "Скручивание с лентой",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Attach the band to a sturdy anchor point at waist height."
+ },
+ {
+  "id": "2jl9K55",
+  "en": "spine twist",
+  "ru_current": "Скручивание с поворотом",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on the ground with your legs extended in front of you."
+ },
+ {
+  "id": "UpWmA5E",
+  "en": "l-sit on floor",
+  "ru_current": "L-sit (уголок) на полу",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on the floor with your legs extended in front of you."
+ },
+ {
+  "id": "jCrtE9b",
+  "en": "one arm slam (with medicine ball)",
+  "ru_current": "с медболом одной рукой",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "medicine ball"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding the medicine ball with one hand in front of your waist."
+ },
+ {
+  "id": "jpgqxiS",
+  "en": "cable standing crunch",
+  "ru_current": "Скручивание на блоке стоя",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Attach a cable handle to a high pulley and stand facing away from the machine."
+ },
+ {
+  "id": "4Ml7QFO",
+  "en": "hanging straight leg raise",
+  "ru_current": "Подъём",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Hang from a pull-up bar with your arms fully extended and your palms facing away from you."
+ },
+ {
+  "id": "aumB2IV",
+  "en": "assisted sit-up",
+  "ru_current": "Подъём туловища в гравитроне",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "assisted"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on the edge of a bench or have someone hold your feet down."
+ },
+ {
+  "id": "xgsGFVM",
+  "en": "crab twist toe touch",
+  "ru_current": "Скручивание с поворотом",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start by sitting on the ground with your knees bent and feet flat on the floor."
+ },
+ {
+  "id": "dTg95eZ",
+  "en": "knee touch crunch",
+  "ru_current": "Скручивание",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "q2ADGqV",
+  "en": "cable side crunch",
+  "ru_current": "Скручивание на блоке",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Attach a cable handle to a low pulley and stand sideways to the machine."
+ },
+ {
+  "id": "Gn5FwYT",
+  "en": "stability ball crunch (full range hands behind head)",
+  "ru_current": "Скручивание на фитболе",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "stability ball"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on the stability ball with your feet flat on the ground and your knees bent at a 90-degree angle."
+ },
+ {
+  "id": "KCBKjma",
+  "en": "band jack knife sit-up",
+  "ru_current": "Подъём туловища с лентой",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your legs straight and your arms extended overhead, holding the band."
+ },
+ {
+  "id": "9ZGZuOD",
+  "en": "incline twisting sit-up",
+  "ru_current": "Подъём туловища на наклонной скамье",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Set up an incline bench at a 45-degree angle."
+ },
+ {
+  "id": "kjE55n5",
+  "en": "kettlebell bent press",
+  "ru_current": "Жим с гирей",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "kettlebell"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a kettlebell in your right hand."
+ },
+ {
+  "id": "UEjSrKI",
+  "en": "cable seated twist",
+  "ru_current": "Скручивание с поворотом на блоке сидя",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on a cable machine with your feet flat on the ground and your knees slightly bent."
+ },
+ {
+  "id": "CosupLu",
+  "en": "front plank with twist",
+  "ru_current": "Планка",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start in a high plank position with your hands directly under your shoulders and your body in a straight line from head to toe."
+ },
+ {
+  "id": "Sn8wxAI",
+  "en": "crunch (on stability ball, arms straight)",
+  "ru_current": "Скручивания",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "stability ball"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on the stability ball with your feet flat on the ground and your knees bent at a 90-degree angle."
+ },
+ {
+  "id": "Hy9D21L",
+  "en": "45° side bend",
+  "ru_current": null,
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and your arms extended straight down by your sides."
+ },
+ {
+  "id": "MvQPqVW",
+  "en": "cable judo flip",
+  "ru_current": "на блоке",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand facing the cable machine with your feet shoulder-width apart."
+ },
+ {
+  "id": "CqhoytW",
+  "en": "smith hip raise",
+  "ru_current": "Подъём в Смите",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Position yourself on the smith machine with your back against the pad and your feet shoulder-width apart."
+ },
+ {
+  "id": "g2oKspu",
+  "en": "curl-up",
+  "ru_current": "Сгибание",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "dFSNDOA",
+  "en": "barbell seated twist",
+  "ru_current": "Скручивание с поворотом со штангой сидя",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on a flat bench with your feet flat on the ground and your knees bent."
+ },
+ {
+  "id": "QYysSLV",
+  "en": "landmine 180",
+  "ru_current": "Ландмайн 180° (ротация)",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold the barbell with both hands in front of your chest."
+ },
+ {
+  "id": "UQr48Oi",
+  "en": "pull-in (on stability ball)",
+  "ru_current": "на фитболе",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "stability ball"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start by sitting on the stability ball with your feet flat on the ground and your knees bent at a 90-degree angle."
+ },
+ {
+  "id": "X3TCNEU",
+  "en": "suspended abdominal fallout",
+  "ru_current": "Выкат пресса в петлях TRX",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Attach a suspension trainer to a high anchor point and adjust the straps to waist height."
+ },
+ {
+  "id": "uWpxD4v",
+  "en": "arm slingers hanging bent knee legs",
+  "ru_current": null,
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Hang from a pull-up bar with your arms fully extended and your knees bent at a 90-degree angle."
+ },
+ {
+  "id": "G7PXMlT",
+  "en": "band vertical pallof press",
+  "ru_current": "Жим с лентой",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and wrap the band around a sturdy object at chest height."
+ },
+ {
+  "id": "WU9BLIs",
+  "en": "weighted russian twist (legs up)",
+  "ru_current": "Скручивание с поворотом с отягощением",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "weighted"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on the ground with your knees bent and feet lifted off the ground, keeping your legs together."
+ },
+ {
+  "id": "NAgVB3t",
+  "en": "wheel rollerout",
+  "ru_current": "с роликом",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "wheel roller"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Kneel on the floor and place the wheel roller in front of you."
+ },
+ {
+  "id": "hCjGsRQ",
+  "en": "power point plank",
+  "ru_current": "Планка",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start in a high plank position with your hands directly under your shoulders and your body in a straight line from head to toe."
+ },
+ {
+  "id": "K9VL0Jq",
+  "en": "lunge with twist",
+  "ru_current": "Выпад",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start by standing with your feet shoulder-width apart."
+ },
+ {
+  "id": "mWppALS",
+  "en": "groin crunch",
+  "ru_current": "Скручивание",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "Y9hNPcN",
+  "en": "seated side crunch (wall)",
+  "ru_current": "Скручивание сидя",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on the floor with your back against a wall and your legs extended in front of you."
+ },
+ {
+  "id": "mgejmGP",
+  "en": "prisoner half sit-up (male)",
+  "ru_current": "Подъём туловища",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "SKXQAx3",
+  "en": "roller reverse crunch",
+  "ru_current": "Скручивание на ролике",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "roller"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your arms extended straight above your head and your legs straight out in front of you."
+ },
+ {
+  "id": "p9cCe2r",
+  "en": "spell caster",
+  "ru_current": "Заклинатель (spell caster) с гантелями",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a dumbbell in one hand."
+ },
+ {
+  "id": "Hgs6Nl1",
+  "en": "seated leg raise",
+  "ru_current": "Подъём сидя",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on a flat bench with your back straight and your feet flat on the ground."
+ },
+ {
+  "id": "zhF9lW4",
+  "en": "band assisted wheel rollerout",
+  "ru_current": "с роликом",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Kneel on the floor and hold the handles of the band with both hands, palms facing down."
+ },
+ {
+  "id": "bmwlYvD",
+  "en": "gorilla chin",
+  "ru_current": "Подтягивания «горилла»",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and your knees slightly bent."
+ },
+ {
+  "id": "r7cT9YD",
+  "en": "assisted motion russian twist",
+  "ru_current": "Скручивание с поворотом в гравитроне",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "medicine ball"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on the ground with your knees bent and feet flat on the floor."
+ },
+ {
+  "id": "zFzbBfL",
+  "en": "band push sit-up",
+  "ru_current": "Подъём туловища с лентой",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Attach the band securely to a stable anchor point."
+ },
+ {
+  "id": "S1JXDAG",
+  "en": "band seated twist",
+  "ru_current": "Скручивание с поворотом с лентой сидя",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on the ground with your legs extended in front of you and your back straight."
+ },
+ {
+  "id": "9IxJdtC",
+  "en": "lying leg-hip raise",
+  "ru_current": "Подъём лёжа",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your legs extended and your arms by your sides."
+ },
+ {
+  "id": "1GPHRyK",
+  "en": "janda sit-up",
+  "ru_current": "Подъём туловища",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "TFqbd8t",
+  "en": "crunch floor",
+  "ru_current": "Скручивание",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "QLL2gdc",
+  "en": "decline sit-up",
+  "ru_current": "Подъём туловища на скамье с отриц. наклоном",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie on a decline bench with your feet secured and your knees bent."
+ },
+ {
+  "id": "PkCN2lv",
+  "en": "front lever",
+  "ru_current": "в рычажном тренажёре",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start by hanging from a pull-up bar with an overhand grip, hands shoulder-width apart."
+ },
+ {
+  "id": "tFToB7l",
+  "en": "reverse plank with leg lift",
+  "ru_current": "Планка",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on the ground with your legs extended in front of you and your hands resting on the ground behind you, fingers pointing towards your feet."
+ },
+ {
+  "id": "ErqK3UL",
+  "en": "posterior step to overhead reach",
+  "ru_current": "над головой",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand with your feet hip-width apart and your arms by your sides."
+ },
+ {
+  "id": "aVs3BR3",
+  "en": "cable twist",
+  "ru_current": "Скручивание с поворотом на блоке",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, facing the cable machine."
+ },
+ {
+  "id": "bbLR7fB",
+  "en": "band lying straight leg raise",
+  "ru_current": "Подъём с лентой лёжа",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your legs straight and your feet together."
+ },
+ {
+  "id": "6bOA1Oi",
+  "en": "weighted side bend (on stability ball)",
+  "ru_current": "на фитболе",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "weighted"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on a stability ball with your feet shoulder-width apart and flat on the ground."
+ },
+ {
+  "id": "7M66AVi",
+  "en": "barbell rollerout",
+  "ru_current": "со штангой",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Kneel on the floor and hold a barbell with both hands, shoulder-width apart."
+ },
+ {
+  "id": "KhHJ338",
+  "en": "push-up to side plank",
+  "ru_current": "Отжимание",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start in a push-up position with your hands shoulder-width apart and your body in a straight line."
+ },
+ {
+  "id": "QOA0FD0",
+  "en": "weighted hanging leg-hip raise",
+  "ru_current": "Подъём с отягощением",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "weighted"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Hang from a pull-up bar with your arms fully extended and your palms facing away from you."
+ },
+ {
+  "id": "9Ap7miY",
+  "en": "decline crunch",
+  "ru_current": "Скручивания на наклонной скамье",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie on a decline bench with your feet secured and your knees bent at a 90-degree angle."
+ },
+ {
+  "id": "QUDd8WS",
+  "en": "oblique crunches floor",
+  "ru_current": "Скручивание",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie on your back with your knees bent and feet flat on the floor."
+ },
+ {
+  "id": "i4JkUaL",
+  "en": "barbell side bent v. 2",
+  "ru_current": "со штангой",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a barbell with both hands, palms facing down."
+ },
+ {
+  "id": "pj0X0tF",
+  "en": "hanging straight leg hip raise",
+  "ru_current": "Подъём",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Hang from a pull-up bar with your arms fully extended and your palms facing away from you."
+ },
+ {
+  "id": "WhuFnR7",
+  "en": "lying leg raise flat bench",
+  "ru_current": "Подъём лёжа",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on a flat bench with your back pressed against it."
+ },
+ {
+  "id": "G7xoEzr",
+  "en": "barbell sitted alternate leg raise",
+  "ru_current": "Подъём со штангой попеременные",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on a bench with your back straight and hold a barbell across your thighs."
+ },
+ {
+  "id": "iQ241UP",
+  "en": "half sit-up (male)",
+  "ru_current": "Подъём туловища",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "VEcJRo2",
+  "en": "hanging leg hip raise",
+  "ru_current": "Подъём",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Hang from a pull-up bar with your arms fully extended and your palms facing away from you."
+ },
+ {
+  "id": "yRpV5TC",
+  "en": "shoulder tap",
+  "ru_current": "Касание плеча в планке",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start in a high plank position with your hands directly under your shoulders and your body in a straight line."
+ },
+ {
+  "id": "szIn2UK",
+  "en": "negative crunch",
+  "ru_current": "Скручивание",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "2gPfomN",
+  "en": "3/4 sit-up",
+  "ru_current": "Подъём туловища",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "KZn52RC",
+  "en": "flexion leg sit up (straight arm)",
+  "ru_current": null,
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your legs extended and arms straight above your head."
+ },
+ {
+  "id": "fZFZ704",
+  "en": "weighted russian twist",
+  "ru_current": "Скручивание с поворотом с отягощением",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "weighted"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on the ground with your knees bent and your feet flat on the floor."
+ },
+ {
+  "id": "PXTIwgu",
+  "en": "arm slingers hanging straight legs",
+  "ru_current": null,
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Hang from a pull-up bar with your arms fully extended and your legs straight down."
+ },
+ {
+  "id": "yQe5HpE",
+  "en": "barbell standing twist",
+  "ru_current": "Скручивание с поворотом со штангой стоя",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a barbell in front of your chest with both hands, palms facing down."
+ },
+ {
+  "id": "sZOR9EV",
+  "en": "lever kneeling twist",
+  "ru_current": "Скручивание с поворотом в рычажном тренажёре",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the machine with your knees resting on the pads and your upper body facing forward."
+ },
+ {
+  "id": "eVxAzgz",
+  "en": "incline leg hip raise (leg straight)",
+  "ru_current": "Подъём на наклонной скамье",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie on an incline bench with your back flat against the bench and your legs extended straight out in front of you."
+ },
+ {
+  "id": "weoDEpH",
+  "en": "captains chair straight leg raise",
+  "ru_current": "Подъём",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on the captain's chair with your back against the backrest and your forearms resting on the arm pads."
+ },
+ {
+  "id": "Q6bvyen",
+  "en": "hanging straight twisting leg hip raise",
+  "ru_current": "Подъём",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Hang from a pull-up bar with your arms fully extended and your legs straight."
+ },
+ {
+  "id": "ZnJHhMk",
+  "en": "lever seated crunch (chest pad)",
+  "ru_current": "Скручивание в рычажном тренажёре сидя",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Adjust the seat height and chest pad position according to your comfort."
+ },
+ {
+  "id": "cJgSTmh",
+  "en": "oblique crunch v. 2",
+  "ru_current": "Скручивание",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "FFRP97T",
+  "en": "frog crunch",
+  "ru_current": "Скручивание",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "BCs0G2F",
+  "en": "barbell sitted alternate leg raise (female)",
+  "ru_current": "Подъём со штангой попеременные",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on a bench with your back straight and hold a barbell across your thighs."
+ },
+ {
+  "id": "nuBF9MO",
+  "en": "hanging pike",
+  "ru_current": "Подъём ног в висе (уголок)",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Hang from a pull-up bar with your arms fully extended and your palms facing away from you."
+ },
+ {
+  "id": "jvp6DiD",
+  "en": "elbow-to-knee",
+  "ru_current": "Локоть к колену",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start by lying flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "YIUAtYf",
+  "en": "weighted russian twist v. 2",
+  "ru_current": "Скручивание с поворотом с отягощением",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "weighted"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on the ground with your knees bent and feet flat on the floor."
+ },
+ {
+  "id": "C0eCeEt",
+  "en": "twisted leg raise",
+  "ru_current": "Подъём",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your legs extended and your arms by your sides."
+ },
+ {
+  "id": "qatbkEd",
+  "en": "cable side bend crunch (bosu ball)",
+  "ru_current": "Скручивание на BOSU",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a cable handle in one hand."
+ },
+ {
+  "id": "XU3ePuv",
+  "en": "cable standing crunch (with rope attachment)",
+  "ru_current": "Скручивание на блоке стоя",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Attach a rope to a cable machine at chest height."
+ },
+ {
+  "id": "Kal9cQQ",
+  "en": "kettlebell advanced windmill",
+  "ru_current": "с гирей",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "kettlebell"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand with your feet wider than shoulder-width apart, toes pointing slightly outward."
+ },
+ {
+  "id": "enxnJcM",
+  "en": "quarter sit-up",
+  "ru_current": "Подъём туловища",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "TV87DNB",
+  "en": "inchworm v. 2",
+  "ru_current": null,
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start in a standing position with your feet hip-width apart."
+ },
+ {
+  "id": "h1ezqSu",
+  "en": "kneeling plank tap shoulder (male)",
+  "ru_current": "Планка",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start in a kneeling position with your hands on the ground, shoulder-width apart."
+ },
+ {
+  "id": "BL3GHeY",
+  "en": "straddle planche",
+  "ru_current": "Планш ноги врозь",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start in a push-up position with your hands shoulder-width apart and your feet spread wide apart."
+ },
+ {
+  "id": "L4ay0PW",
+  "en": "kettlebell figure 8",
+  "ru_current": "с гирей",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "kettlebell"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a kettlebell in one hand."
+ },
+ {
+  "id": "rbu5UUb",
+  "en": "cross body crunch",
+  "ru_current": "Скручивание",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "XVDdcoj",
+  "en": "russian twist",
+  "ru_current": "Русские скручивания",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on the ground with your knees bent and feet flat on the floor."
+ },
+ {
+  "id": "NAkmgdx",
+  "en": "arms overhead full sit-up (male)",
+  "ru_current": "Подъём туловища над головой",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "CUmLRTA",
+  "en": "cable kneeling crunch - gentle variation",
+  "ru_current": "Скручивание на блоке",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Attach a rope handle to a high pulley and kneel down facing away from the machine."
+ },
+ {
+  "id": "3pqGMQj",
+  "en": "band alternating v-up with simple",
+  "ru_current": "с лентой попеременные",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your legs straight and your arms extended overhead, holding the band."
+ },
+ {
+  "id": "gdPIyyO",
+  "en": "hanging pike with intense",
+  "ru_current": null,
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Hang from a pull-up bar with your arms fully extended and your palms facing away from you."
+ },
+ {
+  "id": "vN5HB0s",
+  "en": "blunt cable standing crunch",
+  "ru_current": "Скручивание на блоке стоя",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Attach a cable handle to a high pulley and stand facing away from the machine."
+ },
+ {
+  "id": "xcLntTC",
+  "en": "slow leg pull in flat bench",
+  "ru_current": null,
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on a flat bench with your legs extended straight out in front of you."
+ },
+ {
+  "id": "HZgQPxh",
+  "en": "suspended abdominal fallout - inclined variation",
+  "ru_current": "на наклонной скамье",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Attach a suspension trainer to a high anchor point and adjust the straps to waist height."
+ },
+ {
+  "id": "58rdhvL",
+  "en": "narrow style band jack knife sit-up",
+  "ru_current": "Подъём туловища с лентой",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your legs straight and your arms extended overhead, holding the band."
+ },
+ {
+  "id": "8gQo5Ss",
+  "en": "single style cable standing crunch (with rope attachment)",
+  "ru_current": "Скручивание на блоке стоя",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Attach a rope to a cable machine at chest height."
+ },
+ {
+  "id": "PKlXuJW",
+  "en": "rough band push sit-up",
+  "ru_current": "Подъём туловища с лентой",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Attach the band securely to a stable anchor point."
+ },
+ {
+  "id": "UOphC6N",
+  "en": "cable side bend smooth",
+  "ru_current": "на блоке",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and grasp the cable handle with one hand."
+ },
+ {
+  "id": "7i4msxz",
+  "en": "cocoons with mega",
+  "ru_current": null,
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "6Wr0F3W",
+  "en": "rounded twisted leg raise (female)",
+  "ru_current": "Подъём",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your legs extended and your arms by your sides."
+ },
+ {
+  "id": "Sa8mzWc",
+  "en": "hanging pike weak",
+  "ru_current": null,
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Hang from a pull-up bar with your arms fully extended and your palms facing away from you."
+ },
+ {
+  "id": "IxsFgRT",
+  "en": "cable judo flip with static",
+  "ru_current": "на блоке",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand facing the cable machine with your feet shoulder-width apart."
+ },
+ {
+  "id": "mpYUPkA",
+  "en": "lying leg-hip raise - contracted variation",
+  "ru_current": "Подъём лёжа",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your legs extended and your arms by your sides."
+ },
+ {
+  "id": "ntjtCfu",
+  "en": "barbell sitted alternate leg raise (female) with intermediate",
+  "ru_current": "Подъём со штангой попеременные",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on a bench with your back straight and hold a barbell across your thighs."
+ },
+ {
+  "id": "kk39rUy",
+  "en": "push-up to side plank - athletic variation",
+  "ru_current": "Отжимание",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start in a push-up position with your hands shoulder-width apart and your body in a straight line."
+ },
+ {
+  "id": "L68dTQj",
+  "en": "band seated twist pure",
+  "ru_current": "Скручивание с поворотом с лентой сидя",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Sit on the ground with your legs extended in front of you and your back straight."
+ },
+ {
+  "id": "6vcvsLS",
+  "en": "hanging straight leg raise with elevated",
+  "ru_current": "Подъём с возвышения",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Hang from a pull-up bar with your arms fully extended and your palms facing away from you."
+ },
+ {
+  "id": "WFucoe6",
+  "en": "hanging straight twisting leg hip raise with compound",
+  "ru_current": "Подъём",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Hang from a pull-up bar with your arms fully extended and your legs straight."
+ },
+ {
+  "id": "gSO0KpB",
+  "en": "sit-up with arms on chest with mini",
+  "ru_current": "Подъём туловища",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "tuIZFDt",
+  "en": "intermediate style kneeling plank tap shoulder (male)",
+  "ru_current": "Планка",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start in a kneeling position with your hands on the ground, shoulder-width apart."
+ },
+ {
+  "id": "UI81amT",
+  "en": "supine style band alternating v-up",
+  "ru_current": "с лентой попеременные лицом вверх",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Lie flat on your back with your legs straight and your arms extended overhead, holding the band."
+ },
+ {
+  "id": "4QqYaJW",
+  "en": "gentle prone twist on stability ball",
+  "ru_current": "Скручивание с поворотом на фитболе лицом вниз",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "stability ball"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Start by lying face down on a stability ball with your feet shoulder-width apart and your toes touching the ground."
+ },
+ {
+  "id": "kLiIFdB",
+  "en": "band vertical pallof press - seated variation",
+  "ru_current": "Жим с лентой сидя",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and wrap the band around a sturdy object at chest height."
+ },
+ {
+  "id": "lFBTISi",
+  "en": "firm style hanging oblique knee raise",
+  "ru_current": "Подъём",
+  "target": [
+   "abs"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "waist"
+  ],
+  "instr": "Step:1 Hang from a pull-up bar with your arms fully extended and your palms facing away from you."
+ },
+ {
+  "id": "CHpahtl",
+  "en": "lever seated hip abduction",
+  "ru_current": "Отведение в рычажном тренажёре сидя",
+  "target": [
+   "abductors"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Adjust the seat height so that your knees are at a 90-degree angle."
+ },
+ {
+  "id": "0xDpB4L",
+  "en": "resistance band seated hip abduction",
+  "ru_current": "Отведение с эспандером сидя",
+  "target": [
+   "abductors"
+  ],
+  "equipment": [
+   "resistance band"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Sit on a chair or bench with your back straight and feet flat on the ground."
+ },
+ {
+  "id": "WL4EmxJ",
+  "en": "side bridge hip abduction",
+  "ru_current": "Отведение",
+  "target": [
+   "abductors"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Lie on your side with your legs extended and stacked on top of each other."
+ },
+ {
+  "id": "7WaDzyL",
+  "en": "side hip abduction",
+  "ru_current": "Отведение бедра лёжа на боку",
+  "target": [
+   "abductors"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and your hands on your hips."
+ },
+ {
+  "id": "mQ1tBXn",
+  "en": "straight leg outer hip abductor",
+  "ru_current": "Отведение прямой ноги лёжа",
+  "target": [
+   "abductors"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Lie on your side with your legs straight and stacked on top of each other."
+ },
+ {
+  "id": "Qj0HRAZ",
+  "en": "fast style resistance band seated hip abduction",
+  "ru_current": "Отведение с эспандером сидя",
+  "target": [
+   "abductors"
+  ],
+  "equipment": [
+   "resistance band"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Sit on a chair or bench with your back straight and feet flat on the ground."
+ }
+]

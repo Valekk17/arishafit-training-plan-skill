@@ -1,0 +1,40 @@
+{
+  "name": "",
+  "age": null,
+  "height_cm": null,
+  "weight_kg": null,
+  "gender": "male|female",
+  "injuries": [],
+  "injury_details": "",
+  "diseases": [],
+  "experience": "beginner|intermediate|advanced",
+  "goal": "weight_loss|hypertrophy|strength|endurance|maintenance",
+  "nutrition_issues": "",
+  "training_days": 3,
+  "location": "gym|home",
+  "available_equipment": null,
+  "preferences": {
+    "variety": "minimal|moderate|maximum",
+    "favorite_exercises": [],
+    "disliked_exercises": [],
+    "notes": ""
+  },
+  "plan_weeks": 4,
+  "_injury_slugs_reference": [
+    "hernia_lumbar", "hernia_cervical", "hernia_thoracic", "protrusion_lumbar",
+    "shoulder_impingement", "rotator_cuff_tear",
+    "knee_meniscus", "knee_acl", "knee_arthritis", "hip_arthritis",
+    "tennis_elbow", "carpal_tunnel",
+    "ankle_sprain", "achilles_tendinitis", "plantar_fasciitis",
+    "scoliosis", "spondylolisthesis", "diastasis_recti",
+    "hypertension", "obesity_severe"
+  ],
+  "_equipment_slugs_reference": [
+    "barbell", "dumbbell", "cable", "machine", "leverage_machine",
+    "smith_machine", "kettlebell", "band", "resistance_band",
+    "body_weight", "medicine_ball", "stability_ball", "bosu_ball",
+    "roller", "wheel_roller", "ez_barbell", "trap_bar",
+    "rope", "weighted", "assisted",
+    "elliptical", "stationary_bike", "stepmill", "skierg"
+  ]
+}

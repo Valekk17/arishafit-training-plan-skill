@@ -1,0 +1,1831 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{plan_title}} — ArishaFit</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap');
+
+  :root {
+    --orange: #FF6B35;
+    --orange-hover: #FF5722;
+    --orange-light: #FFF3ED;
+    --orange-glow: rgba(255,107,53,0.15);
+    --green: #22c55e;
+    --green-dark: #16a34a;
+    --green-light: #f0fdf4;
+    --blue: #4A72FF;
+    --blue-light: #EEF2FF;
+    --yellow: #FF9800;
+    --yellow-light: #FFF8E1;
+    --red: #EF5350;
+    --bg: #FAFAF8;
+    --bg-white: #FFFFFF;
+    --bg-warm: #FDF8F4;
+    --bg-section: #F5F3EF;
+    --text: #1a1a1a;
+    --text-light: #666666;
+    --text-muted: #999999;
+    --border: #E8E5DF;
+    --border-light: #F0EDE8;
+    --shadow-xs: 0 1px 3px rgba(0,0,0,0.05);
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.07);
+    --shadow-md: 0 4px 20px rgba(0,0,0,0.09);
+    --shadow-lg: 0 8px 40px rgba(0,0,0,0.12);
+    --shadow-glow: 0 4px 24px var(--orange-glow);
+    --radius: 20px;
+    --radius-sm: 14px;
+    --radius-xs: 8px;
+    --ease: cubic-bezier(0.4,0,0.2,1);
+    --spring: cubic-bezier(0.34,1.56,0.64,1);
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  body {
+    font-family: 'Jost', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  ::selection { background: var(--orange); color: white; }
+
+  /* =====================
+     BEAUTIFUL SCROLLBARS
+     ===================== */
+  /* Firefox — глобально */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--orange) var(--border-light);
+  }
+
+  /* WebKit (Chrome/Safari/Edge) — глобально */
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--border-light);
+    border-radius: 100px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--orange) 0%, var(--orange-hover) 100%);
+    border: 3px solid var(--border-light);
+    border-radius: 100px;
+    background-clip: padding-box;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.15);
+    transition: all .25s var(--ease);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, var(--orange-hover) 0%, #E54818 100%);
+    border: 2px solid var(--border-light);
+    background-clip: padding-box;
+    box-shadow: 0 0 12px var(--orange-glow), inset 0 0 0 1px rgba(255,255,255,0.2);
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background: var(--orange-hover);
+    background-clip: padding-box;
+  }
+  ::-webkit-scrollbar-corner { background: transparent; }
+
+  /* Preview panel — тоньше и минималистичнее */
+  .preview-panel {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,107,53,0.45) transparent;
+  }
+  .preview-panel::-webkit-scrollbar {
+    width: 6px;
+  }
+  .preview-panel::-webkit-scrollbar-track {
+    background: transparent;
+    margin: 12px 4px;
+  }
+  .preview-panel::-webkit-scrollbar-thumb {
+    background: rgba(255,107,53,0.35);
+    border: none;
+    border-radius: 100px;
+    transition: background .25s var(--ease), width .25s var(--ease);
+  }
+  .preview-panel::-webkit-scrollbar-thumb:hover {
+    background: var(--orange);
+  }
+
+  /* WATERMARK */
+  .watermark {
+    position: fixed; top:50%; left:50%;
+    transform: translate(-50%,-50%) rotate(-30deg);
+    font-size: 160px; font-weight: 900;
+    color: rgba(255,107,53,0.025);
+    pointer-events: none; z-index:0;
+    white-space: nowrap; letter-spacing: 40px; user-select: none;
+  }
+
+  /* NAV */
+  .nav {
+    position: sticky; top:0; z-index:200;
+    background: rgba(250,250,248,0.88);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 1px solid var(--border-light);
+    padding: 0 24px;
+  }
+  .nav-inner {
+    max-width: 1200px; margin:0 auto; height:60px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .nav-logo { font-weight:800; font-size:20px; letter-spacing:4px; color:var(--orange); }
+  .nav-links { display:flex; gap:4px; list-style:none; }
+  .nav-links a {
+    color:var(--text-light); text-decoration:none; font-size:14px;
+    font-weight:500; padding:8px 16px; border-radius:var(--radius-xs);
+    transition: all .25s var(--ease);
+  }
+  .nav-links a:hover { color:var(--orange); background:var(--orange-light); }
+
+  /* OVERALL PROGRESS BAR in nav */
+  .nav-progress {
+    display:flex; align-items:center; gap:10px; font-size:13px; font-weight:600;
+  }
+  .nav-progress-bar {
+    width: 120px; height: 6px; background: var(--border);
+    border-radius: 100px; overflow:hidden;
+  }
+  .nav-progress-fill {
+    height:100%; background: linear-gradient(90deg, var(--orange), #ff9f70);
+    border-radius:100px; transition: width .5s var(--ease);
+    width: 0%;
+  }
+  .nav-progress-pct { color:var(--orange); min-width:32px; }
+
+  /* HERO */
+  .hero {
+    position:relative; padding:80px 24px 60px;
+    text-align:center; background:var(--bg-warm);
+    overflow:hidden; z-index:1;
+  }
+  .hero::before {
+    content:''; position:absolute; top:-100px; right:-200px;
+    width:500px; height:500px;
+    background: radial-gradient(circle, var(--orange-glow) 0%, transparent 70%);
+    pointer-events:none;
+  }
+  .hero::after {
+    content:''; position:absolute; bottom:-100px; left:-200px;
+    width:400px; height:400px;
+    background: radial-gradient(circle, rgba(76,175,80,0.06) 0%, transparent 70%);
+    pointer-events:none;
+  }
+  .hero-pill {
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--bg-white); border:1px solid var(--border);
+    padding:8px 20px; border-radius:100px; font-size:13px;
+    font-weight:500; color:var(--text-light); margin-bottom:24px;
+    box-shadow:var(--shadow-xs);
+  }
+  .hero-pill .dot {
+    width:8px; height:8px; background:var(--green);
+    border-radius:50%; animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(.8)} }
+  .hero h1 {
+    font-size:clamp(32px,5vw,52px); font-weight:800;
+    letter-spacing:-1px; color:var(--text); margin-bottom:12px;
+  }
+  .hero h1 .accent { color:var(--orange); }
+  .hero-sub {
+    font-size:17px; color:var(--text-light); font-weight:400;
+    max-width:560px; margin:0 auto 36px;
+  }
+  .hero-stats { display:flex; justify-content:center; gap:40px; flex-wrap:wrap; }
+  .hero-stat .num { font-size:32px; font-weight:800; color:var(--orange); }
+  .hero-stat .label { font-size:12px; font-weight:500; color:var(--text-muted); text-transform:uppercase; letter-spacing:1px; }
+
+  /* OVERALL PROGRESS RING in hero */
+  .hero-progress-ring {
+    display:flex; flex-direction:column; align-items:center; gap:6px;
+    margin-top:32px;
+  }
+  .ring-svg { transform: rotate(-90deg); }
+  .ring-bg { fill:none; stroke: var(--border); stroke-width:6; }
+  .ring-fill {
+    fill:none; stroke:var(--orange); stroke-width:6;
+    stroke-linecap:round;
+    stroke-dasharray: 251.2;
+    stroke-dashoffset: 251.2;
+    transition: stroke-dashoffset .8s var(--ease);
+  }
+  .ring-text { font-size:22px; font-weight:800; color:var(--orange); }
+  .ring-sub { font-size:12px; color:var(--text-muted); text-transform:uppercase; letter-spacing:1px; }
+
+  /* CONTAINER */
+  .container { max-width:1200px; margin:0 auto; padding:0 24px; position:relative; z-index:1; }
+  .section { padding:48px 0; }
+  .section-label { font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:3px; color:var(--orange); margin-bottom:8px; }
+  .section-title { font-size:28px; font-weight:800; color:var(--text); margin-bottom:24px; }
+
+  /* INFO GRID */
+  .info-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px; }
+  .info-card {
+    background:var(--bg-white); border:1px solid var(--border-light);
+    border-radius:var(--radius-sm); padding:20px 24px;
+    transition:all .25s var(--ease); box-shadow:var(--shadow-xs);
+  }
+  .info-card:hover { box-shadow:var(--shadow-sm); transform:translateY(-2px); border-color:var(--orange); }
+  .info-card .label { font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:1.5px; color:var(--text-muted); margin-bottom:4px; }
+  .info-card .value { font-size:20px; font-weight:700; color:var(--text); }
+
+  .alert { display:flex; gap:14px; padding:18px 24px; border-radius:var(--radius-sm); margin-top:16px; font-size:14px; line-height:1.6; align-items:flex-start; }
+  .alert-warning { background:var(--yellow-light); border:1px solid #FFE082; color:#E65100; }
+  .alert-icon { font-size:20px; flex-shrink:0; line-height:1.4; }
+  .alert-body { flex:1; min-width:0; }
+  .alert-title { display:block; font-size:15px; font-weight:700; margin-bottom:6px; letter-spacing:0.2px; }
+  .alert-body p { margin:0 0 6px 0; }
+  .alert-body p:last-child { margin-bottom:0; }
+  .alert-note { font-size:13px; opacity:0.85; font-style:italic; }
+
+  /* STAT CARDS */
+  .overview-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; }
+  .stat-card {
+    background:var(--bg-white); border:1px solid var(--border-light);
+    border-radius:var(--radius); padding:28px 20px; text-align:center;
+    box-shadow:var(--shadow-xs); transition:all .25s var(--ease); cursor:default;
+  }
+  .stat-card:hover { border-color:var(--orange); box-shadow:var(--shadow-glow); transform:translateY(-4px); }
+  .stat-card .num { font-size:32px; font-weight:800; color:var(--orange); }
+  .stat-card .label { font-size:12px; font-weight:500; text-transform:uppercase; letter-spacing:1px; color:var(--text-muted); margin-top:4px; }
+
+  /* MESOCYCLE WAVE */
+  .meso-narrative {
+    background:var(--bg-white); border:1px solid var(--border-light);
+    border-radius:var(--radius); padding:20px 24px; margin-bottom:16px;
+    font-size:14px; line-height:1.7; color:var(--text);
+    box-shadow:var(--shadow-xs);
+  }
+  .meso-narrative strong { color:var(--orange); }
+  .meso-wave {
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:12px; margin-bottom:16px;
+  }
+  .meso-phase {
+    background:var(--bg-white); border:1px solid var(--border-light);
+    border-radius:var(--radius); padding:18px 20px;
+    box-shadow:var(--shadow-xs); position:relative;
+    border-left:4px solid var(--orange);
+  }
+  .meso-phase-num { font-size:11px; font-weight:700; color:var(--orange); letter-spacing:2px; text-transform:uppercase; }
+  .meso-phase-name { font-size:17px; font-weight:700; color:var(--text); margin:4px 0 6px; }
+  .meso-phase-desc { font-size:13px; color:var(--text-light); line-height:1.5; }
+  .meso-next {
+    background:#FFF8E1; border:1px solid #FFE082; border-radius:var(--radius);
+    padding:16px 20px; font-size:13px; line-height:1.6; color:#5D4037;
+  }
+  .meso-next strong { color:#E65100; }
+
+  /* WEEK TABS */
+  .week-tabs {
+    display:flex; gap:6px; margin-bottom:32px; padding:5px;
+    background:var(--bg-white); border-radius:var(--radius-sm);
+    border:1px solid var(--border-light); box-shadow:var(--shadow-xs);
+    width:fit-content; flex-wrap:wrap;
+  }
+  .week-tab {
+    padding:10px 24px; border-radius:var(--radius-xs);
+    font-size:14px; font-weight:600; color:var(--text-light);
+    cursor:pointer; transition:all .25s var(--ease);
+    border:none; background:transparent; font-family:inherit;
+    position:relative;
+  }
+  .week-tab:hover { color:var(--orange); background:var(--orange-light); }
+  .week-tab.active { background:var(--orange); color:white; box-shadow:0 2px 12px var(--orange-glow); }
+
+  /* week progress underline */
+  .week-tab::after {
+    content:''; position:absolute; bottom:0; left:8px; right:8px; height:3px;
+    background:var(--green); border-radius:100px; opacity:0;
+    transform:scaleX(0); transition:all .3s var(--ease);
+  }
+  .week-tab.has-progress::after { opacity:1; transform:scaleX(var(--week-prog, 0)); }
+
+  .week-content { display:none; }
+  .week-content.active { display:block; animation:fadeSlide .4s var(--ease); }
+  @keyframes fadeSlide { from{opacity:0;transform:translateY(12px)} to{opacity:1;transform:translateY(0)} }
+
+  /* WEEK BANNER */
+  .week-banner {
+    background:var(--bg-white); border:1px solid var(--border-light);
+    border-left:4px solid var(--orange); border-radius:var(--radius-sm);
+    padding:24px 28px; margin-bottom:20px; box-shadow:var(--shadow-xs);
+  }
+  .week-banner .week-num { font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:2px; color:var(--orange); }
+  .week-banner h2 { font-size:22px; margin-top:2px; }
+  .week-banner .week-desc { color:var(--text-light); font-size:14px; margin-top:2px; }
+
+  /* DAY CARD */
+  .day-card {
+    background:var(--bg-white); border:1px solid var(--border-light);
+    border-radius:var(--radius); margin-bottom:16px;
+    box-shadow:var(--shadow-sm); overflow:hidden;
+    transition:box-shadow .25s var(--ease);
+  }
+  .day-card:hover { box-shadow:var(--shadow-md); }
+
+  .day-top {
+    display:flex; justify-content:space-between; align-items:center;
+    padding:16px 24px; border-bottom:1px solid var(--border-light);
+    cursor:pointer; user-select:none; transition:background .2s;
+  }
+  .day-top:hover { background:var(--bg); }
+  .day-top-left { display:flex; align-items:center; gap:12px; flex:1; }
+  .day-top h3 { font-size:17px; font-weight:700; }
+
+  .day-badge {
+    font-size:11px; font-weight:700; padding:5px 14px;
+    border-radius:100px; text-transform:uppercase; letter-spacing:1px;
+    background:var(--green); color:white;
+  }
+
+  /* Day SVG progress ring */
+  .day-ring-wrap { display:flex; align-items:center; gap:8px; margin-left:auto; margin-right:16px; }
+  .day-ring { transform:rotate(-90deg); flex-shrink:0; }
+  .day-ring-bg { fill:none; stroke:var(--border); stroke-width:3; }
+  .day-ring-fill {
+    fill:none; stroke:var(--green); stroke-width:3; stroke-linecap:round;
+    stroke-dasharray:75.4; stroke-dashoffset:75.4;
+    transition:stroke-dashoffset .5s var(--ease);
+  }
+  .day-progress-text { font-size:12px; font-weight:600; color:var(--text-muted); }
+
+  .day-toggle {
+    width:32px; height:32px; display:flex; align-items:center; justify-content:center;
+    border-radius:8px; background:var(--bg); color:var(--text-light); font-size:18px;
+    transition:all .2s; border:1px solid var(--border-light); cursor:pointer;
+    font-family:inherit; font-weight:600; flex-shrink:0;
+  }
+  .day-toggle:hover { background:var(--orange-light); color:var(--orange); border-color:var(--orange); }
+
+  .day-body { padding:20px 24px; }
+
+  /* PHASE */
+  .phase {
+    display:flex; align-items:center; gap:10px; padding:12px 16px;
+    border-radius:var(--radius-xs); font-size:14px; margin-bottom:16px;
+  }
+  .phase-warm { background:var(--orange-light); border:1px solid #FFD9C4; color:var(--orange-hover); }
+  .phase-cool { background:var(--blue-light); border:1px solid #C5D5FF; color:var(--blue); margin-top:16px; margin-bottom:0; }
+  .phase-icon { font-size:16px; }
+  .phase-label { font-weight:700; }
+
+  /* =====================
+     STRUCTURED WARMUP
+     ===================== */
+  .warmup-container {
+    background: linear-gradient(180deg, var(--orange-light) 0%, #FFFBF7 100%);
+    border: 1px solid #FFD9C4;
+    border-radius: var(--radius-sm);
+    padding: 16px;
+    margin-bottom: 20px;
+  }
+  .warmup-header {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 15px; font-weight: 700; color: var(--orange-hover);
+    margin-bottom: 14px;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed #FFD9C4;
+  }
+  .warmup-header-icon { font-size: 18px; }
+  .warmup-header-total {
+    margin-left: auto;
+    font-size: 12px; font-weight: 600;
+    background: var(--orange);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 100px;
+  }
+
+  .warmup-block {
+    margin-bottom: 14px;
+  }
+  .warmup-block:last-child { margin-bottom: 0; }
+  .warmup-block-header {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 12px; font-weight: 700;
+    color: var(--text);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+  }
+  .warmup-block-icon {
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 12px;
+  }
+  .warmup-block-icon.raise { background: #FFE0D2; color: var(--orange-hover); }
+  .warmup-block-icon.mobilize { background: var(--blue-light); color: var(--blue); }
+  .warmup-block-icon.potentiate { background: var(--green-light); color: var(--green-dark); }
+  .warmup-block-duration {
+    margin-left: auto;
+    font-size: 11px; font-weight: 600; color: var(--text-muted);
+    background: var(--bg-white);
+    padding: 3px 8px;
+    border-radius: 100px;
+    border: 1px solid var(--border-light);
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  .phase-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 8px;
+  }
+  .phase-item {
+    display: flex; align-items: center; gap: 8px;
+    background: var(--bg-white);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-xs);
+    padding: 6px 10px 6px 6px;
+    cursor: pointer;
+    transition: all .2s var(--ease);
+  }
+  .phase-item:hover {
+    border-color: var(--orange);
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-1px);
+  }
+  .phase-item.active {
+    border-color: var(--orange);
+    box-shadow: 0 0 0 2px var(--orange-glow);
+    background: var(--orange-light);
+  }
+  .phase-item-gif {
+    width: 40px; height: 40px;
+    border-radius: 6px;
+    object-fit: cover;
+    flex-shrink: 0;
+    background: var(--border-light);
+  }
+  .phase-item-body {
+    flex: 1;
+    min-width: 0;
+    display: flex; flex-direction: column; gap: 2px;
+  }
+  .phase-item-name {
+    font-size: 12px; font-weight: 600; color: var(--text);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    line-height: 1.2;
+  }
+  .phase-item-reps {
+    font-size: 11px; color: var(--text-muted);
+    line-height: 1.2;
+  }
+
+  /* =====================
+     STRUCTURED COOLDOWN
+     ===================== */
+  .cooldown-container {
+    background: linear-gradient(180deg, var(--blue-light) 0%, #F8FAFF 100%);
+    border: 1px solid #C5D5FF;
+    border-radius: var(--radius-sm);
+    padding: 16px;
+    margin-top: 16px;
+  }
+  .cooldown-header {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 15px; font-weight: 700; color: var(--blue);
+    margin-bottom: 14px;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed #C5D5FF;
+  }
+  .cooldown-header-icon { font-size: 18px; }
+  .cooldown-header-total {
+    margin-left: auto;
+    font-size: 12px; font-weight: 600;
+    background: var(--blue);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 100px;
+  }
+  .cooldown-block { margin-bottom: 14px; }
+  .cooldown-block:last-child { margin-bottom: 0; }
+  .cooldown-block-header {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 12px; font-weight: 700;
+    color: var(--text);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+  }
+  .cooldown-block-icon {
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 12px;
+  }
+  .cooldown-block-icon.downregulate { background: #DDE9FF; color: var(--blue); }
+  .cooldown-block-icon.stretch { background: #E6E0FF; color: #6B4EE0; }
+  .cooldown-block-icon.breathe { background: #D1F0E5; color: #0D8B63; }
+  .cooldown-block-duration {
+    margin-left: auto;
+    font-size: 11px; font-weight: 600; color: var(--text-muted);
+    background: var(--bg-white);
+    padding: 3px 8px;
+    border-radius: 100px;
+    border: 1px solid var(--border-light);
+    text-transform: none;
+    letter-spacing: 0;
+  }
+  /* Заминка использует тот же .phase-item но на синем фоне → hover/active перекрашиваем */
+  .cooldown-container .phase-item {
+    transition: all .2s var(--ease);
+  }
+  .cooldown-container .phase-item:hover {
+    border-color: var(--blue);
+    box-shadow: 0 2px 10px rgba(74,114,255,0.12);
+  }
+  .cooldown-container .phase-item.active {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 2px rgba(74,114,255,0.2);
+    background: var(--blue-light);
+  }
+
+  /* Potentiate — визуально выделяем зелёным (это мост к рабочим подходам) */
+  .phase-items--potentiate {
+    grid-template-columns: 1fr;
+  }
+  .phase-items--potentiate .phase-item {
+    background: linear-gradient(180deg, #FAFFFB 0%, var(--bg-white) 100%);
+    border-color: #C8E6D2;
+    padding: 8px 12px 8px 8px;
+  }
+  .phase-items--potentiate .phase-item:hover {
+    border-color: var(--green);
+    box-shadow: 0 2px 12px rgba(34,197,94,0.12);
+  }
+  .phase-items--potentiate .phase-item-gif {
+    width: 48px; height: 48px;
+  }
+  .phase-items--potentiate .phase-item-name {
+    white-space: normal;
+    font-size: 13px;
+  }
+  .phase-items--potentiate .phase-item-reps {
+    font-size: 12px;
+    color: var(--green-dark);
+    font-weight: 600;
+  }
+
+  /* RESET DAY BTN */
+  .day-reset {
+    display:inline-flex; align-items:center; gap:6px;
+    font-size:12px; font-weight:500; color:var(--text-muted);
+    background:none; border:none; cursor:pointer; font-family:inherit;
+    padding:4px 8px; border-radius:6px; transition:all .2s; margin-bottom:12px;
+  }
+  .day-reset:hover { color:var(--red); background:rgba(239,83,80,.08); }
+
+  /* =====================
+     EXERCISE ROW (v4)
+     ===================== */
+  .exercise {
+    display:flex; align-items:center; gap:12px;
+    padding:12px 0; border-bottom:1px solid var(--border-light);
+    cursor:pointer; position:relative;
+    transition:background .15s;
+    border-radius:var(--radius-xs);
+    /* scroll-reveal */
+    opacity:0; transform:translateY(16px);
+    transition:opacity .45s var(--ease) calc(var(--i,0) * 50ms),
+               transform .45s var(--ease) calc(var(--i,0) * 50ms),
+               background .15s;
+  }
+  .exercise.revealed { opacity:1; transform:translateY(0); }
+  .exercise:last-of-type { border-bottom:none; }
+  .exercise:hover { background:var(--bg); }
+  .exercise.done .ex-name { text-decoration:line-through; color:var(--text-muted); }
+  .exercise.done { opacity:.65; }
+  .exercise.active-preview { background:var(--orange-light) !important; border-radius:var(--radius-xs); }
+
+  /* Custom checkbox */
+  .ex-check {
+    width:24px; height:24px; flex-shrink:0;
+    appearance:none; -webkit-appearance:none;
+    border:2px solid var(--border); border-radius:6px;
+    cursor:pointer; position:relative; transition:all .2s var(--spring);
+    background:white;
+  }
+  .ex-check:hover { border-color:var(--orange); }
+  .ex-check:checked { background:var(--green); border-color:var(--green); }
+  .ex-check::after {
+    content:''; position:absolute; top:3px; left:7px;
+    width:6px; height:11px; border:2px solid white; border-top:none; border-left:none;
+    transform:rotate(45deg) scale(0); transition:transform .2s var(--spring);
+  }
+  .ex-check:checked::after { transform:rotate(45deg) scale(1); }
+
+  .ex-num {
+    width:28px; height:28px; flex-shrink:0; background:var(--orange);
+    color:white; border-radius:50%; display:flex; align-items:center;
+    justify-content:center; font-size:12px; font-weight:800;
+    box-shadow:0 2px 8px var(--orange-glow);
+  }
+  .exercise.done .ex-num { background:var(--green); box-shadow:none; }
+
+  .ex-main { flex:1; min-width:0; }
+  .ex-name { font-size:15px; font-weight:600; color:var(--text); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .ex-tags { display:flex; gap:5px; flex-wrap:wrap; margin-top:4px; }
+
+  .tag {
+    display:inline-flex; padding:3px 10px; border-radius:100px;
+    font-size:11px; font-weight:600; background:var(--bg);
+    border:1px solid var(--border); color:var(--text);
+  }
+  .tag-primary { background:var(--orange); border-color:var(--orange); color:white; }
+  .tag-rpe { background:var(--blue); border-color:var(--blue); color:white; }
+
+  .ex-chevron {
+    width:28px; height:28px; flex-shrink:0; display:flex; align-items:center;
+    justify-content:center; border-radius:6px; background:var(--bg);
+    border:1px solid var(--border-light); color:var(--text-muted);
+    font-size:14px; transition:all .2s;
+  }
+  .exercise:hover .ex-chevron { border-color:var(--orange); color:var(--orange); }
+  .exercise.active-preview .ex-chevron { background:var(--orange); color:white; border-color:var(--orange); }
+
+  /* =====================
+     TWO-COLUMN LAYOUT
+     ===================== */
+  .training-layout {
+    display:grid;
+    grid-template-columns: 1fr 340px;
+    gap:24px;
+    align-items:start;
+  }
+  .training-main { min-width:0; }
+  .training-panel-wrap {
+    position:sticky; top:80px;
+    max-height:calc(100vh - 100px);
+  }
+
+  /* =====================
+     STICKY PREVIEW PANEL
+     ===================== */
+  .preview-panel {
+    background:var(--bg-white);
+    border:1px solid var(--border-light);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow-lg);
+    overflow-y:auto;
+    overflow-x:hidden;
+    transition:all .35s var(--spring);
+    min-height:200px;
+    max-height:calc(100vh - 100px);
+  }
+
+  .panel-empty {
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    padding:48px 24px; text-align:center; color:var(--text-muted);
+    gap:12px;
+  }
+  .panel-empty-icon { font-size:48px; opacity:.4; }
+  .panel-empty-text { font-size:14px; }
+
+  .panel-content { display:none; flex-direction:column; }
+  .panel-content.visible { display:flex; animation:panelIn .3s var(--spring); }
+  @keyframes panelIn { from{opacity:0;transform:translateY(8px)scale(.97)} to{opacity:1;transform:translateY(0)scale(1)} }
+
+  /* GIF area */
+  .panel-gif-wrap {
+    position:relative; background:#fff;
+    width:100%; aspect-ratio:1/1; overflow:hidden; max-height:320px;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .panel-gif {
+    width:100%; height:100%; object-fit:contain;
+    transition:opacity .3s var(--ease);
+    background:#fff;
+  }
+  .panel-gif.loading { opacity:.4; }
+  .panel-gif.no-src {
+    display:none;
+  }
+  .panel-gif-fallback {
+    display:none; flex-direction:column; align-items:center; justify-content:center;
+    gap:12px; padding:30px; text-align:center;
+    color:var(--text-light);
+  }
+  .panel-gif-fallback.show { display:flex; }
+  .panel-gif-fallback-icon {
+    font-size:64px; opacity:.3;
+  }
+  .panel-gif-fallback-text { font-size:14px; font-weight:500; }
+
+  .panel-body { padding:20px; display:flex; flex-direction:column; gap:14px; }
+
+  .panel-exname { font-size:18px; font-weight:800; line-height:1.3; }
+  .panel-tags { display:flex; gap:6px; flex-wrap:wrap; }
+
+  .panel-section-label {
+    font-size:10px; font-weight:700; text-transform:uppercase;
+    letter-spacing:2px; color:var(--orange); margin-bottom:4px;
+  }
+
+  .panel-tips {
+    font-size:13px; color:var(--text-light); line-height:1.7;
+    padding-left:12px; border-left:3px solid var(--border);
+  }
+
+  .panel-warn {
+    display:flex; gap:8px; padding:10px 14px; border-radius:var(--radius-xs);
+    font-size:12px; background:var(--yellow-light); border:1px solid #FFE082; color:#E65100;
+  }
+
+  /* Alternatives */
+  .panel-alts { display:flex; flex-direction:column; gap:6px; }
+  .alt-item {
+    display:flex; align-items:center; justify-content:space-between;
+    padding:8px 12px; border-radius:10px; border:1px solid var(--border);
+    background:var(--bg); cursor:pointer; transition:all .2s var(--ease);
+    gap:10px;
+  }
+  .alt-item:hover { border-color:var(--orange); background:var(--orange-light); transform:translateX(4px); }
+  .alt-gif {
+    width:52px; height:52px; border-radius:8px;
+    object-fit:cover; background:#fff;
+    flex-shrink:0; border:1px solid var(--border-light);
+  }
+  .alt-gif-fallback {
+    width:52px; height:52px; border-radius:8px;
+    display:flex; align-items:center; justify-content:center;
+    background:var(--orange-light); color:var(--orange);
+    font-size:22px; flex-shrink:0;
+  }
+  .alt-name { font-size:13px; font-weight:600; flex:1; line-height:1.35; }
+  .alt-swap { font-size:11px; color:var(--orange); font-weight:700; opacity:.4; transition:opacity .15s; white-space:nowrap; }
+  .alt-item:hover .alt-swap { opacity:1; }
+  .alt-item.swap-active {
+    border-color:var(--green); background:var(--green-light);
+  }
+  .alt-item.swap-active .alt-swap {
+    opacity:1; color:var(--green);
+  }
+
+  /* Swap indicator on exercise row */
+  .ex-swap-pill {
+    display:inline-flex; align-items:center; gap:6px;
+    margin-top:4px;
+  }
+  .pill-badge {
+    display:inline-flex; align-items:center; gap:3px;
+    font-size:10px; font-weight:700; letter-spacing:.3px;
+    color:var(--orange); background:var(--orange-light);
+    border-radius:100px; padding:3px 9px;
+  }
+  .pill-revert {
+    background:none; border:1px solid var(--border); border-radius:100px;
+    padding:2px 10px; cursor:pointer; color:var(--text-muted);
+    font-weight:600; font-size:10px; transition:all .15s;
+  }
+  .pill-revert:hover { border-color:var(--orange); color:var(--orange); background:#fff; }
+
+  /* Swap info banner in panel */
+  .panel-swap-info {
+    display:none; align-items:center; gap:10px; flex-wrap:wrap;
+    padding:10px 14px; border-radius:10px;
+    background:var(--orange-light); border:1px dashed var(--orange);
+    font-size:12px; color:var(--text); line-height:1.4;
+  }
+  .panel-swap-info.show { display:flex; }
+  .panel-swap-info b { color:var(--orange); font-weight:800; }
+  .panel-revert-btn {
+    background:#fff; border:1px solid var(--orange); border-radius:100px;
+    padding:6px 14px; cursor:pointer; color:var(--orange);
+    font-weight:700; font-size:12px; margin-left:auto;
+    transition:all .2s; white-space:nowrap;
+  }
+  .panel-revert-btn:hover { background:var(--orange); color:#fff; }
+
+  /* Notes */
+  .panel-notes-input {
+    width:100%; background:var(--bg); border:1px solid var(--border);
+    border-radius:10px; padding:10px 14px; font-size:13px;
+    font-family:inherit; color:var(--text); resize:none; min-height:72px;
+    transition:border-color .2s; line-height:1.6;
+  }
+  .panel-notes-input:focus { outline:none; border-color:var(--orange); }
+  .panel-notes-saved { font-size:11px; color:var(--green); opacity:0; transition:opacity .3s; margin-top:4px; }
+  .panel-notes-saved.show { opacity:1; }
+
+  /* Rest timer */
+  .panel-timer { display:flex; align-items:center; gap:10px; }
+  .timer-display {
+    font-size:24px; font-weight:800; color:var(--orange);
+    font-variant-numeric:tabular-nums; min-width:56px;
+  }
+  .timer-bar-wrap { flex:1; height:6px; background:var(--border); border-radius:100px; overflow:hidden; }
+  .timer-bar-fill {
+    height:100%; border-radius:100px;
+    background:linear-gradient(90deg,var(--orange),#ff9f70);
+    transition:width .5s linear; width:100%;
+  }
+  .timer-btn {
+    padding:8px 16px; border-radius:100px; border:none; cursor:pointer;
+    font-family:inherit; font-size:13px; font-weight:700; transition:all .2s var(--spring);
+  }
+  .timer-start { background:var(--orange); color:white; }
+  .timer-start:hover { background:var(--orange-hover); transform:scale(1.05); }
+  .timer-reset { background:var(--bg); border:1px solid var(--border); color:var(--text-light); }
+  .timer-reset:hover { border-color:var(--red); color:var(--red); }
+
+  /* CONFETTI */
+  .confetti-container {
+    position:fixed; inset:0; pointer-events:none; z-index:9999; overflow:hidden;
+  }
+  .confetti-piece {
+    position:absolute; width:8px; height:8px; border-radius:2px;
+    animation:confettiFall var(--dur,2.5s) ease-in forwards;
+    top:-10px;
+  }
+  @keyframes confettiFall {
+    0%{transform:translateY(0) rotate(0deg) translateX(0);opacity:1}
+    100%{transform:translateY(110vh) rotate(720deg) translateX(var(--tx,0px));opacity:0}
+  }
+
+  /* DAY COMPLETE BANNER */
+  .day-complete-banner {
+    display:none; align-items:center; gap:10px;
+    background:var(--green-light); border:1px solid #bbf7d0;
+    border-radius:var(--radius-xs); padding:12px 18px; margin-top:12px;
+    font-size:14px; font-weight:600; color:var(--green-dark);
+    animation:panelIn .4s var(--spring);
+  }
+  .day-complete-banner.show { display:flex; }
+
+  /* DISCLAIMER */
+  .disclaimer {
+    background:var(--bg-white); border:1px solid var(--border-light);
+    border-radius:var(--radius); padding:32px; margin:48px 0; box-shadow:var(--shadow-xs);
+  }
+  .disclaimer h3 { font-size:16px; margin-bottom:12px; }
+  .disclaimer p { font-size:13px; color:var(--text-muted); line-height:1.8; margin-bottom:6px; }
+  .disclaimer .legal { font-size:11px; color:#CCC; margin-top:12px; padding-top:12px; border-top:1px solid var(--border-light); }
+
+  /* FOOTER */
+  .footer {
+    background:var(--bg-section); text-align:center;
+    padding:40px 24px; border-top:1px solid var(--border-light);
+  }
+  .footer-logo { font-size:22px; font-weight:900; letter-spacing:6px; color:var(--orange); }
+  .footer-text { font-size:12px; color:var(--text-muted); margin-top:6px; }
+
+  /* =====================
+     RESPONSIVE
+     ===================== */
+  @media (max-width:900px) {
+    .training-layout { grid-template-columns:1fr; }
+    .training-panel-wrap { position:fixed; bottom:0; left:0; right:0; top:auto; z-index:150; }
+    .preview-panel {
+      border-radius:var(--radius) var(--radius) 0 0;
+      max-height:75vh; overflow-y:auto;
+      transform:translateY(100%); transition:transform .4s var(--spring);
+      border-bottom:none;
+    }
+    .preview-panel.mobile-open { transform:translateY(0); }
+    .mobile-panel-handle {
+      display:flex; justify-content:center; padding:12px;
+      cursor:pointer; background:var(--bg-white);
+    }
+    .mobile-panel-handle span {
+      width:40px; height:4px; background:var(--border);
+      border-radius:100px; display:block;
+    }
+    .mobile-panel-backdrop {
+      display:none; position:fixed; inset:0; background:rgba(0,0,0,.4);
+      z-index:149; backdrop-filter:blur(4px);
+    }
+    .mobile-panel-backdrop.show { display:block; }
+  }
+  @media (min-width:901px) {
+    .mobile-panel-handle { display:none; }
+    .mobile-panel-backdrop { display:none !important; }
+  }
+  @media (max-width:700px) {
+    .hero h1 { font-size:28px; }
+    .info-grid { grid-template-columns:repeat(2,1fr); }
+    .overview-grid { grid-template-columns:repeat(2,1fr); }
+    .week-tabs { width:100%; }
+    .nav-links { display:none; }
+    .nav-progress-bar { width:80px; }
+  }
+  @media (max-width:480px) {
+    .info-grid { grid-template-columns:1fr; }
+  }
+
+  /* PRINT */
+  @media print {
+    .nav, .week-tabs, .day-toggle, .training-panel-wrap,
+    .day-reset, .mobile-panel-backdrop, .ex-check, .ex-chevron { display:none !important; }
+    .training-layout { grid-template-columns:1fr; }
+    .week-content { display:block !important; }
+    .day-card { box-shadow:none; border:1px solid #ddd; page-break-inside:avoid; }
+    .exercise {
+      display:grid; grid-template-columns:80px 1fr;
+      opacity:1 !important; transform:none !important;
+      border-bottom:1px solid #eee; padding:12px 0;
+    }
+    .exercise::before { content:attr(data-print-num); font-weight:700; }
+    .ex-num { display:none; }
+    .hero { padding:30px; }
+    body { font-size:11px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="watermark">ARISHAFIT</div>
+<div class="mobile-panel-backdrop" id="backdrop"></div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">ARISHAFIT</div>
+    <ul class="nav-links">
+      <li><a href="#overview">Профиль</a></li>
+      <li><a href="#program">Программа</a></li>
+      <li><a href="#training">Тренировки</a></li>
+    </ul>
+    <div class="nav-progress" id="navProgress" style="display:none">
+      <div class="nav-progress-bar"><div class="nav-progress-fill" id="navFill"></div></div>
+      <span class="nav-progress-pct" id="navPct">0%</span>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-pill"><span class="dot"></span> Персональная программа</div>
+  <h1>Тренировочный план<br><span class="accent">{{client_name}}</span></h1>
+  <p class="hero-sub">{{plan_weeks}}-недельная программа · {{training_days}} тренировок в неделю · {{goal_ru}}</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="num">{{plan_weeks}}</div><div class="label">Недель</div></div>
+    <div class="hero-stat"><div class="num">{{training_days}}</div><div class="label">Дней / нед</div></div>
+    <div class="hero-stat"><div class="num">{{total_exercises}}</div><div class="label">Упражнений</div></div>
+    <div class="hero-stat"><div class="num">{{total_sets}}</div><div class="label">Подходов / нед</div></div>
+  </div>
+  <div class="hero-progress-ring" id="heroRing" style="display:none">
+    <svg class="ring-svg" width="80" height="80" viewBox="0 0 80 80">
+      <circle class="ring-bg" cx="40" cy="40" r="34"/>
+      <circle class="ring-fill" id="heroRingFill" cx="40" cy="40" r="34"/>
+    </svg>
+    <div class="ring-text" id="heroRingPct">0%</div>
+    <div class="ring-sub">выполнено</div>
+  </div>
+</section>
+
+<!-- CLIENT -->
+<section id="overview" class="container section">
+  <div class="section-label">Профиль</div>
+  <div class="section-title">Данные клиента</div>
+  <div class="info-grid">{{client_fields}}</div>
+  {{medical_warning}}
+</section>
+
+<!-- PROGRAM -->
+<section id="program" class="container section">
+  <div class="section-label">Параметры</div>
+  <div class="section-title">Обзор программы</div>
+  <div class="overview-grid">{{program_overview_items}}</div>
+</section>
+
+<!-- MESOCYCLE CONTEXT -->
+<section id="mesocycle" class="container section">
+  <div class="section-label">Долгосрочный контекст</div>
+  <div class="section-title">Где мы в годовой программе</div>
+  {{mesocycle_block}}
+</section>
+
+<!-- TRAINING -->
+<section id="training" class="container section">
+  <div class="section-label">Тренировки</div>
+  <div class="section-title">Тренировочная программа</div>
+  <div class="week-tabs" id="weekTabs">{{week_tabs}}</div>
+
+  <div class="training-layout">
+    <div class="training-main" id="trainingMain">
+      {{weeks_content}}
+    </div>
+
+    <div class="training-panel-wrap">
+      <div class="mobile-panel-handle" id="panelHandle"><span></span></div>
+      <div class="preview-panel" id="previewPanel">
+        <div class="panel-empty" id="panelEmpty">
+          <div class="panel-empty-icon">👆</div>
+          <div class="panel-empty-text">Нажми на упражнение<br>чтобы увидеть технику выполнения</div>
+        </div>
+        <div class="panel-content" id="panelContent">
+          <div class="panel-gif-wrap">
+            <img class="panel-gif" id="panelGifImg" src="" alt="" loading="lazy" style="display:none">
+            <video class="panel-gif" id="panelGifVid" autoplay loop muted playsinline preload="metadata" style="display:none"></video>
+            <div class="panel-gif-fallback" id="panelGifFallback">
+              <div class="panel-gif-fallback-icon">🏃</div>
+              <div class="panel-gif-fallback-text">Кардио-упражнение<br>Следуй инструкции ниже</div>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="panel-exname" id="panelName"></div>
+            <div class="panel-swap-info" id="panelSwapInfo">
+              <span>&#x21BB; <b>Замена</b> &mdash; оригинал: &laquo;<span id="panelOrigName"></span>&raquo;</span>
+              <button class="panel-revert-btn" onclick="revertSwap(activeKey)">&#x21BA; Вернуть оригинал</button>
+            </div>
+            <div class="panel-tags" id="panelTags"></div>
+
+            <div id="panelTipsWrap" style="display:none">
+              <div class="panel-section-label">Техника</div>
+              <div class="panel-tips" id="panelTips"></div>
+            </div>
+
+            <div id="panelWarnWrap" style="display:none">
+              <div class="panel-warn" id="panelWarn"></div>
+            </div>
+
+            <div id="panelAltsWrap" style="display:none">
+              <div class="panel-section-label">Альтернативы</div>
+              <div class="panel-alts" id="panelAlts"></div>
+            </div>
+
+            <div id="panelTimerWrap" style="display:none">
+              <div class="panel-section-label">Таймер отдыха</div>
+              <div class="panel-timer">
+                <div class="timer-display" id="timerDisplay">1:30</div>
+                <div class="timer-bar-wrap"><div class="timer-bar-fill" id="timerBar"></div></div>
+                <button class="timer-btn timer-start" id="timerStart">▶</button>
+                <button class="timer-btn timer-reset" id="timerReset">↺</button>
+              </div>
+            </div>
+
+            <div>
+              <div class="panel-section-label">Заметка</div>
+              <textarea class="panel-notes-input" id="panelNotes" placeholder="Вес, ощущения, комментарий..." rows="3"></textarea>
+              <div class="panel-notes-saved" id="notesSaved">✓ Сохранено</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DISCLAIMER -->
+<div class="container">
+  <div class="disclaimer">
+    <h3>Важная информация</h3>
+    <p>Перед началом программы обязательна консультация врача (невролог/ортопед).</p>
+    <p>Данная программа является информационно-консультационной услугой. Автор — сертифицированный тренер, не врач. Результаты индивидуальны.</p>
+    <p>На основе ACSM 2026 Position Stand и NSCA Essentials of Strength Training and Conditioning.</p>
+    <div class="legal">Не является публичной офертой (ст. 437 ГК РФ) · ФЗ-323 · ФЗ-152 · ФЗ-2300-1 · © {{year}} ArishaFit · {{date}}</div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-logo">ARISHAFIT</div>
+  <div class="footer-text">© {{year}} · Все права защищены</div>
+</footer>
+
+<script>
+// ============================================================
+// VIDEO PLAYBACK — паузы запечены в MP4 (mp4_paused/ через bake_pauses.py).
+// JS тут не управляет скоростью и паузами — всё в самих файлах.
+// <video autoplay loop muted playsinline> работает как GIF, точка.
+// ============================================================
+
+// ============================================================
+// DATA STORE (per-plan versioning to prevent stale swaps)
+// ============================================================
+const PLAN_ID = "{{plan_id}}";  // уникальный ID плана, меняется при генерации
+const STORAGE_KEY = 'arishafit_' + PLAN_ID;
+
+function loadStore() {
+  try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); }
+  catch { return {}; }
+}
+function saveStore(s) {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(s)); } catch {}
+}
+
+// Очистка старых (другие planID) storage записей при загрузке новой версии
+try {
+  for (let i = localStorage.length - 1; i >= 0; i--) {
+    const k = localStorage.key(i);
+    if (k && k.startsWith('arishafit_') && k !== STORAGE_KEY) {
+      // Оставляем 1 старый store (на случай if user хочет вернуться), удаляем более старые
+      const oldKeys = [];
+      for (let j = 0; j < localStorage.length; j++) {
+        const kk = localStorage.key(j);
+        if (kk && kk.startsWith('arishafit_') && kk !== STORAGE_KEY) oldKeys.push(kk);
+      }
+      // Удаляем все старые чтобы избежать применения swap от старого плана
+      oldKeys.forEach(ok => localStorage.removeItem(ok));
+      break;
+    }
+  }
+} catch {}
+
+let store = loadStore();
+// store.checks = { "w1d1e1": true, ... }
+// store.notes  = { "w1d1e1": "text" }
+// store.swaps  = { "w1d1e1": { nameRu, gif } }
+if (!store.checks) store.checks = {};
+if (!store.notes)  store.notes  = {};
+if (!store.swaps)  store.swaps  = {};
+
+// ============================================================
+// ACTIVE PANEL STATE
+// ============================================================
+let activeKey = null;
+let timerInterval = null;
+let timerTotal = 90;
+let timerRemaining = 90;
+let timerRunning = false;
+let notesSaveTimer = null;
+
+// ============================================================
+// PROGRESS CALCULATIONS
+// ============================================================
+function getWeekProgress(weekNum) {
+  const all = document.querySelectorAll(`#week${weekNum} .ex-check`);
+  if (!all.length) return 0;
+  let done = 0;
+  all.forEach(cb => { if (cb.checked) done++; });
+  return done / all.length;
+}
+
+function getDayProgress(dayEl) {
+  const all = dayEl.querySelectorAll('.ex-check');
+  if (!all.length) return { done: 0, total: 0 };
+  let done = 0;
+  all.forEach(cb => { if (cb.checked) done++; });
+  return { done, total: all.length };
+}
+
+function getTotalProgress() {
+  const all = document.querySelectorAll('.ex-check');
+  if (!all.length) return 0;
+  let done = 0;
+  all.forEach(cb => { if (cb.checked) done++; });
+  return done / all.length;
+}
+
+function updateAllProgress() {
+  // Nav bar
+  const total = getTotalProgress();
+  const pct = Math.round(total * 100);
+  const navProgress = document.getElementById('navProgress');
+  const navFill = document.getElementById('navFill');
+  const navPct = document.getElementById('navPct');
+  if (total > 0) {
+    navProgress.style.display = 'flex';
+    navFill.style.width = pct + '%';
+    navPct.textContent = pct + '%';
+  }
+
+  // Hero ring (circumference for r=34: 2π×34 ≈ 213.6)
+  const heroRing = document.getElementById('heroRing');
+  const heroFill = document.getElementById('heroRingFill');
+  const heroPct = document.getElementById('heroRingPct');
+  if (total > 0) {
+    heroRing.style.display = 'flex';
+    const circ = 213.6;
+    heroFill.style.strokeDashoffset = circ - (circ * total);
+    heroPct.textContent = pct + '%';
+  }
+
+  // Week tabs progress
+  document.querySelectorAll('.week-tab').forEach(tab => {
+    const wn = tab.dataset.week.replace('week','');
+    const prog = getWeekProgress(parseInt(wn));
+    if (prog > 0) {
+      tab.classList.add('has-progress');
+      tab.style.setProperty('--week-prog', prog);
+    }
+  });
+
+  // Day rings
+  document.querySelectorAll('.day-card').forEach(day => {
+    const { done, total: t } = getDayProgress(day);
+    const ringFill = day.querySelector('.day-ring-fill');
+    const ringText = day.querySelector('.day-progress-text');
+    const banner   = day.querySelector('.day-complete-banner');
+    if (ringFill && t > 0) {
+      // circumference for r=12: 2π×12 ≈ 75.4
+      const circ = 75.4;
+      ringFill.style.strokeDashoffset = circ - (circ * done / t);
+      if (ringText) ringText.textContent = `${done}/${t}`;
+    }
+    if (banner) {
+      if (done === t && t > 0) banner.classList.add('show');
+      else banner.classList.remove('show');
+    }
+  });
+}
+
+// ============================================================
+// CONFETTI
+// ============================================================
+function fireConfetti() {
+  const colors = ['#FF6B35','#22c55e','#4A72FF','#FF9800','#a855f7','#ec4899'];
+  const container = document.createElement('div');
+  container.className = 'confetti-container';
+  document.body.appendChild(container);
+  for (let i = 0; i < 50; i++) {
+    const p = document.createElement('div');
+    p.className = 'confetti-piece';
+    p.style.cssText = `
+      left:${Math.random()*100}%;
+      background:${colors[Math.floor(Math.random()*colors.length)]};
+      --dur:${1.8 + Math.random()*1.5}s;
+      --tx:${(Math.random()-0.5)*200}px;
+      animation-delay:${Math.random()*0.4}s;
+      width:${6+Math.random()*8}px; height:${6+Math.random()*8}px;
+      border-radius:${Math.random()>0.5?'50%':'2px'};
+    `;
+    container.appendChild(p);
+  }
+  setTimeout(() => container.remove(), 4000);
+}
+
+// ============================================================
+// TIMER
+// ============================================================
+function formatTime(s) {
+  const m = Math.floor(s/60);
+  const sec = s % 60;
+  return `${m}:${sec.toString().padStart(2,'0')}`;
+}
+
+function updateTimerUI() {
+  document.getElementById('timerDisplay').textContent = formatTime(timerRemaining);
+  const pct = timerRemaining / timerTotal;
+  document.getElementById('timerBar').style.width = (pct * 100) + '%';
+}
+
+function startTimer() {
+  if (timerRunning) return;
+  timerRunning = true;
+  document.getElementById('timerStart').textContent = '⏸';
+  timerInterval = setInterval(() => {
+    if (timerRemaining <= 0) {
+      clearInterval(timerInterval);
+      timerRunning = false;
+      document.getElementById('timerStart').textContent = '▶';
+      document.getElementById('timerDisplay').style.color = 'var(--green)';
+      return;
+    }
+    timerRemaining--;
+    updateTimerUI();
+  }, 1000);
+}
+
+function pauseTimer() {
+  clearInterval(timerInterval);
+  timerRunning = false;
+  document.getElementById('timerStart').textContent = '▶';
+}
+
+function resetTimer() {
+  pauseTimer();
+  timerRemaining = timerTotal;
+  document.getElementById('timerDisplay').style.color = 'var(--orange)';
+  updateTimerUI();
+}
+
+document.getElementById('timerStart').addEventListener('click', () => {
+  if (timerRunning) pauseTimer(); else startTimer();
+});
+document.getElementById('timerReset').addEventListener('click', resetTimer);
+
+// ============================================================
+// EXERCISE DATA (injected by fill_template.py)
+// ============================================================
+const EXERCISES = {{exercise_data_json}};
+const PHASE_ITEMS = {{phase_data_json}};
+
+// ============================================================
+// PANEL MEDIA HELPER — переключает между <video> (MP4) и <img> (PNG/WebP/JPG)
+// ============================================================
+function isVideoSrc(src) {
+  if (!src) return false;
+  return src.startsWith('data:video/') || /\.mp4($|[?;])/i.test(src);
+}
+
+function setPanelMedia(src, alt, key) {
+  const imgEl = document.getElementById('panelGifImg');
+  const vidEl = document.getElementById('panelGifVid');
+  const fallbackEl = document.getElementById('panelGifFallback');
+
+  // Сброс
+  imgEl.classList.remove('loading', 'no-src');
+  vidEl.classList.remove('loading', 'no-src');
+
+  if (!src || src === '') {
+    // Нет медиа — fallback
+    imgEl.style.display = 'none';
+    vidEl.style.display = 'none';
+    imgEl.removeAttribute('src');
+    try { vidEl.pause(); vidEl.removeAttribute('src'); vidEl.load(); } catch(e) {}
+    fallbackEl.classList.add('show');
+    imgEl.dataset.loadedFor = key || '';
+    return;
+  }
+
+  fallbackEl.classList.remove('show');
+
+  if (isVideoSrc(src)) {
+    // MP4 → <video>
+    imgEl.style.display = 'none';
+    imgEl.removeAttribute('src');
+    vidEl.style.display = '';
+    vidEl.classList.add('loading');
+    vidEl.oncanplay = () => vidEl.classList.remove('loading');
+    vidEl.onerror = () => {
+      vidEl.classList.remove('loading');
+      vidEl.style.display = 'none';
+      fallbackEl.classList.add('show');
+    };
+    vidEl.src = src;
+    try { vidEl.play().catch(() => {}); } catch(e) {}
+    vidEl.dataset.loadedFor = key || '';
+  } else {
+    // PNG/WebP/JPG → <img>
+    try { vidEl.pause(); } catch(e) {}
+    vidEl.style.display = 'none';
+    vidEl.removeAttribute('src');
+    imgEl.style.display = '';
+    imgEl.classList.add('loading');
+    imgEl.onload = () => imgEl.classList.remove('loading');
+    imgEl.onerror = () => {
+      imgEl.classList.remove('loading');
+      imgEl.style.display = 'none';
+      fallbackEl.classList.add('show');
+    };
+    imgEl.src = src;
+    if (alt) imgEl.alt = alt;
+    imgEl.dataset.loadedFor = key || '';
+  }
+}
+
+// ============================================================
+// PHASE PANEL (warmup/cooldown) — переиспользует правую панель, без swap UI
+// ============================================================
+function openPhaseItem(key) {
+  const item = PHASE_ITEMS[key];
+  if (!item) return;
+
+  // Снимаем active со всех main-exercises и phase-item-ов (warmup + cooldown)
+  document.querySelectorAll('.exercise.active-preview').forEach(el => el.classList.remove('active-preview'));
+  document.querySelectorAll('.phase-item.active').forEach(el => el.classList.remove('active'));
+  const row = document.querySelector(`.phase-item[data-key="${key}"]`);
+  if (row) row.classList.add('active');
+
+  activeKey = null; // чтобы swap/revert не срабатывали на фазы
+
+  document.getElementById('panelEmpty').style.display = 'none';
+  const content = document.getElementById('panelContent');
+  content.classList.add('visible');
+
+  // GIF / Video
+  setPanelMedia(item.gif, item.name, key);
+
+  document.getElementById('panelName').textContent = item.name;
+
+  // Tags → reps / duration
+  const subText = item.reps || item.details || '';
+  document.getElementById('panelTags').innerHTML = subText
+    ? `<span class="tag tag-reps">${subText}</span>`
+    : '';
+
+  // Tips
+  const tipsWrap = document.getElementById('panelTipsWrap');
+  if (item.tips) {
+    tipsWrap.style.display = 'block';
+    document.getElementById('panelTips').textContent = item.tips;
+  } else tipsWrap.style.display = 'none';
+
+  // Warning
+  const warnWrap = document.getElementById('panelWarnWrap');
+  if (item.warn) {
+    warnWrap.style.display = 'block';
+    document.getElementById('panelWarn').textContent = '\u26A0\uFE0F ' + item.warn;
+  } else warnWrap.style.display = 'none';
+
+  // Alternatives / swap info — warmup не меняется, скрываем
+  const altsWrap = document.getElementById('panelAltsWrap');
+  if (altsWrap) altsWrap.style.display = 'none';
+  const swapInfo = document.getElementById('panelSwapInfo');
+  if (swapInfo) swapInfo.style.display = 'none';
+}
+
+// ============================================================
+// PANEL OPEN — only key needed, data from EXERCISES dict
+// ============================================================
+function openPanel(key) {
+  const ex = EXERCISES[key];
+  if (!ex) return;
+
+  activeKey = key;
+  document.querySelectorAll('.exercise').forEach(el => {
+    el.classList.toggle('active-preview', el.dataset.key === key);
+  });
+
+  document.getElementById('panelEmpty').style.display = 'none';
+  const content = document.getElementById('panelContent');
+  content.classList.add('visible');
+
+  // Media (MP4 → <video>, PNG/WebP → <img>) — всегда обновляем при клике
+  const swapped = store.swaps[key];
+  const gifSrc = swapped ? swapped.gif : ex.gif;
+  setPanelMedia(gifSrc, ex.name, key);
+
+  // Name
+  document.getElementById('panelName').textContent = swapped ? swapped.nameRu : ex.name;
+
+  // Tags (sets/reps/rest — структура подходов общая для main и alts)
+  document.getElementById('panelTags').innerHTML = ex.tagsHtml || '';
+
+  // Tips — НЕРАЗДЕЛИМЫ с именем и картинкой: при swap берём из alt
+  const activeTips = swapped ? swapped.tips : ex.tips;
+  const tipsWrap = document.getElementById('panelTipsWrap');
+  if (activeTips) {
+    tipsWrap.style.display = 'block';
+    document.getElementById('panelTips').textContent = activeTips;
+  } else tipsWrap.style.display = 'none';
+
+  // Warning — тоже неразделимо: при swap берём из alt
+  const activeWarn = swapped ? swapped.warn : ex.warn;
+  const warnWrap = document.getElementById('panelWarnWrap');
+  if (activeWarn) {
+    warnWrap.style.display = 'block';
+    document.getElementById('panelWarn').textContent = '\u26A0\uFE0F ' + activeWarn;
+  } else warnWrap.style.display = 'none';
+
+  // Alternatives — с миниатюрами и подсветкой активной замены
+  const altsWrap = document.getElementById('panelAltsWrap');
+  const altsEl = document.getElementById('panelAlts');
+  if (ex.alts && ex.alts.length) {
+    altsWrap.style.display = 'block';
+    const escapeHtml = s => String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    altsEl.innerHTML = ex.alts.map((a, i) => {
+      let imgHtml;
+      if (!a.gif || a.gif === '') {
+        imgHtml = `<div class="alt-gif-fallback">\u{1F3C3}</div>`;
+      } else if (isVideoSrc(a.gif)) {
+        imgHtml = `<video class="alt-gif" autoplay loop muted playsinline preload="metadata"><source src="${escapeHtml(a.gif)}" type="video/mp4"></video>`;
+      } else {
+        imgHtml = `<img class="alt-gif" src="${escapeHtml(a.gif)}" alt="" loading="lazy" onerror="this.outerHTML='<div class=\\'alt-gif-fallback\\'>\u{1F3C3}</div>'">`;
+      }
+      const isActive = swapped && swapped.nameRu === a.nameRu;
+      const swapLabel = isActive ? '\u2713 \u0412\u044B\u0431\u0440\u0430\u043D\u043E' : '\u21BB \u0417\u0430\u043C\u0435\u043D\u0438\u0442\u044C';
+      return `<div class="alt-item${isActive ? ' swap-active' : ''}" data-idx="${i}">
+        ${imgHtml}
+        <span class="alt-name">${escapeHtml(a.nameRu)}</span>
+        <span class="alt-swap">${swapLabel}</span>
+      </div>`;
+    }).join('');
+    altsEl.querySelectorAll('.alt-item').forEach((el, i) => {
+      el.onclick = function() { swapExercise(key, i, this); };
+    });
+  } else altsWrap.style.display = 'none';
+
+  // Swap info banner
+  const swapInfo = document.getElementById('panelSwapInfo');
+  if (swapped) {
+    swapInfo.classList.add('show');
+    document.getElementById('panelOrigName').textContent = ex.name;
+  } else {
+    swapInfo.classList.remove('show');
+  }
+
+  // Timer
+  const timerWrap = document.getElementById('panelTimerWrap');
+  if (ex.restSec > 0) {
+    timerWrap.style.display = 'block';
+    timerTotal = ex.restSec;
+    timerRemaining = ex.restSec;
+    document.getElementById('timerDisplay').style.color = 'var(--orange)';
+    pauseTimer();
+    updateTimerUI();
+  } else timerWrap.style.display = 'none';
+
+  // Notes
+  document.getElementById('panelNotes').value = store.notes[key] || '';
+  document.getElementById('notesSaved').classList.remove('show');
+
+  // Mobile open
+  document.getElementById('previewPanel').classList.add('mobile-open');
+  document.getElementById('backdrop').classList.add('show');
+}
+
+function closePanel() {
+  document.getElementById('previewPanel').classList.remove('mobile-open');
+  document.getElementById('backdrop').classList.remove('show');
+  document.querySelectorAll('.exercise').forEach(el => el.classList.remove('active-preview'));
+  activeKey = null;
+}
+
+// ============================================================
+// SWAP EXERCISE (+ REVERT)
+// ============================================================
+function swapExercise(key, altIdx, el) {
+  const ex = EXERCISES[key];
+  if (!ex || !ex.alts[altIdx]) return;
+  const alt = ex.alts[altIdx];
+  // ПРАВИЛО: nameRu + gif + tips + warn — НЕРАЗДЕЛИМАЯ группа. Сохраняем всё вместе.
+  store.swaps[key] = {
+    nameRu: alt.nameRu,
+    gif: alt.gif,
+    tips: alt.tips || '',
+    warn: alt.warn || ''
+  };
+  saveStore(store);
+
+  // Panel: name
+  document.getElementById('panelName').textContent = alt.nameRu;
+
+  // Panel: media (alt's MP4/image)
+  setPanelMedia(alt.gif, alt.nameRu, key + '_swap');
+
+  // Panel: tips (техника альтернативы)
+  const tipsWrap = document.getElementById('panelTipsWrap');
+  if (alt.tips) {
+    tipsWrap.style.display = 'block';
+    document.getElementById('panelTips').textContent = alt.tips;
+  } else tipsWrap.style.display = 'none';
+
+  // Panel: warning (предупреждение альтернативы)
+  const warnWrap = document.getElementById('panelWarnWrap');
+  if (alt.warn) {
+    warnWrap.style.display = 'block';
+    document.getElementById('panelWarn').textContent = '\u26A0\uFE0F ' + alt.warn;
+  } else warnWrap.style.display = 'none';
+
+  // Panel: swap-info banner
+  const swapInfo = document.getElementById('panelSwapInfo');
+  swapInfo.classList.add('show');
+  document.getElementById('panelOrigName').textContent = ex.name;
+
+  // Row: name + pill
+  updateRowSwapUI(key, true, alt.nameRu);
+
+  // Alt-items: mark active
+  const altsContainer = el.closest('.panel-alts');
+  altsContainer.querySelectorAll('.alt-item').forEach(a => {
+    a.classList.remove('swap-active');
+    const lbl = a.querySelector('.alt-swap');
+    if (lbl) lbl.textContent = '\u21BB \u0417\u0430\u043C\u0435\u043D\u0438\u0442\u044C';
+  });
+  el.classList.add('swap-active');
+  const activeLbl = el.querySelector('.alt-swap');
+  if (activeLbl) activeLbl.textContent = '\u2713 \u0412\u044B\u0431\u0440\u0430\u043D\u043E';
+}
+
+function revertSwap(key) {
+  if (!key) return;
+  const ex = EXERCISES[key];
+  if (!ex) return;
+  delete store.swaps[key];
+  saveStore(store);
+
+  // Panel: restore name
+  document.getElementById('panelName').textContent = ex.name;
+
+  // Panel: restore media (original MP4/image)
+  setPanelMedia(ex.gif, ex.name, key);
+
+  // Panel: restore tips (техника оригинала)
+  const tipsWrap = document.getElementById('panelTipsWrap');
+  if (ex.tips) {
+    tipsWrap.style.display = 'block';
+    document.getElementById('panelTips').textContent = ex.tips;
+  } else tipsWrap.style.display = 'none';
+
+  // Panel: restore warning (предупреждение оригинала)
+  const warnWrap = document.getElementById('panelWarnWrap');
+  if (ex.warn) {
+    warnWrap.style.display = 'block';
+    document.getElementById('panelWarn').textContent = '\u26A0\uFE0F ' + ex.warn;
+  } else warnWrap.style.display = 'none';
+
+  // Panel: hide swap-info
+  document.getElementById('panelSwapInfo').classList.remove('show');
+
+  // Row: remove pill + restore name
+  updateRowSwapUI(key, false, ex.name);
+
+  // Alt-items: clear active state
+  document.querySelectorAll('.panel-alts .alt-item').forEach(a => {
+    a.classList.remove('swap-active');
+    const lbl = a.querySelector('.alt-swap');
+    if (lbl) lbl.textContent = '\u21BB \u0417\u0430\u043C\u0435\u043D\u0438\u0442\u044C';
+  });
+}
+
+function updateRowSwapUI(key, isSwapped, displayName) {
+  const exEl = document.querySelector(`.exercise[data-key="${key}"]`);
+  if (!exEl) return;
+  const nameEl = exEl.querySelector('.ex-name');
+  if (nameEl && displayName) nameEl.textContent = displayName;
+  const mainEl = exEl.querySelector('.ex-main');
+  if (!mainEl) return;
+  let pill = mainEl.querySelector('.ex-swap-pill');
+  if (isSwapped) {
+    if (!pill) {
+      pill = document.createElement('div');
+      pill.className = 'ex-swap-pill';
+      const keyEsc = String(key).replace(/'/g, "\\'");
+      pill.innerHTML = `<span class="pill-badge">\u21BB \u0437\u0430\u043C\u0435\u043D\u0430</span><button class="pill-revert" onclick="event.stopPropagation(); revertSwap('${keyEsc}')">\u0432\u0435\u0440\u043D\u0443\u0442\u044C</button>`;
+      const tagsEl = mainEl.querySelector('.ex-tags');
+      if (tagsEl) mainEl.insertBefore(pill, tagsEl);
+      else mainEl.appendChild(pill);
+    }
+  } else {
+    if (pill) pill.remove();
+  }
+}
+
+// ============================================================
+// NOTES AUTOSAVE
+// ============================================================
+document.getElementById('panelNotes').addEventListener('input', function() {
+  if (!activeKey) return;
+  clearTimeout(notesSaveTimer);
+  notesSaveTimer = setTimeout(() => {
+    store.notes[activeKey] = this.value;
+    saveStore(store);
+    const saved = document.getElementById('notesSaved');
+    saved.classList.add('show');
+    setTimeout(() => saved.classList.remove('show'), 2000);
+  }, 500);
+});
+
+// ============================================================
+// MOBILE BACKDROP / HANDLE
+// ============================================================
+document.getElementById('backdrop').addEventListener('click', closePanel);
+document.getElementById('panelHandle').addEventListener('click', closePanel);
+
+// ============================================================
+// RESTORE CHECKS FROM LOCALSTORAGE
+// ============================================================
+function restoreChecks() {
+  Object.entries(store.checks).forEach(([key, val]) => {
+    const cb = document.querySelector(`input[data-key="${key}"]`);
+    if (cb) {
+      cb.checked = val;
+      const row = cb.closest('.exercise');
+      if (row && val) row.classList.add('done');
+    }
+  });
+}
+
+function restoreSwaps() {
+  Object.entries(store.swaps).forEach(([key, swap]) => {
+    updateRowSwapUI(key, true, swap.nameRu);
+  });
+}
+
+// ============================================================
+// CHECKBOX CHANGE
+// ============================================================
+document.addEventListener('change', function(e) {
+  if (!e.target.matches('.ex-check')) return;
+  const key = e.target.dataset.key;
+  store.checks[key] = e.target.checked;
+  saveStore(store);
+  const row = e.target.closest('.exercise');
+  if (row) row.classList.toggle('done', e.target.checked);
+  updateAllProgress();
+
+  // Check day completion
+  const dayCard = e.target.closest('.day-card');
+  if (dayCard) {
+    const { done, total } = getDayProgress(dayCard);
+    if (done === total && total > 0) fireConfetti();
+  }
+});
+
+// ============================================================
+// DAY TOGGLE
+// ============================================================
+document.addEventListener('click', function(e) {
+  const top = e.target.closest('.day-top');
+  if (!top) return;
+  if (e.target.matches('.ex-check') || e.target.closest('.ex-check')) return;
+  const body = top.nextElementSibling;
+  const btn = top.querySelector('.day-toggle');
+  const isOpen = body.style.display !== 'none';
+  if (isOpen) {
+    body.style.display = 'none';
+    btn.textContent = '+';
+  } else {
+    body.style.display = 'block';
+    body.style.animation = 'fadeSlide 0.3s ease';
+    btn.textContent = '−';
+    // Trigger scroll reveal for exercises in this day
+    revealExercises(body);
+  }
+});
+
+// ============================================================
+// DAY RESET
+// ============================================================
+document.addEventListener('click', function(e) {
+  const btn = e.target.closest('.day-reset');
+  if (!btn) return;
+  const dayCard = btn.closest('.day-card');
+  if (!confirm('Сбросить прогресс этого дня?')) return;
+  dayCard.querySelectorAll('.ex-check').forEach(cb => {
+    cb.checked = false;
+    delete store.checks[cb.dataset.key];
+    const row = cb.closest('.exercise');
+    if (row) row.classList.remove('done');
+  });
+  saveStore(store);
+  updateAllProgress();
+});
+
+// ============================================================
+// WEEK TABS
+// ============================================================
+document.querySelectorAll('.week-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.week-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.week-content').forEach(c => c.classList.remove('active'));
+    tab.classList.add('active');
+    const target = document.getElementById(tab.dataset.week);
+    if (target) {
+      target.classList.add('active');
+      // Reveal exercises in visible days
+      target.querySelectorAll('.day-body').forEach(b => {
+        if (b.style.display !== 'none') revealExercises(b);
+      });
+    }
+  });
+});
+
+// ============================================================
+// SCROLL REVEAL
+// ============================================================
+function revealExercises(container) {
+  const exercises = container.querySelectorAll('.exercise:not(.revealed)');
+  exercises.forEach((el, i) => {
+    el.style.setProperty('--i', i);
+    // Small delay to trigger transition
+    requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add('revealed')));
+  });
+}
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const container = entry.target;
+      revealExercises(container);
+      observer.unobserve(container);
+    }
+  });
+}, { threshold: 0.05 });
+
+document.querySelectorAll('.day-body').forEach(b => {
+  if (b.style.display !== 'none') observer.observe(b);
+});
+
+// ============================================================
+// SMOOTH NAV SCROLL
+// ============================================================
+document.querySelectorAll('.nav-links a').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+
+// ============================================================
+// INIT
+// ============================================================
+restoreChecks();
+restoreSwaps();
+updateAllProgress();
+
+// Reveal exercises in initially open day-bodies
+document.querySelectorAll('.day-body').forEach(b => {
+  if (b.style.display !== 'none') revealExercises(b);
+});
+</script>
+
+</body>
+</html>

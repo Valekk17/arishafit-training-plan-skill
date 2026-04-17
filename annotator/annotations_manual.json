@@ -1,0 +1,782 @@
+{
+  "01qpYSe": {
+    "total_frames": 12,
+    "fps": 10,
+    "start_frame": 0,
+    "peak_frame": 6,
+    "manual": true
+  },
+  "03lzqwk": {
+    "total_frames": 12,
+    "fps": 10,
+    "start_frame": 0,
+    "peak_frame": 6,
+    "manual": true
+  },
+  "05Cf2v8": {
+    "total_frames": 12,
+    "fps": 10,
+    "start_frame": 0,
+    "peak_frame": 6,
+    "manual": true
+  },
+  "0br45wL": {
+    "total_frames": 12,
+    "fps": 10,
+    "start_frame": 0,
+    "peak_frame": 6,
+    "manual": true
+  },
+  "0CXGHya": {
+    "total_frames": 12,
+    "fps": 10,
+    "start_frame": 0,
+    "peak_frame": 6,
+    "manual": true
+  },
+  "0IgNjSM": {
+    "total_frames": 12,
+    "fps": 10,
+    "start_frame": 0,
+    "peak_frame": 6,
+    "manual": true
+  },
+  "0jp9Rlz": {
+    "total_frames": 12,
+    "fps": 10,
+    "start_frame": 0,
+    "peak_frame": 6,
+    "manual": true
+  },
+  "0L2KwtI": {
+    "total_frames": 12,
+    "fps": 10,
+    "start_frame": 0,
+    "peak_frame": 6,
+    "manual": true
+  },
+  "0lQnxMZ": {
+    "total_frames": 12,
+    "fps": 10,
+    "start_frame": 0,
+    "peak_frame": 6,
+    "manual": true
+  },
+  "0mB6wHO": {
+    "total_frames": 12,
+    "fps": 10,
+    "start_frame": 0,
+    "peak_frame": 6,
+    "manual": true
+  },
+  "0rHfvy9": {
+    "total_frames": 12,
+    "fps": 10,
+    "start_frame": 0,
+    "peak_frame": 6,
+    "manual": true
+  },
+  "0dCyly0": {
+    "total_frames": 18,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6,
+      12
+    ],
+    "manual": true
+  },
+  "0JtKWum": {
+    "total_frames": 30,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6,
+      12,
+      18,
+      24
+    ],
+    "manual": true
+  },
+  "0S75mYG": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "0V2YQjW": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "0xDpB4L": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "0Yz8WdV": {
+    "total_frames": 18,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6,
+      12
+    ],
+    "manual": true
+  },
+  "10Z2DXU": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "11wrviz": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "13TpY4H": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "13VW2VO": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "17bqEXD": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "17lJ1kr": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "196HJGw": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "1bQkKZK": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "1cTf2Ux": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "1DN3iz4": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "1g5bPpA": {
+    "total_frames": 24,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6,
+      12,
+      18
+    ],
+    "manual": true
+  },
+  "1gFNTZV": {
+    "total_frames": 18,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6,
+      12
+    ],
+    "manual": true
+  },
+  "1GPHRyK": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "1IG6gVF": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "1jXLYEw": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "1kB3Wmk": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "1LVFcEn": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "1PK5Uo3": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "1PLE8e9": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "1qrWgZ2": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "1TkiAFK": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "1V1gj1u": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "1VpF8db": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "1xHyxys": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "1YB40kg": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "1ZFqTDN": {
+    "total_frames": 24,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6,
+      12,
+      18
+    ],
+    "manual": true
+  },
+  "225x2Vd": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "25GPyDY": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "27NNGFr": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "2dImyQ8": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "2Dk4xQV": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "2DxtqHL": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "2gPfomN": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "2IHEa2T": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "2IxROQ1": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "2JCuFTU": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "2jl9K55": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "2kattbR": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "2KGnL6M": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "2kr2lWy": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "2LQkNPW": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "2NImIAG": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "2NpxjC1": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "2ORFMoR": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "2Pya1cP": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "2Qh2J1e": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "2qTvJAZ": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "2Ryn564": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "33AzZeV": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "2sQGZ5b": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "2zNKRUB": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "3d7wHyd": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "3eGE2JC": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "3omWx6P": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "3s4NnTh": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "3T12T87": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "3tAXPQ6": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "3TZduzM": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "3uj0Ozg": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "3XFdb1Z": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "3xK09Sk": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "3ZflifB": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "4c9BhzB": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "4CBIBOM": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "4cWjYEN": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "4dF3maG": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "4dUn2iv": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "4f8RXP8": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "4GqRrAk": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "4hATdoB": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  },
+  "4ievMJ9": {
+    "total_frames": 12,
+    "fps": 10,
+    "key_frames": [
+      0,
+      6
+    ],
+    "manual": true
+  }
+}

@@ -1,0 +1,537 @@
+{
+  "_meta": {
+    "version": "1.3",
+    "created": "2026-04-09",
+    "updated": "2026-04-09 (v1.3: fixed hvV79Si/fUBheHs collision + added audit_plan.py runtime)",
+    "purpose": "Hand-curated patches to exercise_db_final.json. Applied at load time by scripts/build_safe_pool.py. Original DB remains unchanged.",
+    "curator": "Claude Opus 4.6 — ArishaFit fitness-training-plan skill v6.4",
+    "scope": "Fixes for exercises actually used in iter1-5 plans + 20 elite gymnastic IDs + T21/T22/T25 smoke test coverage. Not a comprehensive DB rewrite.",
+    "total_db_entries": 1500,
+    "v11_additions": "Extended name_overrides to cover 27 additional duplicate families: 'Приседание в Смите', 'Выпад с гантелями', 'Приседание со штангой', 'Скручивание на блоке', 'Задняя дельта на блоке', 'Приседание с гантелями', 'Тяга на блоке', 'Сгибание с гантелями', 'Тяга (становая) с гантелями', 'Жим с гантелями сидя', 'Сгибание с гантелями одной рукой сидя', 'Жим лёжа со штангой', 'Задняя дельта с гантелями', 'Разведение на блоке'",
+    "v12_additions": "Pattern-based exclusion rules (exclude_by_pattern_if_condition) for fibromyalgia/osteopenia/HTN/lumbar/knee_OA/pregnancy — catches impact/axial_load patterns automatically",
+    "v13_fixes": "Fixed collision: hvV79Si (patched to 'Тяга нижнего блока сидя') conflicted with fUBheHs (original 'Тяга нижнего блока сидя'). Now disambiguated: hvV79Si='Тяга нижнего блока сидя (низкое положение)', fUBheHs='Тяга нижнего блока сидя (базовая)'. Caught by audit_plan.py counterfactual test on T17 iter5 plan."
+  },
+
+  "global_blacklist": {
+    "_description": "NEVER use these exerciseIds for ANY fitness client. Elite calisthenics/gymnastics requiring 5+ years specialized training. Skill must exclude at selection step.",
+    "ids": {
+      "YRaCa5Y": "full maltese (rings) — elite gymnastics",
+      "HfqciZF": "straddle maltese (rings) — elite gymnastics",
+      "YZ4961r": "full planche — elite calisthenics",
+      "LYJodFS": "lean planche — advanced planche progression",
+      "BL3GHeY": "straddle planche — intermediate-elite planche",
+      "rQhGcin": "frog planche — beginner planche (still advanced)",
+      "gw9PqGk": "full planche push-up — elite",
+      "mAYqY4M": "stretched full planche push-up — elite",
+      "GaSzzuh": "back lever (rings/bar) — elite",
+      "hbY9wqG": "front lever reps — elite",
+      "PkCN2lv": "front lever — elite",
+      "pZwUsKB": "iron cross stretch — implies iron cross target",
+      "p5v6rdT": "iron cross stretch deep — same",
+      "cALkHHX": "dumbbell iron cross — elite",
+      "1RIkUHT": "dumbbell iron cross v2 — elite",
+      "yJUHKTn": "muscle up — advanced calisthenics",
+      "MCkqdKE": "weighted muscle up (bar) — elite",
+      "JsOV1SU": "weighted muscle up — elite",
+      "pM07UxU": "kipping muscle up — advanced CrossFit",
+      "znf7t8E": "kipping muscle up with triple — advanced"
+    }
+  },
+
+  "db_quality_blacklist": {
+    "_description": "Broken DB entries (missing GIF, wrong data). Already known from iter3 lesson 12.",
+    "ids": {
+      "tuIZFDt": "hasGif: false — GIF file missing locally; plus nameRu='Планка' is generic/truncated"
+    }
+  },
+
+  "exclude_by_pattern_if_condition": {
+    "_description": "Pattern-based exclusion (added v1.2 after T22 fibromyalgia smoke test). If client has the listed condition, exclude ALL exercises whose movementPatterns contain ANY of the specified patterns. More efficient than listing IDs individually.",
+    "rules": [
+      {
+        "conditions": ["fibromyalgia", "chronic_fatigue", "ME_CFS"],
+        "exclude_patterns": ["impact"],
+        "reason": "PEM (post-exertional malaise) trigger — high-impact exercises forbidden per Clauw 2014, NICE 2021"
+      },
+      {
+        "conditions": ["osteopenia", "osteoporosis", "severe_osteoporosis", "postmenopause"],
+        "exclude_patterns": ["impact"],
+        "reason": "Fracture risk — avoid plyometric/jump loading per ACSM 2018 (LIFTMOR uses controlled high-load, not impact)"
+      },
+      {
+        "conditions": ["hypertension_grade_2", "hypertension_grade_3", "aortic_aneurysm", "post_MI", "post_CABG"],
+        "exclude_patterns": ["impact"],
+        "reason": "BP spike + cardiac stress — no plyometrics per ACSM 2018"
+      },
+      {
+        "conditions": ["lumbar_hernia", "lumbar_disc_herniation", "spinal_fusion", "scoliosis_grade_3"],
+        "exclude_patterns": ["impact", "axial_load", "back_flexion", "rotation_under_load"],
+        "reason": "Disc shear under impact + axial compression + lumbar flexion under load (bent-over rows, deadlifts) + rotation under load (twists, wood chops) — ALL forbidden per SKILL.md v6 Lumbar Hernia section. Fixed in v1.4 after discovering 78 back_flexion + 32 rotation_under_load exercises leaked into lumbar hernia safe pool."
+      },
+      {
+        "conditions": ["knee_OA_any_grade", "knee_OA_grade_2_plus", "knee_meniscus", "ACL_reconstruction_0_3_months", "ACL_reconstruction_3_6_months"],
+        "exclude_patterns": ["impact"],
+        "reason": "Joint stress + uncontrolled landing forces"
+      },
+      {
+        "conditions": ["pregnancy_2nd_trimester", "pregnancy_3rd_trimester"],
+        "exclude_patterns": ["impact", "back_flexion"],
+        "reason": "ACOG 2020 — no high-impact, no spinal flexion under load"
+      },
+      {
+        "conditions": ["diastasis_recti", "postpartum_under_6weeks"],
+        "exclude_patterns": ["impact", "back_flexion"],
+        "reason": "Diastasis recti: no crunches (back_flexion), no impact. Planks excluded via conditional_forbidden IDs (not pattern — Dead Bug has plank_static but IS safe for diastasis)."
+      }
+    ],
+    "exclude_verified_positions": [
+      {
+        "conditions": ["lumbar_hernia", "lumbar_disc_herniation", "spinal_fusion"],
+        "exclude_positions": ["standing_bent_over"],
+        "reason": "Standing bent-over = lumbar flexion under load. Caught 14 exercises where DB tags said supported_back but GIF showed bent-over. Visual review iter6."
+      },
+      {
+        "conditions": ["severe_osteoporosis"],
+        "exclude_positions": ["standing_bent_over"],
+        "reason": "Fracture risk with spinal flexion under load"
+      },
+      {
+        "conditions": ["shoulder_impingement", "rotator_cuff_tear", "shoulder_instability"],
+        "exclude_positions": ["overhead_press", "behind_neck"],
+        "reason": "Overhead PRESSING above 90deg = subacromial compression. Behind-neck = extreme external rotation + compression. Both forbidden. Note: lat pulldowns (pull DOWN to chest) are CAUTION not forbidden — start position is overhead but movement is downward under control. Verified by GIF visual review."
+      },
+      {
+        "conditions": ["cervical_hernia", "cervical_disc"],
+        "exclude_positions": ["behind_neck"],
+        "reason": "Behind-neck loading = cervical spine compression. Forbidden per SKILL.md."
+      },
+      {
+        "conditions": ["severe_obesity_bmi40"],
+        "exclude_positions": ["floor_plank", "floor_bridge"],
+        "reason": "Floor exercises impractical for BMI 40+ — difficulty getting up/down, fall risk. Use seated/standing/machine alternatives."
+      }
+    ]
+  },
+
+  "conditional_forbidden": {
+    "_description": "Specific IDs forbidden only for specific client conditions. Skill checks client.conditions and excludes accordingly. For pattern-based exclusion see exclude_by_pattern_if_condition above.",
+    "knee_OA_any_grade": {
+      "my33uHU": "lever leg extension — OARSI 2019 contraindicated for knee OA"
+    },
+    "knee_OA_grade_2_plus": {
+      "my33uHU": "lever leg extension — stronger evidence for grade 2+"
+    },
+    "hypermobility_EDS": {
+      "my33uHU": "lever leg extension — knee hyperextension risk",
+      "Krmb3cB": "lever reverse hyperextension — spinal hyperextension risk in EDS",
+      "OrETs32": "reverse hyper on flat bench — same"
+    },
+    "ACL_reconstruction_0_3_months": {
+      "my33uHU": "open-chain leg extension — TPL stress",
+      "76vfTdU": "step-up with bicep curl — platform height violation + misleading name",
+      "XE93sQZ": "step-up chair variation — same",
+      "RRWFUcw": "dumbbell lunge — deep knee flexion too early"
+    },
+    "ACL_reconstruction_3_6_months": {
+      "76vfTdU": "step-up with bicep curl — still early for step-ups",
+      "XE93sQZ": "same"
+    },
+    "shoulder_impingement": {
+      "8ARQ9Hw": "kettlebell sumo high pull — upright row pattern, arms above shoulder, subacromial compression",
+      "cALKspW": "cable upright row — same",
+      "RgJDRR1": "barbell wide-grip upright row — same",
+      "UDlhcO8": "barbell upright row — same",
+      "ainizkb": "dumbbell upright row — same",
+      "1DN3iz4": "smith upright row — same",
+      "6cKQC5E": "dumbbell one arm upright row — same",
+      "Iptlv6x": "dumbbell upright row (back pov) — same",
+      "83HoW9X": "barbell upright row v2 — same",
+      "fI18Rbc": "barbell upright row v3 — same",
+      "1oE78pm": "core barbell upright row v2 — same",
+      "GXoaSgn": "barbell guillotine bench press — bar path to neck aggravates subacromial impingement",
+      "J60bN17": "assisted triceps dip — deep shoulder extension forbidden",
+      "Wgbn9qo": "triceps dip between benches — same",
+      "bZq4bwK": "weighted tricep dips — same",
+      "gtO1ErP": "weighted three bench dips — same",
+      "K1vlode": "weighted triceps dip high bars — same",
+      "DQ0cqkT": "three bench dip — same",
+      "ezTvXcr": "ring dips — same + unstable",
+      "RrLske5": "bench dip knees bent — same",
+      "VuoerH0": "triceps dip bench leg — same",
+      "7aVz15j": "triceps dips floor — same",
+      "MU9HnE7": "weighted bench dip — same",
+      "9RT8oQW": "bench dip on floor — same",
+      "FAoIFMw": "one arm dip — same",
+      "NZ5Qqkz": "reverse dip — same",
+      "X6C6i5Y": "triceps dip — same",
+      "05Cf2v8": "impossible dips — same",
+      "jvEXp4N": "one arm dip endurance — same",
+      "9ZGnq1w": "triceps dip extreme — same",
+      "7xeukSt": "scapula dips — same",
+      "PnZJIrk": "assisted wide-grip chest dip — same",
+      "LQFOrMn": "chest dip straight bar — same",
+      "PAgTVaK": "assisted chest dip — same",
+      "O2K9Vb5": "wide-grip chest dip — same",
+      "9WTm7dq": "chest dip — same",
+      "rWoBmi5": "korean dips — same",
+      "XgWyAiA": "chest dip on cage — same + dual pattern",
+      "Ff18ItA": "weighted straight bar dip — same",
+      "F56Xpw3": "fierce weighted straight bar dip — same",
+      "FSF9WOs": "wide-grip chest dip low — same"
+    },
+    "rotator_cuff_tear": {
+      "8ARQ9Hw": "upright row — extreme internal rotation under load",
+      "cALKspW": "cable upright row — same",
+      "RgJDRR1": "barbell wide-grip upright row — same",
+      "UDlhcO8": "barbell upright row — same",
+      "ainizkb": "dumbbell upright row — same",
+      "1DN3iz4": "smith upright row — same",
+      "6cKQC5E": "dumbbell one arm upright row — same",
+      "Iptlv6x": "dumbbell upright row (back pov) — same",
+      "83HoW9X": "barbell upright row v2 — same",
+      "fI18Rbc": "barbell upright row v3 — same",
+      "1oE78pm": "core barbell upright row v2 — same"
+    },
+    "hypertension_grade_2": {
+      "VBAWRPG": "weighted front plank — heavy isometric raises BP"
+    },
+    "hypertension_grade_3": {
+      "VBAWRPG": "weighted front plank — CONTRAINDICATED for HTN g3"
+    },
+    "aortic_aneurysm": {
+      "VBAWRPG": "weighted isometric forbidden"
+    },
+    "lumbar_hernia": {
+      "RKjH6Lt": "dynamic side bridge v2 — disc shear risk",
+      "aaXr7ld": "lever t bar row — GIF=STANDING BENT-OVER despite DB tag supported_back. Visual review iter6.",
+      "BgljGjd": "lever reverse t-bar row — back_flexion + bent-over.",
+      "KWyEjtI": "precision lever bent-over row — back_flexion + bent-over.",
+      "X3cqyXz": "lever bent over row — back_flexion + standing.",
+      "LuBEORI": "lever bent-over row with v-bar — back_flexion.",
+      "oROuvrX": "lever unilateral row — GIF=STANDING SINGLE-ARM BENT-OVER. Tag says supported_back but GIF shows unsupported. Visual GIF review round 1.",
+      "FVM1AUZ": "lever t-bar reverse grip row — GIF=STANDING BENT-OVER despite supported_back tag. Visual review.",
+      "8d8qJQI": "barbell reverse grip incline bench row — GIF=STANDING BENT-OVER, nameRu says 'на наклонной скамье' but NO BENCH in GIF. Name LIES. Visual review.",
+      "dmgMp3n": "barbell incline row — GIF=STANDING BENT-OVER, nameRu says 'на наклонной скамье' but NO BENCH. Name LIES. Visual review.",
+      "Q4DSJPC": "smith one arm row — GIF=STANDING BENT-OVER in Smith machine. Visual review.",
+      "EKXOMEh": "dumbbell rear delt row — GIF=STANDING BENT-OVER one arm on bench. Visual review.",
+      "S9zHIvU": "barbell rear delt row — GIF=STANDING BENT-OVER with barbell. Visual review.",
+      "nFUwqG6": "smith rear delt row — GIF=STANDING BENT-OVER in Smith. Visual review.",
+      "e25F58f": "dumbbell one arm reverse fly (with support) — GIF=STANDING BENT-OVER. Visual review.",
+      "WbNq5Xu": "lever chest press STANDING — axial spinal load through stabilization. Use seated variants.",
+      "Nh3mvOO": "dumbbell reverse grip row female — GIF=DEEP BENT-OVER with dumbbells. No back_flexion tag. Visual review round 2.",
+      "g9AsZ8P": "kettlebell one arm row — GIF=STANDING BENT-OVER with kettlebell. Visual review round 2.",
+      "Ca76jUE": "kettlebell alternating row — GIF=DEEP BENT-OVER with two kettlebells. Visual review round 2.",
+      "r0z6xzQ": "barbell pendlay row — GIF=DEEP BENT-OVER with barbell. No back_flexion tag. Visual review round 2."
+    },
+    "severe_osteoporosis": {
+      "VBAWRPG": "weighted isometric raises IAP — fracture risk"
+    },
+    "diastasis_recti": {
+      "5VXmnV5": "plank — intra-abdominal pressure widens diastasis separation",
+      "VBAWRPG": "weighted plank — same + worse with weight",
+      "h1ezqSu": "kneeling plank — same",
+      "hCjGsRQ": "power point plank — same",
+      "CosupLu": "full plank — same",
+      "tFToB7l": "reverse plank — same",
+      "X6ytgYZ": "dumbbell plank — same + weight",
+      "_note": "Dead Bug (iny3m5y) is NOT here — it's SAFE for diastasis with controlled breathing. Bird-Dog also safe."
+    },
+    "postpartum_under_6weeks": {
+      "5VXmnV5": "plank — too early postpartum, pelvic floor not recovered",
+      "VBAWRPG": "weighted plank — same",
+      "h1ezqSu": "plank — same",
+      "hCjGsRQ": "plank — same",
+      "CosupLu": "plank — same",
+      "tFToB7l": "reverse plank — same",
+      "X6ytgYZ": "dumbbell plank — same"
+    },
+    "severe_obesity_bmi40": {
+      "VBAWRPG": "weighted plank — floor exercise very difficult for BMI 40+",
+      "iny3m5y": "Dead Bug — floor exercise, difficulty getting up/down. Use seated/standing core.",
+      "5VXmnV5": "incline side plank — floor-based. Use cable/machine core instead."
+    }
+  },
+
+  "name_overrides": {
+    "_description": "Corrected nameRu where original nameRu is misleading, truncated, or contradicts nameEn/targetMuscles. Format: id -> new nameRu.",
+
+    "76vfTdU": "Подъём на платформу с гантелями + сгибание на бицепс",
+    "XE93sQZ": "Подъём на платформу со стула с гантелями + сгибание на бицепс",
+
+    "wkgnGfb": "Жим с гантелями на фитболе (акцент трицепс)",
+
+    "RKjH6Lt": "Боковой мост с подъёмом таза (ДИНАМИЧЕСКИЙ — запрещён при грыже L4-L5)",
+    "9c6T1YX": "Планка-альпинист через корпус",
+    "bLyQokI": "Лондонский мост на канате (верх спины)",
+    "D9qe7CM": "Ягодичный мост с наклоном таза лёжа",
+    "GibBPPg": "Ягодичный мост с маршем",
+    "aWedzZX": "Ягодичный мост двумя ногами на скамье",
+    "u0cNiij": "Низкий ягодичный мост на полу",
+
+    "qdRxqCj": "Тяга верхнего блока широким хватом",
+    "xBYcQHj": "Тяга верхнего блока обратным хватом",
+    "CuaWCmC": "Тяга верхнего блока с канатом",
+    "LEprlgG": "Тяга верхнего блока с полной амплитудой",
+    "OQ1otBN": "Тяга верхнего блока крест-накрест",
+    "RVwzP10": "Тяга верхнего блока (базовая)",
+    "SpsOSXk": "Тяга верхнего блока к задней части шеи",
+    "eYnzaCm": "Тяга верхнего блока с прямой рукояткой",
+
+    "PNtsX17": "Тяга нижнего блока обратным хватом сидя",
+    "hvV79Si": "Тяга нижнего блока сидя (низкое положение)",
+    "fUBheHs": "Тяга нижнего блока сидя (базовая)",
+    "veXwo0D": "Тяга нижнего блока широким хватом (с пола)",
+    "qcY50ZD": "Тяга нижнего блока широким хватом сидя",
+    "SJqRxOt": "Тяга нижнего блока с канатом сидя",
+
+    "10Z2DXU": "Жим ногами в тренажёре Prowler (45° вид спереди)",
+    "2Qh2J1e": "Жим ногами в тренажёре Prowler (45° вид сбоку)",
+    "yn2lLSI": "Жим ногами в тренажёре Prowler (45° вид сзади)",
+    "ykHcWme": "Жим носками (голени) в тренажёре для жима ногами",
+    "WWD6FzI": "Жим одной ногой в тренажёре Prowler 45°",
+
+    "OVLmUuL": "Жим гантелей на наклонной скамье нейтральным хватом",
+    "PG1kcIb": "Жим гантелей на наклонной скамье хват-молот",
+    "bfiHMpI": "Жим гантелей на наклонной скамье на фитболе",
+    "ns0SIbU": "Жим гантелей на наклонной скамье (стандартный)",
+
+    "Xy4jlWA": "Жим Арнольда с гантелями",
+    "BqgCRif": "Кубинский жим с гантелями v2",
+    "QfAKy1G": "Кубинский жим с гантелями",
+    "vmwLyCg": "W-жим с гантелями",
+    "5vfAI0I": "Скотт-жим с гантелями",
+
+    "7I6LNUG": "Тяга в рычажном тренажёре сидя (широкий хват)",
+    "IGjKj1v": "Тяга в рычажном тренажёре сидя (узкий хват)",
+    "iCPqbki": "Тяга в рычажном тренажёре сидя (узкий хват, силовой)",
+
+    "dNFYIU1": "Жим плеч в рычажном тренажёре v3",
+    "vqsbmL0": "Жим плеч в рычажном тренажёре v2",
+    "CggQhII": "Военный жим в рычажном тренажёре",
+    "67n3r98": "Жим плеч в рычажном тренажёре (базовый)",
+
+    "FxhcxUW": "Подъём на носки сидя с гантелью одной ногой (хват-молот)",
+    "Ia7tumC": "Подъём на носки сидя с гантелью одной ногой (стандартный хват)",
+    "VW88JNd": "Подъём на носки сидя с гантелью одной ногой (супинированный хват)",
+
+    "3ZflifB": "Разгибания на верхнем блоке с прямой рукояткой",
+    "dU605di": "Разгибания на верхнем блоке с канатом",
+
+    "h1ezqSu": "Планка на коленях с касанием плеча",
+    "hCjGsRQ": "Планка 'power point'",
+    "5VXmnV5": "Боковая планка на наклонной скамье",
+
+    "aaXr7ld": "T-тяга в рычажном тренажёре",
+    "nZZZy9m": "Верхняя тяга в рычажном тренажёре",
+    "oROuvrX": "Односторонняя тяга в рычажном тренажёре",
+    "BgljGjd": "Обратная T-тяга в рычажном тренажёре",
+
+    "myfUsKf": "Разведение в рычажном тренажёре сидя (задняя дельта)",
+    "v3xmPAR": "Сведение в рычажном тренажёре сидя (грудные)",
+    "xiHiJcA": "Разведение в рычажном тренажёре сидя (задняя дельта, параллельный хват)",
+
+    "RRWFUcw": "Выпады с гантелями (стандартные)",
+    "5WiFcYk": "Выпад с отягощением и махом",
+
+    "ZqNOWQ6": "Тяга в рычажном тренажёре обратным хватом",
+    "FVM1AUZ": "Тяга в рычажном тренажёре обратным хватом (нейтральная рукоятка)",
+
+    "DOoWcnA": "Жим от груди в рычажном тренажёре (базовый)",
+    "T0yTjgW": "Жим от груди в рычажном тренажёре (нейтральный хват)",
+
+    "ZuPXtCK": "Хак-присед в Смит-машине",
+    "lFhb2Rw": "Фронтальный присед в Смит-машине (чистый хват)",
+    "dzz6BiV": "Сумо-присед в Смит-машине",
+    "jFtipLl": "Присед в Смит-машине (базовый)",
+    "NNoHCEA": "Глубокий присед в Смит-машине",
+    "RGLscZM": "Присед в Смит-машине (низкая позиция грифа)",
+    "Gu2rNJd": "Присед в Смит-машине стулом",
+
+    "1VpF8db": "Выпад с боулинг-движением гантелей (бицеп)",
+    "SSsBDwB": "Выпад назад с гантелями",
+    "Uywa4S5": "Статичный выпад с гантелями",
+    "7858za8": "Комбинированный выпад со степом и гантелями",
+    "Mz6lLcW": "Выпад с гантелями и сгибанием на бицепс",
+    "gFyFj9z": "Выпад-подъём на платформу с гантелями",
+    "ecl28tP": "Контралатеральный выпад вперёд с гантелями",
+
+    "W9pFVv1": "Присед со штангой на скамью",
+    "RYcV1kH": "Прыжок со штангой со степом и выпадом (HIGH IMPACT)",
+    "Y7YcmIJ": "Фронтальный присед со штангой на скамью",
+    "5VCj6iH": "Хак-присед со штангой",
+
+    "WW95auq": "Скручивание на блоке стоя на коленях",
+    "RqOtqD7": "Обратное скручивание на блоке",
+    "q2ADGqV": "Боковое скручивание на блоке",
+
+    "G61cXLk": "Задняя дельта на блоке стоя на коленях (канат)",
+    "wqNPGCg": "Задняя дельта на блоке (канат)",
+    "yUdIGNs": "Задняя дельта на блоке (стременные рукоятки)",
+
+    "r5DgrW9": "Присед с гантелями с опорой",
+    "yn8yg1r": "Гоблет-присед с гантелью",
+    "QjE2DcA": "Сплит-присед со степом и гантелями",
+
+    "N6dZN2I": "Боковая тяга на блоке стоя на коленях",
+    "ZSJNetl": "Верхняя тяга на блоке стоя на коленях",
+    "PQStVXH": "Верхняя тяга на блоке",
+
+    "GNhAeJ0": "Молотковые сгибания с гантелями в арм-блэстере",
+    "F1KxjBa": "Молотковые сгибания с гантелями на скамье Скотта",
+    "Qyk5J3p": "Молотковые сгибания с гантелями поперёк тела",
+
+    "oom75KC": "Становая тяга с гантелями на прямых ногах",
+    "nUwVh7b": "Становая тяга с гантелями (стандартная)",
+
+    "znQUdHY": "Жим гантелей сидя (обычный хват)",
+    "f1jf47L": "Жим гантелей сидя (параллельный хват)",
+
+    "jK2hZ6n": "Сгибание молотом одной рукой сидя с гантелью",
+    "YtaCTYl": "Сгибание запястья одной рукой сидя с гантелью",
+
+    "JsKq9so": "Жим штанги лёжа (широкий хват)",
+    "GXoaSgn": "Жим штанги лёжа гильотиной (к шее)",
+    "UIbGx6H": "Жим лёжа с гантелями",
+
+    "gKozT8X": "Становая тяга с гантелями на одной ноге",
+    "daBmy1Y": "Становая тяга на одной ноге с опорой на степ",
+
+    "mu5Guxt": "Задняя дельта с гантелями (подъём в наклоне)",
+    "EKXOMEh": "Задняя дельта с гантелями (тяга с разведением)",
+    "Ion0XWz": "Задняя дельта с гантелями лёжа",
+
+    "FVmZVhk": "Сведение на нижнем блоке (грудные)",
+    "xLYSdtg": "Сведение на среднем блоке (грудные)",
+
+    "h1ezqSu": "Планка на коленях с касанием плеча",
+    "hCjGsRQ": "Планка 'power point' (опора на 1 локоть + 1 стопа)",
+
+    "3TZduzM": "Жим штанги на наклонной скамье",
+    "xUwnBMT": "Жим сидя в Смит-машине",
+
+    "aee2Fcj": "Сгибание со штангой (стоя)",
+    "IENzBdA": "Сгибание со штангой (на скамье Скотта)",
+    "V4ryaZa": "Сгибание с EZ-грифом",
+
+    "ky8FLU8": "Тяга сверху в рычажном тренажёре обратным хватом",
+    "ecpY0rH": "Тяга сверху в тренажёре обратным хватом",
+    "7F1DVzn": "Тяга сверху в рычажном тренажёре (широкий хват)"
+  },
+
+  "canonical_id_preference": {
+    "_description": "When multiple IDs are semantically equivalent (truly the same exercise, just different DB entries), prefer this ID. Format: family -> canonical_id. Others in family can still be used but canonical should be first choice.",
+    "cable_seated_row": "hvV79Si",
+    "cable_lat_pulldown_wide": "qdRxqCj",
+    "lever_chest_press": "DOoWcnA",
+    "lever_shoulder_press": "67n3r98",
+    "lever_seated_row": "7I6LNUG",
+    "sled_leg_press_45": "yn2lLSI",
+    "glute_bridge_band": "Pjbc0Kt",
+    "lever_t_bar_row": "aaXr7ld",
+    "incline_db_press": "ns0SIbU",
+    "seated_one_leg_calf_raise": "Ia7tumC",
+    "cable_tricep_pushdown": "3ZflifB",
+    "lever_reverse_fly_rear_delt": "myfUsKf",
+    "dumbbell_lunge": "RRWFUcw",
+    "lever_back_extension": "rUXfn3R",
+    "dead_bug": "iny3m5y",
+    "bodyweight_incline_side_plank": "5VXmnV5"
+  },
+
+  "level_overrides": {
+    "_description": "Add level metadata to exercises that were unlabeled in original DB. elite = never for general clients; advanced = intermediate+; intermediate = default; beginner = safe for newcomers.",
+    "elite": [
+      "YRaCa5Y", "HfqciZF", "YZ4961r", "LYJodFS", "BL3GHeY", "rQhGcin",
+      "gw9PqGk", "mAYqY4M", "GaSzzuh", "hbY9wqG", "PkCN2lv",
+      "pZwUsKB", "p5v6rdT", "cALkHHX", "1RIkUHT",
+      "yJUHKTn", "MCkqdKE", "JsOV1SU", "pM07UxU", "znf7t8E"
+    ],
+    "advanced": [
+      "VBAWRPG"
+    ],
+    "broken": [
+      "tuIZFDt"
+    ]
+  },
+
+  "verified_positions": {
+    "_description": "Visual GIF verification of actual body position (v1.5). Position categories: seated, lying, standing_upright, standing_bent_over, kneeling, machine_fixed, floor_bridge, floor_plank. Verified by Opus reading GIF files. Used by conditions to exclude dangerous positions without per-ID lists.",
+    "seated": [
+      "7I6LNUG", "IGjKj1v", "w2oRpuH", "ZqNOWQ6", "DOoWcnA", "T0yTjgW",
+      "fUBheHs", "PNtsX17", "hvV79Si", "qcY50ZD", "vqsbmL0", "dNFYIU1",
+      "67n3r98", "nZZZy9m", "OIFMAp1", "myfUsKf", "xiHiJcA", "hxyTtWj",
+      "yUdIGNs", "rUXfn3R", "PQStVXH", "UFGF6gk", "xUwnBMT", "znQUdHY",
+      "ecpY0rH", "ky8FLU8", "Zg3XY7P", "SJqRxOt",
+      "v3xmPAR", "nIR4Rwl", "KXyoEtA", "ye84CTU", "my33uHU",
+      "8xUv4J7", "dRTfGZT", "RVwzP10", "vsVoPHt",
+      "c8oybX6", "vpp9Ku2", "Tq6gbK6", "pwt0pnM", "kesXOpB", "yaMIo4D",
+      "D5yqP2p", "BRImeP8"
+    ],
+    "lying": [
+      "SpYC0Kp", "3TZduzM", "EIeI8Vf", "ns0SIbU", "PG1kcIb", "OVLmUuL",
+      "V07qpXy", "9KU9TYF", "17lJ1kr", "UXpKJoq", "XUUD0Fs", "7vG5o25",
+      "9pQSkH8", "ZIViNh1", "EAs3xL9", "OrETs32", "nCU1Ekp",
+      "bZGHsAZ", "10Z2DXU", "2Qh2J1e", "yn2lLSI",
+      "trqKQv2", "UIbGx6H", "OVLmUuL", "tBWXbIT", "uxJcFUU",
+      "7zdxRTl", "WWD6FzI", "JsKq9so", "GXoaSgn", "DIVyqrU"
+    ],
+    "floor_bridge": [
+      "Pjbc0Kt", "GibBPPg", "aWedzZX", "u0cNiij", "UpAlold", "qKBpF7I", "D9qe7CM"
+    ],
+    "floor_plank": [
+      "5VXmnV5", "VBAWRPG", "iny3m5y", "h1ezqSu", "hCjGsRQ", "X6ytgYZ",
+      "CosupLu", "tFToB7l"
+    ],
+    "machine_fixed": [
+      "Krmb3cB", "rUXfn3R", "DOoWcnA", "nZZZy9m"
+    ],
+    "kneeling": [
+      "ZSJNetl", "WrYPP2g", "G61cXLk"
+    ],
+    "standing_upright": [
+      "wqNPGCg", "P5p0j8B", "ZfyAGhK", "tc5dYrf", "xLYSdtg", "gAwDzB3",
+      "4f8RXP8", "km0sQC0", "xbkPfaw", "JF8AkMX", "WbNq5Xu",
+      "3ZflifB", "dU605di", "V4ryaZa", "aee2Fcj", "sYCcnon",
+      "qRZ5S1N", "gVlnLIJ", "j7XMAyn", "AQ0mC4Y", "RRWFUcw",
+      "nnmCTLN", "LEprlgG", "eOG0r6v"
+    ],
+    "standing_bent_over": [
+      "aaXr7ld", "oROuvrX", "FVM1AUZ", "8d8qJQI", "dmgMp3n", "Q4DSJPC",
+      "EKXOMEh", "S9zHIvU", "nFUwqG6", "e25F58f", "Nh3mvOO", "g9AsZ8P",
+      "Ca76jUE", "r0z6xzQ", "Fhdtwf3", "BgljGjd", "KWyEjtI", "X3cqyXz",
+      "LuBEORI", "BJ0Hz5L", "eZyBC3j", "SzX3uzM", "aaxA3cm", "wt6rwjk",
+      "Jsgsc27", "G8dXpNG", "EIsE3u8", "C0MA9bC", "rR0LJzx"
+    ],
+    "overhead_press": [
+      "CggQhII", "xUwnBMT", "QT5Q0nK", "67n3r98", "vqsbmL0", "dNFYIU1",
+      "znQUdHY", "f1jf47L",
+      "Xy4jlWA", "BqgCRif", "QfAKy1G", "vmwLyCg", "5vfAI0I"
+    ],
+    "_comment_overhead_press": "Exercises where arms PRESS above shoulder level (overhead presses). FORBIDDEN for shoulder impingement/rotator cuff. Note: lat PULLDOWNS are NOT here — pulldown start position is above head but movement is downward = CAUTION not forbidden.",
+    "behind_neck": [
+      "SpsOSXk"
+    ],
+    "_comment_behind_neck": "Exercises where GIF shows bar/handle going behind neck. Forbidden for shoulder impingement AND cervical hernia. SpsOSXk = cable rear pulldown behind neck."
+  },
+
+  "intent_flags": {
+    "_description": "Flag exercises where the primary intent (targetMuscle) differs from what the nameRu suggests. These require explicit verification before use.",
+    "flagged": {
+      "76vfTdU": {
+        "suggested_slot": "leg/squat",
+        "actual_intent": "bicep",
+        "reason": "nameEn='dumbbell step up single leg balance with bicep curl', targetMusclesRu=['Бицепс']"
+      },
+      "XE93sQZ": {
+        "suggested_slot": "leg/squat",
+        "actual_intent": "bicep",
+        "reason": "same as 76vfTdU, chair variation"
+      },
+      "wkgnGfb": {
+        "suggested_slot": "chest press",
+        "actual_intent": "tricep isolation",
+        "reason": "nameEn='dumbbell incline hammer press on exercise ball' but bodyParts=['Руки'], targetMuscles=['Трицепс']"
+      }
+    }
+  }
+}

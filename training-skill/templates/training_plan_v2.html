@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{plan_title}} — ArishaFit</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+  :root {
+    --primary: #FF6B35;
+    --primary-dark: #E55A2B;
+    --primary-light: #FF8F5E;
+    --accent-green: #4CAF50;
+    --accent-green-dark: #388E3C;
+    --dark: #1A1A2E;
+    --dark-medium: #16213E;
+    --text: #333333;
+    --text-light: #666666;
+    --text-muted: #999999;
+    --bg: #FFFFFF;
+    --bg-light: #F8F9FA;
+    --bg-warm: #FFF8F3;
+    --border: #E8E8E8;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+    --shadow-md: 0 4px 20px rgba(0,0,0,0.08);
+    --shadow-lg: 0 8px 40px rgba(0,0,0,0.12);
+    --radius: 16px;
+    --radius-sm: 10px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 15px;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.3;
+  }
+
+  /* ============================
+     ВОДЯНОЙ ЗНАК
+     ============================ */
+  .watermark {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 140px;
+    font-weight: 900;
+    color: rgba(255, 107, 53, 0.03);
+    pointer-events: none;
+    z-index: 0;
+    white-space: nowrap;
+    letter-spacing: 30px;
+    user-select: none;
+  }
+
+  @media print {
+    .watermark { color: rgba(255, 107, 53, 0.05); font-size: 110px; }
+  }
+
+  /* ============================
+     HERO HEADER
+     ============================ */
+  .hero {
+    position: relative;
+    min-height: 400px;
+    background: linear-gradient(135deg, var(--dark) 0%, var(--dark-medium) 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80') center/cover no-repeat;
+    opacity: 0.15;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 60px 30px;
+  }
+
+  .hero-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 16px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    letter-spacing: -1px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0.8;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .hero-badge {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    padding: 8px 24px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 20px;
+    letter-spacing: 1px;
+  }
+
+  /* ============================
+     CONTAINER
+     ============================ */
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 24px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ============================
+     SECTION
+     ============================ */
+  .section {
+    padding: 40px 0;
+  }
+
+  .section-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--dark);
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--primary);
+    display: inline-block;
+  }
+
+  /* ============================
+     CLIENT CARD
+     ============================ */
+  .client-card {
+    background: var(--bg-light);
+    border-radius: var(--radius);
+    padding: 32px;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .client-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+
+  .client-field {
+    padding: 12px 16px;
+    background: white;
+    border-radius: var(--radius-sm);
+    border-left: 3px solid var(--primary);
+  }
+
+  .client-field .label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    margin-bottom: 2px;
+  }
+
+  .client-field .value {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark);
+  }
+
+  /* Medical warning */
+  .medical-warning {
+    background: var(--bg-warm);
+    border: 1px solid #FFDDC9;
+    border-radius: var(--radius-sm);
+    padding: 20px 24px;
+    margin-top: 20px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .medical-warning .icon {
+    font-size: 24px;
+    flex-shrink: 0;
+  }
+
+  .medical-warning .text {
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  .medical-warning .text strong {
+    color: var(--primary-dark);
+  }
+
+  /* ============================
+     PROGRAM OVERVIEW
+     ============================ */
+  .overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+  }
+
+  .overview-item {
+    background: white;
+    border-radius: var(--radius);
+    padding: 24px 20px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .overview-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .overview-item .number {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1;
+  }
+
+  .overview-item .label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    margin-top: 8px;
+  }
+
+  /* ============================
+     WEEK HEADER
+     ============================ */
+  .week-section {
+    margin: 48px 0;
+    page-break-before: always;
+  }
+
+  .week-header {
+    position: relative;
+    background: linear-gradient(135deg, var(--dark) 0%, var(--dark-medium) 100%);
+    border-radius: var(--radius);
+    padding: 32px;
+    color: white;
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+
+  .week-header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1200&q=80') center/cover no-repeat;
+    opacity: 0.1;
+  }
+
+  .week-header-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .week-number {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 4px;
+  }
+
+  .week-header h2 {
+    font-size: 28px;
+    font-weight: 800;
+  }
+
+  .week-focus {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-top: 4px;
+    font-weight: 300;
+  }
+
+  /* ============================
+     DAY CARD
+     ============================ */
+  .day-card {
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+    margin-bottom: 24px;
+    overflow: hidden;
+    page-break-inside: avoid;
+  }
+
+  .day-header {
+    background: var(--bg-light);
+    padding: 20px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .day-header h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--dark);
+  }
+
+  .day-badge {
+    background: var(--accent-green);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 16px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .day-body {
+    padding: 24px 28px;
+  }
+
+  /* ============================
+     WARMUP / COOLDOWN
+     ============================ */
+  .phase-block {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 20px;
+    border-radius: var(--radius-sm);
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  .phase-warmup {
+    background: #FFF3E0;
+    border: 1px solid #FFE0B2;
+    color: #E65100;
+  }
+
+  .phase-cooldown {
+    background: #E8F5E9;
+    border: 1px solid #C8E6C9;
+    color: #2E7D32;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .phase-block .phase-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  .phase-block .phase-label {
+    font-weight: 700;
+  }
+
+  /* ============================
+     EXERCISE ROW — КРУПНЫЕ GIF'ки
+     ============================ */
+  .exercise {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 24px;
+    padding: 20px 0;
+    border-bottom: 1px solid #F0F0F0;
+    page-break-inside: avoid;
+    align-items: start;
+  }
+
+  .exercise:last-of-type {
+    border-bottom: none;
+  }
+
+  .exercise-media {
+    position: relative;
+  }
+
+  .exercise-gif {
+    width: 200px;
+    height: 200px;
+    border-radius: var(--radius-sm);
+    object-fit: cover;
+    background: var(--bg-light);
+    border: 1px solid var(--border);
+  }
+
+  .exercise-order {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    width: 32px;
+    height: 32px;
+    background: var(--primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    box-shadow: 0 2px 8px rgba(255,107,53,0.3);
+  }
+
+  .exercise-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .exercise-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dark);
+  }
+
+  .exercise-params {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .param-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: var(--bg-light);
+    border: 1px solid var(--border);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .param-tag.sets {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+  }
+
+  .exercise-tips {
+    font-size: 13px;
+    color: var(--text-light);
+    line-height: 1.6;
+    padding-left: 12px;
+    border-left: 2px solid var(--border);
+  }
+
+  .exercise-warning {
+    background: #FFF8E1;
+    border: 1px solid #FFE082;
+    border-radius: var(--radius-sm);
+    padding: 10px 14px;
+    font-size: 12px;
+    color: #F57F17;
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  .exercise-warning .warn-icon {
+    flex-shrink: 0;
+    font-size: 16px;
+  }
+
+  .exercise-alternatives {
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  .exercise-alternatives strong {
+    color: var(--accent-green-dark);
+    font-weight: 700;
+  }
+
+  /* ============================
+     DISCLAIMER
+     ============================ */
+  .disclaimer {
+    background: var(--bg-light);
+    border-radius: var(--radius);
+    padding: 32px;
+    margin: 40px 0;
+    border: 1px solid var(--border);
+  }
+
+  .disclaimer h3 {
+    font-size: 16px;
+    color: var(--dark);
+    margin-bottom: 12px;
+  }
+
+  .disclaimer p {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 8px;
+  }
+
+  .disclaimer .legal {
+    font-size: 11px;
+    color: #BBB;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+  }
+
+  /* ============================
+     FOOTER
+     ============================ */
+  .footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 32px 24px;
+  }
+
+  .footer-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 6px;
+    color: var(--primary);
+    margin-bottom: 8px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+    opacity: 0.5;
+  }
+
+  /* ============================
+     RESPONSIVE
+     ============================ */
+  @media (max-width: 700px) {
+    .exercise {
+      grid-template-columns: 140px 1fr;
+      gap: 16px;
+    }
+    .exercise-gif {
+      width: 140px;
+      height: 140px;
+    }
+    .hero h1 { font-size: 28px; }
+    .hero { min-height: 300px; }
+    .client-grid { grid-template-columns: 1fr 1fr; }
+    .overview-grid { grid-template-columns: repeat(2, 1fr); }
+    .week-header h2 { font-size: 22px; }
+    .day-header h3 { font-size: 17px; }
+  }
+
+  @media (max-width: 480px) {
+    .exercise {
+      grid-template-columns: 1fr;
+    }
+    .exercise-gif {
+      width: 100%;
+      height: 250px;
+    }
+    .client-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ============================
+     PRINT
+     ============================ */
+  @media print {
+    body { font-size: 12px; }
+    .hero { min-height: 200px; }
+    .week-section { page-break-before: always; }
+    .day-card { page-break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
+    .exercise { page-break-inside: avoid; }
+    .exercise-gif { width: 150px; height: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ВОДЯНОЙ ЗНАК -->
+<div class="watermark">ARISHAFIT</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-content">
+    <div class="hero-logo">A R I S H A F I T</div>
+    <h1>{{plan_title}}</h1>
+    <div class="hero-subtitle">{{client_name}} · {{plan_weeks}} недель · {{training_days}} дней в неделю</div>
+    <div class="hero-badge">{{goal_ru}}</div>
+  </div>
+</div>
+
+<!-- ДАННЫЕ КЛИЕНТА -->
+<div class="container">
+  <div class="section">
+    <div class="section-title">Данные клиента</div>
+    <div class="client-card">
+      <div class="client-grid">
+        {{client_fields}}
+      </div>
+      {{medical_warning}}
+    </div>
+  </div>
+
+  <!-- ОБЗОР ПРОГРАММЫ -->
+  <div class="section">
+    <div class="section-title">Параметры программы</div>
+    <div class="overview-grid">
+      {{program_overview_items}}
+    </div>
+  </div>
+</div>
+
+<!-- ТРЕНИРОВОЧНЫЕ НЕДЕЛИ -->
+{{weeks_content}}
+
+<!-- ДИСКЛЕЙМЕР -->
+<div class="container">
+  <div class="disclaimer">
+    <h3>Важная информация</h3>
+    <p>Перед началом программы обязательна консультация врача (невролог/ортопед).</p>
+    <p>Данная программа является информационно-консультационной услугой и не является медицинской рекомендацией. Автор — сертифицированный персональный тренер, не врач. Результаты индивидуальны и зависят от множества факторов. При появлении острой боли немедленно прекратите упражнение и обратитесь к врачу.</p>
+    <p>Программа составлена на основе рекомендаций ACSM 2026 Position Stand и NSCA Essentials of Strength Training and Conditioning.</p>
+    <div class="legal">Не является публичной офертой (ст. 437 ГК РФ) · ФЗ-323 · ФЗ-152 · ФЗ-2300-1 · {{date}}</div>
+  </div>
+</div>
+
+<!-- ФУТЕР -->
+<div class="footer">
+  <div class="footer-logo">ARISHAFIT</div>
+  <div class="footer-text">© {{year}} ArishaFit · Все права защищены</div>
+</div>
+
+</body>
+</html>

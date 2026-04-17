@@ -1,0 +1,7502 @@
+[
+ {
+  "id": "VPPtusI",
+  "en": "inverted row bent knees",
+  "ru_current": "Тяга",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Set up a bar at waist height and lie underneath it."
+ },
+ {
+  "id": "8d8qJQI",
+  "en": "barbell reverse grip incline bench row",
+  "ru_current": "Тяга со штангой обратным хватом на наклонной скамье",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Set up an incline bench at a 45-degree angle."
+ },
+ {
+  "id": "JGKowMS",
+  "en": "smith narrow row",
+  "ru_current": "Тяга в Смите",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the machine with your feet flat on the floor."
+ },
+ {
+  "id": "dmgMp3n",
+  "en": "barbell incline row",
+  "ru_current": "Тяга со штангой на наклонной скамье",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Set up an incline bench at a 45-degree angle."
+ },
+ {
+  "id": "ZqNOWQ6",
+  "en": "lever reverse grip vertical row",
+  "ru_current": "Тяга в рычажном тренажёре обратным хватом",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Adjust the seat height and footplate position to ensure proper alignment."
+ },
+ {
+  "id": "w2oRpuH",
+  "en": "lever alternating narrow grip seated row",
+  "ru_current": "Тяга в рычажном тренажёре попеременные сидя",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Adjust the seat height and footplate position to ensure proper alignment."
+ },
+ {
+  "id": "zYmNaoY",
+  "en": "elevator",
+  "ru_current": "Элеватор (подъём на перекладине)",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and your knees slightly bent."
+ },
+ {
+  "id": "C0MA9bC",
+  "en": "dumbbell one arm bent-over row",
+  "ru_current": "Тяга с гантелями одной рукой",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a dumbbell in one hand with your palm facing your body."
+ },
+ {
+  "id": "UFGF6gk",
+  "en": "cable rope crossover seated row",
+  "ru_current": "Кроссовер на блоке сидя",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Sit on the rowing machine with your feet flat on the footrests and your knees slightly bent."
+ },
+ {
+  "id": "c8oybX6",
+  "en": "cable rope elevated seated row",
+  "ru_current": "Тяга на блоке с возвышения сидя",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Sit on the elevated seat facing the cable machine."
+ },
+ {
+  "id": "b9kqlBy",
+  "en": "kettlebell alternating renegade row",
+  "ru_current": "Тяга с гирей попеременные",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "kettlebell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Start in a high plank position with your hands gripping the kettlebells and your feet hip-width apart."
+ },
+ {
+  "id": "WrYPP2g",
+  "en": "cable one arm straight back high row (kneeling)",
+  "ru_current": "Тяга на блоке одной рукой",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Attach a handle to a cable machine at waist height."
+ },
+ {
+  "id": "km0sQC0",
+  "en": "band one arm standing low row",
+  "ru_current": "Тяга с лентой стоя одной рукой",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Attach the band to a stable anchor point at waist height."
+ },
+ {
+  "id": "Ca76jUE",
+  "en": "kettlebell alternating row",
+  "ru_current": "Тяга с гирей попеременные",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "kettlebell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, knees slightly bent, and hold a kettlebell in each hand with your palms facing your body."
+ },
+ {
+  "id": "ZX9UZmj",
+  "en": "smith bent over row",
+  "ru_current": "Тяга в Смите",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Set up the smith machine with the bar at hip height."
+ },
+ {
+  "id": "xbkPfaw",
+  "en": "bodyweight standing one arm row",
+  "ru_current": "Тяга стоя одной рукой",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, knees slightly bent, and hold a dumbbell in one hand."
+ },
+ {
+  "id": "bKWbrTA",
+  "en": "one arm towel row",
+  "ru_current": "Тяга одной рукой",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, knees slightly bent, and hold a towel with one hand."
+ },
+ {
+  "id": "XUUD0Fs",
+  "en": "dumbbell lying rear delt row",
+  "ru_current": "Задняя дельта с гантелями лёжа",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Lie face down on a flat bench with a dumbbell in each hand, palms facing inwards."
+ },
+ {
+  "id": "Fhdtwf3",
+  "en": "lever one arm bent over row",
+  "ru_current": "Тяга в рычажном тренажёре одной рукой",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, knees slightly bent, and hold a barbell with an overhand grip."
+ },
+ {
+  "id": "PNtsX17",
+  "en": "cable reverse-grip straight back seated high row",
+  "ru_current": "Тяга на блоке сидя",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Sit on the seat facing the cable machine with your feet flat on the floor."
+ },
+ {
+  "id": "OmQ8w0p",
+  "en": "cable palm rotational row",
+  "ru_current": "Вращение на блоке",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Attach a handle to a cable machine at waist height."
+ },
+ {
+  "id": "7vG5o25",
+  "en": "dumbbell incline row",
+  "ru_current": "Тяга с гантелями на наклонной скамье",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Set up an incline bench at a 45-degree angle."
+ },
+ {
+  "id": "hvV79Si",
+  "en": "cable low seated row",
+  "ru_current": "Тяга на блоке сидя",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Sit on the machine with your feet flat on the footrests and your knees slightly bent."
+ },
+ {
+  "id": "wf24o8S",
+  "en": "kettlebell two arm row",
+  "ru_current": "Тяга с гирей",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "kettlebell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, knees slightly bent, and hold a kettlebell in each hand with your palms facing your body."
+ },
+ {
+  "id": "BReCuOn",
+  "en": "bodyweight squatting row (with towel)",
+  "ru_current": "Приседание",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a towel in front of you with your palms facing down."
+ },
+ {
+  "id": "oROuvrX",
+  "en": "lever unilateral row",
+  "ru_current": "Тяга в рычажном тренажёре",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself facing the machine."
+ },
+ {
+  "id": "bZGHsAZ",
+  "en": "inverted row",
+  "ru_current": "Австралийские подтягивания",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Set up a bar at waist height or use a suspension trainer."
+ },
+ {
+  "id": "uTv34oq",
+  "en": "bodyweight standing row (with towel)",
+  "ru_current": "Тяга стоя",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a towel in front of you with both hands."
+ },
+ {
+  "id": "X6ytgYZ",
+  "en": "dumbbell side plank with rear fly",
+  "ru_current": "Планка с гантелями",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Start by lying on your side with your legs extended and stacked on top of each other."
+ },
+ {
+  "id": "G70mEAJ",
+  "en": "chin-ups (narrow parallel grip)",
+  "ru_current": "Подтягивание обр. хватом",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Hang from a pull-up bar with a narrow parallel grip, palms facing towards you."
+ },
+ {
+  "id": "FVM1AUZ",
+  "en": "lever t-bar reverse grip row",
+  "ru_current": "Тяга в рычажном тренажёре обратным хватом",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the machine with your chest against the pad and your feet flat on the floor."
+ },
+ {
+  "id": "JF8AkMX",
+  "en": "standing archer",
+  "ru_current": "Лучник стоя (спина)",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and your knees slightly bent."
+ },
+ {
+  "id": "BJ0Hz5L",
+  "en": "dumbbell bent over row",
+  "ru_current": "Тяга гантели в наклоне",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, knees slightly bent, and hold a dumbbell in each hand with your palms facing your body."
+ },
+ {
+  "id": "SzX3uzM",
+  "en": "barbell reverse grip bent over row",
+  "ru_current": "Тяга со штангой обратным хватом",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and knees slightly bent."
+ },
+ {
+  "id": "9pQSkH8",
+  "en": "dumbbell reverse grip incline bench two arm row",
+  "ru_current": "Тяга с гантелями обратным хватом на наклонной скамье",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Set up an incline bench at a 45-degree angle."
+ },
+ {
+  "id": "R5swFnc",
+  "en": "cambered bar lying row",
+  "ru_current": "Тяга лёжа",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Set up a barbell on the floor and lie face down on a bench with your chest just off the edge."
+ },
+ {
+  "id": "wd4ds3s",
+  "en": "bodyweight standing row",
+  "ru_current": "Тяга стоя",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and knees slightly bent."
+ },
+ {
+  "id": "eZyBC3j",
+  "en": "barbell bent over row",
+  "ru_current": "Тяга штанги в наклоне",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and knees slightly bent."
+ },
+ {
+  "id": "JOZhu2h",
+  "en": "cable standing twist row (v-bar)",
+  "ru_current": "Скручивание с поворотом на блоке стоя",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Attach a v-bar attachment to a cable machine at chest height."
+ },
+ {
+  "id": "3xK09Sk",
+  "en": "bodyweight squatting row",
+  "ru_current": "Приседание",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding onto a sturdy object or suspension trainer with your arms extended."
+ },
+ {
+  "id": "aaxA3cm",
+  "en": "smith reverse grip bent over row",
+  "ru_current": "Тяга в Смите обратным хватом",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Set up the smith machine with the bar at hip height."
+ },
+ {
+  "id": "Q4DSJPC",
+  "en": "smith one arm row",
+  "ru_current": "Тяга в Смите одной рукой",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Adjust the height of the smith machine bar to waist level."
+ },
+ {
+  "id": "uX3sUBz",
+  "en": "inverted row v. 2",
+  "ru_current": "Тяга",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Set up a bar at waist height on a Smith machine or use a suspension trainer."
+ },
+ {
+  "id": "aaXr7ld",
+  "en": "lever t bar row",
+  "ru_current": "Тяга в рычажном тренажёре",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Adjust the seat height and footplate position to ensure proper alignment."
+ },
+ {
+  "id": "wt6rwjk",
+  "en": "dumbbell palm rotational bent over row",
+  "ru_current": "Вращение с гантелями",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a dumbbell in each hand with an overhand grip."
+ },
+ {
+  "id": "BgljGjd",
+  "en": "lever reverse t-bar row",
+  "ru_current": "Тяга в рычажном тренажёре",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Adjust the seat height and footplate position on the leverage machine."
+ },
+ {
+  "id": "nZZZy9m",
+  "en": "lever high row",
+  "ru_current": "Тяга в рычажном тренажёре",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Adjust the seat height and foot platform to a comfortable position."
+ },
+ {
+  "id": "v2DfH14",
+  "en": "bodyweight standing close-grip one arm row",
+  "ru_current": "Тяга стоя одной рукой",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, knees slightly bent, and hold a dumbbell in one hand with a neutral grip."
+ },
+ {
+  "id": "veXwo0D",
+  "en": "cable floor seated wide-grip row",
+  "ru_current": "Тяга на блоке сидя",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Sit on the floor with your legs extended and your back straight."
+ },
+ {
+  "id": "fUBheHs",
+  "en": "cable seated row",
+  "ru_current": "Тяга нижнего блока сидя",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Sit on the cable row machine with your feet flat on the footrests and your knees slightly bent."
+ },
+ {
+  "id": "4f8RXP8",
+  "en": "cable standing row (v-bar)",
+  "ru_current": "Тяга на блоке стоя",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand facing the cable machine with your feet shoulder-width apart."
+ },
+ {
+  "id": "vpp9Ku2",
+  "en": "cable seated one arm alternate row",
+  "ru_current": "Тяга на блоке попеременные одной рукой сидя",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Sit on a bench facing a cable machine with your feet flat on the ground and knees slightly bent."
+ },
+ {
+  "id": "tig3PXb",
+  "en": "bodyweight standing close-grip row",
+  "ru_current": "Тяга стоя",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and knees slightly bent."
+ },
+ {
+  "id": "GaSzzuh",
+  "en": "back lever",
+  "ru_current": "в рычажном тренажёре",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Start by hanging from a pull-up bar with an overhand grip, hands slightly wider than shoulder-width apart."
+ },
+ {
+  "id": "PQStVXH",
+  "en": "cable upper row",
+  "ru_current": "Тяга на блоке",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Attach a straight bar to a cable machine at chest height."
+ },
+ {
+  "id": "qcY50ZD",
+  "en": "cable seated wide-grip row",
+  "ru_current": "Тяга на блоке сидя",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Sit on the cable row machine with your feet flat on the footrests and your knees slightly bent."
+ },
+ {
+  "id": "GSDioYu",
+  "en": "upper back stretch",
+  "ru_current": "Растяжка",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand up straight with your feet shoulder-width apart."
+ },
+ {
+  "id": "MgKwAAo",
+  "en": "cable rope extension incline bench row",
+  "ru_current": "Разгибание на блоке на наклонной скамье",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Set up an incline bench at a 45-degree angle and attach a cable machine to the low pulley."
+ },
+ {
+  "id": "O4oIqQD",
+  "en": "bodyweight standing one arm row (with towel)",
+  "ru_current": "Тяга стоя одной рукой",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, knees slightly bent, and hold a towel with one hand."
+ },
+ {
+  "id": "ZIViNh1",
+  "en": "dumbbell reverse grip incline bench one arm row",
+  "ru_current": "Тяга с гантелями обратным хватом на наклонной скамье одной рукой",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Set up an incline bench at a 45-degree angle."
+ },
+ {
+  "id": "hbY9wqG",
+  "en": "front lever reps",
+  "ru_current": "в рычажном тренажёре",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Hang from a pull-up bar with an overhand grip, palms facing away from you."
+ },
+ {
+  "id": "yaAxcQr",
+  "en": "rope climb",
+  "ru_current": "Лазание по канату",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "rope"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand facing the rope with your feet shoulder-width apart."
+ },
+ {
+  "id": "4OaumBr",
+  "en": "suspended row",
+  "ru_current": "Тяга",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Set up a suspension trainer at an appropriate height."
+ },
+ {
+  "id": "r0z6xzQ",
+  "en": "barbell pendlay row",
+  "ru_current": "Тяга со штангой",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and your knees slightly bent."
+ },
+ {
+  "id": "Jsgsc27",
+  "en": "barbell one arm bent over row",
+  "ru_current": "Тяга со штангой одной рукой",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, knees slightly bent, and hold a barbell with one hand using an overhand grip."
+ },
+ {
+  "id": "OIFMAp1",
+  "en": "lever one arm lateral high row",
+  "ru_current": "Тяга в рычажном тренажёре одной рукой",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself facing the machine."
+ },
+ {
+  "id": "MSfvriJ",
+  "en": "skin the cat",
+  "ru_current": "Переворот в висе (skin the cat)",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Start by hanging from a bar with your arms fully extended and your body relaxed."
+ },
+ {
+  "id": "Mxa7Cr8",
+  "en": "inverted row on bench",
+  "ru_current": "Тяга",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Set up a bench at a height that allows your body to hang freely underneath it."
+ },
+ {
+  "id": "kesXOpB",
+  "en": "cable decline seated wide-grip row",
+  "ru_current": "Тяга на блоке на скамье с отриц. наклоном сидя",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Sit on the decline bench facing the cable machine with your feet securely placed on the footrests."
+ },
+ {
+  "id": "oHg8eop",
+  "en": "medicine ball overhead slam",
+  "ru_current": "с медболом над головой",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "medicine ball"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a medicine ball with both hands above your head."
+ },
+ {
+  "id": "g9AsZ8P",
+  "en": "kettlebell one arm row",
+  "ru_current": "Тяга с гирей одной рукой",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "kettlebell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a kettlebell in one hand with an overhand grip."
+ },
+ {
+  "id": "ZSJNetl",
+  "en": "cable high row (kneeling)",
+  "ru_current": "Тяга на блоке",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Attach a straight bar to a cable machine at chest height."
+ },
+ {
+  "id": "PbzNu7c",
+  "en": "dumbbell incline y-raise",
+  "ru_current": "Подъём с гантелями на наклонной скамье",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Set an incline bench to a 45-degree angle and sit on it with a dumbbell in each hand, palms facing inwards."
+ },
+ {
+  "id": "LuBEORI",
+  "en": "lever bent-over row with v-bar",
+  "ru_current": "Тяга в рычажном тренажёре",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself facing the machine."
+ },
+ {
+  "id": "EIsE3u8",
+  "en": "cable one arm bent over row",
+  "ru_current": "Тяга на блоке одной рукой",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand facing a cable machine with your feet shoulder-width apart."
+ },
+ {
+  "id": "jdiExfW",
+  "en": "inverted row with straps",
+  "ru_current": "Тяга",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Set up a suspension trainer or straps at chest height."
+ },
+ {
+  "id": "wbUYILZ",
+  "en": "elbow lift - reverse push-up",
+  "ru_current": "Отжимание",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Start by lying face down on the ground with your legs extended and your hands placed directly under your shoulders."
+ },
+ {
+  "id": "7I6LNUG",
+  "en": "lever seated row",
+  "ru_current": "Тяга в рычажном тренажёре сидя",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Adjust the seat height and footrests to a comfortable position."
+ },
+ {
+  "id": "yaMIo4D",
+  "en": "cable incline bench row",
+  "ru_current": "Тяга на блоке на наклонной скамье",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Set up an incline bench at a 45-degree angle and attach a cable handle to the low pulley."
+ },
+ {
+  "id": "X3cqyXz",
+  "en": "lever bent over row",
+  "ru_current": "Тяга в рычажном тренажёре",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and knees slightly bent."
+ },
+ {
+  "id": "IGjKj1v",
+  "en": "lever narrow grip seated row",
+  "ru_current": "Тяга в рычажном тренажёре сидя",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Adjust the seat height and footrests to ensure proper form."
+ },
+ {
+  "id": "Nu7jqFE",
+  "en": "resistance band seated straight back row",
+  "ru_current": "Тяга с эспандером сидя",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "resistance band"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Sit on the floor with your legs extended and loop the resistance band around your feet."
+ },
+ {
+  "id": "bLyQokI",
+  "en": "london bridge",
+  "ru_current": "Мост",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "rope"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Attach the rope to a high anchor point."
+ },
+ {
+  "id": "G8dXpNG",
+  "en": "ez bar reverse grip bent over row",
+  "ru_current": "Тяга с EZ-грифом обратным хватом",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "ez barbell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and knees slightly bent."
+ },
+ {
+  "id": "DKBwJrL",
+  "en": "band one arm twisting seated row",
+  "ru_current": "Скручивание с поворотом с лентой одной рукой сидя",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Sit on a bench or chair with your feet flat on the ground and your back straight."
+ },
+ {
+  "id": "SJqRxOt",
+  "en": "cable rope seated row",
+  "ru_current": "Тяга на блоке сидя",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Sit on the rowing machine with your feet flat on the footrests and knees slightly bent."
+ },
+ {
+  "id": "Tq6gbK6",
+  "en": "cable straight back seated row",
+  "ru_current": "Тяга на блоке сидя",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Sit on the cable row machine with your feet flat on the footrests and your knees slightly bent."
+ },
+ {
+  "id": "Nh3mvOO",
+  "en": "dumbbell reverse grip row (female)",
+  "ru_current": "Тяга с гантелями обратным хватом",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and knees slightly bent."
+ },
+ {
+  "id": "WM6TvvW",
+  "en": "cable low seated row controlled",
+  "ru_current": "Тяга на блоке сидя",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Sit on the machine with your feet flat on the footrests and your knees slightly bent."
+ },
+ {
+  "id": "N6dZN2I",
+  "en": "side cable high row (kneeling)",
+  "ru_current": "Тяга на блоке",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Attach a straight bar to a cable machine at chest height."
+ },
+ {
+  "id": "u3UuCZu",
+  "en": "intense kettlebell two arm row",
+  "ru_current": "Тяга с гирей",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "kettlebell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, knees slightly bent, and hold a kettlebell in each hand with your palms facing your body."
+ },
+ {
+  "id": "KWyEjtI",
+  "en": "precision style lever bent-over row with v-bar",
+  "ru_current": "Тяга в рычажном тренажёре",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself facing the machine."
+ },
+ {
+  "id": "pgIdT6i",
+  "en": "band one arm standing low row - lateral variation",
+  "ru_current": "Тяга с лентой стоя одной рукой",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Attach the band to a stable anchor point at waist height."
+ },
+ {
+  "id": "dAJscVq",
+  "en": "cable incline bench row - elite variation",
+  "ru_current": "Тяга на блоке на наклонной скамье",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Set up an incline bench at a 45-degree angle and attach a cable handle to the low pulley."
+ },
+ {
+  "id": "9fCHfSc",
+  "en": "pointed cable palm rotational row",
+  "ru_current": "Вращение на блоке",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Attach a handle to a cable machine at waist height."
+ },
+ {
+  "id": "1u36hhy",
+  "en": "stability lever narrow grip seated row",
+  "ru_current": "Тяга в рычажном тренажёре сидя",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Adjust the seat height and footrests to ensure proper form."
+ },
+ {
+  "id": "w44vFvP",
+  "en": "smith one arm row linear",
+  "ru_current": "Тяга в Смите одной рукой",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Adjust the height of the smith machine bar to waist level."
+ },
+ {
+  "id": "A3P4O0R",
+  "en": "cable seated row with reverse",
+  "ru_current": "Тяга на блоке сидя",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Sit on the cable row machine with your feet flat on the footrests and your knees slightly bent."
+ },
+ {
+  "id": "5lE7XRz",
+  "en": "smith bent over row with declined",
+  "ru_current": "Тяга в Смите на скамье с отриц. наклоном",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Set up the smith machine with the bar at hip height."
+ },
+ {
+  "id": "KQfySvS",
+  "en": "dumbbell reverse grip row (female) hold",
+  "ru_current": "Тяга с гантелями обратным хватом",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and knees slightly bent."
+ },
+ {
+  "id": "iCPqbki",
+  "en": "lever narrow grip seated row - strength variation",
+  "ru_current": "Тяга в рычажном тренажёре сидя",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Adjust the seat height and footrests to ensure proper form."
+ },
+ {
+  "id": "1YUWDNZ",
+  "en": "extended style inverted row",
+  "ru_current": "Тяга",
+  "target": [
+   "upper back"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Set up a bar at waist height or use a suspension trainer."
+ },
+ {
+  "id": "LMGXZn8",
+  "en": "barbell decline close grip to skull press",
+  "ru_current": "Жим со штангой узким хватом на скамье с отриц. наклоном",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie on a decline bench with your head lower than your feet and hold a barbell with a close grip."
+ },
+ {
+  "id": "x6KpKpq",
+  "en": "close-grip push-up",
+  "ru_current": "Отжимание",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Start in a high plank position with your hands placed close together, directly under your shoulders."
+ },
+ {
+  "id": "obe5LMq",
+  "en": "band side triceps extension",
+  "ru_current": "Разгибание с лентой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold the band with both hands, palms facing down."
+ },
+ {
+  "id": "qRZ5S1N",
+  "en": "cable one arm tricep pushdown",
+  "ru_current": "Разгибание на блоке на блоке одной рукой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand facing a cable machine with a straight bar attachment at chest height."
+ },
+ {
+  "id": "XooAdhl",
+  "en": "handstand",
+  "ru_current": "Стойка на руках",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Find an open space with enough room to perform a handstand."
+ },
+ {
+  "id": "iaapw0g",
+  "en": "ez barbell seated triceps extension",
+  "ru_current": "Разгибание с EZ-грифом сидя",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "ez barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your back straight and feet flat on the ground."
+ },
+ {
+  "id": "WcHl7ru",
+  "en": "smith close-grip bench press",
+  "ru_current": "Жим лёжа в Смите",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the bench with your feet flat on the ground."
+ },
+ {
+  "id": "uxJcFUU",
+  "en": "cable lying triceps extension v. 2",
+  "ru_current": "Разгибание на блоке лёжа",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Attach a rope handle to a low pulley cable machine."
+ },
+ {
+  "id": "U3ffHlY",
+  "en": "cable rope lying on floor tricep extension",
+  "ru_current": "Разгибание на блоке лёжа",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Attach a rope to a cable machine and set it to the lowest position."
+ },
+ {
+  "id": "Gchi5Tr",
+  "en": "cable alternate triceps extension",
+  "ru_current": "Разгибание на блоке попеременные",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand facing the cable machine with your feet shoulder-width apart."
+ },
+ {
+  "id": "NN8nSNT",
+  "en": "cable rope high pulley overhead tricep extension",
+  "ru_current": "Разгибание на блоке над головой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Attach a rope to a high pulley and adjust the weight accordingly."
+ },
+ {
+  "id": "jDnrkar",
+  "en": "dumbbell incline one arm hammer press on exercise ball",
+  "ru_current": "Жим с гантелями на наклонной скамье одной рукой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with a dumbbell in one hand."
+ },
+ {
+  "id": "s0HKO2I",
+  "en": "bodyweight kneeling triceps extension",
+  "ru_current": "Разгибание",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Kneel down on the ground with your knees hip-width apart."
+ },
+ {
+  "id": "gAwDzB3",
+  "en": "cable triceps pushdown (v-bar)",
+  "ru_current": "Разгибание на блоке на блоке",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Attach a v-bar attachment to the cable machine at the highest setting."
+ },
+ {
+  "id": "HEJ6DIX",
+  "en": "cable kickback",
+  "ru_current": "Отведение ноги назад на блоке",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand facing a cable machine with your feet shoulder-width apart."
+ },
+ {
+  "id": "cAvTaSg",
+  "en": "dumbbell kickbacks on exercise ball",
+  "ru_current": "Отведение назад с гантелями",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with your feet flat on the ground and your back straight."
+ },
+ {
+  "id": "zZlORz6",
+  "en": "dumbbell lying one arm supinated triceps extension",
+  "ru_current": "Разгибание с гантелями одной рукой лёжа",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your back and head supported, and your feet flat on the ground."
+ },
+ {
+  "id": "J60bN17",
+  "en": "assisted triceps dip (kneeling)",
+  "ru_current": "Отжимание на брусьях в гравитроне",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Adjust the machine to your desired weight and height."
+ },
+ {
+  "id": "z6TAHoT",
+  "en": "dumbbell twisting bench press",
+  "ru_current": "Жим лёжа с гантелями",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your feet flat on the ground and your back pressed against the bench."
+ },
+ {
+  "id": "Wgbn9qo",
+  "en": "triceps dip (between benches)",
+  "ru_current": "Отжимание на брусьях",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your hands gripping the edge of the bench, fingers pointing forward."
+ },
+ {
+  "id": "RxayqAZ",
+  "en": "dumbbell close-grip press",
+  "ru_current": "Жим с гантелями",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a flat bench with a dumbbell in each hand, resting on your thighs."
+ },
+ {
+  "id": "LkoAWAE",
+  "en": "elbow dips",
+  "ru_current": "Отжимание на брусьях",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on the edge of a bench or chair with your hands gripping the edge next to your hips."
+ },
+ {
+  "id": "da4cXST",
+  "en": "ez-bar close-grip bench press",
+  "ru_current": "Жим лёжа",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "ez barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your feet flat on the ground and your back pressed against the bench."
+ },
+ {
+  "id": "bndCa3Q",
+  "en": "barbell pin presses",
+  "ru_current": "Жим со штангой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Set up a barbell on a power rack at chest height."
+ },
+ {
+  "id": "2IxROQ1",
+  "en": "cable overhead triceps extension (rope attachment)",
+  "ru_current": "Разгибание на блоке над головой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Attach a rope to a cable machine at a high position."
+ },
+ {
+  "id": "wOLmCXc",
+  "en": "dumbbell tricep kickback with stork stance",
+  "ru_current": "Отведение назад с гантелями",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a dumbbell in your right hand."
+ },
+ {
+  "id": "wkgnGfb",
+  "en": "dumbbell incline hammer press on exercise ball",
+  "ru_current": "Жим с гантелями на наклонной скамье",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with a dumbbell in each hand, palms facing each other."
+ },
+ {
+  "id": "uOV3Itw",
+  "en": "triceps stretch",
+  "ru_current": "Растяжка",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand or sit upright with your back straight."
+ },
+ {
+  "id": "L2V5Nan",
+  "en": "dumbbell lying extension (across face)",
+  "ru_current": "Разгибание с гантелями лёжа",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your feet flat on the ground and your head at the end of the bench."
+ },
+ {
+  "id": "vtusOWT",
+  "en": "barbell one arm floor press",
+  "ru_current": "Жим со штангой одной рукой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on your back on the floor with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "bZq4bwK",
+  "en": "weighted tricep dips",
+  "ru_current": "Отжимание на брусьях с отягощением",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "weighted"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on the edge of a bench or chair with your hands gripping the edge next to your hips."
+ },
+ {
+  "id": "VjYliFZ",
+  "en": "cable reverse-grip pushdown",
+  "ru_current": "Разгибание на блоке на блоке",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Attach a straight bar to a high pulley cable machine."
+ },
+ {
+  "id": "1YB40kg",
+  "en": "incline close-grip push-up",
+  "ru_current": "Отжимание на наклонной скамье",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Place your hands on an elevated surface, such as a bench or step, slightly wider than shoulder-width apart."
+ },
+ {
+  "id": "JhYSVwT",
+  "en": "dumbbell seated bench extension",
+  "ru_current": "Разгибание с гантелями сидя",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your back straight and feet flat on the ground."
+ },
+ {
+  "id": "i11JWU7",
+  "en": "cable standing reverse grip one arm overhead tricep extension",
+  "ru_current": "Разгибание на блоке обратным хватом стоя над головой одной рукой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand facing away from the cable machine with your feet shoulder-width apart."
+ },
+ {
+  "id": "4cWjYEN",
+  "en": "narrow push-up on exercise ball",
+  "ru_current": "Отжимание",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "stability ball"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Place the stability ball on the ground and position yourself in a push-up position with your hands on the ball, slightly narrower than shoulder-width apart."
+ },
+ {
+  "id": "zd4P4B2",
+  "en": "stalder press",
+  "ru_current": "Жим",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Start by standing with your feet shoulder-width apart and your arms extended overhead."
+ },
+ {
+  "id": "Z5YStHW",
+  "en": "overhead triceps stretch",
+  "ru_current": "Растяжка над головой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand or sit upright with your feet shoulder-width apart."
+ },
+ {
+  "id": "v3vLFW0",
+  "en": "close-grip push-up (on knees)",
+  "ru_current": "Отжимание",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Start by getting on your hands and knees, with your hands shoulder-width apart and your knees hip-width apart."
+ },
+ {
+  "id": "3ZflifB",
+  "en": "cable pushdown",
+  "ru_current": "Разгибания на верхнем блоке (трицепс)",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Attach a straight bar to a high pulley cable machine."
+ },
+ {
+  "id": "4Jt8QsQ",
+  "en": "push-up on lower arms",
+  "ru_current": "Отжимание",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Start in a plank position with your forearms on the ground and elbows directly below your shoulders."
+ },
+ {
+  "id": "U7D9Fx3",
+  "en": "dumbbell incline two arm extension",
+  "ru_current": "Разгибание с гантелями на наклонной скамье",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on an incline bench with a dumbbell in each hand, resting on your thighs."
+ },
+ {
+  "id": "mpKZGWz",
+  "en": "dumbbell lying triceps extension",
+  "ru_current": "Разгибание с гантелями лёжа",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with a dumbbell in each hand, palms facing each other."
+ },
+ {
+  "id": "CJwa0vD",
+  "en": "dumbbell standing bent over one arm triceps extension",
+  "ru_current": "Разгибание с гантелями стоя одной рукой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a dumbbell in one hand."
+ },
+ {
+  "id": "iZop9xO",
+  "en": "barbell lying triceps extension",
+  "ru_current": "Разгибание со штангой лёжа",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your feet flat on the ground and your head at the end of the bench."
+ },
+ {
+  "id": "D5yqP2p",
+  "en": "lever overhand triceps dip",
+  "ru_current": "Отжимание на брусьях в рычажном тренажёре",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Adjust the machine to the appropriate height and secure your body in position."
+ },
+ {
+  "id": "EcaV7aL",
+  "en": "barbell lying close-grip press",
+  "ru_current": "Жим со штангой лёжа",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your feet flat on the ground and your back pressed against the bench."
+ },
+ {
+  "id": "W6PxUkg",
+  "en": "dumbbell kickback",
+  "ru_current": "Отведение гантели назад (трицепс)",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a dumbbell in each hand."
+ },
+ {
+  "id": "wpbD28t",
+  "en": "side push-up",
+  "ru_current": "Отжимание",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Start by lying on your side with your legs extended and stacked on top of each other."
+ },
+ {
+  "id": "OTgkHwR",
+  "en": "dumbbell decline triceps extension",
+  "ru_current": "Разгибание с гантелями на скамье с отриц. наклоном",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie on a decline bench with your head lower than your feet and hold a dumbbell in each hand, palms facing each other."
+ },
+ {
+  "id": "1xHyxys",
+  "en": "cable high pulley overhead tricep extension",
+  "ru_current": "Разгибание на блоке над головой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Attach a rope to a high pulley and stand facing away from the machine."
+ },
+ {
+  "id": "OVIKwsd",
+  "en": "dumbbell incline triceps extension",
+  "ru_current": "Разгибание с гантелями на наклонной скамье",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on an incline bench with a dumbbell in each hand, palms facing inwards."
+ },
+ {
+  "id": "Hx1WC8I",
+  "en": "cable incline triceps extension",
+  "ru_current": "Разгибание на блоке на наклонной скамье",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Adjust the cable machine to a low pulley position."
+ },
+ {
+  "id": "4ievMJ9",
+  "en": "dumbbell seated bent over triceps extension",
+  "ru_current": "Разгибание с гантелями сидя",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your feet flat on the ground and hold a dumbbell in each hand."
+ },
+ {
+  "id": "yg8Totb",
+  "en": "barbell lying back of the head tricep extension",
+  "ru_current": "Разгибание со штангой лёжа",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your feet flat on the ground and your head at the end of the bench."
+ },
+ {
+  "id": "eOCOwIR",
+  "en": "dumbbell lying elbow press",
+  "ru_current": "Жим с гантелями лёжа",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with a dumbbell in each hand, palms facing each other and arms extended straight up over your chest."
+ },
+ {
+  "id": "gtO1ErP",
+  "en": "weighted three bench dips",
+  "ru_current": "Отжимание на брусьях с отягощением",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "weighted"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on the edge of a bench with your hands gripping the edge, fingers pointing forward."
+ },
+ {
+  "id": "pP8wP2P",
+  "en": "dumbbell neutral grip bench press",
+  "ru_current": "Жим лёжа с гантелями нейтральным хватом",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your feet flat on the ground and your back pressed against the bench."
+ },
+ {
+  "id": "HJ63mSO",
+  "en": "barbell lying close-grip triceps extension",
+  "ru_current": "Разгибание со штангой лёжа",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your feet flat on the ground and your head at the end of the bench."
+ },
+ {
+  "id": "CQHoDm0",
+  "en": "ez barbell decline triceps extension",
+  "ru_current": "Разгибание с EZ-грифом на скамье с отриц. наклоном",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "ez barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie on a decline bench with your head lower than your feet and your feet secured."
+ },
+ {
+  "id": "VQ3sNCn",
+  "en": "dumbbell seated one arm kickback",
+  "ru_current": "Отведение назад с гантелями одной рукой сидя",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your feet flat on the ground and hold a dumbbell in one hand."
+ },
+ {
+  "id": "6CKUx7o",
+  "en": "ez bar lying close grip triceps extension behind head",
+  "ru_current": "Разгибание с EZ-грифом узким хватом лёжа",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "ez barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your feet flat on the ground and your head at the end of the bench."
+ },
+ {
+  "id": "ufaxB52",
+  "en": "band close-grip push-up",
+  "ru_current": "Отжимание с лентой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Place a band around your upper arms, just above the elbows."
+ },
+ {
+  "id": "bpJL2Qs",
+  "en": "dumbbell pronate-grip triceps extension",
+  "ru_current": "Разгибание с гантелями",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench or chair with your back straight and feet flat on the ground."
+ },
+ {
+  "id": "K1vlode",
+  "en": "weighted triceps dip on high parallel bars",
+  "ru_current": "Отжимание на брусьях с отягощением",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "weighted"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Position yourself between two parallel bars with your hands gripping the bars and your arms fully extended."
+ },
+ {
+  "id": "DQ0cqkT",
+  "en": "three bench dip",
+  "ru_current": "Отжимание на брусьях",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your hands gripping the edge, fingers pointing forward."
+ },
+ {
+  "id": "ezTvXcr",
+  "en": "ring dips",
+  "ru_current": "Отжимание на брусьях",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Start by hanging from the rings with your arms fully extended and your body straight."
+ },
+ {
+  "id": "s5PdDyY",
+  "en": "dumbbell tate press",
+  "ru_current": "Жим с гантелями",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a flat bench with a dumbbell in each hand, palms facing each other."
+ },
+ {
+  "id": "RrLske5",
+  "en": "bench dip (knees bent)",
+  "ru_current": "Обратные отжимания от скамьи",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on the edge of a bench or chair with your hands gripping the edge next to your hips."
+ },
+ {
+  "id": "dZl9Q27",
+  "en": "barbell standing overhead triceps extension",
+  "ru_current": "Разгибание со штангой стоя над головой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a barbell with an overhand grip."
+ },
+ {
+  "id": "ZujAdR9",
+  "en": "cable rope incline tricep extension",
+  "ru_current": "Разгибание на блоке на наклонной скамье",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Attach a rope to a high pulley and adjust the incline bench to a comfortable angle."
+ },
+ {
+  "id": "o8aOcrz",
+  "en": "smith machine incline tricep extension",
+  "ru_current": "Разгибание в Смите на наклонной скамье",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Adjust the seat of the smith machine so that the bar is at shoulder height."
+ },
+ {
+  "id": "wu5LXwz",
+  "en": "olympic barbell triceps extension",
+  "ru_current": "Разгибание со штангой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "olympic barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Start by standing with your feet shoulder-width apart and holding the barbell with an overhand grip."
+ },
+ {
+  "id": "VYmYxK5",
+  "en": "dumbbell one arm hammer press on exercise ball",
+  "ru_current": "Жим с гантелями одной рукой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with your feet flat on the ground and your back straight."
+ },
+ {
+  "id": "kont8Ut",
+  "en": "dumbbell seated triceps extension",
+  "ru_current": "Разгибание с гантелями сидя",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your back straight and feet flat on the ground."
+ },
+ {
+  "id": "PdmaD0N",
+  "en": "dumbbell standing triceps extension",
+  "ru_current": "Разгибание с гантелями стоя",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a dumbbell in one hand."
+ },
+ {
+  "id": "NfP83rA",
+  "en": "dumbbell lying alternate extension",
+  "ru_current": "Разгибание с гантелями попеременные лёжа",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with a dumbbell in each hand, palms facing each other."
+ },
+ {
+  "id": "VuoerH0",
+  "en": "triceps dip (bench leg)",
+  "ru_current": "Отжимание на брусьях",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on the edge of a bench with your hands gripping the edge, fingers pointing forward."
+ },
+ {
+  "id": "Al3tP0D",
+  "en": "medicine ball supine chest throw",
+  "ru_current": "Тяга с медболом лицом вверх",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "medicine ball"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on your back on a bench with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "OxJk1fg",
+  "en": "cable triceps pushdown (v-bar) (with arm blaster)",
+  "ru_current": "Разгибание на блоке на блоке",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Attach a v-bar attachment to the cable machine at the highest setting."
+ },
+ {
+  "id": "J6Dx1Mu",
+  "en": "barbell close-grip bench press",
+  "ru_current": "Жим лёжа со штангой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your feet flat on the ground and your back pressed against the bench."
+ },
+ {
+  "id": "7HcfMBP",
+  "en": "assisted standing triceps extension (with towel)",
+  "ru_current": "Разгибание в гравитроне стоя",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "assisted"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a towel with both hands behind your head."
+ },
+ {
+  "id": "kprile3",
+  "en": "exercise ball dip",
+  "ru_current": "Отжимание на брусьях",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "stability ball"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on the stability ball with your feet flat on the ground and your knees bent at a 90-degree angle."
+ },
+ {
+  "id": "4CBIBOM",
+  "en": "barbell seated close grip behind neck triceps extension",
+  "ru_current": "Разгибание со штангой за голову узким хватом сидя",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your back straight and feet flat on the ground."
+ },
+ {
+  "id": "7aVz15j",
+  "en": "triceps dips floor",
+  "ru_current": "Отжимание на брусьях",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on the edge of a chair or bench with your hands next to your hips, fingers pointing forward."
+ },
+ {
+  "id": "8K7m2SS",
+  "en": "medicine ball close grip push up",
+  "ru_current": "Отжимание с медболом узким хватом",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "medicine ball"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Start in a high plank position with your hands on the medicine ball, shoulder-width apart."
+ },
+ {
+  "id": "KyLtiLT",
+  "en": "ez barbell incline triceps extension",
+  "ru_current": "Разгибание с EZ-грифом на наклонной скамье",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "ez barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Set up an incline bench at a 45-degree angle."
+ },
+ {
+  "id": "sYCcnon",
+  "en": "cable standing one arm triceps extension",
+  "ru_current": "Разгибание на блоке стоя одной рукой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, facing the cable machine."
+ },
+ {
+  "id": "hnOYgH3",
+  "en": "ez barbell jm bench press",
+  "ru_current": "Жим лёжа с EZ-грифом",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "ez barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your feet flat on the ground and your back pressed against the bench."
+ },
+ {
+  "id": "EMpUwRI",
+  "en": "barbell lying extension",
+  "ru_current": "Разгибание со штангой лёжа",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your feet flat on the ground and your head at the end of the bench."
+ },
+ {
+  "id": "dU605di",
+  "en": "cable pushdown (with rope attachment)",
+  "ru_current": "Разгибания на верхнем блоке (трицепс)",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Attach a rope attachment to a high pulley on a cable machine."
+ },
+ {
+  "id": "vvNjDJS",
+  "en": "cable two arm tricep kickback",
+  "ru_current": "Отведение назад на блоке",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and knees slightly bent."
+ },
+ {
+  "id": "U6G2gk9",
+  "en": "body-up",
+  "ru_current": "Подъём тела обратным хватом",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Start by placing your hands on a raised surface, such as a bench or parallel bars, with your palms facing down and fingers pointing forward."
+ },
+ {
+  "id": "Db7eEgw",
+  "en": "cable concentration extension (on knee)",
+  "ru_current": "Разгибание на блоке",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench or chair with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "yRLPCLu",
+  "en": "barbell reverse grip skullcrusher",
+  "ru_current": "со штангой обратным хватом",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your feet flat on the ground and your head at the end of the bench."
+ },
+ {
+  "id": "7ePTw4B",
+  "en": "exercise ball seated triceps stretch",
+  "ru_current": "Растяжка сидя",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "stability ball"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a stability ball with your feet flat on the ground and your back straight."
+ },
+ {
+  "id": "XalXcvM",
+  "en": "dumbbell forward lunge triceps extension",
+  "ru_current": "Разгибание с гантелями",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a dumbbell in each hand."
+ },
+ {
+  "id": "3T12T87",
+  "en": "dumbbell standing bent over two arm triceps extension",
+  "ru_current": "Разгибание с гантелями стоя",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a dumbbell in each hand."
+ },
+ {
+  "id": "wyaqzOS",
+  "en": "dumbbell lying one arm pronated triceps extension",
+  "ru_current": "Разгибание с гантелями одной рукой лёжа",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your back and head supported, and your feet flat on the ground."
+ },
+ {
+  "id": "KZXAtKQ",
+  "en": "push-up close-grip off dumbbell",
+  "ru_current": "Отжимание с гантелями",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Start in a push-up position with your hands placed close together, directly under your shoulders."
+ },
+ {
+  "id": "BCUR88E",
+  "en": "dumbbell standing one arm extension",
+  "ru_current": "Разгибание с гантелями стоя одной рукой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a dumbbell in one hand."
+ },
+ {
+  "id": "UmpPAAe",
+  "en": "dumbbell standing kickback",
+  "ru_current": "Отведение назад с гантелями стоя",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a dumbbell in each hand."
+ },
+ {
+  "id": "ZsiqXYa",
+  "en": "barbell jm bench press",
+  "ru_current": "Жим лёжа со штангой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your feet flat on the ground and your back pressed against the bench."
+ },
+ {
+  "id": "Gi2BXfK",
+  "en": "dumbbell standing alternating tricep kickback",
+  "ru_current": "Отведение назад с гантелями попеременные стоя",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a dumbbell in each hand."
+ },
+ {
+  "id": "Ser9eQp",
+  "en": "lever triceps extension",
+  "ru_current": "Разгибание в рычажном тренажёре",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the machine with your back against the pad."
+ },
+ {
+  "id": "MU9HnE7",
+  "en": "weighted bench dip",
+  "ru_current": "Отжимание на брусьях с отягощением",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "weighted"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your hands gripping the edge, fingers pointing forward."
+ },
+ {
+  "id": "ziFKQXP",
+  "en": "dumbbell one arm french press on exercise ball",
+  "ru_current": "Жим с гантелями одной рукой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with your feet flat on the ground and your back straight."
+ },
+ {
+  "id": "641mIfk",
+  "en": "barbell incline reverse-grip press",
+  "ru_current": "Жим со штангой на наклонной скамье",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Set up an incline bench at a 45-degree angle."
+ },
+ {
+  "id": "9RT8oQW",
+  "en": "bench dip on floor",
+  "ru_current": "Отжимание на брусьях",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on the edge of a bench or chair with your hands gripping the edge, fingers pointing forward."
+ },
+ {
+  "id": "nAuHPcD",
+  "en": "dumbbell one arm triceps extension (on bench)",
+  "ru_current": "Разгибание с гантелями одной рукой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your back straight and feet flat on the ground."
+ },
+ {
+  "id": "YqJw82s",
+  "en": "barbell reverse close-grip bench press",
+  "ru_current": "Жим лёжа со штангой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your feet flat on the ground and your back pressed against the bench."
+ },
+ {
+  "id": "yB9SvIF",
+  "en": "smith machine decline close grip bench press",
+  "ru_current": "Жим лёжа в Смите узким хватом на скамье с отриц. наклоном",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Adjust the bench on the smith machine to a decline position."
+ },
+ {
+  "id": "ThKP69G",
+  "en": "cable reverse grip triceps pushdown (sz-bar) (with arm blaster)",
+  "ru_current": "Разгибание на блоке на блоке обратным хватом",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Attach a straight bar to the cable machine at the highest setting."
+ },
+ {
+  "id": "h8LFzo9",
+  "en": "barbell lying triceps extension skull crusher",
+  "ru_current": "Разгибание со штангой лёжа",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your feet flat on the ground and your head at the end of the bench."
+ },
+ {
+  "id": "soIB2rj",
+  "en": "diamond push-up",
+  "ru_current": "Отжимания узким хватом (алмазные)",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Start in a high plank position with your hands close together, forming a diamond shape with your thumbs and index fingers."
+ },
+ {
+  "id": "5uFK1xr",
+  "en": "barbell seated overhead triceps extension",
+  "ru_current": "Разгибание со штангой над головой сидя",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your back straight and feet flat on the ground."
+ },
+ {
+  "id": "1cTf2Ux",
+  "en": "ez bar standing french press",
+  "ru_current": "Жим с EZ-грифом стоя",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "ez barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold the ez barbell with an overhand grip."
+ },
+ {
+  "id": "vpQaQkH",
+  "en": "ski ergometer",
+  "ru_current": "Лыжный эргометр",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "skierg machine"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Adjust the seat height and footrests to a comfortable position."
+ },
+ {
+  "id": "FAoIFMw",
+  "en": "one arm dip",
+  "ru_current": "Отжимание на брусьях одной рукой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand facing away from a bench or chair, with your feet shoulder-width apart."
+ },
+ {
+  "id": "7jGOBF3",
+  "en": "dumbbell close grip press",
+  "ru_current": "Жим с гантелями узким хватом",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a flat bench with a dumbbell in each hand, resting on your thighs."
+ },
+ {
+  "id": "gx7s7uF",
+  "en": "barbell incline close grip bench press",
+  "ru_current": "Жим лёжа со штангой узким хватом на наклонной скамье",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Set up an incline bench at a 45-degree angle."
+ },
+ {
+  "id": "x0lwvfq",
+  "en": "dumbbell seated bent over alternate kickback",
+  "ru_current": "Отведение назад с гантелями попеременные сидя",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with a dumbbell in each hand, palms facing inwards."
+ },
+ {
+  "id": "BRImeP8",
+  "en": "lever seated dip",
+  "ru_current": "Отжимание на брусьях в рычажном тренажёре сидя",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Adjust the seat height so that your feet are flat on the ground and your knees are at a 90-degree angle."
+ },
+ {
+  "id": "8eqjhOl",
+  "en": "dumbbell palms in incline bench press",
+  "ru_current": "Жим лёжа с гантелями на наклонной скамье",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Set up an incline bench at a 45-degree angle."
+ },
+ {
+  "id": "NZ5Qqkz",
+  "en": "reverse dip",
+  "ru_current": "Отжимание на брусьях",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Position yourself between two parallel bars with your arms fully extended and your body straight."
+ },
+ {
+  "id": "5fKX7wi",
+  "en": "dumbbell seated reverse grip one arm overhead tricep extension",
+  "ru_current": "Разгибание с гантелями обратным хватом над головой одной рукой сидя",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your back straight and feet flat on the ground."
+ },
+ {
+  "id": "X6C6i5Y",
+  "en": "triceps dip",
+  "ru_current": "Отжимание на брусьях",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on the edge of a bench or chair with your hands gripping the edge, fingers pointing forward."
+ },
+ {
+  "id": "DgZQ11d",
+  "en": "ez barbell decline close grip face press",
+  "ru_current": "Жим с EZ-грифом узким хватом на скамье с отриц. наклоном",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "ez barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie on a decline bench with your head lower than your feet."
+ },
+ {
+  "id": "6MfS53i",
+  "en": "dumbbell lying single extension",
+  "ru_current": "Разгибание с гантелями лёжа",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with a dumbbell in one hand and your arm fully extended above your chest."
+ },
+ {
+  "id": "LL1UiTX",
+  "en": "dumbbell incline one arm hammer press",
+  "ru_current": "Жим с гантелями на наклонной скамье одной рукой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on an incline bench with a dumbbell in one hand, resting on your thigh."
+ },
+ {
+  "id": "bQy2Eni",
+  "en": "dumbbell one arm kickback",
+  "ru_current": "Отведение назад с гантелями одной рукой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a dumbbell in your right hand."
+ },
+ {
+  "id": "FQXdXzY",
+  "en": "dumbbells seated triceps extension",
+  "ru_current": "Разгибание с гантелями сидя",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your back straight and feet flat on the ground."
+ },
+ {
+  "id": "en550rk",
+  "en": "dumbbell seated kickback",
+  "ru_current": "Отведение назад с гантелями сидя",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your feet flat on the ground and hold a dumbbell in each hand."
+ },
+ {
+  "id": "Gm2Uv1z",
+  "en": "exercise ball supine triceps extension",
+  "ru_current": "Разгибание лицом вверх",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with your feet flat on the ground and your knees bent at a 90-degree angle."
+ },
+ {
+  "id": "CFN9P8G",
+  "en": "ez bar french press on exercise ball",
+  "ru_current": "Жим с EZ-грифом",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "ez barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on an exercise ball and hold an EZ barbell with an overhand grip."
+ },
+ {
+  "id": "SHUMp5H",
+  "en": "dumbbell decline one arm hammer press",
+  "ru_current": "Жим с гантелями на скамье с отриц. наклоном одной рукой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie on a decline bench with a dumbbell in one hand, resting on your chest."
+ },
+ {
+  "id": "c3QQLPi",
+  "en": "cable rear drive",
+  "ru_current": "на блоке",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Attach a handle to a low pulley cable machine and stand facing away from the machine."
+ },
+ {
+  "id": "rQxwMxO",
+  "en": "handstand push-up",
+  "ru_current": "Отжимание",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Find a wall and face away from it, standing a few feet away."
+ },
+ {
+  "id": "KWdF2JI",
+  "en": "cable kneeling triceps extension",
+  "ru_current": "Разгибание на блоке",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Attach a rope handle to a high pulley and kneel down facing the cable machine."
+ },
+ {
+  "id": "fSrPP6B",
+  "en": "triceps press",
+  "ru_current": "Жим",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and your knees slightly bent."
+ },
+ {
+  "id": "05Cf2v8",
+  "en": "impossible dips",
+  "ru_current": "Отжимание на брусьях",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Position yourself between two parallel bars with your arms fully extended and your body suspended in the air."
+ },
+ {
+  "id": "1TVoin7",
+  "en": "barbell lying triceps extension double",
+  "ru_current": "Разгибание со штангой лёжа",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your feet flat on the ground and your head at the end of the bench."
+ },
+ {
+  "id": "syUwUKY",
+  "en": "rotated dumbbell pronate-grip triceps extension",
+  "ru_current": "Разгибание с гантелями",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench or chair with your back straight and feet flat on the ground."
+ },
+ {
+  "id": "omsF3RN",
+  "en": "dynamic style band side triceps extension",
+  "ru_current": "Разгибание с лентой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold the band with both hands, palms facing down."
+ },
+ {
+  "id": "pNIKolI",
+  "en": "exercise ball seated triceps stretch wide",
+  "ru_current": "Растяжка сидя",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "stability ball"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a stability ball with your feet flat on the ground and your back straight."
+ },
+ {
+  "id": "jvEXp4N",
+  "en": "endurance style one arm dip",
+  "ru_current": "Отжимание на брусьях одной рукой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand facing away from a bench or chair, with your feet shoulder-width apart."
+ },
+ {
+  "id": "9tvVVM9",
+  "en": "flexible cable triceps pushdown (v-bar)",
+  "ru_current": "Разгибание на блоке на блоке",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Attach a v-bar attachment to the cable machine at the highest setting."
+ },
+ {
+  "id": "w7obpWd",
+  "en": "active style cable pushdown",
+  "ru_current": "Разгибание на блоке на блоке",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Attach a straight bar to a high pulley cable machine."
+ },
+ {
+  "id": "TBNaSNs",
+  "en": "ez barbell decline close grip face press - mini variation",
+  "ru_current": "Жим с EZ-грифом узким хватом на скамье с отриц. наклоном",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "ez barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie on a decline bench with your head lower than your feet."
+ },
+ {
+  "id": "C8Crfa4",
+  "en": "targeted style smith close-grip bench press",
+  "ru_current": "Жим лёжа в Смите",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the bench with your feet flat on the ground."
+ },
+ {
+  "id": "iFsqlCD",
+  "en": "prone medicine ball close grip push up",
+  "ru_current": "Отжимание с медболом узким хватом лицом вниз",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "medicine ball"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Start in a high plank position with your hands on the medicine ball, shoulder-width apart."
+ },
+ {
+  "id": "9ZGnq1w",
+  "en": "triceps dip (between benches) - extreme variation",
+  "ru_current": "Отжимание на брусьях",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on a bench with your hands gripping the edge of the bench, fingers pointing forward."
+ },
+ {
+  "id": "qU8bYp7",
+  "en": "rough cable standing one arm triceps extension",
+  "ru_current": "Разгибание на блоке стоя одной рукой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, facing the cable machine."
+ },
+ {
+  "id": "I6Ca0a7",
+  "en": "complete style ez bar lying close grip triceps extension behind head",
+  "ru_current": "Разгибание с EZ-грифом узким хватом лёжа",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "ez barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your feet flat on the ground and your head at the end of the bench."
+ },
+ {
+  "id": "7WcQgkm",
+  "en": "smith machine incline tricep extension - straight variation",
+  "ru_current": "Разгибание в Смите на наклонной скамье",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Adjust the seat of the smith machine so that the bar is at shoulder height."
+ },
+ {
+  "id": "1IFV9h3",
+  "en": "push-up on lower arms - resistance variation",
+  "ru_current": "Отжимание",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Start in a plank position with your forearms on the ground and elbows directly below your shoulders."
+ },
+ {
+  "id": "OJFgZJ0",
+  "en": "dynamic style barbell lying back of the head tricep extension",
+  "ru_current": "Разгибание со штангой лёжа",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your feet flat on the ground and your head at the end of the bench."
+ },
+ {
+  "id": "7R4NIjL",
+  "en": "assisted standing triceps extension (with towel) with horizontal",
+  "ru_current": "Разгибание в гравитроне стоя",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "assisted"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a towel with both hands behind your head."
+ },
+ {
+  "id": "W7yh3Yo",
+  "en": "wall style dumbbell one arm french press on exercise ball",
+  "ru_current": "Жим с гантелями одной рукой",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with your feet flat on the ground and your back straight."
+ },
+ {
+  "id": "VsopqcV",
+  "en": "macro style close-grip push-up",
+  "ru_current": "Отжимание",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Start in a high plank position with your hands placed close together, directly under your shoulders."
+ },
+ {
+  "id": "vNPJbDA",
+  "en": "cable rope incline tricep extension - reverse variation",
+  "ru_current": "Разгибание на блоке на наклонной скамье",
+  "target": [
+   "triceps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "upper arms"
+  ],
+  "instr": "Step:1 Attach a rope to a high pulley and adjust the incline bench to a comfortable angle."
+ },
+ {
+  "id": "trmte8s",
+  "en": "band shrug",
+  "ru_current": "Шраги с лентой",
+  "target": [
+   "traps"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "neck"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and place the band under your feet, holding the ends with your hands."
+ },
+ {
+  "id": "Eg98Ft9",
+  "en": "cable shrug",
+  "ru_current": "Шраги на блоке",
+  "target": [
+   "traps"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand facing the cable machine with your feet shoulder-width apart."
+ },
+ {
+  "id": "cbuFJrn",
+  "en": "lever gripless shrug v. 2",
+  "ru_current": "Шраги в рычажном тренажёре",
+  "target": [
+   "traps"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the machine with your back against the pad."
+ },
+ {
+  "id": "7xeukSt",
+  "en": "scapula dips",
+  "ru_current": "Отжимания на лопатки (брусья)",
+  "target": [
+   "traps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Start by standing with your feet shoulder-width apart and your arms extended in front of you."
+ },
+ {
+  "id": "cwsAI4G",
+  "en": "dumbbell decline shrug",
+  "ru_current": "Шраги с гантелями на скамье с отриц. наклоном",
+  "target": [
+   "traps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Set up a decline bench at a 45-degree angle."
+ },
+ {
+  "id": "8ARQ9Hw",
+  "en": "kettlebell sumo high pull",
+  "ru_current": "Сумо-тяга гири к подбородку",
+  "target": [
+   "traps"
+  ],
+  "equipment": [
+   "kettlebell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet wider than shoulder-width apart, toes pointing outwards."
+ },
+ {
+  "id": "dG7tG5y",
+  "en": "barbell shrug",
+  "ru_current": "Шраги со штангой",
+  "target": [
+   "traps"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a barbell in front of you with an overhand grip."
+ },
+ {
+  "id": "ZZKbeMw",
+  "en": "lever shrug",
+  "ru_current": "Шраги в рычажном тренажёре",
+  "target": [
+   "traps"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the leverage machine with your back against the pad."
+ },
+ {
+  "id": "NJzBsGJ",
+  "en": "dumbbell shrug",
+  "ru_current": "Шраги с гантелями",
+  "target": [
+   "traps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a dumbbell in each hand with your palms facing your body."
+ },
+ {
+  "id": "f91FwXG",
+  "en": "lever gripless shrug",
+  "ru_current": "Шраги в рычажном тренажёре",
+  "target": [
+   "traps"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the leverage machine."
+ },
+ {
+  "id": "OUQ0ZyW",
+  "en": "smith shrug",
+  "ru_current": "Шраги в Смите",
+  "target": [
+   "traps"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and your knees slightly bent."
+ },
+ {
+  "id": "JymLInS",
+  "en": "dumbbell incline shrug",
+  "ru_current": "Шраги с гантелями на наклонной скамье",
+  "target": [
+   "traps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Set an incline bench to a 45-degree angle and sit on it with a dumbbell in each hand."
+ },
+ {
+  "id": "bRlbdjK",
+  "en": "dumbbell decline shrug v. 2",
+  "ru_current": "Шраги с гантелями на скамье с отриц. наклоном",
+  "target": [
+   "traps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Set up a decline bench at a 45-degree angle."
+ },
+ {
+  "id": "uTBt1HV",
+  "en": "scapular pull-up",
+  "ru_current": "Подтягивание",
+  "target": [
+   "traps"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Start by hanging from a pull-up bar with your palms facing away from you and your arms fully extended."
+ },
+ {
+  "id": "MzNnwx9",
+  "en": "smith back shrug",
+  "ru_current": "Шраги в Смите",
+  "target": [
+   "traps"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and your knees slightly bent."
+ },
+ {
+  "id": "IH2kr7n",
+  "en": "dumbbell decline shrug - rigid variation",
+  "ru_current": "Шраги с гантелями на скамье с отриц. наклоном",
+  "target": [
+   "traps"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Set up a decline bench at a 45-degree angle."
+ },
+ {
+  "id": "DIVyqrU",
+  "en": "sphinx",
+  "ru_current": "Сфинкс (разгибание спины)",
+  "target": [
+   "spine"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Lie face down on the ground with your forearms flat on the floor, elbows directly under your shoulders."
+ },
+ {
+  "id": "zkgRrbK",
+  "en": "hyperextension (on bench)",
+  "ru_current": "Гиперэкстензия",
+  "target": [
+   "spine"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Adjust the hyperextension bench so that your hips are resting comfortably on the pad and your feet are secured."
+ },
+ {
+  "id": "qLpO4vV",
+  "en": "back extension on exercise ball",
+  "ru_current": "Разгибание",
+  "target": [
+   "spine"
+  ],
+  "equipment": [
+   "stability ball"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Place the stability ball on the ground and lie face down on top of it, with your hips resting on the ball and your feet against a wall or other stable surface."
+ },
+ {
+  "id": "WME869U",
+  "en": "exercise ball back extension with knees off ground",
+  "ru_current": "Разгибание",
+  "target": [
+   "spine"
+  ],
+  "equipment": [
+   "stability ball"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Place the stability ball on the ground and lie face down on top of it, with your hips resting on the ball and your feet against a wall for stability."
+ },
+ {
+  "id": "cuKYxhu",
+  "en": "standing pelvic tilt",
+  "ru_current": "Наклон таза стоя",
+  "target": [
+   "spine"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and your knees slightly bent."
+ },
+ {
+  "id": "isofgzg",
+  "en": "roller back stretch",
+  "ru_current": "Растяжка на ролике",
+  "target": [
+   "spine"
+  ],
+  "equipment": [
+   "roller"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Start by sitting on the ground with your legs extended in front of you."
+ },
+ {
+  "id": "lCKm4Rs",
+  "en": "exercise ball prone leg raise",
+  "ru_current": "Подъём одной ногой",
+  "target": [
+   "spine"
+  ],
+  "equipment": [
+   "stability ball"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Lie face down on a mat with your legs extended and your toes resting on top of the stability ball."
+ },
+ {
+  "id": "o1HGDSq",
+  "en": "exercise ball back extension with hands behind head",
+  "ru_current": "Разгибание",
+  "target": [
+   "spine"
+  ],
+  "equipment": [
+   "stability ball"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Place the stability ball on the ground and lie face down on top of it with your hips resting on the ball."
+ },
+ {
+  "id": "PERjVm8",
+  "en": "exercise ball back extension with arms extended",
+  "ru_current": "Разгибание",
+  "target": [
+   "spine"
+  ],
+  "equipment": [
+   "stability ball"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Place the stability ball on the ground and lie face down on top of it, with your hips resting on the ball and your feet against a wall for stability."
+ },
+ {
+  "id": "rUXfn3R",
+  "en": "lever back extension",
+  "ru_current": "Разгибание в рычажном тренажёре",
+  "target": [
+   "spine"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Adjust the machine to fit your body size and range of motion."
+ },
+ {
+  "id": "p195zsJ",
+  "en": "two toe touch (male)",
+  "ru_current": "Касание носков двумя руками",
+  "target": [
+   "spine"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and your arms extended out to the sides."
+ },
+ {
+  "id": "ANbbry2",
+  "en": "lower back curl",
+  "ru_current": "Скручивание поясницы",
+  "target": [
+   "spine"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Lie flat on your stomach with your legs extended and your arms by your sides."
+ },
+ {
+  "id": "01qpYSe",
+  "en": "upward facing dog",
+  "ru_current": "Собака мордой вверх (йога)",
+  "target": [
+   "spine"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Lie face down on the floor with your legs extended behind you."
+ },
+ {
+  "id": "WVD66ff",
+  "en": "exercise ball back extension with rotation",
+  "ru_current": "Разгибание",
+  "target": [
+   "spine"
+  ],
+  "equipment": [
+   "stability ball"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Start by lying face down on the stability ball with your hips resting on the ball and your feet firmly planted on the ground."
+ },
+ {
+  "id": "JbC2iaV",
+  "en": "spine stretch",
+  "ru_current": "Растяжка",
+  "target": [
+   "spine"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Sit on the ground with your legs extended in front of you."
+ },
+ {
+  "id": "zhMwOwE",
+  "en": "hyperextension",
+  "ru_current": "Гиперэкстензия",
+  "target": [
+   "spine"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Adjust the hyperextension bench so that your upper thighs are resting on the pad and your feet are secured."
+ },
+ {
+  "id": "d7z1Y7V",
+  "en": "exercise ball hug",
+  "ru_current": "Обхват фитбола (растяжка спины)",
+  "target": [
+   "spine"
+  ],
+  "equipment": [
+   "stability ball"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Sit on the stability ball with your feet flat on the ground and your back straight."
+ },
+ {
+  "id": "KUaoUV8",
+  "en": "band straight leg deadlift",
+  "ru_current": "Тяга (становая) с лентой",
+  "target": [
+   "spine"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and place the band around your feet."
+ },
+ {
+  "id": "8urJS9b",
+  "en": "weighted hyperextension (on stability ball)",
+  "ru_current": "Гиперэкстензия на фитболе",
+  "target": [
+   "spine"
+  ],
+  "equipment": [
+   "weighted"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Position yourself face down on a stability ball with your hips resting on the ball and your feet against a wall for stability."
+ },
+ {
+  "id": "O3INw8V",
+  "en": "improved sphinx",
+  "ru_current": "Сфинкс (улучшенный)",
+  "target": [
+   "spine"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Lie face down on the ground with your forearms flat on the floor, elbows directly under your shoulders."
+ },
+ {
+  "id": "lRcrlH8",
+  "en": "fast band straight leg deadlift",
+  "ru_current": "Тяга (становая) с лентой",
+  "target": [
+   "spine"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "back"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and place the band around your feet."
+ },
+ {
+  "id": "ayAHcEm",
+  "en": "smith incline shoulder raises",
+  "ru_current": "Подъём в Смите на наклонной скамье",
+  "target": [
+   "serratus anterior"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the smith machine to an incline position."
+ },
+ {
+  "id": "6e2DcYX",
+  "en": "dumbbell incline shoulder raise",
+  "ru_current": "Подъём с гантелями на наклонной скамье",
+  "target": [
+   "serratus anterior"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Set an incline bench to a 45-degree angle and sit on it with a dumbbell in each hand, palms facing down."
+ },
+ {
+  "id": "GdMa1ET",
+  "en": "incline scapula push up",
+  "ru_current": "Отжимание на наклонной скамье",
+  "target": [
+   "serratus anterior"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Set up an incline bench at a 45-degree angle."
+ },
+ {
+  "id": "xi0yckC",
+  "en": "barbell incline shoulder raise",
+  "ru_current": "Подъём со штангой на наклонной скамье",
+  "target": [
+   "serratus anterior"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Set up an incline bench at a 45-degree angle."
+ },
+ {
+  "id": "jV65tKx",
+  "en": "scapula push-up",
+  "ru_current": "Отжимание",
+  "target": [
+   "serratus anterior"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Start in a high plank position with your hands directly under your shoulders and your body in a straight line."
+ },
+ {
+  "id": "gMyx3Qn",
+  "en": "high style scapula push-up",
+  "ru_current": "Отжимание",
+  "target": [
+   "serratus anterior"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Start in a high plank position with your hands directly under your shoulders and your body in a straight line."
+ },
+ {
+  "id": "T2fA5Ir",
+  "en": "squat on bosu ball",
+  "ru_current": "Приседание на BOSU",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "bosu ball"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Place the bosu ball on the ground with the flat side up."
+ },
+ {
+  "id": "SGY8Zui",
+  "en": "barbell clean and press",
+  "ru_current": "Жим со штангой",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and the barbell on the floor in front of you."
+ },
+ {
+  "id": "YUYAMEj",
+  "en": "assisted prone lying quads stretch",
+  "ru_current": "Растяжка в гравитроне лёжа лицом вниз",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "assisted"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Lie face down on the ground with your legs extended."
+ },
+ {
+  "id": "W9pFVv1",
+  "en": "barbell bench squat",
+  "ru_current": "Приседание со штангой",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Set up a barbell on a squat rack at chest height."
+ },
+ {
+  "id": "QpXqiq8",
+  "en": "suspended split squat",
+  "ru_current": "Приседание",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand facing away from a suspension trainer with your feet shoulder-width apart."
+ },
+ {
+  "id": "BWnJR72",
+  "en": "lying (side) quads stretch",
+  "ru_current": "Растяжка лёжа",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Lie on your side with your legs straight."
+ },
+ {
+  "id": "5BZHW9s",
+  "en": "squat to overhead reach with twist",
+  "ru_current": "Приседание над головой",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and toes slightly turned out."
+ },
+ {
+  "id": "wWFspEi",
+  "en": "smith single leg split squat",
+  "ru_current": "Приседание в Смите одной ногой",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand in front of the smith machine with your feet shoulder-width apart."
+ },
+ {
+  "id": "xGgAGPm",
+  "en": "chair leg extended stretch",
+  "ru_current": "Растяжка",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Sit on the edge of a chair with your back straight and feet flat on the ground."
+ },
+ {
+  "id": "r5DgrW9",
+  "en": "dumbbell supported squat",
+  "ru_current": "Приседание с гантелями",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a dumbbell in each hand at your sides."
+ },
+ {
+  "id": "gfk9kD4",
+  "en": "barbell overhead squat",
+  "ru_current": "Приседание со штангой над головой",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and toes slightly turned out."
+ },
+ {
+  "id": "HBYyX94",
+  "en": "barbell split squat v. 2",
+  "ru_current": "Приседание со штангой",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Start by standing with your feet shoulder-width apart, holding a barbell across your upper back."
+ },
+ {
+  "id": "tFGKm99",
+  "en": "intermediate hip flexor and quad stretch",
+  "ru_current": "Растяжка",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "rope"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand upright with your feet shoulder-width apart."
+ },
+ {
+  "id": "Gu2rNJd",
+  "en": "smith chair squat",
+  "ru_current": "Приседание в Смите",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Adjust the height of the smith machine bar to a comfortable position."
+ },
+ {
+  "id": "RYcV1kH",
+  "en": "barbell squat jump step rear lunge",
+  "ru_current": "Приседание со штангой",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Start by standing with your feet shoulder-width apart, holding a barbell across your upper back."
+ },
+ {
+  "id": "uKyN64F",
+  "en": "barbell one leg squat",
+  "ru_current": "Приседание со штангой одной ногой",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a barbell across your upper back."
+ },
+ {
+  "id": "oR7O9LW",
+  "en": "barbell squat (on knees)",
+  "ru_current": "Приседания со штангой",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Start by kneeling on the ground with your knees hip-width apart and your toes pointing forward."
+ },
+ {
+  "id": "W31mMjd",
+  "en": "barbell side split squat",
+  "ru_current": "Приседание со штангой",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand with your feet wider than shoulder-width apart, toes pointing slightly outward."
+ },
+ {
+  "id": "dG5Smob",
+  "en": "snatch pull",
+  "ru_current": "Рывок",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and the barbell on the ground in front of you."
+ },
+ {
+  "id": "y8bYM8w",
+  "en": "band single leg split squat",
+  "ru_current": "Приседание с лентой одной ногой",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand with your feet hip-width apart and place a resistance band around your ankles."
+ },
+ {
+  "id": "IMRsOCn",
+  "en": "squat jerk",
+  "ru_current": "Приседание",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Start with the barbell resting on your shoulders, with your feet shoulder-width apart."
+ },
+ {
+  "id": "qx4fgX7",
+  "en": "dumbbell single leg split squat",
+  "ru_current": "Приседание с гантелями одной ногой",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a dumbbell in each hand."
+ },
+ {
+  "id": "mweqJin",
+  "en": "quick feet v. 2",
+  "ru_current": "Быстрые ноги v.2",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and your arms by your sides."
+ },
+ {
+  "id": "9E25EOx",
+  "en": "split squats",
+  "ru_current": "Приседание",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart."
+ },
+ {
+  "id": "Y7YcmIJ",
+  "en": "barbell bench front squat",
+  "ru_current": "Приседание со штангой",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Start by standing with your feet shoulder-width apart and the barbell resting on your upper chest, just below your collarbone."
+ },
+ {
+  "id": "HUEqZ1y",
+  "en": "barbell side split squat v. 2",
+  "ru_current": "Приседание со штангой",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand with your feet wider than shoulder-width apart, toes pointing slightly outwards."
+ },
+ {
+  "id": "0lQnxMZ",
+  "en": "weighted sissy squat",
+  "ru_current": "Приседание с отягощением",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "weighted"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and your toes pointing slightly outward."
+ },
+ {
+  "id": "gFyFj9z",
+  "en": "dumbbell step-up lunge",
+  "ru_current": "Выпад с гантелями",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand in front of a step or platform with a dumbbell in each hand, palms facing your sides."
+ },
+ {
+  "id": "s7HX1BY",
+  "en": "barbell wide squat",
+  "ru_current": "Приседание со штангой",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand with your feet wider than shoulder-width apart, toes pointing slightly outward."
+ },
+ {
+  "id": "uZKq7lo",
+  "en": "forward jump",
+  "ru_current": "Прыжок",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart."
+ },
+ {
+  "id": "Y1MsI1l",
+  "en": "resistance band leg extension",
+  "ru_current": "Разгибание ног с эспандером",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "resistance band"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Attach the resistance band to a sturdy anchor point and secure it around your ankle."
+ },
+ {
+  "id": "xAySMB0",
+  "en": "balance board",
+  "ru_current": "Баланс-борд",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Place the balance board on a flat surface."
+ },
+ {
+  "id": "arsYEd3",
+  "en": "band one arm single leg split squat",
+  "ru_current": "Приседание с лентой одной ногой одной рукой",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand with your feet hip-width apart and place a resistance band around your ankles."
+ },
+ {
+  "id": "my33uHU",
+  "en": "lever leg extension",
+  "ru_current": "Разгибания ног в рычажном тренажёре",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Adjust the seat height and backrest of the machine to fit your body."
+ },
+ {
+  "id": "QChZi3x",
+  "en": "squat to overhead reach",
+  "ru_current": "Приседание над головой",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and toes slightly turned out."
+ },
+ {
+  "id": "xdYPUtE",
+  "en": "sissy squat",
+  "ru_current": "Сисси-приседания",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and your toes pointing slightly outward."
+ },
+ {
+  "id": "yn8yg1r",
+  "en": "dumbbell goblet squat",
+  "ru_current": "Приседание с гантелями",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a dumbbell vertically against your chest with both hands."
+ },
+ {
+  "id": "V07qpXy",
+  "en": "lever alternate leg press",
+  "ru_current": "Жим ногами в рычажном тренажёре попеременные",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Adjust the seat and foot platform of the leverage machine to your desired position."
+ },
+ {
+  "id": "gGNQmVt",
+  "en": "barbell single leg split squat",
+  "ru_current": "Приседание со штангой одной ногой",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a barbell across your upper back."
+ },
+ {
+  "id": "qBcKorM",
+  "en": "all fours squad stretch",
+  "ru_current": "Растяжка",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Start on all fours with your hands directly under your shoulders and your knees directly under your hips."
+ },
+ {
+  "id": "qPEzJjA",
+  "en": "farmers walk",
+  "ru_current": "Ходьба",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand up straight with a dumbbell in each hand, palms facing your sides."
+ },
+ {
+  "id": "QjE2DcA",
+  "en": "dumbbell step-up split squat",
+  "ru_current": "Приседание с гантелями",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand in front of a bench or step with a dumbbell in each hand, palms facing your body."
+ },
+ {
+  "id": "6YUfHPL",
+  "en": "quads",
+  "ru_current": "Растяжка квадрицепса",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart."
+ },
+ {
+  "id": "SaDOwk7",
+  "en": "backward jump",
+  "ru_current": "Прыжок",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart."
+ },
+ {
+  "id": "Ul5OFSV",
+  "en": "resistance band leg extension declined",
+  "ru_current": "Разгибание ног с эспандером на скамье с отриц. наклоном",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "resistance band"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Attach the resistance band to a sturdy anchor point and secure it around your ankle."
+ },
+ {
+  "id": "IBj3nsn",
+  "en": "quick feet v. 2 with bent",
+  "ru_current": null,
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and your arms by your sides."
+ },
+ {
+  "id": "DoEYq4s",
+  "en": "sissy squat isolation",
+  "ru_current": "Приседание",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and your toes pointing slightly outward."
+ },
+ {
+  "id": "fF6GKVh",
+  "en": "chair leg extended stretch with modified",
+  "ru_current": "Растяжка",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Sit on the edge of a chair with your back straight and feet flat on the ground."
+ },
+ {
+  "id": "LzX8YEz",
+  "en": "all fours squad stretch - elevated variation",
+  "ru_current": "Растяжка с возвышения",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Start on all fours with your hands directly under your shoulders and your knees directly under your hips."
+ },
+ {
+  "id": "7858za8",
+  "en": "fluid dumbbell step-up lunge",
+  "ru_current": "Выпад с гантелями",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand in front of a step or platform with a dumbbell in each hand, palms facing your sides."
+ },
+ {
+  "id": "MDFxU4b",
+  "en": "quads complex",
+  "ru_current": null,
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart."
+ },
+ {
+  "id": "echClj7",
+  "en": "barbell squat (on knees) with pure",
+  "ru_current": "Приседание со штангой",
+  "target": [
+   "quads"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "upper legs"
+  ],
+  "instr": "Step:1 Start by kneeling on the ground with your knees hip-width apart and your toes pointing forward."
+ },
+ {
+  "id": "27NNGFr",
+  "en": "cable incline fly (on stability ball)",
+  "ru_current": "Разведение на фитболе на наклонной скамье",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Set up a stability ball at an incline angle."
+ },
+ {
+  "id": "DOoWcnA",
+  "en": "lever chest press",
+  "ru_current": "Жим от груди в рычажном тренажёре",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the machine with your back flat against the pad."
+ },
+ {
+  "id": "UKWTJWR",
+  "en": "cable standing up straight crossovers",
+  "ru_current": "Кроссовер на блоке стоя",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Stand in the middle of a cable machine with your feet shoulder-width apart."
+ },
+ {
+  "id": "PnZJIrk",
+  "en": "assisted wide-grip chest dip (kneeling)",
+  "ru_current": "Отжимание на брусьях в гравитроне",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the machine to your desired height and secure your knees on the pad."
+ },
+ {
+  "id": "LQFOrMn",
+  "en": "chest dip on straight bar",
+  "ru_current": "Отжимание на брусьях",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Grab the parallel bars with your palms facing down and your arms fully extended."
+ },
+ {
+  "id": "33AzZeV",
+  "en": "barbell front raise and pullover",
+  "ru_current": "Подъём перед собой со штангой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a barbell with an overhand grip, palms facing down."
+ },
+ {
+  "id": "gw9PqGk",
+  "en": "full planche push-up",
+  "ru_current": "Отжимание",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Start in a push-up position with your hands placed slightly wider than shoulder-width apart."
+ },
+ {
+  "id": "IaGQCrC",
+  "en": "suspended push-up",
+  "ru_current": "Отжимание",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Find a suspension trainer and adjust it to an appropriate height."
+ },
+ {
+  "id": "REGM1dE",
+  "en": "dumbbell one arm decline chest press",
+  "ru_current": "Жим с гантелями на скамье с отриц. наклоном одной рукой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Lie on a decline bench with a dumbbell in one hand, resting on your chest."
+ },
+ {
+  "id": "xLYSdtg",
+  "en": "cable middle fly",
+  "ru_current": "Разведение на блоке",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Attach cables to both sides of a cable machine at chest height."
+ },
+ {
+  "id": "1PLE8e9",
+  "en": "dumbbell incline twisted flyes",
+  "ru_current": "Скручивание с поворотом с гантелями на наклонной скамье",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Set an incline bench to a 45-degree angle and sit on it with a dumbbell in each hand, palms facing each other."
+ },
+ {
+  "id": "CB8WET1",
+  "en": "incline push up depth jump",
+  "ru_current": "Отжимание на наклонной скамье",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Find an elevated surface, such as a bench or step, and place your hands shoulder-width apart on the edge."
+ },
+ {
+  "id": "PAgTVaK",
+  "en": "assisted chest dip (kneeling)",
+  "ru_current": "Отжимание на брусьях в гравитроне",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the machine to your desired height and secure your knees on the pad."
+ },
+ {
+  "id": "wDN97Ca",
+  "en": "machine inner chest press",
+  "ru_current": "Жим в тренажёре",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the machine with your back flat against the pad."
+ },
+ {
+  "id": "wXvUZC8",
+  "en": "push and pull bodyweight",
+  "ru_current": "Отжимание-тяга собств. весом",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Start in a push-up position with your hands slightly wider than shoulder-width apart and your body in a straight line."
+ },
+ {
+  "id": "CjETvlw",
+  "en": "roller seated single leg shoulder flexor depresor retractor",
+  "ru_current": "на ролике одной ногой сидя",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "roller"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Sit on a flat surface with your legs extended in front of you."
+ },
+ {
+  "id": "9sgNE2O",
+  "en": "barbell decline pullover",
+  "ru_current": "Пуловер со штангой на скамье с отриц. наклоном",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Lie down on a decline bench with your head lower than your hips and your feet secured."
+ },
+ {
+  "id": "8coXSYU",
+  "en": "roller seated shoulder flexor depresor retractor",
+  "ru_current": "на ролике сидя",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "roller"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Sit on a flat surface with your legs extended in front of you."
+ },
+ {
+  "id": "sVvXT5J",
+  "en": "exercise ball pike push up",
+  "ru_current": "Отжимание",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "stability ball"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Start in a push-up position with your hands on the floor and your shins resting on the stability ball."
+ },
+ {
+  "id": "3TZduzM",
+  "en": "barbell incline bench press",
+  "ru_current": "Жим штанги на наклонной скамье",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Set up an incline bench at a 45-degree angle."
+ },
+ {
+  "id": "O2K9Vb5",
+  "en": "wide-grip chest dip on high parallel bars",
+  "ru_current": "Отжимание на брусьях",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Position yourself on the parallel bars with your arms fully extended and your body suspended in the air."
+ },
+ {
+  "id": "reFHapa",
+  "en": "dumbbell decline twist fly",
+  "ru_current": "Скручивание с поворотом с гантелями на скамье с отриц. наклоном",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Lie down on a decline bench with your head lower than your hips."
+ },
+ {
+  "id": "c16nYGA",
+  "en": "band one arm twisting chest press",
+  "ru_current": "Жим с лентой одной рукой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Attach the band to a sturdy anchor point at chest height."
+ },
+ {
+  "id": "PSlvNMs",
+  "en": "weighted drop push up",
+  "ru_current": "Отжимание с отягощением",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "weighted"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Start in a high plank position with your hands slightly wider than shoulder-width apart and your feet together."
+ },
+ {
+  "id": "13TpY4H",
+  "en": "raise single arm push-up",
+  "ru_current": "Отжимание одной рукой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Start in a push-up position with your hands slightly wider than shoulder-width apart and your feet together."
+ },
+ {
+  "id": "NCmbLCw",
+  "en": "push-up (wall) v. 2",
+  "ru_current": "Отжимание",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Stand facing a wall, about arm's length away."
+ },
+ {
+  "id": "ZOuKWir",
+  "en": "kneeling push-up (male)",
+  "ru_current": "Отжимание",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Start by kneeling on the ground with your hands shoulder-width apart, fingers pointing forward."
+ },
+ {
+  "id": "HbSG1Pw",
+  "en": "isometric chest squeeze",
+  "ru_current": "изометрические",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and your knees slightly bent."
+ },
+ {
+  "id": "DU7I633",
+  "en": "barbell reverse grip incline bench press",
+  "ru_current": "Жим лёжа со штангой обратным хватом на наклонной скамье",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Set up an incline bench at a 45-degree angle."
+ },
+ {
+  "id": "ktf3nvW",
+  "en": "kettlebell plyo push-up",
+  "ru_current": "Отжимание с гирей",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "kettlebell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Start in a high plank position with your hands on the kettlebells, shoulder-width apart."
+ },
+ {
+  "id": "MUic5zN",
+  "en": "single arm push-up",
+  "ru_current": "Отжимание одной рукой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Start in a push-up position with your hands shoulder-width apart and one hand placed slightly wider than the other."
+ },
+ {
+  "id": "hl8DUh8",
+  "en": "barbell decline wide-grip press",
+  "ru_current": "Жим со штангой на скамье с отриц. наклоном",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Lie on a decline bench with your feet secured and your head lower than your hips."
+ },
+ {
+  "id": "SpYC0Kp",
+  "en": "dumbbell bench press",
+  "ru_current": "Жим гантелей лёжа",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your feet flat on the ground and your back pressed against the bench."
+ },
+ {
+  "id": "K3dIO25",
+  "en": "dumbbell lying one arm press v. 2",
+  "ru_current": "Жим с гантелями одной рукой лёжа",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your back supported and feet flat on the ground."
+ },
+ {
+  "id": "KHGNa16",
+  "en": "cable decline one arm press",
+  "ru_current": "Жим на блоке на скамье с отриц. наклоном одной рукой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the cable machine to a decline position."
+ },
+ {
+  "id": "o17Jfkt",
+  "en": "lever incline chest press v. 2",
+  "ru_current": "Жим в рычажном тренажёре на наклонной скамье",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the seat height and backrest angle on the leverage machine to a comfortable position."
+ },
+ {
+  "id": "7saC5zz",
+  "en": "cable decline fly",
+  "ru_current": "Разведение на блоке на скамье с отриц. наклоном",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the cable machine to a decline position."
+ },
+ {
+  "id": "DotAgEF",
+  "en": "barbell reverse grip decline bench press",
+  "ru_current": "Жим лёжа со штангой обратным хватом на скамье с отриц. наклоном",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Lie on a decline bench with your feet secured and your head lower than your hips."
+ },
+ {
+  "id": "ykA5tU7",
+  "en": "chest stretch with exercise ball",
+  "ru_current": "Растяжка",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "stability ball"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Sit on the stability ball with your feet flat on the ground and your back straight."
+ },
+ {
+  "id": "Snj1wSv",
+  "en": "plyo push up",
+  "ru_current": "Отжимание",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Start in a high plank position with your hands slightly wider than shoulder-width apart."
+ },
+ {
+  "id": "945zpRg",
+  "en": "barbell wide reverse grip bench press",
+  "ru_current": "Жим лёжа со штангой обратным хватом",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your feet flat on the ground and your back pressed against the bench."
+ },
+ {
+  "id": "Am02iPd",
+  "en": "dumbbell one arm fly on exercise ball",
+  "ru_current": "Разведение с гантелями одной рукой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with a dumbbell in one hand and your feet flat on the ground."
+ },
+ {
+  "id": "T0yTjgW",
+  "en": "lever chest press",
+  "ru_current": "Жим от груди в рычажном тренажёре",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the machine with your back flat against the pad."
+ },
+ {
+  "id": "9WTm7dq",
+  "en": "chest dip",
+  "ru_current": "Отжимания на брусьях (грудь)",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Position yourself on parallel bars with your arms fully extended and your body straight."
+ },
+ {
+  "id": "I1OBLnn",
+  "en": "weighted svend press",
+  "ru_current": "Жим Свенда с отягощением",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "weighted"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart and hold a weight plate in front of your chest with both hands."
+ },
+ {
+  "id": "rDAiRf9",
+  "en": "dumbbell incline one arm press",
+  "ru_current": "Жим с гантелями на наклонной скамье одной рукой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Sit on an incline bench with a dumbbell in one hand, resting on your thigh."
+ },
+ {
+  "id": "tgryw5Y",
+  "en": "push-up (on stability ball)",
+  "ru_current": "Отжимания от пола",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "stability ball"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Place the stability ball on the ground and position yourself facing down with your hands on the ball, shoulder-width apart."
+ },
+ {
+  "id": "rWoBmi5",
+  "en": "korean dips",
+  "ru_current": "Отжимание на брусьях",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Position yourself between two parallel bars with your arms extended and supporting your body weight."
+ },
+ {
+  "id": "9XjtHvS",
+  "en": "dumbbell pullover",
+  "ru_current": "Пуловер с гантелями",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your head at one end and your feet on the floor."
+ },
+ {
+  "id": "XgWyAiA",
+  "en": "chest dip (on dip-pull-up cage)",
+  "ru_current": "Отжимания на брусьях (грудь)",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the dip bars to a height that allows you to comfortably grip them."
+ },
+ {
+  "id": "PDaMuyV",
+  "en": "dumbbell one arm incline chest press",
+  "ru_current": "Жим с гантелями на наклонной скамье одной рукой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the incline bench to a 45-degree angle."
+ },
+ {
+  "id": "TVdivgY",
+  "en": "dumbbell incline alternate press",
+  "ru_current": "Жим с гантелями попеременные на наклонной скамье",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Sit on an incline bench with a dumbbell in each hand, resting on your thighs."
+ },
+ {
+  "id": "RoV1Rfa",
+  "en": "assisted seated pectoralis major stretch with stability ball",
+  "ru_current": "Растяжка на фитболе сидя",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "assisted"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Sit on a stability ball with your feet flat on the ground and your back straight."
+ },
+ {
+  "id": "2kr2lWy",
+  "en": "push-up (bosu ball)",
+  "ru_current": "Отжимания от пола",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "bosu ball"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Place the bosu ball on the ground with the flat side facing up."
+ },
+ {
+  "id": "7w6i0vE",
+  "en": "kettlebell alternating press on floor",
+  "ru_current": "Жим с гирей попеременные",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "kettlebell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Start by lying on your back on the floor with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "2Pya1cP",
+  "en": "cable decline press",
+  "ru_current": "Жим на блоке на скамье с отриц. наклоном",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the cable machine to a decline position."
+ },
+ {
+  "id": "11wrviz",
+  "en": "isometric wipers",
+  "ru_current": "изометрические",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Start by lying flat on your back on a mat or bench."
+ },
+ {
+  "id": "B3Rxp6L",
+  "en": "dumbbell incline breeding",
+  "ru_current": "с гантелями на наклонной скамье",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Set up an incline bench at a 45-degree angle."
+ },
+ {
+  "id": "vAwm6rK",
+  "en": "cable press on exercise ball",
+  "ru_current": "Жим на блоке",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with your feet flat on the ground and your knees at a 90-degree angle."
+ },
+ {
+  "id": "rseLfH3",
+  "en": "kettlebell extended range one arm press on floor",
+  "ru_current": "Жим с гирей одной рукой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "kettlebell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Start by lying on your back on the floor with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "LLNh6q5",
+  "en": "dumbbell incline one arm fly on exercise ball",
+  "ru_current": "Разведение с гантелями на наклонной скамье одной рукой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with a dumbbell in one hand."
+ },
+ {
+  "id": "w4dLzSx",
+  "en": "cable one arm decline chest fly",
+  "ru_current": "Разведение на блоке на скамье с отриц. наклоном одной рукой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Attach a D-handle to a low pulley cable machine and set the bench to a decline angle."
+ },
+ {
+  "id": "GKEH6jj",
+  "en": "cable one arm incline press",
+  "ru_current": "Жим на блоке на наклонной скамье одной рукой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the cable machine to a low pulley position."
+ },
+ {
+  "id": "Bg5JKSH",
+  "en": "dumbbell incline one arm press on exercise ball",
+  "ru_current": "Жим с гантелями на наклонной скамье одной рукой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with a dumbbell in one hand, feet flat on the ground."
+ },
+ {
+  "id": "JsKq9so",
+  "en": "barbell wide bench press",
+  "ru_current": "Жим лёжа со штангой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your feet flat on the ground and your back pressed against the bench."
+ },
+ {
+  "id": "xXm4nYq",
+  "en": "dumbbell decline fly",
+  "ru_current": "Разведение с гантелями на скамье с отриц. наклоном",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Lie on a decline bench with your feet secured and your head lower than your hips."
+ },
+ {
+  "id": "F7vjXqT",
+  "en": "incline push-up (on box)",
+  "ru_current": "Отжимания от возвышения",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Place your hands on the edge of a box or elevated surface, slightly wider than shoulder-width apart."
+ },
+ {
+  "id": "v3xmPAR",
+  "en": "lever seated fly",
+  "ru_current": "Разведение в рычажном тренажёре сидя",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the machine with your back against the pad."
+ },
+ {
+  "id": "PG1kcIb",
+  "en": "dumbbell incline hammer press",
+  "ru_current": "Жим с гантелями на наклонной скамье",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Set an incline bench to a 45-degree angle and sit on it with a dumbbell in each hand, resting on your thighs."
+ },
+ {
+  "id": "Lt3iWnf",
+  "en": "dumbbell fly on exercise ball",
+  "ru_current": "Разведение с гантелями",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Sit on an exercise ball and hold a dumbbell in each hand."
+ },
+ {
+  "id": "HYe1ZqR",
+  "en": "dumbbell incline fly on exercise ball",
+  "ru_current": "Разведение с гантелями на наклонной скамье",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Set up an incline bench at a 45-degree angle."
+ },
+ {
+  "id": "dB07vDu",
+  "en": "cable one arm lateral bent-over",
+  "ru_current": "на блоке одной рукой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, facing a cable machine."
+ },
+ {
+  "id": "wi2H9QX",
+  "en": "smith wide grip decline bench press",
+  "ru_current": "Жим лёжа в Смите широким хватом на скамье с отриц. наклоном",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the decline bench to the desired angle."
+ },
+ {
+  "id": "dCJnuVq",
+  "en": "medicine ball chest push from 3 point stance",
+  "ru_current": "с медболом",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "medicine ball"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Start in a 3 point stance with one hand on the medicine ball and the other hand on the ground."
+ },
+ {
+  "id": "i5cEhka",
+  "en": "decline push-up",
+  "ru_current": "Отжимания с ногами на возвышении",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Place your hands on the ground slightly wider than shoulder-width apart, with your feet elevated on a stable surface."
+ },
+ {
+  "id": "1qrWgZ2",
+  "en": "dumbbell decline hammer press",
+  "ru_current": "Жим с гантелями на скамье с отриц. наклоном",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Lie on a decline bench with your feet secured and your head lower than your hips."
+ },
+ {
+  "id": "7xI5MXA",
+  "en": "cable bench press",
+  "ru_current": "Жим лёжа на блоке",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the cable machine to chest height and attach the handles."
+ },
+ {
+  "id": "trqKQv2",
+  "en": "smith bench press",
+  "ru_current": "Жим лёжа в Смите",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the height of the smith machine bar to chest level."
+ },
+ {
+  "id": "lI7easp",
+  "en": "dumbbell pullover hip extension on exercise ball",
+  "ru_current": "Разгибание с гантелями",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with your feet flat on the ground and the dumbbell resting on your thighs."
+ },
+ {
+  "id": "4x5Okof",
+  "en": "resistance band seated chest press",
+  "ru_current": "Жим с эспандером сидя",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "resistance band"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Sit on a chair or bench with your back straight and feet flat on the ground."
+ },
+ {
+  "id": "EIeI8Vf",
+  "en": "barbell bench press",
+  "ru_current": "Жим штанги лёжа",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your feet flat on the ground and your back pressed against the bench."
+ },
+ {
+  "id": "zK8Fu1W",
+  "en": "smith reverse-grip press",
+  "ru_current": "Жим обратным хватом в Смите",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the height of the smith machine bar to chest level."
+ },
+ {
+  "id": "ETZfAbZ",
+  "en": "smith decline bench press",
+  "ru_current": "Жим лёжа в Смите на скамье с отриц. наклоном",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the decline bench to the desired angle."
+ },
+ {
+  "id": "LEH9jxP",
+  "en": "push-up (wall)",
+  "ru_current": "Отжимания от пола",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Stand facing a wall, about arm's length away."
+ },
+ {
+  "id": "bfiHMpI",
+  "en": "dumbbell incline press on exercise ball",
+  "ru_current": "Жим с гантелями на наклонной скамье",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with a dumbbell in each hand, palms facing forward."
+ },
+ {
+  "id": "wVompEp",
+  "en": "push up on bosu ball",
+  "ru_current": "Отжимание на BOSU",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "bosu ball"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Place the bosu ball on the ground with the flat side facing up."
+ },
+ {
+  "id": "nIR4Rwl",
+  "en": "cable seated chest press",
+  "ru_current": "Жим на блоке сидя",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the seat height and cable handles to a comfortable position."
+ },
+ {
+  "id": "rg59QCH",
+  "en": "kettlebell one arm floor press",
+  "ru_current": "Жим с гирей одной рукой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "kettlebell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Lie flat on your back on the floor with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "5v7KYld",
+  "en": "smith incline bench press",
+  "ru_current": "Жим лёжа в Смите на наклонной скамье",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the bench to a 30-45 degree incline."
+ },
+ {
+  "id": "I4hDWkc",
+  "en": "push-up",
+  "ru_current": "Отжимания от пола",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Start in a high plank position with your hands slightly wider than shoulder-width apart and your feet together."
+ },
+ {
+  "id": "tBWXbIT",
+  "en": "cable incline fly",
+  "ru_current": "Разведение на блоке на наклонной скамье",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the cable machine to a low position and attach the handles."
+ },
+ {
+  "id": "vptOQ4N",
+  "en": "deep push up",
+  "ru_current": "Отжимание",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Start in a high plank position with your hands slightly wider than shoulder-width apart and your body in a straight line."
+ },
+ {
+  "id": "pAIWRGu",
+  "en": "hands bike",
+  "ru_current": "Ручной велотренажёр (эргометр)",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "upper body ergometer"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the seat height and handlebar position to a comfortable level."
+ },
+ {
+  "id": "Q497lAE",
+  "en": "drop push up",
+  "ru_current": "Отжимание",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Start in a high plank position with your hands slightly wider than shoulder-width apart."
+ },
+ {
+  "id": "GXoaSgn",
+  "en": "barbell guillotine bench press",
+  "ru_current": "Жим лёжа со штангой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your feet flat on the ground and your back pressed against the bench."
+ },
+ {
+  "id": "CMAxnsG",
+  "en": "clock push-up",
+  "ru_current": "Отжимание",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Start in a high plank position with your hands directly under your shoulders and your body in a straight line."
+ },
+ {
+  "id": "khlHMqs",
+  "en": "band bench press",
+  "ru_current": "Жим лёжа с лентой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "band"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your feet flat on the ground and your back pressed against the bench."
+ },
+ {
+  "id": "QZFv5ui",
+  "en": "dumbbell one arm press on exercise ball",
+  "ru_current": "Жим с гантелями одной рукой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with your feet flat on the ground and your knees bent at a 90-degree angle."
+ },
+ {
+  "id": "Ff18ItA",
+  "en": "weighted straight bar dip",
+  "ru_current": "Отжимание на брусьях с отягощением",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "weighted"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Position yourself between parallel bars with your arms fully extended and your body straight."
+ },
+ {
+  "id": "Y4BRNQF",
+  "en": "push-up (on stability ball)",
+  "ru_current": "Отжимания от пола",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "stability ball"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Place the stability ball on the ground and position yourself facing down with your hands on the ball, shoulder-width apart."
+ },
+ {
+  "id": "Ze7MoIb",
+  "en": "dumbbell one arm reverse grip press",
+  "ru_current": "Жим с гантелями обратным хватом одной рукой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Sit on a flat bench with a dumbbell in one hand, palm facing towards your body."
+ },
+ {
+  "id": "vi8EhoE",
+  "en": "dumbbell around pullover",
+  "ru_current": "Пуловер с гантелями",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your head at one end and your feet firmly on the ground."
+ },
+ {
+  "id": "WbNq5Xu",
+  "en": "lever standing chest press",
+  "ru_current": "Жим в рычажном тренажёре стоя",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "leverage machine"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the seat height and position yourself on the machine with your feet flat on the ground."
+ },
+ {
+  "id": "A9qxk2F",
+  "en": "archer push up",
+  "ru_current": "Отжимание",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Start in a push-up position with your hands slightly wider than shoulder-width apart."
+ },
+ {
+  "id": "Gw2HFvW",
+  "en": "dumbbell incline one arm fly",
+  "ru_current": "Разведение с гантелями на наклонной скамье одной рукой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the incline bench to a 30-45 degree angle."
+ },
+ {
+  "id": "4GqRrAk",
+  "en": "superman push-up",
+  "ru_current": "Отжимание",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Start in a high plank position with your hands slightly wider than shoulder-width apart and your feet together."
+ },
+ {
+  "id": "FVmZVhk",
+  "en": "cable low fly",
+  "ru_current": "Разведение на блоке",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Attach the handles to the low pulleys of a cable machine and select an appropriate weight."
+ },
+ {
+  "id": "Vh0GsK4",
+  "en": "cable incline bench press",
+  "ru_current": "Жим лёжа на блоке на наклонной скамье",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the bench to a 45-degree incline."
+ },
+ {
+  "id": "DwhEmmE",
+  "en": "dumbbell decline bench press",
+  "ru_current": "Жим гантелей на скамье с отриц. наклоном",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Lie down on a decline bench with your feet secured and your head lower than your hips."
+ },
+ {
+  "id": "yz9nUhF",
+  "en": "dumbbell fly",
+  "ru_current": "Разводка гантелей лёжа",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Lie flat on a bench with a dumbbell in each hand, palms facing each other."
+ },
+ {
+  "id": "P14Dz9D",
+  "en": "cable one arm incline fly on exercise ball",
+  "ru_current": "Разведение на блоке на наклонной скамье одной рукой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with your feet flat on the ground and your back against an incline bench."
+ },
+ {
+  "id": "neonEDL",
+  "en": "floor fly (with barbell)",
+  "ru_current": "Разведение со штангой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Lie flat on your back on the floor with your knees bent and feet flat on the ground."
+ },
+ {
+  "id": "epOSYUZ",
+  "en": "modified hindu push-up (male)",
+  "ru_current": "Отжимание",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Start in a push-up position with your hands slightly wider than shoulder-width apart and your feet hip-width apart."
+ },
+ {
+  "id": "pX9Elbe",
+  "en": "medicine ball chest push with run release",
+  "ru_current": "Бег с медболом",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "medicine ball"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a medicine ball at chest level."
+ },
+ {
+  "id": "OVLmUuL",
+  "en": "dumbbell incline palm-in press",
+  "ru_current": "Жим с гантелями на наклонной скамье",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Set up an incline bench at a 45-degree angle."
+ },
+ {
+  "id": "iK59oEA",
+  "en": "dumbbell lying pullover on exercise ball",
+  "ru_current": "Пуловер с гантелями лёжа",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Sit on an exercise ball and roll forward until your upper back is resting on the ball."
+ },
+ {
+  "id": "B1EVP9F",
+  "en": "incline push-up",
+  "ru_current": "Отжимания от возвышения",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Place your hands on an elevated surface, such as a bench or step, slightly wider than shoulder-width apart."
+ },
+ {
+  "id": "aDoFKrE",
+  "en": "medicine ball chest pass",
+  "ru_current": "Пас медболом от груди",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "medicine ball"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding the medicine ball at chest level."
+ },
+ {
+  "id": "zGSIWQi",
+  "en": "dumbbell lying one arm press",
+  "ru_current": "Жим с гантелями одной рукой лёжа",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Lie flat on a bench with a dumbbell in one hand and your feet flat on the ground."
+ },
+ {
+  "id": "pvBMLHA",
+  "en": "push-up plus",
+  "ru_current": "Отжимание",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Start in a high plank position with your hands slightly wider than shoulder-width apart and your body in a straight line from head to heels."
+ },
+ {
+  "id": "6t00BsF",
+  "en": "cable one arm incline press on exercise ball",
+  "ru_current": "Жим на блоке на наклонной скамье одной рукой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with your feet flat on the ground and your back resting against an incline bench."
+ },
+ {
+  "id": "j7XMAyn",
+  "en": "cable upper chest crossovers",
+  "ru_current": "Кроссовер на блоке",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Attach the handles to the cables at chest height."
+ },
+ {
+  "id": "Pr9Rhf4",
+  "en": "cable standing fly",
+  "ru_current": "Разведение на блоке стоя",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Attach the handles to the cables at chest height."
+ },
+ {
+  "id": "JmMVpR3",
+  "en": "wide hand push up",
+  "ru_current": "Отжимание",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Start in a high plank position with your hands wider than shoulder-width apart."
+ },
+ {
+  "id": "zoOvPcx",
+  "en": "smith wide grip bench press",
+  "ru_current": "Жим лёжа в Смите широким хватом",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the bench to a comfortable position on the smith machine."
+ },
+ {
+  "id": "78VqWQK",
+  "en": "smith incline reverse-grip press",
+  "ru_current": "Жим в Смите на наклонной скамье",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the seat of the smith machine to a comfortable incline angle."
+ },
+ {
+  "id": "qEse6fe",
+  "en": "shoulder tap push-up",
+  "ru_current": "Отжимание",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Start in a high plank position with your hands slightly wider than shoulder-width apart and your body in a straight line from head to heels."
+ },
+ {
+  "id": "MKIelrR",
+  "en": "cable one arm press on exercise ball",
+  "ru_current": "Жим на блоке одной рукой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with your feet flat on the ground and your back straight."
+ },
+ {
+  "id": "3uj0Ozg",
+  "en": "dynamic chest stretch (male)",
+  "ru_current": "Растяжка",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Stand tall with your feet shoulder-width apart."
+ },
+ {
+  "id": "QoHIhPl",
+  "en": "behind head chest stretch",
+  "ru_current": "Растяжка",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "assisted"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Stand tall with your feet shoulder-width apart."
+ },
+ {
+  "id": "7aolH9D",
+  "en": "medicine ball chest push multiple response",
+  "ru_current": "с медболом",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "medicine ball"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Stand with your feet shoulder-width apart, holding a medicine ball at chest level."
+ },
+ {
+  "id": "MY9P1WA",
+  "en": "smith decline reverse-grip press",
+  "ru_current": "Жим в Смите на скамье с отриц. наклоном",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the smith machine to a decline position."
+ },
+ {
+  "id": "ESOd5Pl",
+  "en": "dumbbell incline fly",
+  "ru_current": "Разводка гантелей на наклонной скамье",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Set an incline bench to a 45-degree angle."
+ },
+ {
+  "id": "Bpkf41o",
+  "en": "dumbbell one arm chest fly on exercise ball",
+  "ru_current": "Разведение с гантелями одной рукой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with a dumbbell in one hand and your feet flat on the ground."
+ },
+ {
+  "id": "P9ZRyLT",
+  "en": "hyght dumbbell fly",
+  "ru_current": "Разведение с гантелями",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Lie flat on a bench with a dumbbell in each hand, palms facing each other."
+ },
+ {
+  "id": "QyO6Uma",
+  "en": "smith machine reverse decline close grip bench press",
+  "ru_current": "Жим лёжа в Смите узким хватом на скамье с отриц. наклоном",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "smith machine"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the smith machine to a decline position."
+ },
+ {
+  "id": "i8BdLTK",
+  "en": "dumbbell straight arm pullover",
+  "ru_current": "Пуловер с гантелями",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Lie flat on a bench with your head at one end and your feet planted firmly on the ground."
+ },
+ {
+  "id": "GrO65fd",
+  "en": "barbell decline bench press",
+  "ru_current": "Жим штанги на скамье с отрицательным наклоном",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Lie on a decline bench with your feet secured and your head lower than your hips."
+ },
+ {
+  "id": "7E06s6d",
+  "en": "chest tap push-up (male)",
+  "ru_current": "Отжимание",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "body weight"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Start in a high plank position with your hands slightly wider than shoulder-width apart and your body in a straight line."
+ },
+ {
+  "id": "hHy8tQG",
+  "en": "cable one arm fly on exercise ball",
+  "ru_current": "Разведение на блоке одной рукой",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Sit on an exercise ball with your feet flat on the ground and your back straight."
+ },
+ {
+  "id": "0CXGHya",
+  "en": "cable cross-over variation",
+  "ru_current": "на блоке",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Adjust the cable pulleys to chest height."
+ },
+ {
+  "id": "7gdLIXa",
+  "en": "dumbbell lying hammer press",
+  "ru_current": "Жим с гантелями лёжа",
+  "target": [
+   "pectorals"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "body": [
+   "chest"
+  ],
+  "instr": "Step:1 Lie flat on a bench with a dumbbell in each hand, palms facing each other and arms extended straight up."
+ }
+]

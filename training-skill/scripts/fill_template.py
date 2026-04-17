@@ -176,13 +176,28 @@ def render_medical_warning(client):
 
 
 def render_overview(program, client):
-    """Рендер обзора — v3 stat-card стиль."""
-    split_name = program.get("split_type", "—").replace("_", "/").title()
+    """Рендер обзора программы — полноценные читаемые фразы без сокращений."""
+    training_days = client.get("training_days", 3)
+    weeks = program.get("weeks", 4)
+    deload_week = program.get("deload_week", 4)
+    goal_ru = GOAL_RU.get(client.get("goal"), client.get("goal", "—"))
+
+    # Русские склонения
+    def weeks_word(n):
+        if n % 10 == 1 and n % 100 != 11: return "неделя"
+        if 2 <= n % 10 <= 4 and not (12 <= n % 100 <= 14): return "недели"
+        return "недель"
+
+    def days_word(n):
+        if n % 10 == 1 and n % 100 != 11: return "день"
+        if 2 <= n % 10 <= 4 and not (12 <= n % 100 <= 14): return "дня"
+        return "дней"
+
     items = [
-        (split_name, "Тип сплита"),
-        (str(program.get("weeks", 4)), "Недель"),
-        (str(client.get("training_days", "?")), "Дней/неделю"),
-        (f"Нед. {program.get('deload_week', 4)}", "Разгрузка"),
+        (f"{training_days} {days_word(training_days)} в неделю", "частота тренировок"),
+        (f"{weeks} {weeks_word(weeks)}", "длительность программы"),
+        (goal_ru, "главная цель"),
+        (f"Неделя {deload_week} — разгрузка", "активное восстановление"),
     ]
     html = ""
     for value, label in items:

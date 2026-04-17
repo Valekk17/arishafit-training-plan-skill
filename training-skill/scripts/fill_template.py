@@ -287,8 +287,11 @@ def render_exercise(ex, order, week_num, day_num):
     </div>"""
 
 
-def render_warmup_item(item, week_num, day_num, block_phase, item_idx):
-    """Рендер одного элемента разминки — карточка с GIF + название + reps."""
+def render_warmup_item(item, week_num, day_num, block_phase, item_idx, scope=None):
+    """Рендер одного элемента разминки — карточка с GIF + название + reps.
+
+    scope — опциональный префикс ключа, чтобы общая секция не коллидила с дневными.
+    """
     exercise_id = item.get("exerciseId", "")
     name = item.get("nameRu", item.get("name", ""))
     reps = item.get("reps") or item.get("duration") or ""
@@ -297,7 +300,10 @@ def render_warmup_item(item, week_num, day_num, block_phase, item_idx):
     warning = item.get("warning", "") or ""
 
     # Уникальный ключ для открытия панели
-    item_key = f"wu-w{week_num}-d{day_num}-{block_phase}-{item_idx}"
+    if scope:
+        item_key = f"{scope}-{block_phase}-{item_idx}"
+    else:
+        item_key = f"wu-w{week_num}-d{day_num}-{block_phase}-{item_idx}"
 
     # GIF — либо из gifUrl, либо derive из exerciseId
     gif_url = item.get("gifUrl") or ""
@@ -329,8 +335,11 @@ def render_warmup_item(item, week_num, day_num, block_phase, item_idx):
       </div>"""
 
 
-def render_warmup_block(block, week_num, day_num):
-    """Рендер одного блока разминки (raise / mobilize / potentiate)."""
+def render_warmup_block(block, week_num, day_num, scope=None):
+    """Рендер одного блока разминки (raise / mobilize / potentiate).
+
+    scope — опциональный префикс для ключей элементов (общая секция).
+    """
     phase = block.get("phase", "mobilize")
     label = block.get("label", "")
     duration = block.get("duration_min", "")
@@ -347,7 +356,7 @@ def render_warmup_block(block, week_num, day_num):
     # Все фазы рендерятся одинаково — карточки с gif + название + reps.
     # Potentiate имеет свою цветовую акцентуацию через модификатор .warmup-items--potentiate
     items_html = "".join(
-        render_warmup_item(it, week_num, day_num, phase, idx)
+        render_warmup_item(it, week_num, day_num, phase, idx, scope=scope)
         for idx, it in enumerate(items)
     )
     mod_cls = f" phase-items--{phase}" if phase == "potentiate" else ""
@@ -391,8 +400,11 @@ def render_warmup(warmup, week_num, day_num):
     </div>"""
 
 
-def render_cooldown_block(block, week_num, day_num):
-    """Рендер одного блока заминки (downregulate / stretch / breathe)."""
+def render_cooldown_block(block, week_num, day_num, scope=None):
+    """Рендер одного блока заминки (downregulate / stretch / breathe).
+
+    scope — опциональный префикс для ключей (общая секция).
+    """
     phase = block.get("phase", "stretch")
     label = block.get("label", "")
     duration = block.get("duration_min", "")
@@ -407,7 +419,7 @@ def render_cooldown_block(block, week_num, day_num):
     display_label = label or default_label
 
     items_html = "".join(
-        render_warmup_item(it, week_num, day_num, f"cd-{phase}", idx)
+        render_warmup_item(it, week_num, day_num, f"cd-{phase}", idx, scope=scope)
         for idx, it in enumerate(items)
     )
     body = f"""
@@ -470,7 +482,9 @@ def render_shared_prepost_section(plan_data):
             active = " active" if first else ""
             hidden = "" if first else " hidden"
             tabs_html += f'<button class="pp-tab{active}" data-pp-kind="{kind}" data-pp-type="{t}">{label} · {total_min} мин</button>'
-            inner_blocks = "".join(block_renderer(b, 0, 0) for b in blocks)
+            # Уникальный scope на каждую комбинацию kind+type — чтобы ключи не коллидили
+            scope = f"shared-{kind}-{t}"
+            inner_blocks = "".join(block_renderer(b, 0, 0, scope=scope) for b in blocks)
             content_html += (
                 f'<div class="pp-content"{hidden} data-pp-kind="{kind}" data-pp-type="{t}">'
                 f'{inner_blocks}</div>'
@@ -663,26 +677,27 @@ def fill_template(plan_data):
         tabs_html += f'<button class="week-tab {active}" data-week="week{wn}">Неделя {wn}</button>\n'
     html = html.replace("{{week_tabs}}", tabs_html)
 
-    # Недели
+    # Недели — наполняет EXERCISES_DATA и PHASE_DATA
     weeks_html = ""
     for week in weeks:
         weeks_html += render_week(week)
     html = html.replace("{{weeks_content}}", weeks_html)
 
-    # Инжектируем данные упражнений как JSON (безопасно, без экранирования в атрибутах)
+    # Общая секция разминки/заминки — тоже наполняет PHASE_DATA (shared-*)
+    # ВАЖНО: рендерим ДО инъекции phase_data_json, иначе shared-items пропадут
+    html = html.replace("{{warmup_cooldown_block}}", render_shared_prepost_section(plan_data))
+
+    # Теперь инжектируем накопленные данные в JS-константы
     exercises_json = json.dumps(EXERCISES_DATA, ensure_ascii=False)
     html = html.replace("{{exercise_data_json}}", exercises_json)
 
     phase_json = json.dumps(PHASE_DATA, ensure_ascii=False)
     html = html.replace("{{phase_data_json}}", phase_json)
 
-    # Библиотека справок (info boxes) — инъекция в JS
+    # Библиотека справок
     info_boxes = load_info_boxes()
     info_json = json.dumps(info_boxes, ensure_ascii=False)
     html = html.replace("{{info_boxes_json}}", info_json)
-
-    # Общая секция разминки/заминки
-    html = html.replace("{{warmup_cooldown_block}}", render_shared_prepost_section(plan_data))
 
     return html
 

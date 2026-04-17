@@ -17,9 +17,12 @@ bake_pauses.py — пересобирает MP4 с запечёнными пау
   3. Пишем через ffmpeg raw pipe (bgr24) с тем же fps → libx264.
 
 Параметры:
-  HOLD_SECONDS = 0.5 — длительность паузы на ключевой позе
-  На 10 fps это = 5 кадров одной позы подряд.
-  Меньшая пауза = ритмичный «поза—движение—поза» без мёртвого воздуха.
+  HOLD_SECONDS = 1.0 — длительность паузы на ключевой позе
+  OUTPUT_FPS = 10    — фиксированный fps выхода (ломаем разнобой 3/10 fps в источнике)
+
+Проблема была: ~22% MP4 в ExerciseDB закодированы на 3 fps. При сохранении
+native fps в выходном файле браузер играл их медленно. Теперь все выходы
+10 fps: низкочастотные источники уплотняются дубликатами кадров.
 """
 
 import json
@@ -39,7 +42,8 @@ OUT_DIR = ROOT / "exercisedb_data" / "mp4_paused"
 AUTO_F = Path(__file__).resolve().parent / "annotations_auto.json"
 MANUAL_F = Path(__file__).resolve().parent / "annotations_manual.json"
 
-HOLD_SECONDS = 0.5
+HOLD_SECONDS = 1.0
+OUTPUT_FPS = 10  # принудительный fps вывода — 296 MP4 источника на 3-5 fps
 
 
 def load_json(p):
@@ -58,7 +62,7 @@ def bake(eid: str, key_frames: list[int], verbose: bool = False):
         return (eid, "no_source")
 
     cap = cv2.VideoCapture(str(src))
-    fps = cap.get(cv2.CAP_PROP_FPS) or 10.0
+    source_fps = cap.get(cv2.CAP_PROP_FPS) or 10.0
     frames = []
     while True:
         ok, f = cap.read()
@@ -70,28 +74,32 @@ def bake(eid: str, key_frames: list[int], verbose: bool = False):
     if not frames:
         return (eid, "no_frames")
 
-    hold_count = max(1, int(round(fps * HOLD_SECONDS)))
+    # НЕ сохраняем native fps источника. Все видео выводим на OUTPUT_FPS (10).
+    # 3-fps источник с 12 кадрами будет играться как 1.2с, а не 3.9с — это
+    # именно то что нужно: одинаковая скорость для всех упражнений независимо
+    # от кодирования источника. Ключевые кадры остаются на тех же индексах.
+
+    # Ключевые кадры получают HOLD_SECONDS × OUTPUT_FPS дубликатов
+    hold_count = max(1, int(round(OUTPUT_FPS * HOLD_SECONDS)))
     key_set = set(key_frames)
 
-    # Строим расширенную последовательность
     sequence = []
     for i, frame in enumerate(frames):
         sequence.append(frame)
         if i in key_set:
-            # добавляем (hold_count - 1) дубликатов
             for _ in range(hold_count - 1):
                 sequence.append(frame)
 
     h, w = frames[0].shape[:2]
 
-    # Пишем через ffmpeg raw pipe
+    # Пишем через ffmpeg raw pipe — фиксированный OUTPUT_FPS
     cmd = [
         "ffmpeg", "-y", "-loglevel", "error",
         "-f", "rawvideo",
         "-vcodec", "rawvideo",
         "-s", f"{w}x{h}",
         "-pix_fmt", "bgr24",
-        "-r", str(fps),
+        "-r", str(OUTPUT_FPS),
         "-i", "-",
         "-c:v", "libx264",
         "-preset", "slow",

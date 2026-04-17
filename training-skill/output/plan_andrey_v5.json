@@ -38,7 +38,8 @@
         "Планка": "3×45-50 сек"
       },
       "note": "Старт новой программы — НЕ с нуля. Использовать его последние веса как ориентир."
-    }
+    },
+    "info_box": "why_3_day_full_body"
   },
   "weeks": [
     {
@@ -187,7 +188,7 @@
               "gifUrl": "https://static.exercisedb.dev/media/5VXmnV5.gif"
             }
           ],
-          "info_box": "superset_fat_loss",
+          "info_box": "why_push_pull_superset",
           "warmup_type": "strength",
           "cooldown_type": "strength"
         },
@@ -223,8 +224,7 @@
                 }
               ],
               "gifUrl": "https://static.exercisedb.dev/media/H1PESYI.gif",
-              "hr_target": "110-130",
-              "info_box": "zone2_continuous"
+              "hr_target": "110-130"
             }
           ],
           "info_box": "zone2_continuous",
@@ -373,12 +373,11 @@
               "gifUrl": "https://static.exercisedb.dev/media/rUXfn3R.gif"
             }
           ],
-          "info_box": "superset_fat_loss",
+          "info_box": "why_compound_first_core_last",
           "warmup_type": "strength",
           "cooldown_type": "strength"
         }
-      ],
-      "info_box": "mesocycle_phase"
+      ]
     },
     {
       "week_number": 2,
@@ -527,6 +526,7 @@
               "gifUrl": "https://static.exercisedb.dev/media/5VXmnV5.gif"
             }
           ],
+          "info_box": "why_12_15_reps_fat_loss",
           "warmup_type": "strength",
           "cooldown_type": "strength"
         },
@@ -562,11 +562,10 @@
                 }
               ],
               "gifUrl": "https://static.exercisedb.dev/media/rjtuP6X.gif",
-              "hr_target": "115-130",
-              "info_box": "zone2_continuous"
+              "hr_target": "115-130"
             }
           ],
-          "info_box": "zone2_continuous",
+          "info_box": "why_cardio_between_strength",
           "warmup_type": "cardio",
           "cooldown_type": "cardio"
         },
@@ -713,10 +712,10 @@
             }
           ],
           "warmup_type": "strength",
-          "cooldown_type": "strength"
+          "cooldown_type": "strength",
+          "info_box": "why_lat_pulldown_as_pull_v"
         }
-      ],
-      "info_box": "progressive_overload"
+      ]
     },
     {
       "week_number": 3,
@@ -866,7 +865,8 @@
             }
           ],
           "warmup_type": "strength",
-          "cooldown_type": "strength"
+          "cooldown_type": "strength",
+          "info_box": "why_rotation_week3"
         },
         {
           "day_number": 2,
@@ -900,11 +900,10 @@
                 }
               ],
               "gifUrl": "https://static.exercisedb.dev/media/rjiM4L3.gif",
-              "hr_target": "120-135",
-              "info_box": "zone2_continuous"
+              "hr_target": "120-135"
             }
           ],
-          "info_box": "zone2_continuous",
+          "info_box": "why_zone2_not_hiit",
           "warmup_type": "cardio",
           "cooldown_type": "cardio"
         },
@@ -1053,8 +1052,7 @@
           "warmup_type": "strength",
           "cooldown_type": "strength"
         }
-      ],
-      "info_box": "progressive_overload"
+      ]
     },
     {
       "week_number": 4,
@@ -1203,6 +1201,7 @@
               "gifUrl": "https://static.exercisedb.dev/media/5VXmnV5.gif"
             }
           ],
+          "info_box": "why_deload_50pct",
           "warmup_type": "strength",
           "cooldown_type": "strength"
         },
@@ -1238,11 +1237,9 @@
                 }
               ],
               "gifUrl": "https://static.exercisedb.dev/media/H1PESYI.gif",
-              "hr_target": "100-115",
-              "info_box": "zone2_continuous"
+              "hr_target": "100-115"
             }
           ],
-          "info_box": "zone2_continuous",
           "warmup_type": "cardio",
           "cooldown_type": "cardio"
         },
@@ -1389,10 +1386,10 @@
             }
           ],
           "warmup_type": "strength",
-          "cooldown_type": "strength"
+          "cooldown_type": "strength",
+          "info_box": "why_dead_bug_over_crunch"
         }
-      ],
-      "info_box": "deload_necessity"
+      ]
     }
   ],
   "legal": {
@@ -1462,7 +1459,8 @@
               "gifUrl": "https://static.exercisedb.dev/media/cuKYxhu.gif",
               "reps": "15 повт",
               "tips": "КРИТИЧНО: при грыже L4-L5 это твоя база безопасности. Делай их каждый день даже в дилоуд. Мягко подкручиваешь таз вперёд (живот подтягиваешь к рёбрам, копчик идёт вниз), потом расслабляешь обратно. Поясница движется в маленьком нейтральном диапазоне — тренируешь контроль таза перед любой силовой работой.",
-              "warning": "Движение МЯГКОЕ, амплитуда небольшая — это не упражнение на силу, это нейромышечный реминдер. Если поясницу тянет — уменьши амплитуду."
+              "warning": "Движение МЯГКОЕ, амплитуда небольшая — это не упражнение на силу, это нейромышечный реминдер. Если поясницу тянет — уменьши амплитуду.",
+              "info_box": "why_pelvic_tilt_mandatory"
             },
             {
               "exerciseId": "X7jbxra",
@@ -1509,7 +1507,8 @@
               "gifUrl": "https://static.exercisedb.dev/media/O95afRA.gif",
               "reps": "2×10 шагов в каждую сторону",
               "tips": "Резинка на коленях (умеренного сопротивления) или чуть выше колен. Полуприсед, корпус чуть наклонён вперёд (из тазобедренных, спина прямая). Идёшь боком короткими шагами — постоянное напряжение на резинку. Активирует СРЕДНЮЮ ягодичную (gluteus medius), которая держит колено от заваливания внутрь в жиме ногами и приседе. Цель — почувствовать жжение сбоку таза, не устать.",
-              "warning": "Не дёргай — резинка работает только пока мышца напряжена. Колени СТРОГО в линии со стопой, не заваливаются внутрь (в этом и смысл). Нейтральная поясница, никаких наклонов с прогибом."
+              "warning": "Не дёргай — резинка работает только пока мышца напряжена. Колени СТРОГО в линии со стопой, не заваливаются внутрь (в этом и смысл). Нейтральная поясница, никаких наклонов с прогибом.",
+              "info_box": "why_monster_walk_glute_med"
             }
           ]
         }
@@ -1676,7 +1675,8 @@
               "gifUrl": "https://static.exercisedb.dev/media/NKJ8o6x.gif",
               "reps": "12 циклов (2 мин)",
               "tips": "Лёжа на спине, колени согнуты, стопы на полу. Одна ладонь на груди, вторая на животе. Вдох через нос 4 сек — поднимается ТОЛЬКО живот, грудь неподвижна. Пауза 2 сек на задержке. Выдох через рот 6 сек — живот опускается. Это переключает ANS с симпатики (стресс силовой) на парасимпатику (восстановление) — ускоряет выход кортизола и засыпание.",
-              "warning": "Если кружится голова — дыши мельче, укороти выдох. НЕ включай пресс на выдохе, живот опускается пассивно. При грыже L4-L5 диафрагмальное дыхание улучшает стабилизацию ядра — это бонус помимо релаксации."
+              "warning": "Если кружится голова — дыши мельче, укороти выдох. НЕ включай пресс на выдохе, живот опускается пассивно. При грыже L4-L5 диафрагмальное дыхание улучшает стабилизацию ядра — это бонус помимо релаксации.",
+              "info_box": "why_diaphragmatic_breathing_cooldown"
             }
           ]
         }

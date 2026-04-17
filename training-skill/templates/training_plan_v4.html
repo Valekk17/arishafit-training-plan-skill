@@ -1914,7 +1914,12 @@ document.addEventListener('click', function(e) {
   if (e.target.matches('.ex-check') || e.target.closest('.ex-check')) return;
   // Клик по кнопке справки не должен сворачивать день
   if (e.target.closest('.info-btn')) return;
-  const body = top.nextElementSibling;
+  // Находим .day-body по классу, а не nextElementSibling — справка может
+  // вставляться между .day-top и .day-body и ломать nextElementSibling
+  const dayCard = top.closest('.day-card');
+  if (!dayCard) return;
+  const body = Array.from(dayCard.children).find(c => c.classList.contains('day-body'));
+  if (!body) return;
   const btn = top.querySelector('.day-toggle');
   const isOpen = body.style.display !== 'none';
   if (isOpen) {

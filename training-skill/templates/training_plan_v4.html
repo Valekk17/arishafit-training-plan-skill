@@ -248,6 +248,58 @@
   .alert-body p:last-child { margin-bottom:0; }
   .alert-note { font-size:13px; opacity:0.85; font-style:italic; }
 
+  /* INFO BOX — раскрывающиеся справки с научным обоснованием */
+  .info-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 22px; height: 22px; border-radius: 50%;
+    background: rgba(59,130,246,0.12); color: #2563eb;
+    border: 1px solid rgba(59,130,246,0.35);
+    font-size: 13px; font-weight: 700; cursor: pointer;
+    margin-left: 8px; flex-shrink: 0; padding: 0; line-height: 1;
+    transition: all .15s var(--ease);
+    font-family: ui-sans-serif, -apple-system, sans-serif;
+  }
+  .info-btn:hover { background: rgba(59,130,246,0.22); transform: scale(1.08); }
+  .info-btn.active { background: #2563eb; color: #fff; border-color: #2563eb; }
+
+  .info-box {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-left: 4px solid #2563eb;
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin: 12px 0 16px;
+    font-size: 13px;
+    line-height: 1.65;
+    color: #1e3a8a;
+    display: none;
+    animation: info-slide 0.25s ease-out;
+  }
+  .info-box.open { display: block; }
+  @keyframes info-slide {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .info-box .info-title {
+    font-size: 14px; font-weight: 700; color: #1e40af;
+    margin-bottom: 10px;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .info-box .info-title::before { content: "📚"; font-size: 14px; }
+  .info-box .info-body { color: #1e3a8a; }
+  .info-box .info-body p { margin: 0 0 8px 0; }
+  .info-box .info-body p:last-child { margin-bottom: 0; }
+  .info-box .info-body ul, .info-box .info-body ol { margin: 6px 0 8px 0; padding-left: 22px; }
+  .info-box .info-body li { margin-bottom: 3px; }
+  .info-box .info-body strong { color: #1e40af; }
+  .info-box .info-body em { font-style: italic; }
+  .info-box .info-source {
+    font-size: 11px; color: #64748b; font-style: italic;
+    margin-top: 10px; padding-top: 10px;
+    border-top: 1px dashed #bfdbfe;
+    line-height: 1.5;
+  }
+
   /* STAT CARDS */
   .overview-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; }
   .stat-card {
@@ -1109,6 +1161,45 @@
 // ============================================================
 const PLAN_ID = "{{plan_id}}";  // уникальный ID плана, меняется при генерации
 const STORAGE_KEY = 'arishafit_' + PLAN_ID;
+
+// ============================================================
+// INFO BOXES — раскрывающиеся научные справки
+// ============================================================
+const INFO_BOXES = {{info_boxes_json}};
+
+function escInfo(s) {
+  return String(s || '').replace(/[<>&]/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;'}[c]));
+}
+
+function toggleInfoBox(btn) {
+  const id = btn.dataset.info;
+  if (!id || !INFO_BOXES[id]) return;
+  // Ищем уже созданный info-box сразу после родительского контейнера кнопки
+  const container = btn.closest('.day-top, .week-banner, .ex-header, .phase-item') || btn.parentElement;
+  const parent = container.parentElement || container;
+  let box = parent.querySelector(`:scope > .info-box[data-info="${id}"]`);
+  if (!box) {
+    const data = INFO_BOXES[id];
+    box = document.createElement('div');
+    box.className = 'info-box';
+    box.dataset.info = id;
+    box.innerHTML =
+      `<div class="info-title">${escInfo(data.title)}</div>` +
+      `<div class="info-body">${data.body}</div>` +
+      (data.source ? `<div class="info-source">Источники: ${escInfo(data.source)}</div>` : '');
+    container.insertAdjacentElement('afterend', box);
+  }
+  const opened = box.classList.toggle('open');
+  btn.classList.toggle('active', opened);
+}
+
+document.addEventListener('click', (e) => {
+  const btn = e.target.closest('.info-btn');
+  if (!btn) return;
+  e.preventDefault();
+  e.stopPropagation();
+  toggleInfoBox(btn);
+});
 
 function loadStore() {
   try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); }

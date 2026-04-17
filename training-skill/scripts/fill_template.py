@@ -22,6 +22,22 @@ GIFS_HD_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "exercisedb_da
 MP4_PAUSED_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "exercisedb_data", "mp4_paused")
 MP4_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "exercisedb_data", "mp4")
 ASSETS_DIR = os.path.join(os.path.dirname(__file__), "..", "assets")
+INFO_BOXES_PATH = os.path.join(ASSETS_DIR, "info_boxes.json")
+
+
+def load_info_boxes():
+    """Загрузить библиотеку справок."""
+    if os.path.exists(INFO_BOXES_PATH):
+        with open(INFO_BOXES_PATH, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+
+def render_info_btn(info_id):
+    """Кнопка '?' рядом с элементом — раскрывает справку."""
+    if not info_id:
+        return ""
+    return f'<button class="info-btn" data-info="{info_id}" title="Научная справка">?</button>'
 
 # Перевод целей
 GOAL_RU = {
@@ -512,11 +528,13 @@ def render_day(day, week_num):
     else:
         heading = f"День {day_num}: {day_name_ru}"
 
+    info_btn = render_info_btn(day.get("info_box"))
+
     return f"""
   <div class="day-card">
     <div class="day-top">
       <div class="day-top-left">
-        <h3>{heading}</h3>
+        <h3>{heading}{info_btn}</h3>
         <span class="day-badge">{day.get('name', '')}</span>
       </div>
       <div class="day-ring-wrap">
@@ -547,11 +565,12 @@ def render_week(week):
 
     # Убираем задвоение focus в h2 и week-desc: h2 показываем только номер, focus идёт одним блоком в desc
     focus_text = week.get('focus', '')
+    info_btn = render_info_btn(week.get("info_box"))
     return f"""
 <div class="week-content {'active' if wn == 1 else ''}" id="week{wn}">
   <div class="week-banner">
     <div class="week-num">Неделя {wn}</div>
-    <h2>{f'Неделя {wn}'}</h2>
+    <h2>{f'Неделя {wn}'}{info_btn}</h2>
     <div class="week-desc">{focus_text}</div>
   </div>
   {days_html}
@@ -640,6 +659,11 @@ def fill_template(plan_data):
 
     phase_json = json.dumps(PHASE_DATA, ensure_ascii=False)
     html = html.replace("{{phase_data_json}}", phase_json)
+
+    # Библиотека справок (info boxes) — инъекция в JS
+    info_boxes = load_info_boxes()
+    info_json = json.dumps(info_boxes, ensure_ascii=False)
+    html = html.replace("{{info_boxes_json}}", info_json)
 
     return html
 

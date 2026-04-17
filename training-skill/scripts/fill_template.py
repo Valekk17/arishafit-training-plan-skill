@@ -602,6 +602,7 @@ def render_week(week):
     return f"""
 <div class="week-content {'active' if wn == 1 else ''}" id="week{wn}">
   <div class="week-banner">
+    <button class="week-toggle" title="Свернуть/развернуть неделю">−</button>
     <div class="week-num">Неделя {wn}</div>
     <h2>{f'Неделя {wn}'}{info_btn}</h2>
     <div class="week-desc">{focus_text}</div>

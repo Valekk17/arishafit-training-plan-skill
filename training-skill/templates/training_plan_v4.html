@@ -410,10 +410,22 @@
     background:var(--bg-white); border:1px solid var(--border-light);
     border-left:4px solid var(--orange); border-radius:var(--radius-sm);
     padding:24px 28px; margin-bottom:20px; box-shadow:var(--shadow-xs);
+    position:relative; cursor:pointer; user-select:none;
   }
   .week-banner .week-num { font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:2px; color:var(--orange); }
   .week-banner h2 { font-size:22px; margin-top:2px; }
   .week-banner .week-desc { color:var(--text-light); font-size:14px; margin-top:2px; }
+  .week-toggle {
+    position:absolute; right:20px; top:22px;
+    width:30px; height:30px; border-radius:50%;
+    background:var(--bg-white); border:1px solid var(--border-light);
+    color:var(--text); font-size:16px; font-weight:700; cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    transition:all .2s var(--ease);
+  }
+  .week-toggle:hover { border-color:var(--orange); color:var(--orange); transform:scale(1.08); }
+  .week-content.collapsed .day-card { display:none; }
+  .week-content.collapsed .week-banner { margin-bottom:8px; }
 
   /* DAY CARD */
   .day-card {
@@ -1900,6 +1912,8 @@ document.addEventListener('click', function(e) {
   const top = e.target.closest('.day-top');
   if (!top) return;
   if (e.target.matches('.ex-check') || e.target.closest('.ex-check')) return;
+  // Клик по кнопке справки не должен сворачивать день
+  if (e.target.closest('.info-btn')) return;
   const body = top.nextElementSibling;
   const btn = top.querySelector('.day-toggle');
   const isOpen = body.style.display !== 'none';
@@ -1931,6 +1945,21 @@ document.addEventListener('click', function(e) {
   });
   saveStore(store);
   updateAllProgress();
+});
+
+// ============================================================
+// WEEK COLLAPSE — клик по банеру недели сворачивает/разворачивает дни
+// ============================================================
+document.addEventListener('click', function(e) {
+  const banner = e.target.closest('.week-banner');
+  if (!banner) return;
+  // Клик по info-btn открывает справку, не сворачивает неделю
+  if (e.target.closest('.info-btn')) return;
+  const content = banner.closest('.week-content');
+  if (!content) return;
+  const collapsed = content.classList.toggle('collapsed');
+  const btn = banner.querySelector('.week-toggle');
+  if (btn) btn.textContent = collapsed ? '+' : '−';
 });
 
 // ============================================================

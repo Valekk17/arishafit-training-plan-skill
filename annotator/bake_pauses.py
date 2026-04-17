@@ -17,8 +17,9 @@ bake_pauses.py — пересобирает MP4 с запечёнными пау
   3. Пишем через ffmpeg raw pipe (bgr24) с тем же fps → libx264.
 
 Параметры:
-  HOLD_SECONDS = 1.0 — длительность паузы на ключевой позе
-  На 10 fps это = 10 кадров одной позы подряд.
+  HOLD_SECONDS = 0.5 — длительность паузы на ключевой позе
+  На 10 fps это = 5 кадров одной позы подряд.
+  Меньшая пауза = ритмичный «поза—движение—поза» без мёртвого воздуха.
 """
 
 import json
@@ -38,7 +39,7 @@ OUT_DIR = ROOT / "exercisedb_data" / "mp4_paused"
 AUTO_F = Path(__file__).resolve().parent / "annotations_auto.json"
 MANUAL_F = Path(__file__).resolve().parent / "annotations_manual.json"
 
-HOLD_SECONDS = 1.0
+HOLD_SECONDS = 0.5
 
 
 def load_json(p):

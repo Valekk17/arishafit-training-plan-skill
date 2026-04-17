@@ -1092,27 +1092,30 @@
   <div class="overview-grid">{{program_overview_items}}</div>
 </section>
 
-<!-- WARMUP/COOLDOWN SHARED -->
-<section id="warmup-cooldown" class="container section">
-  <div class="section-label">Подготовка тела</div>
-  <div class="section-title">Разминка и заминка</div>
-  {{warmup_cooldown_block}}
-</section>
+<!-- WARMUP/COOLDOWN + TRAINING shares a common right panel -->
+<div class="container section training-layout">
+  <div class="training-main" id="trainingMain">
 
-<!-- TRAINING -->
-<section id="training" class="container section">
-  <div class="section-label">Тренировки</div>
-  <div class="section-title">Тренировочная программа</div>
-  <div class="week-tabs" id="weekTabs">{{week_tabs}}</div>
+    <!-- WARMUP/COOLDOWN SHARED -->
+    <section id="warmup-cooldown">
+      <div class="section-label">Подготовка тела</div>
+      <div class="section-title">Разминка и заминка</div>
+      {{warmup_cooldown_block}}
+    </section>
 
-  <div class="training-layout">
-    <div class="training-main" id="trainingMain">
+    <!-- TRAINING -->
+    <section id="training" style="margin-top:40px">
+      <div class="section-label">Тренировки</div>
+      <div class="section-title">Тренировочная программа</div>
+      <div class="week-tabs" id="weekTabs">{{week_tabs}}</div>
       {{weeks_content}}
-    </div>
+    </section>
 
-    <div class="training-panel-wrap">
-      <div class="mobile-panel-handle" id="panelHandle"><span></span></div>
-      <div class="preview-panel" id="previewPanel">
+  </div>
+
+  <div class="training-panel-wrap">
+    <div class="mobile-panel-handle" id="panelHandle"><span></span></div>
+    <div class="preview-panel" id="previewPanel">
         <div class="panel-empty" id="panelEmpty">
           <div class="panel-empty-icon">👆</div>
           <div class="panel-empty-text">Нажми на упражнение<br>чтобы увидеть технику выполнения</div>
@@ -1168,7 +1171,7 @@
       </div>
     </div>
   </div>
-</section>
+</div>
 
 <!-- DISCLAIMER -->
 <div class="container">

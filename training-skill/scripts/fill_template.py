@@ -23,6 +23,9 @@ MP4_PAUSED_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "exercisedb
 MP4_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "exercisedb_data", "mp4")
 ASSETS_DIR = os.path.join(os.path.dirname(__file__), "..", "assets")
 INFO_BOXES_PATH = os.path.join(ASSETS_DIR, "info_boxes.json")
+EXERCISE_DB_PATH = os.path.join(
+    os.path.dirname(__file__), "..", "..", "exercisedb_data", "exercise_db_final.json"
+)
 
 
 def load_info_boxes():
@@ -31,6 +34,43 @@ def load_info_boxes():
         with open(INFO_BOXES_PATH, "r", encoding="utf-8") as f:
             return json.load(f)
     return {}
+
+
+# Загружаем каноническую БД упражнений один раз при старте — источник правды
+# для имён. План может override только через суффикс в скобках (квалификатор
+# типа «(A1 суперсета)»).
+_EX_DB = {}
+if os.path.exists(EXERCISE_DB_PATH):
+    with open(EXERCISE_DB_PATH, "r", encoding="utf-8") as f:
+        for _e in json.load(f):
+            _EX_DB[_e["exerciseId"]] = _e
+
+
+_SUFFIX_RE = __import__("re").compile(r"^(.+?)\s*\(([^)]+)\)\s*$")
+
+
+def resolve_name(ex):
+    """Возвращает корректное nameRu: берём из БД по exerciseId, сохраняя
+    квалификатор в скобках если он есть в плановом имени.
+
+    Правило: БД — источник правды. План не может «переименовать» упражнение,
+    только добавить суффикс-квалификатор вроде «(A1 суперсета)».
+    """
+    eid = ex.get("exerciseId")
+    plan_name = (ex.get("nameRu") or "").strip()
+    if not eid or eid not in _EX_DB:
+        return plan_name or ex.get("nameEn", "—")
+    db_name = _EX_DB[eid].get("nameRu", "").strip() or plan_name
+    # Если в плановом имени есть квалификатор (A1, A2, суперсет, ротация…) —
+    # сохраняем его как суффикс к правильному DB-имени.
+    if plan_name:
+        m = _SUFFIX_RE.match(plan_name)
+        if m:
+            suffix = m.group(2).strip()
+            # Принимаем только значимые квалификаторы
+            if any(k in suffix.lower() for k in ["a1", "a2", "b1", "b2", "c1", "c2", "суперсет", "ротация", "дилоуд", "альтернатив"]):
+                return f"{db_name} ({suffix})"
+    return db_name
 
 
 def render_info_btn(info_id):
@@ -253,7 +293,9 @@ def render_exercise(ex, order, week_num, day_num):
     if not gif_src and main_url:
         gif_src = main_url
     ex_key = f"w{week_num}d{day_num}e{order}"
-    name = ex.get("nameRu", ex.get("nameEn", "—"))
+    # Имя ВСЕГДА из БД по exerciseId (source of truth) + сохраняем квалификатор
+    # из плана если есть (например «(A1 суперсета)»)
+    name = resolve_name(ex)
 
     tags_html = ""
     if ex.get("sets") and ex.get("reps"):
@@ -272,9 +314,10 @@ def render_exercise(ex, order, week_num, day_num):
         alt_gif = media_to_base64(alt_url, a.get("gifLocalPath", ""), use_relative=USE_RELATIVE)
         if not alt_gif and alt_url:
             alt_gif = alt_url  # CDN fallback
-        # Триада НЕРАЗДЕЛИМА: nameRu + gif + tips + warning идут вместе
+        # Триада НЕРАЗДЕЛИМА: nameRu + gif + tips + warning идут вместе.
+        # Имя альтернативы — из БД по exerciseId (source of truth).
         alts_data.append({
-            "nameRu": a.get("nameRu", a.get("name", "")),
+            "nameRu": resolve_name(a),
             "gif": alt_gif,
             "tips": a.get("tips", "") or "",
             "warn": a.get("warning", "") or "",
@@ -308,7 +351,7 @@ def render_warmup_item(item, week_num, day_num, block_phase, item_idx, scope=Non
     scope — опциональный префикс ключа, чтобы общая секция не коллидила с дневными.
     """
     exercise_id = item.get("exerciseId", "")
-    name = item.get("nameRu", item.get("name", ""))
+    name = resolve_name(item) if item.get("exerciseId") else item.get("nameRu", item.get("name", ""))
     reps = item.get("reps") or item.get("duration") or ""
     details = item.get("details", "")
     tips = item.get("tips", "") or ""

@@ -338,8 +338,9 @@ function show(i) {
   document.getElementById('exConf').textContent = statusTxt;
 
   // Names block
-  document.getElementById('nameNew').textContent = e.nameRu_new || '(нет, не в батче)';
-  document.getElementById('nameOld').textContent = e.nameRu_old || '—';
+  document.getElementById('nameNew').textContent = e.nameRu || '—';
+  const oldEl = document.getElementById('nameOld');
+  if (oldEl) oldEl.style.display = 'none';  // старое имя удалено из БД
   document.getElementById('nameEn').textContent = e.nameEn || '—';
 
   // Description

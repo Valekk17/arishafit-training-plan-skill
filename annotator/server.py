@@ -48,12 +48,10 @@ def save_json(p, data):
     p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-# Загружаем БД с именами
+# Загружаем чистую БД упражнений
 print(f"Загружаю БД упражнений из {DB}...")
 db = load_json(DB, [])
 ex_info = {}
-renames = load_json(RENAMES_F, {})
-print(f"Загрузил новых имён (Opus): {len(renames)}")
 
 for ex in db:
     eid = ex.get("exerciseId", "")
@@ -61,16 +59,16 @@ for ex in db:
         continue
     instr = ex.get("instructions", [])
     ex_info[eid] = {
-        "nameRu_old": ex.get("nameRu", "") or ex.get("nameEn", ""),
-        "nameRu_new": renames.get(eid, ""),
+        "nameRu": ex.get("nameRu", "") or ex.get("nameEn", ""),
         "nameEn": ex.get("nameEn", ""),
-        "bodyParts": ex.get("bodyPartsRu") or ex.get("bodyParts", []),
-        "equipments": ex.get("equipmentsRu") or ex.get("equipments", []),
-        "targetMuscles": ex.get("targetMusclesRu") or ex.get("targetMuscles", []),
+        "bodyParts": ex.get("bodyParts", []),
+        "equipments": ex.get("equipments", []),
+        "targetMuscles": ex.get("targetMuscles", []),
         "instruction_1": instr[0] if instr else "",
         "instruction_2": instr[1] if len(instr) > 1 else "",
+        "hasAnimation": ex.get("hasAnimation", True),
     }
-print(f"  имён загружено: {len(ex_info)}")
+print(f"  записей загружено: {len(ex_info)}")
 
 
 def get_exercises_list():
@@ -103,10 +101,9 @@ def get_exercises_list():
             key_frames = sorted({sf, pf})
         out.append({
             "id": eid,
-            "nameRu": info.get("nameRu_new") or info.get("nameRu_old") or eid,
-            "nameRu_old": info.get("nameRu_old", ""),
-            "nameRu_new": info.get("nameRu_new", ""),
+            "nameRu": info.get("nameRu", eid),
             "nameEn": info.get("nameEn", ""),
+            "hasAnimation": info.get("hasAnimation", True),
             "bodyParts": info.get("bodyParts", []),
             "equipments": info.get("equipments", []),
             "targetMuscles": info.get("targetMuscles", []),

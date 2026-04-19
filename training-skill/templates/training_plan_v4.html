@@ -1067,8 +1067,13 @@
     }
     .preview-panel.mobile-open { /* триггер для :has() */ }
 
-    /* Когда панель открыта — блокируем scroll всей страницы под ней */
-    body.panel-open { overflow:hidden; position:fixed; width:100%; }
+    /* Когда панель открыта — блокируем scroll фона через overflow и touch-action,
+       но НЕ position:fixed на body (оно ломает scroll внутри fixed-детей на iOS). */
+    html.panel-open { overflow:hidden; }
+    body.panel-open { overflow:hidden; touch-action:none; }
+    /* Панель и её содержимое остаются прокручиваемыми */
+    body.panel-open .training-panel-wrap,
+    body.panel-open .preview-panel { touch-action:pan-y; }
     .mobile-panel-handle {
       display:flex; justify-content:center; padding:10px 12px;
       cursor:pointer; background:var(--bg-white);
@@ -1836,20 +1841,16 @@ function openPhaseItem(key) {
 }
 
 // ============================================================
-// SCROLL LOCK — фиксируем страницу под открытой панелью
+// SCROLL LOCK — блокируем фоновый scroll без position:fixed
+// (position:fixed на body ломает scroll внутри fixed-детей на iOS)
 // ============================================================
-let _savedScrollY = 0;
 function lockBodyScroll() {
-  if (document.body.classList.contains('panel-open')) return;
-  _savedScrollY = window.scrollY;
-  document.body.style.top = `-${_savedScrollY}px`;
+  document.documentElement.classList.add('panel-open');
   document.body.classList.add('panel-open');
 }
 function unlockBodyScroll() {
-  if (!document.body.classList.contains('panel-open')) return;
+  document.documentElement.classList.remove('panel-open');
   document.body.classList.remove('panel-open');
-  document.body.style.top = '';
-  window.scrollTo(0, _savedScrollY);
 }
 
 // ============================================================

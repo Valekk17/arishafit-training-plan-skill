@@ -1073,13 +1073,15 @@
     }
     .preview-panel.mobile-open { /* триггер для :has() */ }
 
-    /* Когда панель открыта — блокируем scroll фона ТОЛЬКО через overflow.
-       touch-action:none ломает touch-scroll у position:fixed детей на iOS
-       Safari, даже при touch-action:pan-y на самих детях (известный баг). */
-    html.panel-open, body.panel-open {
-      overflow:hidden;
-      height:100%;
-    }
+    /* Блокировка фонового скролла делается НЕ через overflow:hidden на html/body
+       (это обнуляет позицию скролла на iOS и Chrome) и НЕ через position:fixed
+       (ломает scroll внутри position:fixed детей).
+
+       Вместо этого — touch-action:none на backdrop. Когда backdrop виден
+       (панель открыта), любые touch-жесты по области backdrop блокируются.
+       Панель и её дети — поверх backdrop (z:9999 vs 9998), их touch-события
+       обрабатываются первыми → scroll внутри работает. */
+    .mobile-panel-backdrop.show { touch-action:none; }
     .mobile-panel-handle {
       display:flex; justify-content:center; padding:10px 12px;
       cursor:pointer; background:var(--bg-white);
@@ -1840,20 +1842,6 @@ function openPhaseItem(key) {
   document.getElementById('previewPanel').classList.add('mobile-open');
   document.querySelector('.training-panel-wrap')?.classList.add('mobile-open');
   document.getElementById('backdrop').classList.add('show');
-  lockBodyScroll();
-}
-
-// ============================================================
-// SCROLL LOCK — блокируем фоновый scroll без position:fixed
-// (position:fixed на body ломает scroll внутри fixed-детей на iOS)
-// ============================================================
-function lockBodyScroll() {
-  document.documentElement.classList.add('panel-open');
-  document.body.classList.add('panel-open');
-}
-function unlockBodyScroll() {
-  document.documentElement.classList.remove('panel-open');
-  document.body.classList.remove('panel-open');
 }
 
 // ============================================================
@@ -1955,7 +1943,6 @@ function openPanel(key) {
   document.getElementById('previewPanel').classList.add('mobile-open');
   document.querySelector('.training-panel-wrap')?.classList.add('mobile-open');
   document.getElementById('backdrop').classList.add('show');
-  lockBodyScroll();
 }
 
 function closePanel() {
@@ -1964,7 +1951,6 @@ function closePanel() {
   document.getElementById('backdrop').classList.remove('show');
   document.querySelectorAll('.exercise').forEach(el => el.classList.remove('active-preview'));
   activeKey = null;
-  unlockBodyScroll();
 }
 
 // ============================================================

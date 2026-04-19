@@ -224,7 +224,7 @@
 
   /* CONTAINER */
   .container { max-width:1200px; margin:0 auto; padding:0 24px; position:relative; z-index:1; }
-  .section { padding:48px 0; }
+  .section { padding-top:48px; padding-bottom:48px; }  /* не трогаем left/right — их даёт .container */
   .section-label { font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:3px; color:var(--orange); margin-bottom:8px; }
   .section-title { font-size:28px; font-weight:800; color:var(--text); margin-bottom:24px; }
 
@@ -992,17 +992,28 @@
   /* ========= Планшет/мобильник: панель предпросмотра внизу ========= */
   @media (max-width:900px) {
     .training-layout { grid-template-columns:1fr; }
-    .training-panel-wrap { position:fixed; bottom:0; left:0; right:0; top:auto; z-index:150; }
+    /* Контейнер панели фиксирован внизу, но НЕ блокирует клики по контенту —
+       pointer-events:none. Элементы внутри (handle + panel) получают auto. */
+    .training-panel-wrap {
+      position:fixed; bottom:0; left:0; right:0; top:auto; z-index:150;
+      pointer-events:none;
+    }
     .preview-panel {
       border-radius:var(--radius) var(--radius) 0 0;
       max-height:75vh; overflow-y:auto;
       transform:translateY(100%); transition:transform .4s var(--spring);
       border-bottom:none;
+      pointer-events:auto;
+      /* Тень вверх чтобы было видно что это bottom sheet */
+      box-shadow:0 -8px 24px rgba(0,0,0,.1);
     }
     .preview-panel.mobile-open { transform:translateY(0); }
     .mobile-panel-handle {
       display:flex; justify-content:center; padding:12px;
       cursor:pointer; background:var(--bg-white);
+      pointer-events:auto;
+      border-radius:var(--radius) var(--radius) 0 0;
+      box-shadow:0 -4px 12px rgba(0,0,0,.08);
     }
     .mobile-panel-handle span {
       width:40px; height:4px; background:var(--border);
@@ -1025,7 +1036,7 @@
   /* ========= Планшет портрет / большой мобильник ========= */
   @media (max-width:768px) {
     .container { padding:0 18px; }
-    .section { padding:36px 0; }
+    .section { padding-top:36px; padding-bottom:36px; }
     .section-title { font-size:22px; margin-bottom:18px; }
     .hero { padding:60px 20px 44px; }
     .hero h1 { font-size:28px; }
@@ -1055,7 +1066,7 @@
   /* ========= Маленький мобильник (<480px) ========= */
   @media (max-width:480px) {
     .container { padding:0 14px; }
-    .section { padding:28px 0; }
+    .section { padding-top:28px; padding-bottom:28px; }
     .section-title { font-size:20px; }
     .hero { padding:44px 16px 32px; }
     .hero h1 { font-size:24px; }

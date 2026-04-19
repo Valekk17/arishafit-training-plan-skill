@@ -4,7 +4,7 @@
     {
       "name": "plan-preview",
       "runtimeExecutable": "python",
-      "runtimeArgs": ["-m", "http.server", "8788", "--directory", "training-skill/output"],
+      "runtimeArgs": ["-m", "http.server", "8788"],
       "port": 8788
     }
   ]

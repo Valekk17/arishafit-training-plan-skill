@@ -273,12 +273,15 @@
     line-height: 1.65;
     color: #1e3a8a;
     display: none;
-    animation: info-slide 0.25s ease-out;
+    /* Анимация только opacity — transform на сабпиксельных значениях
+       размывает текст на мобильных GPU. Opacity даёт плавный fade,
+       текст остаётся чётким. */
+    animation: info-fade 0.2s ease-out;
   }
   .info-box.open { display: block; }
-  @keyframes info-slide {
-    from { opacity: 0; transform: translateY(-4px); }
-    to { opacity: 1; transform: translateY(0); }
+  @keyframes info-fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
   }
   .info-box .info-title {
     font-size: 14px; font-weight: 700; color: #1e40af;
@@ -1037,19 +1040,22 @@
       background:var(--bg-white);
       border-radius:var(--radius) var(--radius) 0 0;
       box-shadow:0 -8px 24px rgba(0,0,0,.15);
-      transform:translateY(100%);
-      transition:transform .4s var(--spring);
+      transform:translate3d(0, 100%, 0);
+      transition:transform .35s cubic-bezier(.25,.46,.45,.94);
       pointer-events:none;  /* не ловим клики когда панель спрятана */
+      will-change:transform;
+      backface-visibility:hidden;
+      -webkit-backface-visibility:hidden;
     }
     /* Когда panel открыта — JS вешает .mobile-open на саму wrap.
        Это работает на всех браузерах без поддержки :has() (старые iOS Safari). */
     .training-panel-wrap.mobile-open {
-      transform:translateY(0);
+      transform:translate3d(0, 0, 0);
       pointer-events:auto;
     }
     /* :has() как progressive enhancement для современных браузеров */
     .training-panel-wrap:has(.preview-panel.mobile-open) {
-      transform:translateY(0);
+      transform:translate3d(0, 0, 0);
       pointer-events:auto;
     }
     .preview-panel {
@@ -1069,8 +1075,11 @@
       border-radius:100px; display:block;
     }
     .mobile-panel-backdrop {
-      display:none; position:fixed; inset:0; background:rgba(0,0,0,.4);
-      z-index:149; backdrop-filter:blur(4px);
+      display:none; position:fixed; inset:0; background:rgba(0,0,0,.45);
+      z-index:149;
+      /* Убрал backdrop-filter:blur(4px) — размывал контент за панелью
+         на мобильных GPU и заставлял весь плано казаться «смазанным».
+         Тёмный overlay + opacity достаточно чтобы выделить панель. */
     }
     .mobile-panel-backdrop.show { display:block; }
     /* Уплотнение основных блоков */

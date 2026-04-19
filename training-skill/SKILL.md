@@ -1,35 +1,70 @@
 ---
 name: fitness-training-plan
-description: Generator of personalized training plans based on ACSM 2026 and NSCA with mandatory 3-pass audit loop
+description: Generator of personalized training plans based on ACSM 2026 and NSCA with mandatory 3-pass audit loop. ONLY Opus generates plans.
 model: opus
 ---
 
-# ArishaFit Training Plan Generator (v2)
+# ArishaFit Training Plan Generator (v3)
 
 ## Role
 NSCA-CSCS certified trainer (15+ years). All decisions based on **ACSM 2026 Position Stand** and **NSCA Essentials**. Specializes in injury-adapted programs.
 
 ---
 
+# HARD RULES — READ FIRST
+
+## 1. Планы генерирует ТОЛЬКО Opus
+Код никогда не создаёт план автоматически. Скрипты готовят контекст (safe pool, история клиента, библиотека справок) → Opus получает промпт → Opus возвращает JSON плана → код записывает в БД и рендерит.
+
+**Запрещено:**
+- Рандомайзеры для подбора упражнений
+- Python-логика выбора дня / недели / прогрессии
+- Любой код вида «если клиент X, дать ему Y подходов»
+
+**Разрешено:**
+- Фильтрация из каталога под ограничения (safe pool)
+- Расчёт 1RM по Эпли из session_logs
+- Валидация структуры плана (3-pass audit) после генерации
+- Рендер готового плана в HTML
+
+## 2. БД (PostgreSQL) — единственный источник правды
+Каталог упражнений, справки, планы и история тренировок живут в Postgres.
+Скрипты читают через `db.queries` (SQLAlchemy), не через JSON-файлы.
+JSON — только формат импорта (первичная заливка) и экспорта (для рендера).
+
+## 3. Имя ↔ анимация ↔ описание — привязаны к `exerciseId`
+Имя упражнения и описание берутся из таблицы `exercises` по `exerciseId`.
+План не может «переименовать» упражнение — только добавить квалификатор `(A1 суперсета)` / `(ротация)`.
+Это правило реализовано в `fill_template.resolve_name()`.
+
+---
+
 # ARCHITECTURE: CREATE -> AUDIT -> FIX -> REPEAT
 
 ```
-PHASE 0: Pre-flight (client data + DB check)
+PHASE 0: Pre-flight (client from clients, history from session_logs)
     |
-PHASE 1: Generate plan (week by week, IDENTICAL JSON format)
+PHASE 1: Build context for Opus
+    |-- safe_pool = build_safe_pool.py под травмы клиента
+    |-- history  = последние 4 недели из exercise_logs
+    |-- catalog  = db.queries.find_exercises(фильтры)
+    |-- info_boxes = db.queries.load_all_info_boxes()
     |
-PHASE 2: 3-pass audit
+PHASE 2: Opus генерирует план (week by week, IDENTICAL JSON format)
+    |
+PHASE 3: 3-pass audit (мой код проверяет Opus-вывод)
     |-- Pass 1: SAFETY (forbidden exercises, static vs dynamic, warnings, core min)
-    |-- Pass 2: CONSISTENCY TRIAD (exerciseId <-> nameRu <-> gifUrl)
-    |-- Pass 3: STRUCTURE (JSON format, periodization, pattern balance, template compat)
+    |-- Pass 2: CONSISTENCY TRIAD (exerciseId ↔ nameRu ↔ hasAnimation)
+    |-- Pass 3: STRUCTURE (JSON format, периодизация, баланс паттернов)
     |
-    +-- ANY failures? -> FIX -> re-run failed pass -> loop (max 5 iterations)
+    +-- ANY failures? -> Opus исправляет -> re-run failed pass -> loop (max 5)
     |
-PHASE 3: Assemble full plan JSON
+PHASE 4: Запись в БД
+    |-- clients update, plans insert, weeks+days+plan_exercises insert
     |
-PHASE 4: Generate HTML via fill_template.py
-    |
-PHASE 5: Post-generation validation
+PHASE 5: Export & render
+    |-- scripts/export_plan_from_db.py → plan_<client>.json
+    |-- training-skill/scripts/fill_template.py → plan.html
     |
 DELIVER
 ```

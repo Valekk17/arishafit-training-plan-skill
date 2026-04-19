@@ -27,23 +27,50 @@ EXERCISE_DB_PATH = os.path.join(
     os.path.dirname(__file__), "..", "..", "exercisedb_data", "exercise_db_final.json"
 )
 
+# === Источник правды: Postgres. JSON — fallback если БД недоступна. ===
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
+
+try:
+    from db.queries import load_all_exercises, load_all_info_boxes, is_db_available
+    _USE_DB = is_db_available()
+    if _USE_DB:
+        print("Источник данных: PostgreSQL", file=sys.stderr)
+    else:
+        print("Postgres недоступен — fallback на JSON", file=sys.stderr)
+except Exception as _e:
+    print(f"Postgres import failed ({_e}) — fallback на JSON", file=sys.stderr)
+    _USE_DB = False
+    load_all_exercises = None
+    load_all_info_boxes = None
+
 
 def load_info_boxes():
-    """Загрузить библиотеку справок."""
+    """Загрузить библиотеку справок — Postgres → JSON fallback."""
+    if _USE_DB and load_all_info_boxes:
+        data = load_all_info_boxes()
+        if data:
+            return data
     if os.path.exists(INFO_BOXES_PATH):
         with open(INFO_BOXES_PATH, "r", encoding="utf-8") as f:
             return json.load(f)
     return {}
 
 
-# Загружаем каноническую БД упражнений один раз при старте — источник правды
-# для имён. План может override только через суффикс в скобках (квалификатор
-# типа «(A1 суперсета)»).
-_EX_DB = {}
-if os.path.exists(EXERCISE_DB_PATH):
-    with open(EXERCISE_DB_PATH, "r", encoding="utf-8") as f:
-        for _e in json.load(f):
-            _EX_DB[_e["exerciseId"]] = _e
+def _load_exercise_catalog():
+    """Загрузить каталог упражнений: Postgres → JSON fallback."""
+    if _USE_DB and load_all_exercises:
+        catalog = load_all_exercises()
+        if catalog:
+            return catalog
+    catalog = {}
+    if os.path.exists(EXERCISE_DB_PATH):
+        with open(EXERCISE_DB_PATH, "r", encoding="utf-8") as f:
+            for _e in json.load(f):
+                catalog[_e["exerciseId"]] = _e
+    return catalog
+
+
+_EX_DB = _load_exercise_catalog()
 
 
 _SUFFIX_RE = __import__("re").compile(r"^(.+?)\s*\(([^)]+)\)\s*$")

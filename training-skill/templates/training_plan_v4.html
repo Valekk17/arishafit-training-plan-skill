@@ -1032,9 +1032,15 @@
     .training-layout { grid-template-columns:1fr; }
     /* Bottom-sheet: вся обёртка переезжает целиком, handle и контент вместе.
        КРИТИЧНО: pointer-events:none когда закрыта — иначе невидимая
-       «сцена» снизу перехватывает все клики на контенте. */
+       «сцена» снизу перехватывает все клики на контенте.
+       КРИТИЧНО 2: родительская .container создаёт свой stacking-context
+       через position:relative+z-index:1. На мобильном убираем этот
+       stacking-context у training-layout чтобы wrap (z:9999) на
+       мобильном был реально поверх backdrop. */
+    .training-layout { z-index:auto; }
     .training-panel-wrap {
-      position:fixed; bottom:0; left:0; right:0; top:auto; z-index:150;
+      position:fixed; bottom:0; left:0; right:0; top:auto;
+      z-index:9999;  /* выше всех наших слоёв */
       display:flex; flex-direction:column;
       max-height:85vh;
       background:var(--bg-white);
@@ -1042,7 +1048,7 @@
       box-shadow:0 -8px 24px rgba(0,0,0,.15);
       transform:translate3d(0, 100%, 0);
       transition:transform .35s cubic-bezier(.25,.46,.45,.94);
-      pointer-events:none;  /* не ловим клики когда панель спрятана */
+      pointer-events:none;
       will-change:transform;
       backface-visibility:hidden;
       -webkit-backface-visibility:hidden;
@@ -1067,13 +1073,13 @@
     }
     .preview-panel.mobile-open { /* триггер для :has() */ }
 
-    /* Когда панель открыта — блокируем scroll фона через overflow и touch-action,
-       но НЕ position:fixed на body (оно ломает scroll внутри fixed-детей на iOS). */
-    html.panel-open { overflow:hidden; }
-    body.panel-open { overflow:hidden; touch-action:none; }
-    /* Панель и её содержимое остаются прокручиваемыми */
-    body.panel-open .training-panel-wrap,
-    body.panel-open .preview-panel { touch-action:pan-y; }
+    /* Когда панель открыта — блокируем scroll фона ТОЛЬКО через overflow.
+       touch-action:none ломает touch-scroll у position:fixed детей на iOS
+       Safari, даже при touch-action:pan-y на самих детях (известный баг). */
+    html.panel-open, body.panel-open {
+      overflow:hidden;
+      height:100%;
+    }
     .mobile-panel-handle {
       display:flex; justify-content:center; padding:10px 12px;
       cursor:pointer; background:var(--bg-white);
@@ -1086,10 +1092,7 @@
     }
     .mobile-panel-backdrop {
       display:none; position:fixed; inset:0; background:rgba(0,0,0,.45);
-      z-index:149;
-      /* Убрал backdrop-filter:blur(4px) — размывал контент за панелью
-         на мобильных GPU и заставлял весь плано казаться «смазанным».
-         Тёмный overlay + opacity достаточно чтобы выделить панель. */
+      z-index:9998;  /* прямо под panel wrap (9999), но выше всего контента */
     }
     .mobile-panel-backdrop.show { display:block; }
     /* Уплотнение основных блоков */

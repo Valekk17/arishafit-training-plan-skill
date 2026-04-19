@@ -1062,8 +1062,13 @@
       border-radius:0; border:none; box-shadow:none;
       flex:1 1 auto; min-height:0;
       overflow-y:auto;
+      -webkit-overflow-scrolling:touch;  /* momentum scroll на iOS Safari */
+      overscroll-behavior:contain;       /* scroll не «вытекает» на фон */
     }
     .preview-panel.mobile-open { /* триггер для :has() */ }
+
+    /* Когда панель открыта — блокируем scroll всей страницы под ней */
+    body.panel-open { overflow:hidden; position:fixed; width:100%; }
     .mobile-panel-handle {
       display:flex; justify-content:center; padding:10px 12px;
       cursor:pointer; background:var(--bg-white);
@@ -1827,6 +1832,24 @@ function openPhaseItem(key) {
   document.getElementById('previewPanel').classList.add('mobile-open');
   document.querySelector('.training-panel-wrap')?.classList.add('mobile-open');
   document.getElementById('backdrop').classList.add('show');
+  lockBodyScroll();
+}
+
+// ============================================================
+// SCROLL LOCK — фиксируем страницу под открытой панелью
+// ============================================================
+let _savedScrollY = 0;
+function lockBodyScroll() {
+  if (document.body.classList.contains('panel-open')) return;
+  _savedScrollY = window.scrollY;
+  document.body.style.top = `-${_savedScrollY}px`;
+  document.body.classList.add('panel-open');
+}
+function unlockBodyScroll() {
+  if (!document.body.classList.contains('panel-open')) return;
+  document.body.classList.remove('panel-open');
+  document.body.style.top = '';
+  window.scrollTo(0, _savedScrollY);
 }
 
 // ============================================================
@@ -1928,6 +1951,7 @@ function openPanel(key) {
   document.getElementById('previewPanel').classList.add('mobile-open');
   document.querySelector('.training-panel-wrap')?.classList.add('mobile-open');
   document.getElementById('backdrop').classList.add('show');
+  lockBodyScroll();
 }
 
 function closePanel() {
@@ -1936,6 +1960,7 @@ function closePanel() {
   document.getElementById('backdrop').classList.remove('show');
   document.querySelectorAll('.exercise').forEach(el => el.classList.remove('active-preview'));
   activeKey = null;
+  unlockBodyScroll();
 }
 
 // ============================================================

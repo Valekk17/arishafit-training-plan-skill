@@ -36,3 +36,11 @@ node_modules/
 
 # Logs
 *.log
+
+# Environment
+.env
+.env.local
+
+# Postgres volumes (managed by Docker)
+db/init/*.sql
+

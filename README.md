@@ -1,109 +1,154 @@
 # ArishaFit — Training Plan Skill
 
-Reusable engine for generating personalized gym training plans with adaptive exercise selection, injury-aware filtering, and animated MP4 demonstrations.
+Reusable engine для генерации персональных тренировочных планов. Хранит каталог упражнений, планы клиентов и историю тренировок в PostgreSQL. Рендерит HTML-документ с встроенными MP4-анимациями для клиента.
 
-## Что это
-
-Скилл для генерации персональных планов тренировок из анкеты клиента (JSON) в HTML-документ с запечёнными видео упражнений.
-
-**Ключевые возможности:**
-- База из 1500 упражнений (ExerciseDB) с профессиональными русскими названиями
-- Автоматический подбор упражнений под травмы, оборудование, цели клиента
-- Периодизация (линейная/волновая/блочная) на 4-недельный цикл
-- MP4-видео каждого упражнения с запечёнными 1-секундными паузами на ключевых позах
-- Суперсеты, Zone 2 кардио, дроп-сеты — полный арсенал методик
-
-## Структура репо
+## Архитектура
 
 ```
-.
-├── annotator/                  # Инструмент разметки ключевых кадров упражнений
-│   ├── server.py               # Локальный HTTP-сервер (http://localhost:8787)
-│   ├── index.html              # Web-UI для просмотра/правки разметки
-│   ├── autodetect.py           # Авто-поиск ключевых кадров по blackness
-│   ├── bake_pauses.py          # Запекает паузы в MP4 через ffmpeg
-│   ├── annotations_auto.json   # Результат автодетекта (1322 упражнения)
-│   ├── annotations_manual.json # Ручные правки
-│   └── _batch_[1-3]_*.json     # Opus-батчи для переименования упражнений
-│
-├── exercisedb_data/
-│   └── exercise_db_final.json  # Каноническая БД (1500 упражнений с Opus-именами)
-│   # mp4/, mp4_paused/, gifs_hd/ — НЕ в git (слишком большие), доступны отдельно
-│
-├── training-skill/
-│   ├── SKILL.md                # Описание скилла для Claude
-│   ├── scripts/
-│   │   ├── fill_template.py    # Рендер плана (JSON → HTML)
-│   │   ├── build_safe_pool.py  # Подбор безопасных упражнений по травмам
-│   │   ├── query_exercises.py  # Поиск упражнений в БД
-│   │   └── extract_hd_frame.py # Утилита для WebP фреймов
-│   ├── templates/
-│   │   └── training_plan_v4.html  # HTML-шаблон плана
-│   └── output/
-│       └── plan_andrey_v5.json    # Пример плана (не в git: рендер и бэкапы)
-│
-├── nutrition-skill/            # Питание (отдельный скилл, в разработке)
-│
-├── ARCHITECTURE.md
-├── CLAUDE.md                   # Контекст проекта для LLM
-├── SKILL_BLUEPRINT.md
-└── CLAUDE_CODE_PROMPT.md
+┌─────────────────────┐     ┌──────────────────┐     ┌──────────────────┐
+│   PostgreSQL 16     │     │  exercisedb_data │     │    Renderer      │
+│                     │     │                  │     │                  │
+│  exercises (1500)   │◄────│ mp4_paused/*.mp4 │     │  fill_template   │
+│  info_boxes (29)    │     │ gifs_hd/*.webp   │────►│       ↓          │
+│  clients (N)        │     └──────────────────┘     │   HTML plan      │
+│  plans (N)          │                              │  (клиенту)       │
+│  weeks / days       │                              └──────────────────┘
+│  exercises in plan  │                                        ▲
+│  alternatives       │                                        │
+│  warmup_variants    │     ┌──────────────────┐              │
+│  cooldown_variants  │     │ JSON (export)    │──────────────┘
+│  session_logs       │────►│ plan_XX.json     │
+│  exercise_logs      │     └──────────────────┘
+│  1rm_estimates      │
+└─────────────────────┘
 ```
 
-## Как запустить
+**БД — источник правды.** JSON-файл плана — промежуточный формат для рендера, генерируется экспортом из БД.
 
-### 1. Установка зависимостей
+## Быстрый старт
+
+### 1. Зависимости
 
 ```bash
-pip install opencv-python-headless pillow numpy
-# ffmpeg должен быть в PATH
+pip install -r requirements.txt
+# Плюс должен быть установлен Docker Desktop и ffmpeg
 ```
 
-### 2. Подготовка медиа
-
-Папки `exercisedb_data/{mp4,mp4_paused,gifs_hd}` не в git — скачай отдельно (см. отдельный storage) или запусти локальную пайплайну:
+### 2. Поднять PostgreSQL
 
 ```bash
-# Автодетект ключевых кадров
-python annotator/autodetect.py
-
-# Запечь 1-секундные паузы в MP4
-python annotator/bake_pauses.py
+docker compose up -d
+# Проверка: docker exec arishafit-postgres pg_isready -U arishafit
 ```
 
-### 3. Разметка ключевых кадров (опционально)
-
-Для ручной корректировки автодетекта:
+### 3. Настроить окружение
 
 ```bash
-python annotator/server.py
-# Открой http://localhost:8787/ в браузере
+cp .env.example .env
+# .env содержит DATABASE_URL по умолчанию на локальный Postgres
 ```
 
-### 4. Рендер плана
+### 4. Создать таблицы и залить данные
 
 ```bash
+python scripts/migrate_json_to_db.py --create-tables --wipe
+# Заливает 1500 упражнений, 29 справок, план Андрея (если JSON на месте)
+```
+
+### 5. Экспорт плана из БД + рендер в HTML
+
+```bash
+python scripts/export_plan_from_db.py --client "Андрей" --output training-skill/output/plan_andrey_v5.json
 python training-skill/scripts/fill_template.py \
   --plan training-skill/output/plan_andrey_v5.json \
   --output training-skill/output/andrey_v5_rendered.html
 ```
 
-## Данные MP4
+## Схема БД
 
-Каждое упражнение имеет:
-- `mp4/<id>.mp4` — оригинал ExerciseDB (~12-36 кадров, 10 fps)
-- `mp4_paused/<id>.mp4` — с запечёнными паузами на ключевых позах (1 сек × N поз)
+| Таблица | Назначение |
+|---|---|
+| `exercises` | Каталог 1500 упражнений из ExerciseDB (read-only) |
+| `info_boxes` | Библиотека 29 научных справок |
+| `clients` | Клиенты с анкетой, целями, травмами |
+| `plans` | Мезоциклы (4-недельные блоки), привязаны к клиенту |
+| `weeks`, `days` | Недели и дни в плане |
+| `plan_exercises` | Упражнения в дне (ссылка на `exercises`) |
+| `plan_alternatives` | Альтернативы к упражнениям |
+| `plan_warmup_variants` / `plan_cooldown_variants` | Разминки/заминки (JSONB blocks) |
+| `session_logs` | Факты выполнения тренировок клиентом |
+| `exercise_logs` | Фактические веса/повторения в каждом подходе |
+| `one_rm_estimates` | Расчётные 1RM (для автопрогрессии) |
 
-`mp4_paused/` используется в рендере планов по умолчанию — не требует JS для пауз.
+## Структура репо
 
-## Переименование БД
+```
+.
+├── docker-compose.yml          # PostgreSQL 16
+├── .env.example                # DATABASE_URL
+├── requirements.txt            # Python deps (sqlalchemy, psycopg2, alembic, ...)
+│
+├── db/
+│   ├── models.py               # SQLAlchemy ORM модели
+│   ├── session.py              # engine + SessionLocal
+│   └── __init__.py
+│
+├── scripts/
+│   ├── migrate_json_to_db.py   # JSON → Postgres (первоначальная заливка)
+│   └── export_plan_from_db.py  # Postgres → JSON (для рендера)
+│
+├── exercisedb_data/
+│   ├── exercise_db_final.json  # Каталог (источник для migrate_json_to_db.py)
+│   ├── mp4_paused/             # Анимации с запечёнными паузами (не в git)
+│   ├── mp4/                    # Оригиналы (не в git)
+│   └── gifs_hd/                # WebP HD fallback (не в git)
+│
+├── training-skill/
+│   ├── SKILL.md
+│   ├── assets/
+│   │   ├── info_boxes.json     # Источник для migrate_json_to_db.py
+│   │   └── breathing_lying.png
+│   ├── scripts/
+│   │   ├── fill_template.py    # Рендер JSON → HTML
+│   │   ├── build_safe_pool.py
+│   │   ├── query_exercises.py
+│   │   └── extract_hd_frame.py
+│   ├── templates/
+│   │   └── training_plan_v4.html
+│   └── output/
+│       ├── plan_andrey_v5.json # Экспорт из БД
+│       └── andrey_v5_rendered.html
+│
+├── annotator/                  # Инструмент разметки ключевых кадров MP4
+│   ├── server.py
+│   ├── index.html
+│   ├── autodetect.py
+│   ├── bake_pauses.py
+│   └── annotations_*.json
+│
+├── ARCHITECTURE.md
+├── CLAUDE.md                   # Контекст для LLM
+├── SKILL_BLUEPRINT.md
+└── CLAUDE_CODE_PROMPT.md
+```
 
-Все 1500 названий сгенерированы через Claude Opus в 3 батча по 500:
-- `annotator/_batch_[1-3]_output.json` — результаты
-- `annotator/_renames_all.json` — сведённый словарь `{exerciseId: nameRu}`
+## Workflow при добавлении нового клиента / плана
 
-Принципы: профессиональная зальная терминология, 2-5 слов, уникальность в пределах всех 1500 имён.
+1. Анкета клиента → записать в `clients` (вручную или через будущий API)
+2. Скилл (будущая реализация) читает историю клиента из БД, генерирует план
+3. План записывается в `plans` + `weeks` + `days` + `plan_exercises` и т.д.
+4. `export_plan_from_db.py` выгружает план в JSON
+5. `fill_template.py` рендерит JSON в HTML
+6. HTML отправляется клиенту
+
+## Что даёт БД (vs чистого JSON)
+
+- **Кросс-планные запросы**: «какой вес Андрей жал в 3-м мезоцикле на жим ногами?»
+- **Автопрогрессия**: следующий мезоцикл автоматически ставит +2.5 кг от последнего пика
+- **Ротация упражнений**: если клиент делал N недель одно и то же — скилл подберёт альтернативу
+- **Coach dashboard**: все клиенты в одной витрине
+- **Session tracking**: клиент отмечает выполнение, реальные веса идут в `exercise_logs`
 
 ## Лицензия
 
-Проприетарный, ArishaFit © 2025
+Проприетарный, ArishaFit © 2026

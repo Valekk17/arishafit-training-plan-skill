@@ -383,82 +383,83 @@
   }
   .glossary-def strong { color: var(--text); font-weight: 700; }
 
-  /* GLOSSARY — раскрывающиеся карточки (expandable) */
+  /* GLOSSARY — premium раскрытие со staggered-анимацией */
   .glossary-card.is-expandable {
     position: relative; cursor: pointer;
-    padding-right: 52px;
-    transition: border-left-width 0.3s cubic-bezier(0.2,0.9,0.3,1),
-                box-shadow 0.3s cubic-bezier(0.2,0.9,0.3,1),
-                background 0.2s;
+    padding-right: 56px;
+    transition:
+      border-left-width 0.5s cubic-bezier(0.22,1,0.36,1),
+      box-shadow 0.55s cubic-bezier(0.22,1,0.36,1),
+      background 0.45s cubic-bezier(0.22,1,0.36,1),
+      transform 0.35s cubic-bezier(0.22,1,0.36,1);
     outline: none;
+    will-change: transform, box-shadow;
   }
   .glossary-card.is-expandable:hover {
-    box-shadow: 0 2px 14px rgba(0,0,0,0.06);
     background: #fffdfa;
+    box-shadow: 0 6px 22px rgba(0,0,0,0.06);
+    transform: translateY(-1px);
   }
   .glossary-card.is-expandable:focus-visible {
-    box-shadow: 0 0 0 3px var(--orange-glow), 0 2px 14px rgba(0,0,0,0.06);
+    box-shadow: 0 0 0 3px var(--orange-glow), 0 6px 22px rgba(0,0,0,0.06);
   }
   .glossary-card.is-expandable.is-open {
     border-left-width: 6px;
-    box-shadow: 0 8px 28px rgba(255,107,53,0.14);
-    background: #fffdfa;
+    background: linear-gradient(135deg, #fffdfa 0%, #fff6ed 100%);
+    box-shadow:
+      0 14px 44px rgba(255,107,53,0.13),
+      0 2px 8px rgba(0,0,0,0.04);
+    transform: translateY(0);
   }
+
   .glossary-info-btn {
-    position: absolute; top: 14px; right: 14px;
-    width: 28px; height: 28px; border-radius: 50%;
+    position: absolute; top: 16px; right: 16px;
+    width: 30px; height: 30px; border-radius: 50%;
     background: var(--orange-light); color: var(--orange);
-    border: none; font-weight: 700; font-size: 14px;
+    border: none; font-weight: 700; font-size: 15px;
     display: inline-flex; align-items: center; justify-content: center;
     cursor: pointer; padding: 0;
-    transition: transform 0.35s cubic-bezier(0.4,1.4,0.5,1),
-                background 0.25s, color 0.25s,
-                box-shadow 0.25s;
+    transition:
+      transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+      background 0.35s cubic-bezier(0.22,1,0.36,1),
+      color 0.35s cubic-bezier(0.22,1,0.36,1),
+      box-shadow 0.35s cubic-bezier(0.22,1,0.36,1);
     -webkit-tap-highlight-color: transparent;
     touch-action: manipulation;
   }
   .glossary-info-btn::before {
-    content: '?'; display: block;
-    transition: transform 0.3s cubic-bezier(0.4,1.4,0.5,1);
+    content: '?'; display: block; line-height: 1;
+    transition: transform 0.3s cubic-bezier(0.22,1,0.36,1);
   }
   .glossary-card.is-expandable:hover .glossary-info-btn {
     background: var(--orange); color: white;
-    box-shadow: 0 2px 8px var(--orange-glow);
+    box-shadow: 0 4px 14px var(--orange-glow);
+    transform: scale(1.08);
   }
   .glossary-card.is-open .glossary-info-btn {
     background: var(--orange); color: white;
-    transform: rotate(45deg);
-    box-shadow: 0 3px 10px var(--orange-glow);
+    transform: rotate(45deg) scale(1.05);
+    box-shadow: 0 6px 20px var(--orange-glow);
   }
-  .glossary-card.is-open .glossary-info-btn::before {
-    content: '+';
-  }
+  .glossary-card.is-open .glossary-info-btn::before { content: '+'; }
+
+  /* Контейнер с высотой — плавное развёртывание */
   .glossary-detail-wrap {
     height: 0;
     overflow: hidden;
-    transition: height 0.45s cubic-bezier(0.22,1,0.36,1);
+    transition: height 0.6s cubic-bezier(0.22,1,0.36,1);
     will-change: height;
   }
-  .glossary-detail {
-    opacity: 0;
-    transform: translateY(-6px);
-    transition: opacity 0.25s ease-out,
-                transform 0.35s cubic-bezier(0.22,1,0.36,1);
-  }
-  .glossary-card.is-open .glossary-detail {
-    opacity: 1;
-    transform: translateY(0);
-    transition-delay: 0.1s;
-  }
+
   .glossary-detail-inner {
-    padding-top: 14px; margin-top: 14px;
+    padding-top: 18px; margin-top: 18px;
     border-top: 1px dashed var(--border);
     font-size: 13px; line-height: 1.65; color: var(--text-light);
   }
   .glossary-detail-inner h4 {
     font-size: 11px; font-weight: 700;
     text-transform: uppercase; letter-spacing: 0.8px;
-    color: var(--orange); margin: 14px 0 6px;
+    color: var(--orange); margin: 16px 0 6px;
   }
   .glossary-detail-inner h4:first-child { margin-top: 0; }
   .glossary-detail-inner p { margin: 0 0 10px; }
@@ -474,19 +475,51 @@
     content: '→'; position: absolute; left: 0; top: 0;
     color: var(--orange); font-weight: 700;
   }
-  .glossary-detail-inner .glossary-cite {
-    font-size: 11px; color: var(--text-muted);
-    font-style: italic; margin-top: 8px;
+
+  /* Staggered reveal — каждый child появляется с задержкой, fade+slide+blur */
+  .glossary-detail-inner > * {
+    opacity: 0;
+    transform: translateY(14px);
+    filter: blur(4px);
+    transition:
+      opacity 0.35s ease-out,
+      transform 0.35s ease-out,
+      filter 0.35s ease-out;
   }
+  .glossary-card.is-open .glossary-detail-inner > * {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+    transition:
+      opacity 0.75s cubic-bezier(0.22,1,0.36,1),
+      transform 0.75s cubic-bezier(0.22,1,0.36,1),
+      filter 0.55s cubic-bezier(0.22,1,0.36,1);
+  }
+  /* Каждый элемент с нарастающей задержкой — даёт эффект «строки появляются по очереди» */
+  .glossary-card.is-open .glossary-detail-inner > *:nth-child(1)  { transition-delay: 0.14s; }
+  .glossary-card.is-open .glossary-detail-inner > *:nth-child(2)  { transition-delay: 0.20s; }
+  .glossary-card.is-open .glossary-detail-inner > *:nth-child(3)  { transition-delay: 0.26s; }
+  .glossary-card.is-open .glossary-detail-inner > *:nth-child(4)  { transition-delay: 0.32s; }
+  .glossary-card.is-open .glossary-detail-inner > *:nth-child(5)  { transition-delay: 0.38s; }
+  .glossary-card.is-open .glossary-detail-inner > *:nth-child(6)  { transition-delay: 0.44s; }
+  .glossary-card.is-open .glossary-detail-inner > *:nth-child(7)  { transition-delay: 0.50s; }
+  .glossary-card.is-open .glossary-detail-inner > *:nth-child(8)  { transition-delay: 0.56s; }
+  .glossary-card.is-open .glossary-detail-inner > *:nth-child(9)  { transition-delay: 0.62s; }
+  .glossary-card.is-open .glossary-detail-inner > *:nth-child(10) { transition-delay: 0.68s; }
+  .glossary-card.is-open .glossary-detail-inner > *:nth-child(11) { transition-delay: 0.74s; }
+  .glossary-card.is-open .glossary-detail-inner > *:nth-child(12) { transition-delay: 0.80s; }
+  .glossary-card.is-open .glossary-detail-inner > *:nth-child(n+13) { transition-delay: 0.86s; }
+
   @media (max-width: 640px) {
     .glossary-detail-inner { font-size: 12.5px; }
-    .glossary-card.is-expandable { padding-right: 46px; }
+    .glossary-card.is-expandable { padding-right: 50px; }
+    .glossary-info-btn { width: 28px; height: 28px; top: 14px; right: 14px; }
   }
   @media (prefers-reduced-motion: reduce) {
     .glossary-detail-wrap,
-    .glossary-detail,
+    .glossary-detail-inner > *,
     .glossary-info-btn,
-    .glossary-card.is-expandable { transition: none !important; }
+    .glossary-card.is-expandable { transition: none !important; filter: none !important; }
   }
 
   /* WARMUP / COOLDOWN SHARED CARDS */

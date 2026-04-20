@@ -1,0 +1,964 @@
+{
+  "push_h_machine": [
+    {
+      "exerciseId": "DOoWcnA",
+      "nameRu": "Жим в Хаммере от груди",
+      "nameEn": "lever chest press",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "pectorals"
+      ]
+    },
+    {
+      "exerciseId": "o17Jfkt",
+      "nameRu": "Жим в Хаммере на наклонной в. 2",
+      "nameEn": "lever incline chest press v. 2",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "pectorals"
+      ]
+    },
+    {
+      "exerciseId": "T0yTjgW",
+      "nameRu": "Жим от груди в рычажном тренажёре",
+      "nameEn": "lever chest press",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "pectorals"
+      ]
+    },
+    {
+      "exerciseId": "WbNq5Xu",
+      "nameRu": "Жим в Хаммере стоя",
+      "nameEn": "lever standing chest press",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "pectorals"
+      ]
+    },
+    {
+      "exerciseId": "jHAnWmT",
+      "nameRu": "Жим в Хаммере на наклонной",
+      "nameEn": "lever incline chest press",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "pectorals"
+      ]
+    },
+    {
+      "exerciseId": "vsVoPHt",
+      "nameRu": "Жим в Хаммере на отрицательном наклоне",
+      "nameEn": "lever decline chest press",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "pectorals"
+      ]
+    }
+  ],
+  "push_h_cable": [
+    {
+      "exerciseId": "w4dLzSx",
+      "nameRu": "Разводка в блоке одной рукой на отрицательном наклоне",
+      "nameEn": "cable one arm decline chest fly",
+      "equipments": [
+        "cable"
+      ],
+      "targetMuscles": [
+        "pectorals"
+      ]
+    },
+    {
+      "exerciseId": "j7XMAyn",
+      "nameRu": "Кроссовер на верхнюю часть груди",
+      "nameEn": "cable upper chest crossovers",
+      "equipments": [
+        "cable"
+      ],
+      "targetMuscles": [
+        "pectorals"
+      ]
+    }
+  ],
+  "push_h_incline": [
+    {
+      "exerciseId": "o17Jfkt",
+      "nameRu": "Жим в Хаммере на наклонной в. 2",
+      "nameEn": "lever incline chest press v. 2",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "pectorals"
+      ]
+    },
+    {
+      "exerciseId": "jHAnWmT",
+      "nameRu": "Жим в Хаммере на наклонной",
+      "nameEn": "lever incline chest press",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "pectorals"
+      ]
+    },
+    {
+      "exerciseId": "jDnrkar",
+      "nameRu": "Жим гантелей нейтральным хватом на фитболе",
+      "nameEn": "dumbbell incline one arm hammer press on exercise ball",
+      "equipments": [
+        "dumbbell"
+      ],
+      "targetMuscles": [
+        "triceps"
+      ]
+    },
+    {
+      "exerciseId": "wkgnGfb",
+      "nameRu": "Жим гантелей молотковым хватом на фитболе",
+      "nameEn": "dumbbell incline hammer press on exercise ball",
+      "equipments": [
+        "dumbbell"
+      ],
+      "targetMuscles": [
+        "triceps"
+      ]
+    },
+    {
+      "exerciseId": "641mIfk",
+      "nameRu": "Жим штанги обратным хватом на наклонной (трицепс)",
+      "nameEn": "barbell incline reverse-grip press",
+      "equipments": [
+        "barbell"
+      ],
+      "targetMuscles": [
+        "triceps"
+      ]
+    },
+    {
+      "exerciseId": "gx7s7uF",
+      "nameRu": "Жим штанги узким хватом на наклонной",
+      "nameEn": "barbell incline close grip bench press",
+      "equipments": [
+        "barbell"
+      ],
+      "targetMuscles": [
+        "triceps"
+      ]
+    }
+  ],
+  "pull_v_wide": [
+    {
+      "exerciseId": "rkg41Fb",
+      "nameRu": "Тяга сверху параллельным хватом с двойной рукоятью",
+      "nameEn": "twin handle parallel grip lat pulldown",
+      "equipments": [
+        "cable"
+      ],
+      "targetMuscles": [
+        "lats"
+      ]
+    },
+    {
+      "exerciseId": "LEprlgG",
+      "nameRu": "Тяга сверху на блоке в полную амплитуду",
+      "nameEn": "cable lat pulldown full range of motion",
+      "equipments": [
+        "cable"
+      ],
+      "targetMuscles": [
+        "lats"
+      ]
+    }
+  ],
+  "pull_v_reverse": [
+    {
+      "exerciseId": "ecpY0rH",
+      "nameRu": "Вертикальная тяга в Хаммере обратным хватом",
+      "nameEn": "reverse grip machine lat pulldown",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "lats"
+      ]
+    }
+  ],
+  "pull_v_cable_pullover": [
+    {
+      "exerciseId": "Q2Eu1Ax",
+      "nameRu": "Пуловер-разгибание на блоке лёжа с канатом",
+      "nameEn": "cable lying extension pullover (with rope attachment)",
+      "equipments": [
+        "cable"
+      ],
+      "targetMuscles": [
+        "lats"
+      ]
+    }
+  ],
+  "squat_safe_seated": [
+    {
+      "exerciseId": "IeDEXTe",
+      "nameRu": "Подъём на носки в приседе в тренажёре",
+      "nameEn": "lever seated squat calf raise on leg press machine",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "calves"
+      ]
+    }
+  ],
+  "squat_safe_hack": [
+    {
+      "exerciseId": "Qa55kX1",
+      "nameRu": "Гакк-приседания на санях",
+      "nameEn": "sled hack squat",
+      "equipments": [
+        "sled machine"
+      ],
+      "targetMuscles": [
+        "glutes"
+      ]
+    },
+    {
+      "exerciseId": "ZuPXtCK",
+      "nameRu": "Гакк-приседания в Смите",
+      "nameEn": "smith hack squat",
+      "equipments": [
+        "smith machine"
+      ],
+      "targetMuscles": [
+        "glutes"
+      ]
+    },
+    {
+      "exerciseId": "5VCj6iH",
+      "nameRu": "Гакк-приседания со штангой",
+      "nameEn": "barbell hack squat",
+      "equipments": [
+        "barbell"
+      ],
+      "targetMuscles": [
+        "glutes"
+      ]
+    },
+    {
+      "exerciseId": "9n2149Z",
+      "nameRu": "Приседания в наклонных санях лёжа",
+      "nameEn": "sled lying squat",
+      "equipments": [
+        "sled machine"
+      ],
+      "targetMuscles": [
+        "glutes"
+      ]
+    },
+    {
+      "exerciseId": "gf3ZjB9",
+      "nameRu": "Гакк-приседания на санях (плотно)",
+      "nameEn": "sled closer hack squat",
+      "equipments": [
+        "sled machine"
+      ],
+      "targetMuscles": [
+        "glutes"
+      ]
+    }
+  ],
+  "leg_extension": [
+    {
+      "exerciseId": "my33uHU",
+      "nameRu": "Разгибание ног в тренажёре",
+      "nameEn": "lever leg extension",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "quads"
+      ]
+    },
+    {
+      "exerciseId": "Y1MsI1l",
+      "nameRu": "Разгибание ноги с эспандером",
+      "nameEn": "resistance band leg extension",
+      "equipments": [
+        "resistance band"
+      ],
+      "targetMuscles": [
+        "quads"
+      ]
+    }
+  ],
+  "lying_leg_curl": [
+    {
+      "exerciseId": "17lJ1kr",
+      "nameRu": "Сгибание ног в тренажёре лёжа",
+      "nameEn": "lever lying leg curl",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "hamstrings"
+      ]
+    },
+    {
+      "exerciseId": "UXpKJoq",
+      "nameRu": "Сгибание одной ногой в Хаммере лёжа (два-один)",
+      "nameEn": "lever lying two-one leg curl",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "hamstrings"
+      ]
+    }
+  ],
+  "split_squat_smith": [
+    {
+      "exerciseId": "wWFspEi",
+      "nameRu": "Болгарские выпады в Смите",
+      "nameEn": "smith single leg split squat",
+      "equipments": [
+        "smith machine"
+      ],
+      "targetMuscles": [
+        "quads"
+      ]
+    },
+    {
+      "exerciseId": "qx4fgX7",
+      "nameRu": "Болгарские выпады с гантелями",
+      "nameEn": "dumbbell single leg split squat",
+      "equipments": [
+        "dumbbell"
+      ],
+      "targetMuscles": [
+        "quads"
+      ]
+    },
+    {
+      "exerciseId": "QjE2DcA",
+      "nameRu": "Зашагивание с гантелями в сплит-стойке",
+      "nameEn": "dumbbell step-up split squat",
+      "equipments": [
+        "dumbbell"
+      ],
+      "targetMuscles": [
+        "quads"
+      ]
+    }
+  ],
+  "pull_h_cable": [
+    {
+      "exerciseId": "w2oRpuH",
+      "nameRu": "Попеременная тяга в Хаммере сидя",
+      "nameEn": "lever alternating narrow grip seated row",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "upper back"
+      ]
+    },
+    {
+      "exerciseId": "7I6LNUG",
+      "nameRu": "Тяга в Хаммере сидя",
+      "nameEn": "lever seated row",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "upper back"
+      ]
+    },
+    {
+      "exerciseId": "IGjKj1v",
+      "nameRu": "Тяга в Хаммере узким хватом сидя",
+      "nameEn": "lever narrow grip seated row",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "upper back"
+      ]
+    },
+    {
+      "exerciseId": "UFGF6gk",
+      "nameRu": "Горизонтальная тяга с канатом сидя",
+      "nameEn": "cable rope crossover seated row",
+      "equipments": [
+        "cable"
+      ],
+      "targetMuscles": [
+        "upper back"
+      ]
+    },
+    {
+      "exerciseId": "c8oybX6",
+      "nameRu": "Тяга каната с возвышения сидя",
+      "nameEn": "cable rope elevated seated row",
+      "equipments": [
+        "cable"
+      ],
+      "targetMuscles": [
+        "upper back"
+      ]
+    },
+    {
+      "exerciseId": "PNtsX17",
+      "nameRu": "Тяга блока обратным хватом сидя",
+      "nameEn": "cable reverse-grip straight back seated high row",
+      "equipments": [
+        "cable"
+      ],
+      "targetMuscles": [
+        "upper back"
+      ]
+    }
+  ],
+  "pull_h_machine_lever": [
+    {
+      "exerciseId": "w2oRpuH",
+      "nameRu": "Попеременная тяга в Хаммере сидя",
+      "nameEn": "lever alternating narrow grip seated row",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "upper back"
+      ]
+    },
+    {
+      "exerciseId": "7I6LNUG",
+      "nameRu": "Тяга в Хаммере сидя",
+      "nameEn": "lever seated row",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "upper back"
+      ]
+    },
+    {
+      "exerciseId": "IGjKj1v",
+      "nameRu": "Тяга в Хаммере узким хватом сидя",
+      "nameEn": "lever narrow grip seated row",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "upper back"
+      ]
+    },
+    {
+      "exerciseId": "ZqNOWQ6",
+      "nameRu": "Тяга в Хаммере обратным хватом",
+      "nameEn": "lever reverse grip vertical row",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "upper back"
+      ]
+    },
+    {
+      "exerciseId": "Fhdtwf3",
+      "nameRu": "Тяга штанги одной рукой в упоре (рычажная)",
+      "nameEn": "lever one arm bent over row",
+      "equipments": [
+        "barbell"
+      ],
+      "targetMuscles": [
+        "upper back"
+      ]
+    },
+    {
+      "exerciseId": "oROuvrX",
+      "nameRu": "Тяга в Хаммере одной рукой",
+      "nameEn": "lever unilateral row",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "upper back"
+      ]
+    }
+  ],
+  "pull_h_one_arm": [
+    {
+      "exerciseId": "Fhdtwf3",
+      "nameRu": "Тяга штанги одной рукой в упоре (рычажная)",
+      "nameEn": "lever one arm bent over row",
+      "equipments": [
+        "barbell"
+      ],
+      "targetMuscles": [
+        "upper back"
+      ]
+    },
+    {
+      "exerciseId": "OIFMAp1",
+      "nameRu": "Боковая верхняя тяга одной рукой в Хаммере",
+      "nameEn": "lever one arm lateral high row",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "upper back"
+      ]
+    },
+    {
+      "exerciseId": "vpp9Ku2",
+      "nameRu": "Попеременная тяга блока сидя",
+      "nameEn": "cable seated one arm alternate row",
+      "equipments": [
+        "cable"
+      ],
+      "targetMuscles": [
+        "upper back"
+      ]
+    },
+    {
+      "exerciseId": "DKBwJrL",
+      "nameRu": "Тяга эспандера одной рукой сидя с разворотом",
+      "nameEn": "band one arm twisting seated row",
+      "equipments": [
+        "band"
+      ],
+      "targetMuscles": [
+        "upper back"
+      ]
+    },
+    {
+      "exerciseId": "C0MA9bC",
+      "nameRu": "Тяга гантели одной рукой в наклоне",
+      "nameEn": "dumbbell one arm bent-over row",
+      "equipments": [
+        "dumbbell"
+      ],
+      "targetMuscles": [
+        "upper back"
+      ]
+    },
+    {
+      "exerciseId": "WrYPP2g",
+      "nameRu": "Тяга блока одной рукой с колена",
+      "nameEn": "cable one arm straight back high row (kneeling)",
+      "equipments": [
+        "cable"
+      ],
+      "targetMuscles": [
+        "upper back"
+      ]
+    }
+  ],
+  "push_v_machine": [
+    {
+      "exerciseId": "vqsbmL0",
+      "nameRu": "Жим плеч в Хаммере в. 2",
+      "nameEn": "lever shoulder press v. 2",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "delts"
+      ]
+    },
+    {
+      "exerciseId": "dNFYIU1",
+      "nameRu": "Жим плеч в Хаммере в. 3",
+      "nameEn": "lever shoulder press v. 3",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "delts"
+      ]
+    },
+    {
+      "exerciseId": "2KGnL6M",
+      "nameRu": "Жим в Хаммере одной рукой (плечи)",
+      "nameEn": "lever one arm shoulder press",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "delts"
+      ]
+    },
+    {
+      "exerciseId": "67n3r98",
+      "nameRu": "Жим плеч в Хаммере",
+      "nameEn": "lever shoulder press",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "delts"
+      ]
+    }
+  ],
+  "push_v_lateral": [
+    {
+      "exerciseId": "dRTfGZT",
+      "nameRu": "Махи в стороны в рычажном тренажёре",
+      "nameEn": "lever lateral raise",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "delts"
+      ]
+    },
+    {
+      "exerciseId": "x825CZm",
+      "nameRu": "Махи на блоке в стороны сидя",
+      "nameEn": "cable seated rear lateral raise",
+      "equipments": [
+        "cable"
+      ],
+      "targetMuscles": [
+        "delts"
+      ]
+    },
+    {
+      "exerciseId": "wEulIzp",
+      "nameRu": "Махи на блоке в сторону одной рукой",
+      "nameEn": "cable one arm lateral raise",
+      "equipments": [
+        "cable"
+      ],
+      "targetMuscles": [
+        "delts"
+      ]
+    },
+    {
+      "exerciseId": "goJ6ezq",
+      "nameRu": "Махи на блоке в сторону",
+      "nameEn": "cable lateral raise",
+      "equipments": [
+        "cable"
+      ],
+      "targetMuscles": [
+        "delts"
+      ]
+    }
+  ],
+  "push_v_dumbbell_supported": [
+    {
+      "exerciseId": "znQUdHY",
+      "nameRu": "Жим гантелей сидя над головой",
+      "nameEn": "dumbbell seated shoulder press",
+      "equipments": [
+        "dumbbell"
+      ],
+      "targetMuscles": [
+        "delts"
+      ]
+    },
+    {
+      "exerciseId": "f1jf47L",
+      "nameRu": "Жим гантелей сидя параллельным хватом",
+      "nameEn": "dumbbell seated shoulder press (parallel grip)",
+      "equipments": [
+        "dumbbell"
+      ],
+      "targetMuscles": [
+        "delts"
+      ]
+    },
+    {
+      "exerciseId": "OeL23VY",
+      "nameRu": "Подъём на бицепс с жимом гантелей сидя",
+      "nameEn": "dumbbell seated biceps curl to shoulder press",
+      "equipments": [
+        "dumbbell"
+      ],
+      "targetMuscles": [
+        "biceps"
+      ]
+    }
+  ],
+  "hinge_glute_bridge": [
+    {
+      "exerciseId": "qKBpF7I",
+      "nameRu": "Ягодичный мост со штангой",
+      "nameEn": "barbell glute bridge",
+      "equipments": [
+        "barbell"
+      ],
+      "targetMuscles": [
+        "glutes"
+      ]
+    },
+    {
+      "exerciseId": "qg2PGl6",
+      "nameRu": "Ягодичный мост со штангой на скамье",
+      "nameEn": "barbell glute bridge two legs on bench (male)",
+      "equipments": [
+        "barbell"
+      ],
+      "targetMuscles": [
+        "glutes"
+      ]
+    }
+  ],
+  "hinge_cable_pullthrough": [
+    {
+      "exerciseId": "OM46QHm",
+      "nameRu": "Тяга между ног на блоке с канатом",
+      "nameEn": "cable pull through (with rope)",
+      "equipments": [
+        "cable"
+      ],
+      "targetMuscles": [
+        "glutes"
+      ]
+    },
+    {
+      "exerciseId": "BmrwWzo",
+      "nameRu": "Тяга между ног сумо с гантелью",
+      "nameEn": "dumbbell sumo pull through",
+      "equipments": [
+        "dumbbell"
+      ],
+      "targetMuscles": [
+        "glutes"
+      ]
+    },
+    {
+      "exerciseId": "VtTbiP3",
+      "nameRu": "Тяга между ног с резиной",
+      "nameEn": "band pull through",
+      "equipments": [
+        "band"
+      ],
+      "targetMuscles": [
+        "glutes"
+      ]
+    }
+  ],
+  "hinge_reverse_hyper": [
+    {
+      "exerciseId": "Krmb3cB",
+      "nameRu": "Обратная гиперэкстензия в Хаммере",
+      "nameEn": "lever reverse hyperextension",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "glutes"
+      ]
+    },
+    {
+      "exerciseId": "vM5YS2g",
+      "nameRu": "Обратная гиперэкстензия на фитболе",
+      "nameEn": "reverse hyper extension (on stability ball)",
+      "equipments": [
+        "stability ball"
+      ],
+      "targetMuscles": [
+        "glutes"
+      ]
+    },
+    {
+      "exerciseId": "OrETs32",
+      "nameRu": "Обратная гиперэкстензия на плоской скамье",
+      "nameEn": "reverse hyper on flat bench",
+      "equipments": [
+        "body weight"
+      ],
+      "targetMuscles": [
+        "glutes"
+      ]
+    }
+  ],
+  "hinge_safe_hyperextension": [
+    {
+      "exerciseId": "rUXfn3R",
+      "nameRu": "Гиперэкстензия в тренажёре",
+      "nameEn": "lever back extension",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "spine"
+      ]
+    },
+    {
+      "exerciseId": "Krmb3cB",
+      "nameRu": "Обратная гиперэкстензия в Хаммере",
+      "nameEn": "lever reverse hyperextension",
+      "equipments": [
+        "leverage machine"
+      ],
+      "targetMuscles": [
+        "glutes"
+      ]
+    },
+    {
+      "exerciseId": "zkgRrbK",
+      "nameRu": "Гиперэкстензия на скамье",
+      "nameEn": "hyperextension (on bench)",
+      "equipments": [
+        "body weight"
+      ],
+      "targetMuscles": [
+        "spine"
+      ]
+    },
+    {
+      "exerciseId": "qLpO4vV",
+      "nameRu": "Гиперэкстензия на фитболе",
+      "nameEn": "back extension on exercise ball",
+      "equipments": [
+        "stability ball"
+      ],
+      "targetMuscles": [
+        "spine"
+      ]
+    },
+    {
+      "exerciseId": "WME869U",
+      "nameRu": "Гиперэкстензия на фитболе без упора коленей",
+      "nameEn": "exercise ball back extension with knees off ground",
+      "equipments": [
+        "stability ball"
+      ],
+      "targetMuscles": [
+        "spine"
+      ]
+    },
+    {
+      "exerciseId": "o1HGDSq",
+      "nameRu": "Гиперэкстензия на фитболе с руками за головой",
+      "nameEn": "exercise ball back extension with hands behind head",
+      "equipments": [
+        "stability ball"
+      ],
+      "targetMuscles": [
+        "spine"
+      ]
+    }
+  ],
+  "core_side_plank": [
+    {
+      "exerciseId": "X6ytgYZ",
+      "nameRu": "Разводка гантели в боковой планке",
+      "nameEn": "dumbbell side plank with rear fly",
+      "equipments": [
+        "dumbbell"
+      ],
+      "targetMuscles": [
+        "upper back"
+      ]
+    },
+    {
+      "exerciseId": "VO2qeJg",
+      "nameRu": "Приведение бедра в боковой планке",
+      "nameEn": "side plank hip adduction",
+      "equipments": [
+        "body weight"
+      ],
+      "targetMuscles": [
+        "adductors"
+      ]
+    },
+    {
+      "exerciseId": "5VXmnV5",
+      "nameRu": "Боковая планка на наклонной",
+      "nameEn": "bodyweight incline side plank",
+      "equipments": [
+        "body weight"
+      ],
+      "targetMuscles": [
+        "abs"
+      ]
+    },
+    {
+      "exerciseId": "RKjH6Lt",
+      "nameRu": "Боковой мост (вариант 2)",
+      "nameEn": "side bridge v. 2",
+      "equipments": [
+        "body weight"
+      ],
+      "targetMuscles": [
+        "abs"
+      ]
+    },
+    {
+      "exerciseId": "KhHJ338",
+      "nameRu": "Отжимание с переходом в боковую планку",
+      "nameEn": "push-up to side plank",
+      "equipments": [
+        "body weight"
+      ],
+      "targetMuscles": [
+        "abs"
+      ]
+    },
+    {
+      "exerciseId": "WL4EmxJ",
+      "nameRu": "Отведение бедра в боковой планке",
+      "nameEn": "side bridge hip abduction",
+      "equipments": [
+        "body weight"
+      ],
+      "targetMuscles": [
+        "abductors"
+      ]
+    }
+  ],
+  "core_bird_dog": [],
+  "core_pallof": [
+    {
+      "exerciseId": "9pa4H5m",
+      "nameRu": "Горизонтальный жим с лентой (Pallof)",
+      "nameEn": "band horizontal pallof press",
+      "equipments": [
+        "band"
+      ],
+      "targetMuscles": [
+        "abs"
+      ]
+    },
+    {
+      "exerciseId": "G7PXMlT",
+      "nameRu": "Вертикальный жим с лентой (Pallof)",
+      "nameEn": "band vertical pallof press",
+      "equipments": [
+        "band"
+      ],
+      "targetMuscles": [
+        "abs"
+      ]
+    }
+  ],
+  "core_dead_bug": [
+    {
+      "exerciseId": "iny3m5y",
+      "nameRu": "Жук (Dead Bug)",
+      "nameEn": "dead bug",
+      "equipments": [
+        "body weight"
+      ],
+      "targetMuscles": [
+        "abs"
+      ]
+    }
+  ]
+}

@@ -853,6 +853,17 @@
     text-transform: none;
     letter-spacing: 0;
   }
+  /* Когда блок без упражнений (только текст-инструкция, напр. дыхание) */
+  .cooldown-block-description {
+    padding: 16px 18px;
+    background: var(--bg-white);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-sm);
+    font-size: 13px; line-height: 1.65;
+    color: var(--text-light);
+    margin-top: 4px;
+  }
+  .cooldown-block-description strong { color: var(--text); font-weight: 600; }
   /* Заминка использует тот же .phase-item но на синем фоне → hover/active перекрашиваем */
   .cooldown-container .phase-item {
     transition: all .2s var(--ease);

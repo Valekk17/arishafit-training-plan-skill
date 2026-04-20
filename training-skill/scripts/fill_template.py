@@ -507,7 +507,14 @@ def render_cooldown_block(block, week_num, day_num, scope=None):
         render_warmup_item(it, week_num, day_num, f"cd-{phase}", idx, scope=scope)
         for idx, it in enumerate(items)
     )
-    body = f"""
+    description = block.get("description", "")
+
+    # Если блок без items но есть description — показываем текст вместо карточек
+    if not items and description:
+        body = f"""
+      <div class="cooldown-block-description">{description}</div>"""
+    else:
+        body = f"""
       <div class="phase-items">{items_html}
       </div>"""
 

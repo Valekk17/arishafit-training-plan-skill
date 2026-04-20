@@ -38,7 +38,18 @@ sys.stdout.reconfigure(encoding="utf-8")
 ROOT = Path(__file__).resolve().parent.parent
 EX_DB_F = ROOT / "exercisedb_data" / "exercise_db_final.json"
 INFO_F = ROOT / "training-skill" / "assets" / "info_boxes.json"
-PLAN_F = ROOT / "training-skill" / "output" / "plan_andrey_v5.json"
+DEFAULT_PLAN_F = ROOT / "training-skill" / "output" / "plan_andrey_v5.json"
+
+
+def wipe_plan_tables(session):
+    """Удалить всё что ссылается на exercises, до wipe самих exercises."""
+    # FK порядок: plan_alternatives → plan_exercises → days → weeks → plans → clients
+    # + warmup_variants, cooldown_variants → exercises
+    for model in (M.PlanAlternative, M.PlanExercise, M.WarmupVariant, M.CooldownVariant):
+        session.execute(delete(model))
+    for model in (M.Day, M.Week, M.Plan, M.Client):
+        session.execute(delete(model))
+    session.flush()
 
 
 # ----------------------------------------------------------------------
@@ -231,7 +242,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--create-tables", action="store_true", help="CREATE TABLE IF NOT EXISTS для всех моделей")
     ap.add_argument("--wipe", action="store_true", help="Очистить существующие данные перед миграцией")
+    ap.add_argument("--plan", type=str, default=str(DEFAULT_PLAN_F), help="Путь к plan.json")
     args = ap.parse_args()
+
+    plan_path = Path(args.plan)
 
     if args.create_tables:
         print("Создаю таблицы…")
@@ -242,14 +256,18 @@ def main():
     try:
         print("Заливаю данные…")
 
+        if args.wipe:
+            print("→ wipe планов (plan_alternatives, plan_exercises, days, weeks, plans, clients, warmup/cooldown variants)")
+            wipe_plan_tables(session)
+
         print("→ exercises")
         migrate_exercises(session, json.loads(EX_DB_F.read_text(encoding="utf-8")))
 
         print("→ info_boxes")
         migrate_info_boxes(session, json.loads(INFO_F.read_text(encoding="utf-8")))
 
-        print("→ plan_andrey_v5")
-        migrate_plan(session, json.loads(PLAN_F.read_text(encoding="utf-8")))
+        print(f"→ plan from {plan_path.name}")
+        migrate_plan(session, json.loads(plan_path.read_text(encoding="utf-8")))
 
         session.commit()
         print("Готово.")

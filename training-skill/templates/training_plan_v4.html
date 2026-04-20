@@ -383,6 +383,112 @@
   }
   .glossary-def strong { color: var(--text); font-weight: 700; }
 
+  /* GLOSSARY — раскрывающиеся карточки (expandable) */
+  .glossary-card.is-expandable {
+    position: relative; cursor: pointer;
+    padding-right: 52px;
+    transition: border-left-width 0.3s cubic-bezier(0.2,0.9,0.3,1),
+                box-shadow 0.3s cubic-bezier(0.2,0.9,0.3,1),
+                background 0.2s;
+    outline: none;
+  }
+  .glossary-card.is-expandable:hover {
+    box-shadow: 0 2px 14px rgba(0,0,0,0.06);
+    background: #fffdfa;
+  }
+  .glossary-card.is-expandable:focus-visible {
+    box-shadow: 0 0 0 3px var(--orange-glow), 0 2px 14px rgba(0,0,0,0.06);
+  }
+  .glossary-card.is-expandable.is-open {
+    border-left-width: 6px;
+    box-shadow: 0 8px 28px rgba(255,107,53,0.14);
+    background: #fffdfa;
+  }
+  .glossary-info-btn {
+    position: absolute; top: 14px; right: 14px;
+    width: 28px; height: 28px; border-radius: 50%;
+    background: var(--orange-light); color: var(--orange);
+    border: none; font-weight: 700; font-size: 14px;
+    display: inline-flex; align-items: center; justify-content: center;
+    cursor: pointer; padding: 0;
+    transition: transform 0.35s cubic-bezier(0.4,1.4,0.5,1),
+                background 0.25s, color 0.25s,
+                box-shadow 0.25s;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+  .glossary-info-btn::before {
+    content: '?'; display: block;
+    transition: transform 0.3s cubic-bezier(0.4,1.4,0.5,1);
+  }
+  .glossary-card.is-expandable:hover .glossary-info-btn {
+    background: var(--orange); color: white;
+    box-shadow: 0 2px 8px var(--orange-glow);
+  }
+  .glossary-card.is-open .glossary-info-btn {
+    background: var(--orange); color: white;
+    transform: rotate(45deg);
+    box-shadow: 0 3px 10px var(--orange-glow);
+  }
+  .glossary-card.is-open .glossary-info-btn::before {
+    content: '+';
+  }
+  .glossary-detail-wrap {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.45s cubic-bezier(0.22,1,0.36,1);
+    will-change: height;
+  }
+  .glossary-detail {
+    opacity: 0;
+    transform: translateY(-6px);
+    transition: opacity 0.25s ease-out,
+                transform 0.35s cubic-bezier(0.22,1,0.36,1);
+  }
+  .glossary-card.is-open .glossary-detail {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.1s;
+  }
+  .glossary-detail-inner {
+    padding-top: 14px; margin-top: 14px;
+    border-top: 1px dashed var(--border);
+    font-size: 13px; line-height: 1.65; color: var(--text-light);
+  }
+  .glossary-detail-inner h4 {
+    font-size: 11px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.8px;
+    color: var(--orange); margin: 14px 0 6px;
+  }
+  .glossary-detail-inner h4:first-child { margin-top: 0; }
+  .glossary-detail-inner p { margin: 0 0 10px; }
+  .glossary-detail-inner p:last-child { margin-bottom: 0; }
+  .glossary-detail-inner strong { color: var(--text); font-weight: 700; }
+  .glossary-detail-inner ul {
+    list-style: none; padding: 0; margin: 0 0 10px;
+  }
+  .glossary-detail-inner ul li {
+    position: relative; padding-left: 18px; margin-bottom: 5px;
+  }
+  .glossary-detail-inner ul li::before {
+    content: '→'; position: absolute; left: 0; top: 0;
+    color: var(--orange); font-weight: 700;
+  }
+  .glossary-detail-inner .glossary-cite {
+    font-size: 11px; color: var(--text-muted);
+    font-style: italic; margin-top: 8px;
+  }
+  @media (max-width: 640px) {
+    .glossary-detail-inner { font-size: 12.5px; }
+    .glossary-card.is-expandable { padding-right: 46px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .glossary-detail-wrap,
+    .glossary-detail,
+    .glossary-info-btn,
+    .glossary-card.is-expandable { transition: none !important; }
+  }
+
   /* WARMUP / COOLDOWN SHARED CARDS */
   .pp-cards { display: flex; flex-direction: column; gap: 14px; }
   .pp-card {
@@ -1324,47 +1430,219 @@
 <section id="glossary" class="container section">
   <div class="section-label">Основы</div>
   <div class="section-title">Базовые понятия и термины</div>
-  <p class="glossary-intro">Термины из плана. На каждый есть кнопка <span class="info-btn-example">?</span> с полным научным обоснованием.</p>
+  <p class="glossary-intro">Термины из плана. Нажми на карточку, чтобы развернуть подробное объяснение.</p>
   <div class="glossary-grid">
 
-    <div class="glossary-card">
+    <div class="glossary-card is-expandable" role="button" tabindex="0" aria-expanded="false">
+      <button class="glossary-info-btn" aria-label="Подробнее про RPE" type="button" tabindex="-1"></button>
       <div class="glossary-term">RPE</div>
       <div class="glossary-def">Субъективная шкала усилия 1–10. <strong>RPE 7</strong> — мог бы сделать ещё 3 повторения. <strong>RPE 8</strong> — ещё 2. Рабочая зона гипертрофии: <strong>7–8</strong>.</div>
+      <div class="glossary-detail-wrap"><div class="glossary-detail"><div class="glossary-detail-inner">
+        <h4>Что это и откуда</h4>
+        <p>Rate of Perceived Exertion — шкала субъективной оценки усилия. Исходно Борг предложил её в 1960-х (6–20). В 2016 Zourdos адаптировал в формат 1–10 через концепцию <strong>RIR</strong> (reps in reserve — повторений в запасе): RPE X = 10−X повторений до отказа.</p>
+        <h4>Как определить свой RPE</h4>
+        <p>После подхода честно спроси: «Сколько ещё полноценных повторений с чистой техникой я мог бы сделать?»</p>
+        <ul>
+          <li><strong>RPE 6</strong> — ещё 4 повторения в запасе (лёгкий подход)</li>
+          <li><strong>RPE 7</strong> — ещё 3 (рабочий, но комфортный)</li>
+          <li><strong>RPE 8</strong> — ещё 2 (тяжело, но техника держится)</li>
+          <li><strong>RPE 9</strong> — ещё 1 (последний повтор — на грани)</li>
+          <li><strong>RPE 10</strong> — отказ, больше ни одного повторения</li>
+        </ul>
+        <h4>Почему НЕ работаем до отказа</h4>
+        <p>Исследования 2019–2022 гг. показали: тренировки при <strong>1–3 RIR</strong> дают ~95% гипертрофии от работы до отказа, но в <strong>2 раза меньше</strong> усталости ЦНС. Это значит — больше качественных подходов, больше тренировок в неделю, меньше риск травм.</p>
+        <h4>На практике в этом плане</h4>
+        <p>Первые 2 подхода упражнения — <strong>RPE 6–7</strong> (разогрев в рабочих весах). Последний подход — <strong>RPE 7–8</strong>. Если уже с первого подхода RPE 9 — вес слишком большой, снижай на 5–10%.</p>
+      </div></div></div>
     </div>
 
-    <div class="glossary-card">
+    <div class="glossary-card is-expandable" role="button" tabindex="0" aria-expanded="false">
+      <button class="glossary-info-btn" aria-label="Подробнее про суперсет" type="button" tabindex="-1"></button>
       <div class="glossary-term">Суперсет</div>
       <div class="glossary-def">Два упражнения подряд без отдыха (<strong>A1 → A2</strong>). Между парой — 45 с. Между раундами — 90 с. Плотность тренировки × 2, пульс в зоне жиросжигания.</div>
+      <div class="glossary-detail-wrap"><div class="glossary-detail"><div class="glossary-detail-inner">
+        <h4>Как это работает</h4>
+        <p>Два упражнения выполняются спиной к спине — без отдыха между ними. Затем длинный отдых, затем следующий раунд.</p>
+        <p><strong>Пример из плана:</strong> A1 Жим в Хаммере 12–15 → сразу A2 Тяга сверху 12–15 → отдых 90 с → следующий раунд A1+A2.</p>
+        <h4>Антагонисты vs агонисты</h4>
+        <p>В твоём плане — <strong>антагонистические</strong> суперсеты: грудь+спина, плечи+спина. Пока одна мышца работает, противоположная активно восстанавливается. Это позволяет держать высокую плотность без падения силы.</p>
+        <h4>Что это даёт для жиросжигания</h4>
+        <ul>
+          <li>Плотность тренировки × 2 — то же количество подходов за в 2 раза меньшее время</li>
+          <li>Пульс стабильно в зоне 130–150 bpm — это окно окисления жира</li>
+          <li>Повышенный EPOC (афтербёрн) на 6–10% vs обычные подходы</li>
+        </ul>
+        <h4>Компромиссы</h4>
+        <p>Рабочий вес на 5–10% ниже чем в straight sets — мышца получает две нагрузки с коротким отдыхом. Это нормально: цель суперсета — не максимальная сила, а метаболический стресс + высокий объём.</p>
+      </div></div></div>
     </div>
 
-    <div class="glossary-card">
+    <div class="glossary-card is-expandable" role="button" tabindex="0" aria-expanded="false">
+      <button class="glossary-info-btn" aria-label="Подробнее про дилоуд" type="button" tabindex="-1"></button>
       <div class="glossary-term">Дилоуд</div>
       <div class="glossary-def">Разгрузочная неделя. <strong>50% объёма</strong> и RPE 5–6. Обязательна каждые 3–4 недели — сбрасывает накопленную усталость ЦНС, сухожилий, гормональной системы.</div>
+      <div class="glossary-detail-wrap"><div class="glossary-detail"><div class="glossary-detail-inner">
+        <h4>Что это НЕ</h4>
+        <p>Дилоуд — это <strong>не отпуск</strong> и <strong>не пропуск тренировок</strong>. Ты продолжаешь ходить в зал, но выполняешь 40–60% от объёма прошлой недели (меньше подходов, легче веса, ниже RPE).</p>
+        <h4>Зачем он нужен</h4>
+        <p>За 3 недели тяжёлых тренировок в твоём теле накапливается:</p>
+        <ul>
+          <li>Микротравмы сухожилий (тендиноз быстрее появляется чем восстанавливается)</li>
+          <li>Повышенный кортизол (гормон стресса)</li>
+          <li>Снижение чувствительности андрогеновых рецепторов</li>
+          <li>ЦНС-усталость (хуже концентрация, техника «плывёт»)</li>
+        </ul>
+        <p>За неделю дилоуда всё это откатывается — и тело готово к следующему прогрессивному циклу.</p>
+        <h4>Маркёры «пора дилоудить»</h4>
+        <ul>
+          <li>Падение силы 2+ тренировки подряд</li>
+          <li>Плохой сон и раздражительность</li>
+          <li>Суставы ноют по утрам</li>
+          <li>Нет желания идти в зал (это не лень — это усталость ЦНС)</li>
+        </ul>
+        <h4>Частая ошибка</h4>
+        <p>«Пропущу дилоуд — быстрее прогрессирую». Работает ровно наоборот: без дилоудов через 6–8 недель наступает плато, которое без вынужденного отдыха не сдвигается. Дилоуд ускоряет прогресс, а не замедляет.</p>
+      </div></div></div>
     </div>
 
-    <div class="glossary-card">
+    <div class="glossary-card is-expandable" role="button" tabindex="0" aria-expanded="false">
+      <button class="glossary-info-btn" aria-label="Подробнее про Zone 2" type="button" tabindex="-1"></button>
       <div class="glossary-term">Zone 2 кардио</div>
       <div class="glossary-def">Непрерывная сессия в ЧСС <strong>60–70% от максимума</strong> (можно говорить, нельзя петь). Главный инструмент жиросжигания и аэробной базы.</div>
+      <div class="glossary-detail-wrap"><div class="glossary-detail"><div class="glossary-detail-inner">
+        <h4>5 зон по ЧСС</h4>
+        <ul>
+          <li><strong>Z1</strong> (50–60%) — прогулка, разговор совершенно свободный</li>
+          <li><strong>Z2</strong> (60–70%) — разговорный темп, фразами по 5–7 слов</li>
+          <li><strong>Z3</strong> (70–80%) — переходная зона, короткие фразы</li>
+          <li><strong>Z4</strong> (80–90%) — тяжёлое дыхание, пару слов</li>
+          <li><strong>Z5</strong> (90–100%) — максимум, говорить невозможно</li>
+        </ul>
+        <h4>Твоя зона</h4>
+        <p>Твой максимум ЧСС ≈ <strong>184</strong> (формула 220 − возраст). Zone 2 = <strong>110–130 bpm</strong>.</p>
+        <h4>Почему именно Z2 для жиросжигания</h4>
+        <p>В Z2 топливо: ~80% жир, ~20% углеводы. В HIIT наоборот: ~20% жир, ~80% глюкоза. Z2 растит <strong>Тип I волокон и митохондрии</strong> («печи жира» — чем больше, тем эффективнее окисление даже в покое).</p>
+        <h4>Разговорный тест</h4>
+        <p>Можешь произнести фразу из 5–7 слов без одышки — ты в Z2. Можешь петь куплет — ты в Z1 (слишком легко). Приходится сокращать фразы — ты ушёл в Z3 (жир уже не основное топливо).</p>
+        <h4>Минимум для эффекта</h4>
+        <p>ACSM рекомендует минимум <strong>150 минут/неделю</strong> Z2-кардио для клинически значимого эффекта на композицию тела и метаболическое здоровье. В твоём плане — 40–50 мин × 3 раза = 120–150 мин.</p>
+      </div></div></div>
     </div>
 
-    <div class="glossary-card">
+    <div class="glossary-card is-expandable" role="button" tabindex="0" aria-expanded="false">
+      <button class="glossary-info-btn" aria-label="Подробнее про прогрессивную перегрузку" type="button" tabindex="-1"></button>
       <div class="glossary-term">Прогрессивная перегрузка</div>
       <div class="glossary-def">Постепенное увеличение нагрузки. Выполнил целевые повторения с <strong>RPE ≤ 8</strong> → на следующей тренировке <strong>+2.5 кг</strong> на базе или <strong>+1.25 кг</strong> на изоляции.</div>
+      <div class="glossary-detail-wrap"><div class="glossary-detail"><div class="glossary-detail-inner">
+        <h4>Главный принцип гипертрофии</h4>
+        <p>Ткань адаптируется только к стрессу <strong>выше привычного</strong>. Если из тренировки в тренировку делаешь одно и то же — тело просто поддерживает то что есть. Чтобы расти, стресс должен постепенно увеличиваться.</p>
+        <h4>Чем можно прогрессировать</h4>
+        <ul>
+          <li><strong>Вес</strong> — самый очевидный, но не единственный способ</li>
+          <li><strong>Повторения</strong> — 12 → 13 → 14 → 15 с тем же весом</li>
+          <li><strong>Подходы</strong> — 3 → 4 рабочих подхода</li>
+          <li><strong>Плотность</strong> — меньше отдыха между подходами</li>
+          <li><strong>Темп</strong> — медленнее опускание = больше TUT</li>
+          <li><strong>Амплитуда</strong> — глубже приседание (если техника позволяет)</li>
+        </ul>
+        <h4>Модель Double Progression (в твоём плане)</h4>
+        <p>Сначала растут повторения, потом вес:</p>
+        <ul>
+          <li>Начало: 4 × 12 с весом X</li>
+          <li>Неделя 2: 4 × 14 с тем же X (если RPE ≤ 8 в последнем подходе)</li>
+          <li>Неделя 3: 4 × 15 с тем же X</li>
+          <li>Неделя 4 после дилоуда: <strong>+2.5 кг</strong>, возврат к 4 × 12</li>
+        </ul>
+        <h4>Правило прогрессии</h4>
+        <p>Последний рабочий подход <strong>&gt; 15 повт с RPE ≤ 8</strong> → на следующей тренировке <strong>+2.5 кг</strong> на базе (жим, тяга, присед) или <strong>+1.25 кг</strong> на изоляции (махи, сгибания).</p>
+        <h4>Частая ошибка</h4>
+        <p>Гонка за весом раньше времени. Сначала — чистая техника + все целевые повторения с RPE ≤ 8. Только потом вес.</p>
+      </div></div></div>
     </div>
 
-    <div class="glossary-card">
+    <div class="glossary-card is-expandable" role="button" tabindex="0" aria-expanded="false">
+      <button class="glossary-info-btn" aria-label="Подробнее про ротацию" type="button" tabindex="-1"></button>
       <div class="glossary-term">Ротация упражнений</div>
       <div class="glossary-def">Смена упражнения (или угла/хвата) раз в 2–3 недели. Не даёт нервной системе адаптироваться и встать в плато. В этом плане — на Неделе 3.</div>
+      <div class="glossary-detail-wrap"><div class="glossary-detail"><div class="glossary-detail-inner">
+        <h4>Почему одно и то же перестаёт работать</h4>
+        <p>Через 3–4 недели в одном упражнении прирост силы замедляется — это <strong>нейральное плато</strong>, не мышечное. ЦНС «оптимизирует» конкретный моторный паттерн и перестаёт рекрутировать новые двигательные единицы.</p>
+        <h4>Как ротация помогает</h4>
+        <p>Меняя вариант упражнения (жим гантелей → жим рычажный, угол 0° → угол 30°, широкий хват → обратный), ты задействуешь <strong>другие подфракции мышечных волокон</strong> и новые паттерны моторной координации. Те же мышцы получают новый стимул.</p>
+        <h4>Оптимальная частота</h4>
+        <p>Каждые <strong>2–3 недели</strong>. Чаще — не успеваешь выработать эффективность в движении. Реже — наступает нейральное плато.</p>
+        <h4>Ротация в v6 плана</h4>
+        <ul>
+          <li><strong>Неделя 1</strong> — базовые упражнения, вход в программу</li>
+          <li><strong>Неделя 2</strong> — ротация оборудования (кроссовер вместо жима, leg ext+curl вместо жима ногами)</li>
+          <li><strong>Неделя 3</strong> — новые углы и амплитуды (наклонный жим, пуловер, болгарские выпады)</li>
+          <li><strong>Неделя 4</strong> (дилоуд) — возврат к W1 с 50% объёма</li>
+        </ul>
+        <h4>Keystone-упражнения</h4>
+        <p>Не всё ротируется. <strong>Dead Bug</strong> и <strong>Боковая планка</strong> идут все 4 недели — это стабилизационные базы при грыже, паттерн нужно держать постоянно.</p>
+      </div></div></div>
     </div>
 
-    <div class="glossary-card">
+    <div class="glossary-card is-expandable" role="button" tabindex="0" aria-expanded="false">
+      <button class="glossary-info-btn" aria-label="Подробнее про темп" type="button" tabindex="-1"></button>
       <div class="glossary-term">Темп</div>
       <div class="glossary-def">Скорость фаз движения в секундах. <strong>2-0-2</strong>: опускание 2 с, без паузы, подъём 2 с. Контроль темпа = в 1.5 раза больше микроповреждений и роста.</div>
+      <div class="glossary-detail-wrap"><div class="glossary-detail"><div class="glossary-detail-inner">
+        <h4>Как читать запись темпа</h4>
+        <p>Формат <strong>X-Y-Z-W</strong>:</p>
+        <ul>
+          <li><strong>X</strong> — эксцентрика (опускание, негативная фаза)</li>
+          <li><strong>Y</strong> — пауза в нижней точке</li>
+          <li><strong>Z</strong> — концентрика (подъём, позитивная фаза)</li>
+          <li><strong>W</strong> — пауза в верхней точке (часто опускается)</li>
+        </ul>
+        <p>Например <strong>3-1-2-0</strong> = опускание 3 с, пауза внизу 1 с, подъём 2 с, без паузы сверху.</p>
+        <h4>Почему эксцентрика важнее</h4>
+        <p>Опускание веса (эксцентрическая фаза) даёт в <strong>1.5 раза больше</strong> микро-повреждений и сигналов mTOR для синтеза белка, чем подъём. Быстрое неконтролируемое опускание — потеря половины стимула.</p>
+        <h4>Зачем пауза в нижней точке</h4>
+        <p>Без паузы работает <strong>эластическая отдача</strong> сухожилий — мышца «отдыхает» в мёртвых точках, как пружина. Пауза 1 с обнуляет накопленную упругую энергию — дальше мышце приходится снова включаться с нуля. Это реальная работа, а не прыжок на инерции.</p>
+        <h4>Темп в твоём плане</h4>
+        <p>Основной темп <strong>2-0-3</strong> на жимах и тягах: контролируемое опускание 2 с, без паузы, быстрый подъём 3 с (это опечатка-наоборот — на самом деле опускание 3 с, подъём 2 с — если встретишь неоднозначность, уточняй). TUT за подход 12–15 повт × 5 с ≈ 60–75 с — окно гипертрофии.</p>
+        <h4>Практика</h4>
+        <p>Считай вслух «и-раз, и-два, и-три» — объективный метроном. На глаз темп обычно в 1.5 раза быстрее чем кажется.</p>
+      </div></div></div>
     </div>
 
-    <div class="glossary-card">
+    <div class="glossary-card is-expandable" role="button" tabindex="0" aria-expanded="false">
+      <button class="glossary-info-btn" aria-label="Подробнее про осевую нагрузку" type="button" tabindex="-1"></button>
       <div class="glossary-term">Осевая нагрузка</div>
       <div class="glossary-def">Вертикальная компрессия позвоночника (штанга на плечах, становая тяга, жим стоя). <strong>ПРОТИВОПОКАЗАНА</strong> при грыжах L4–L5. В плане таких упражнений нет.</div>
+      <div class="glossary-detail-wrap"><div class="glossary-detail"><div class="glossary-detail-inner">
+        <h4>Что это</h4>
+        <p>Вертикальная компрессия позвоночника — вес давит сверху вниз через позвоночный столб. Примеры: штанга на плечах (присед, жим стоя), удержание веса в руках вертикально (становая тяга, шраги стоя).</p>
+        <h4>Что происходит с диском</h4>
+        <p>При приседе 1RM давление на диски L4–L5 = <strong>3–6× собственный вес</strong>. При 102 кг и приседе 150 кг давление доходит до <strong>500+ кг</strong>.</p>
+        <p>Механика повреждения:</p>
+        <ul>
+          <li>Нагрузка давит на диск сверху</li>
+          <li>Жидкое ядро (pulposus) выдавливается в стороны</li>
+          <li>Если в фиброзном кольце (annulus) есть разрыв — ядро протискивается в щель</li>
+          <li>Выпячивание растёт, давит на корешок нерва → боль, онемение</li>
+        </ul>
+        <h4>Запрещено при твоей грыже</h4>
+        <ul>
+          <li>Присед со штангой (любой)</li>
+          <li>Становая тяга (классическая, сумо, румынская)</li>
+          <li>Жим стоя с отягощением над головой</li>
+          <li>Выпады со штангой на плечах</li>
+          <li>Шраги стоя с тяжёлой штангой</li>
+        </ul>
+        <h4>Безопасные альтернативы в плане</h4>
+        <ul>
+          <li>Гакк-приседания на санях (90° посадка, спина прижата)</li>
+          <li>Жим ногами 45° (был — заменён на гакк из-за подкручивания таза)</li>
+          <li>Ягодичный мост со штангой на бёдрах (нагрузка горизонтальная)</li>
+          <li>Cable pull-through, reverse hyper — безопасные hip hinge</li>
+          <li>Болгарские выпады в Смите (фиксированная траектория + корпус вертикально)</li>
+        </ul>
+        <h4>Когда можно вернуться</h4>
+        <p>Только после МРТ с подтверждением стабилизации грыжи и минимум <strong>12 месяцев</strong> прогрессивной нагрузки через безопасные варианты. Первые веса на спину — под присмотром опытного тренера. До этого — никаких экспериментов.</p>
+      </div></div></div>
     </div>
 
   </div>
@@ -2303,6 +2581,53 @@ document.querySelectorAll('.nav-links a').forEach(a => {
     e.preventDefault();
     const target = document.querySelector(a.getAttribute('href'));
     if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+
+// ============================================================
+// GLOSSARY — expandable cards (JS-driven height, smooth on all browsers)
+// ============================================================
+document.querySelectorAll('.glossary-card.is-expandable').forEach(card => {
+  const wrap = card.querySelector('.glossary-detail-wrap');
+  const detail = card.querySelector('.glossary-detail');
+  if (!wrap || !detail) return;
+
+  const toggle = () => {
+    const isOpen = card.classList.contains('is-open');
+    if (isOpen) {
+      // CLOSE: current height → 0
+      const h = detail.getBoundingClientRect().height;
+      wrap.style.height = h + 'px';
+      wrap.offsetHeight;                       // force reflow
+      requestAnimationFrame(() => {
+        card.classList.remove('is-open');
+        card.setAttribute('aria-expanded', 'false');
+        wrap.style.height = '0px';
+      });
+    } else {
+      // OPEN: 0 → content height
+      card.classList.add('is-open');
+      card.setAttribute('aria-expanded', 'true');
+      const target = detail.getBoundingClientRect().height;
+      wrap.style.height = target + 'px';
+      // after transition, release to 'auto' so content can grow/shrink
+      const onEnd = (e) => {
+        if (e.propertyName !== 'height') return;
+        wrap.removeEventListener('transitionend', onEnd);
+        if (card.classList.contains('is-open')) {
+          wrap.style.height = 'auto';
+        }
+      };
+      wrap.addEventListener('transitionend', onEnd);
+    }
+  };
+
+  card.addEventListener('click', toggle);
+  card.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      toggle();
+    }
   });
 });
 

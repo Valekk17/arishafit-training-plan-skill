@@ -7,6 +7,34 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap');
 
+  /* ======================================================================
+     iOS SAFARI КОМПАТИБИЛЬНОСТЬ
+     ======================================================================
+     iOS Safari не fire'ит click events на <div>/<span> через
+     document.addEventListener('click', ...) если у элемента нет
+     cursor:pointer ИЛИ явного onclick атрибута. Все наши интерактивные
+     слои используют делегирование на document, поэтому явно помечаем
+     их как clickable.
+
+     touch-action: manipulation убирает 350ms tap-delay.
+     -webkit-tap-highlight-color: transparent — избавляет от серой
+     подсветки на тапе. */
+  .day-top, .day-toggle, .day-reset, .day-prepost-link,
+  .week-banner, .week-toggle, .week-tab,
+  .info-btn, .info-box,
+  .pp-head, .pp-tab, .pp-card,
+  .exercise, .exercise .ex-check,
+  .phase-item, .phase-item-gif, .phase-item-name,
+  .alt-item, .alt-item-gif,
+  .mobile-panel-handle, .mobile-panel-backdrop,
+  .timer-btn, .panel-revert-btn,
+  .info-card, .stat-card, .glossary-card,
+  [onclick], [role="button"] {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
   :root {
     --orange: #FF6B35;
     --orange-hover: #FF5722;

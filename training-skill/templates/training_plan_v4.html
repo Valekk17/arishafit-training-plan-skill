@@ -954,38 +954,53 @@
     opacity:1; color:var(--green);
   }
 
-  /* Swap indicator on exercise row */
+  /* Swap indicator on exercise row — используем зелёную схему для максимального
+     контраста с общим оранжевым цветом плана. Через CSS-переменные ниже
+     можно будет легко перекрасить при theming. */
+  :root {
+    --swap-color: #16a34a;           /* насыщенный зелёный (contrast 4.5:1 на белом) */
+    --swap-color-bg: #dcfce7;         /* светло-зелёный фон */
+    --swap-color-strong: #15803d;     /* тёмный зелёный для hover/b */
+  }
+
   .ex-swap-pill {
     display:inline-flex; align-items:center; gap:6px;
     margin-top:4px;
   }
   .pill-badge {
     display:inline-flex; align-items:center; gap:3px;
-    font-size:10px; font-weight:700; letter-spacing:.3px;
-    color:var(--orange); background:var(--orange-light);
-    border-radius:100px; padding:3px 9px;
+    font-size:11px; font-weight:800; letter-spacing:.5px;
+    color:#fff; background:var(--swap-color);
+    border-radius:100px; padding:4px 10px;
+    text-transform:uppercase;
+    box-shadow:0 1px 3px rgba(22,163,74,0.25);
   }
   .pill-revert {
-    background:none; border:1px solid var(--border); border-radius:100px;
-    padding:2px 10px; cursor:pointer; color:var(--text-muted);
-    font-weight:600; font-size:10px; transition:all .15s;
+    background:#fff; border:1px solid var(--swap-color); border-radius:100px;
+    padding:2px 10px; cursor:pointer; color:var(--swap-color);
+    font-weight:700; font-size:10px; transition:all .15s;
   }
-  .pill-revert:hover { border-color:var(--orange); color:var(--orange); background:#fff; }
+  .pill-revert:hover {
+    background:var(--swap-color); color:#fff;
+  }
 
   /* Swap info banner in panel */
   .panel-swap-info {
     display:none; align-items:center; gap:10px; flex-wrap:wrap;
     padding:10px 14px; border-radius:10px;
-    background:var(--orange-light); border:1px dashed var(--orange);
+    background:var(--swap-color-bg); border:1px solid var(--swap-color);
     font-size:12px; color:var(--text); line-height:1.4;
   }
   .panel-swap-info.show { display:flex; }
-  .panel-swap-info b { color:var(--orange); font-weight:800; }
+  .panel-swap-info b { color:var(--swap-color-strong); font-weight:800; }
   .panel-revert-btn {
-    background:#fff; border:1px solid var(--orange); border-radius:100px;
-    padding:6px 14px; cursor:pointer; color:var(--orange);
+    background:var(--swap-color); border:1px solid var(--swap-color); border-radius:100px;
+    padding:6px 14px; cursor:pointer; color:#fff;
     font-weight:700; font-size:12px; margin-left:auto;
     transition:all .2s; white-space:nowrap;
+  }
+  .panel-revert-btn:hover {
+    background:var(--swap-color-strong); border-color:var(--swap-color-strong);
   }
   .panel-revert-btn:hover { background:var(--orange); color:#fff; }
 
@@ -1395,8 +1410,8 @@
           <div class="panel-body">
             <div class="panel-exname" id="panelName"></div>
             <div class="panel-swap-info" id="panelSwapInfo">
-              <span>&#x21BB; <b>Замена</b> &mdash; оригинал: &laquo;<span id="panelOrigName"></span>&raquo;</span>
-              <button class="panel-revert-btn" onclick="revertSwap(activeKey)">&#x21BA; Вернуть оригинал</button>
+              <span>✓ <b>Заменено</b> &mdash; оригинал: &laquo;<span id="panelOrigName"></span>&raquo;</span>
+              <button class="panel-revert-btn" onclick="revertSwap(activeKey)">↺ Вернуть оригинал</button>
             </div>
             <div class="panel-tags" id="panelTags"></div>
 
@@ -2101,7 +2116,8 @@ function updateRowSwapUI(key, isSwapped, displayName) {
       pill = document.createElement('div');
       pill.className = 'ex-swap-pill';
       const keyEsc = String(key).replace(/'/g, "\\'");
-      pill.innerHTML = `<span class="pill-badge">\u21BB \u0437\u0430\u043C\u0435\u043D\u0430</span><button class="pill-revert" onclick="event.stopPropagation(); revertSwap('${keyEsc}')">\u0432\u0435\u0440\u043D\u0443\u0442\u044C</button>`;
+      // ✓ ЗАМЕНЕНО (зелёная плашка) + кнопка вернуть
+      pill.innerHTML = `<span class="pill-badge">\u2713 \u0437\u0430\u043C\u0435\u043D\u0435\u043D\u043E</span><button class="pill-revert" onclick="event.stopPropagation(); revertSwap('${keyEsc}')">\u0432\u0435\u0440\u043D\u0443\u0442\u044C</button>`;
       const tagsEl = mainEl.querySelector('.ex-tags');
       if (tagsEl) mainEl.insertBefore(pill, tagsEl);
       else mainEl.appendChild(pill);

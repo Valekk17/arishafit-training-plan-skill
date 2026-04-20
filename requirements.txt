@@ -4,6 +4,11 @@ psycopg2-binary==2.9.11
 alembic==1.18.4
 python-dotenv==1.1.2
 
+# API backend
+fastapi==0.120.2
+uvicorn[standard]==0.38.0
+python-multipart==0.0.22
+
 # Media / CV (аннотатор и запекание MP4)
 opencv-python-headless==4.13.0.88
 pillow==11.5.0

@@ -10,8 +10,11 @@ exercisedb_data/gifs/
 *_backup.*
 
 # Рендеры планов с embedded base64 (десятки мегабайт)
+# Исключение: публикуемые через GitHub Pages для мобильного тестирования
 training-skill/output/*.html
 training-skill/output/andrey_*.html
+!docs/*.html
+!docs/index.html
 
 # Python cache
 __pycache__/

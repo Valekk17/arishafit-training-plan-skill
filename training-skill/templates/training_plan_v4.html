@@ -2,10 +2,20 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="mobile-web-app-capable" content="yes">
 <title>{{plan_title}} — ArishaFit</title>
+<!-- Шрифты через link (быстрее и надёжнее @import, особенно на iOS Safari) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap');
+  /* -webkit-text-size-adjust: 100% — iOS Safari не должен менять размер текста
+     при повороте экрана или auto-zoom */
+  html { -webkit-text-size-adjust:100%; text-size-adjust:100%; }
+  body { font-family: Jost, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; }
 
   /* ======================================================================
      iOS SAFARI КОМПАТИБИЛЬНОСТЬ

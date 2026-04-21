@@ -82,12 +82,21 @@ def resolve_name(ex):
 
     Правило: БД — источник правды. План не может «переименовать» упражнение,
     только добавить суффикс-квалификатор вроде «(A1 суперсета)».
+
+    Исключение: если в БД hasAnimation=False (static reference pose —
+    картинка позы используется как визуальная опора для разных упражнений,
+    напр. pelvic tilt activation + диафрагмальное дыхание), то имя из
+    плана имеет приоритет. Одна поза — разные подписи в разных контекстах.
     """
     eid = ex.get("exerciseId")
     plan_name = (ex.get("nameRu") or "").strip()
     if not eid or eid not in _EX_DB:
         return plan_name or ex.get("nameEn", "—")
-    db_name = _EX_DB[eid].get("nameRu", "").strip() or plan_name
+    db_entry = _EX_DB[eid]
+    # Static reference pose: план может полностью задать имя
+    if db_entry.get("hasAnimation") is False and plan_name:
+        return plan_name
+    db_name = db_entry.get("nameRu", "").strip() or plan_name
     # Если в плановом имени есть квалификатор (A1, A2, суперсет, ротация…) —
     # сохраняем его как суффикс к правильному DB-имени.
     if plan_name:

@@ -45416,5 +45416,33 @@
       "isolation_lower"
     ],
     "hasAnimation": false
+  },
+  {
+    "exerciseId": "pose_supine_knees_bent",
+    "nameEn": "supine hook-lying pose (static reference)",
+    "nameRu": "Поза лёжа с согнутыми коленями",
+    "instructions": [
+      "Lie on your back on the floor.",
+      "Bend knees 90°, feet flat on floor, shoulder-width apart.",
+      "Arms relaxed by sides, palms down.",
+      "Maintain neutral spine (small natural arch in lower back).",
+      "Breathe normally through the nose."
+    ],
+    "targetMuscles": [
+      "abs"
+    ],
+    "bodyParts": [
+      "waist"
+    ],
+    "equipments": [
+      "body weight"
+    ],
+    "secondaryMuscles": [
+      "lower back"
+    ],
+    "movementPatterns": [
+      "posture"
+    ],
+    "hasAnimation": false
   }
 ]

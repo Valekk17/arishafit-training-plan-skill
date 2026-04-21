@@ -2193,14 +2193,14 @@ function openPhaseItem(key) {
   const tipsWrap = document.getElementById('panelTipsWrap');
   if (item.tips) {
     tipsWrap.style.display = 'block';
-    document.getElementById('panelTips').textContent = item.tips;
+    document.getElementById('panelTips').innerHTML = item.tips;
   } else tipsWrap.style.display = 'none';
 
   // Warning
   const warnWrap = document.getElementById('panelWarnWrap');
   if (item.warn) {
     warnWrap.style.display = 'block';
-    document.getElementById('panelWarn').textContent = '\u26A0\uFE0F ' + item.warn;
+    document.getElementById('panelWarn').innerHTML = '\u26A0\uFE0F ' + item.warn;
   } else warnWrap.style.display = 'none';
 
   // Alternatives / swap info — warmup не меняется, скрываем
@@ -2251,7 +2251,7 @@ function openPanel(key) {
   const tipsWrap = document.getElementById('panelTipsWrap');
   if (activeTips) {
     tipsWrap.style.display = 'block';
-    document.getElementById('panelTips').textContent = activeTips;
+    document.getElementById('panelTips').innerHTML = activeTips;
   } else tipsWrap.style.display = 'none';
 
   // Warning — тоже неразделимо: при swap берём из alt
@@ -2259,7 +2259,7 @@ function openPanel(key) {
   const warnWrap = document.getElementById('panelWarnWrap');
   if (activeWarn) {
     warnWrap.style.display = 'block';
-    document.getElementById('panelWarn').textContent = '\u26A0\uFE0F ' + activeWarn;
+    document.getElementById('panelWarn').innerHTML = '\u26A0\uFE0F ' + activeWarn;
   } else warnWrap.style.display = 'none';
 
   // Alternatives — с миниатюрами и подсветкой активной замены
@@ -2354,14 +2354,14 @@ function swapExercise(key, altIdx, el) {
   const tipsWrap = document.getElementById('panelTipsWrap');
   if (alt.tips) {
     tipsWrap.style.display = 'block';
-    document.getElementById('panelTips').textContent = alt.tips;
+    document.getElementById('panelTips').innerHTML = alt.tips;
   } else tipsWrap.style.display = 'none';
 
   // Panel: warning (предупреждение альтернативы)
   const warnWrap = document.getElementById('panelWarnWrap');
   if (alt.warn) {
     warnWrap.style.display = 'block';
-    document.getElementById('panelWarn').textContent = '\u26A0\uFE0F ' + alt.warn;
+    document.getElementById('panelWarn').innerHTML = '\u26A0\uFE0F ' + alt.warn;
   } else warnWrap.style.display = 'none';
 
   // Panel: swap-info banner
@@ -2401,14 +2401,14 @@ function revertSwap(key) {
   const tipsWrap = document.getElementById('panelTipsWrap');
   if (ex.tips) {
     tipsWrap.style.display = 'block';
-    document.getElementById('panelTips').textContent = ex.tips;
+    document.getElementById('panelTips').innerHTML = ex.tips;
   } else tipsWrap.style.display = 'none';
 
   // Panel: restore warning (предупреждение оригинала)
   const warnWrap = document.getElementById('panelWarnWrap');
   if (ex.warn) {
     warnWrap.style.display = 'block';
-    document.getElementById('panelWarn').textContent = '\u26A0\uFE0F ' + ex.warn;
+    document.getElementById('panelWarn').innerHTML = '\u26A0\uFE0F ' + ex.warn;
   } else warnWrap.style.display = 'none';
 
   // Panel: hide swap-info

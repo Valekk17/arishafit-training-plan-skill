@@ -74,6 +74,21 @@ _EX_DB = _load_exercise_catalog()
 
 
 _SUFFIX_RE = __import__("re").compile(r"^(.+?)\s*\(([^)]+)\)\s*$")
+_MD_BOLD_RE = __import__("re").compile(r"\*\*(.+?)\*\*")
+
+
+def md_inline(text):
+    """Преобразовать минимальный markdown в HTML для отображения в панели:
+    - HTML-escape (& < > ")
+    - **жирный** → <strong>жирный</strong>
+    """
+    if not text:
+        return ""
+    # Escape HTML first
+    t = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
+    # Then convert markdown bold (safe because we escaped HTML)
+    t = _MD_BOLD_RE.sub(r"<strong>\1</strong>", t)
+    return t
 
 
 def resolve_name(ex):
@@ -355,16 +370,16 @@ def render_exercise(ex, order, week_num, day_num):
         alts_data.append({
             "nameRu": resolve_name(a),
             "gif": alt_gif,
-            "tips": a.get("tips", "") or "",
-            "warn": a.get("warning", "") or "",
+            "tips": md_inline(a.get("tips", "") or ""),
+            "warn": md_inline(a.get("warning", "") or ""),
         })
 
     EXERCISES_DATA[ex_key] = {
         "name": name,
         "gif": gif_src,
         "tagsHtml": tags_html,
-        "tips": ex.get("tips", ""),
-        "warn": ex.get("warning", "") or "",
+        "tips": md_inline(ex.get("tips", "") or ""),
+        "warn": md_inline(ex.get("warning", "") or ""),
         "alts": alts_data,
         "restSec": ex.get("rest_sec", 0) or 0,
     }
@@ -413,8 +428,8 @@ def render_warmup_item(item, week_num, day_num, block_phase, item_idx, scope=Non
         "gif": gif_src,
         "reps": reps,
         "details": details,
-        "tips": tips,
-        "warn": warning,
+        "tips": md_inline(tips),
+        "warn": md_inline(warning),
     }
 
     media_tag = _render_media_tag(gif_src, "phase-item-gif", alt=name)

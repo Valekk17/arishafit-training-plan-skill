@@ -8493,34 +8493,6 @@
     "hasAnimation": true
   },
   {
-    "exerciseId": "cuKYxhu",
-    "nameEn": "standing pelvic tilt",
-    "nameRu": "Наклон таза стоя",
-    "instructions": [
-      "Step:1 Stand with your feet shoulder-width apart and your knees slightly bent.",
-      "Step:2 Place your hands on your hips or let them hang by your sides.",
-      "Step:3 Engage your core muscles and tilt your pelvis forward, pushing your lower back towards the wall behind you.",
-      "Step:4 Hold the position for a few seconds, then release and return to the starting position.",
-      "Step:5 Repeat for the desired number of repetitions."
-    ],
-    "targetMuscles": [
-      "spine"
-    ],
-    "bodyParts": [
-      "back"
-    ],
-    "equipments": [
-      "body weight"
-    ],
-    "secondaryMuscles": [
-      "abdominals"
-    ],
-    "movementPatterns": [
-      "stretching"
-    ],
-    "hasAnimation": true
-  },
-  {
     "exerciseId": "isofgzg",
     "nameEn": "roller back stretch",
     "nameRu": "Растяжка спины на валике",

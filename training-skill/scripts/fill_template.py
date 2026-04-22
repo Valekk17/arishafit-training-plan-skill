@@ -587,7 +587,12 @@ def render_shared_prepost_section(plan_data):
     def tabs(kind, data, block_renderer):
         if not data:
             return ""
-        tab_labels = {"strength": "Силовой день", "cardio": "Кардио-день"}
+        tab_labels = {
+            "strength": "Силовой день",
+            "cardio": "Кардио-день",
+            "push": "Push день",
+            "pull_legs": "Pull+Legs день",
+        }
         tabs_html = ""
         content_html = ""
         first = True
@@ -651,7 +656,12 @@ def render_day_pre_post(day):
     cd_type = day.get("cooldown_type")
     if not wu_type and not cd_type:
         return ""
-    type_label = {"strength": "силовой", "cardio": "кардио"}.get(wu_type or cd_type, "")
+    type_label = {
+        "strength": "силовой",
+        "cardio": "кардио",
+        "push": "push",
+        "pull_legs": "pull+legs",
+    }.get(wu_type or cd_type, "")
     return f"""
       <div class="day-prepost">
         <a class="day-prepost-link" href="#warmup-cooldown" data-type="{wu_type or ''}">

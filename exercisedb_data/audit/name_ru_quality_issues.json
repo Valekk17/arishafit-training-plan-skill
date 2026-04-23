@@ -1,0 +1,1521 @@
+{
+  "summary": {
+    "total_db": 1500,
+    "total_with_issues": 78,
+    "by_code": {
+      "Q8_bloated": 78
+    },
+    "duplicate_groups": 0
+  },
+  "duplicates": {},
+  "per_ex_issues": {
+    "bZGHsAZ": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.25"
+        ]
+      ],
+      "nameEn": "inverted row",
+      "nameRu": "Горизонтальные подтягивания",
+      "movementPatterns": [
+        "pull_horizontal"
+      ],
+      "targetMuscles": [
+        "upper back"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "uX3sUBz": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.18"
+        ]
+      ],
+      "nameEn": "inverted row v. 2",
+      "nameRu": "Горизонтальные подтягивания вариант 2",
+      "movementPatterns": [
+        "pull_horizontal"
+      ],
+      "targetMuscles": [
+        "upper back"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "GaSzzuh": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.50"
+        ]
+      ],
+      "nameEn": "back lever",
+      "nameRu": "Задний вис горизонтальный",
+      "movementPatterns": [
+        "supported_back"
+      ],
+      "targetMuscles": [
+        "upper back"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "MSfvriJ": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.25"
+        ]
+      ],
+      "nameEn": "skin the cat",
+      "nameRu": "Выкрут назад на перекладине",
+      "movementPatterns": [
+        "pull_vertical"
+      ],
+      "targetMuscles": [
+        "upper back"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "X3cqyXz": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.21"
+        ]
+      ],
+      "nameEn": "lever bent over row",
+      "nameRu": "Тяга штанги в рычажном тренажёре в наклоне",
+      "movementPatterns": [
+        "back_flexion",
+        "pull_horizontal",
+        "supported_back"
+      ],
+      "targetMuscles": [
+        "upper back"
+      ],
+      "equipments": [
+        "barbell"
+      ]
+    },
+    "HEJ6DIX": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.07"
+        ]
+      ],
+      "nameEn": "cable kickback",
+      "nameRu": "Разгибание руки в блоке назад",
+      "movementPatterns": [
+        "isolation_upper"
+      ],
+      "targetMuscles": [
+        "triceps"
+      ],
+      "equipments": [
+        "cable"
+      ]
+    },
+    "3ZflifB": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.07"
+        ]
+      ],
+      "nameEn": "cable pushdown",
+      "nameRu": "Разгибание на трицепс в блоке",
+      "movementPatterns": [
+        "isolation_upper"
+      ],
+      "targetMuscles": [
+        "triceps"
+      ],
+      "equipments": [
+        "cable"
+      ]
+    },
+    "FAoIFMw": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.91"
+        ]
+      ],
+      "nameEn": "one arm dip",
+      "nameRu": "Отжимания на брусьях одной рукой",
+      "movementPatterns": [
+        "isolation_upper"
+      ],
+      "targetMuscles": [
+        "triceps"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "c3QQLPi": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.06"
+        ]
+      ],
+      "nameEn": "cable rear drive",
+      "nameRu": "Разгибание рук в блоке назад сидя",
+      "movementPatterns": [
+        "isolation_upper"
+      ],
+      "targetMuscles": [
+        "triceps"
+      ],
+      "equipments": [
+        "cable"
+      ]
+    },
+    "05Cf2v8": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.13"
+        ]
+      ],
+      "nameEn": "impossible dips",
+      "nameRu": "Невозможные отжимания на брусьях",
+      "movementPatterns": [
+        "isolation_upper"
+      ],
+      "targetMuscles": [
+        "triceps"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "7xeukSt": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.58"
+        ]
+      ],
+      "nameEn": "scapula dips",
+      "nameRu": "Лопаточные отжимания на брусьях",
+      "movementPatterns": [
+        "isolation_upper"
+      ],
+      "targetMuscles": [
+        "traps"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "s7HX1BY": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.06"
+        ]
+      ],
+      "nameEn": "barbell wide squat",
+      "nameRu": "Приседания со штангой широкой стойкой",
+      "movementPatterns": [
+        "axial_load",
+        "squat"
+      ],
+      "targetMuscles": [
+        "quads"
+      ],
+      "equipments": [
+        "barbell"
+      ]
+    },
+    "qPEzJjA": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.33"
+        ]
+      ],
+      "nameEn": "farmers walk",
+      "nameRu": "Прогулка фермера с гантелями",
+      "movementPatterns": [
+        "axial_load"
+      ],
+      "targetMuscles": [
+        "quads"
+      ],
+      "equipments": [
+        "dumbbell"
+      ]
+    },
+    "reFHapa": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.12"
+        ]
+      ],
+      "nameEn": "dumbbell decline twist fly",
+      "nameRu": "Разводка гантелей с разворотом на отрицательном наклоне",
+      "movementPatterns": [
+        "push_horizontal",
+        "supported_back",
+        "isolation_upper",
+        "rotation_under_load"
+      ],
+      "targetMuscles": [
+        "pectorals"
+      ],
+      "equipments": [
+        "dumbbell"
+      ]
+    },
+    "7saC5zz": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.41"
+        ]
+      ],
+      "nameEn": "cable decline fly",
+      "nameRu": "Разводка в блоке на отрицательном наклоне",
+      "movementPatterns": [
+        "push_horizontal",
+        "supported_back",
+        "isolation_upper"
+      ],
+      "targetMuscles": [
+        "pectorals"
+      ],
+      "equipments": [
+        "cable"
+      ]
+    },
+    "Snj1wSv": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.08"
+        ]
+      ],
+      "nameEn": "plyo push up",
+      "nameRu": "Плиометрические отжимания",
+      "movementPatterns": [
+        "push_horizontal"
+      ],
+      "targetMuscles": [
+        "pectorals"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "rWoBmi5": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.73"
+        ]
+      ],
+      "nameEn": "korean dips",
+      "nameRu": "Корейские отжимания на брусьях",
+      "movementPatterns": [
+        "push_horizontal"
+      ],
+      "targetMuscles": [
+        "pectorals"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "xXm4nYq": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.10"
+        ]
+      ],
+      "nameEn": "dumbbell decline fly",
+      "nameRu": "Разводка гантелей на отрицательном наклоне",
+      "movementPatterns": [
+        "push_horizontal",
+        "supported_back",
+        "isolation_upper"
+      ],
+      "targetMuscles": [
+        "pectorals"
+      ],
+      "equipments": [
+        "dumbbell"
+      ]
+    },
+    "i5cEhka": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.13"
+        ]
+      ],
+      "nameEn": "decline push-up",
+      "nameRu": "Отжимания с ногами на возвышении",
+      "movementPatterns": [
+        "push_horizontal",
+        "supported_back"
+      ],
+      "targetMuscles": [
+        "pectorals"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "vptOQ4N": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 3.58"
+        ]
+      ],
+      "nameEn": "deep push up",
+      "nameRu": "Отжимания с глубоким опусканием на гантелях",
+      "movementPatterns": [
+        "push_horizontal"
+      ],
+      "targetMuscles": [
+        "pectorals"
+      ],
+      "equipments": [
+        "dumbbell"
+      ]
+    },
+    "pvBMLHA": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.83"
+        ]
+      ],
+      "nameEn": "push-up plus",
+      "nameRu": "Отжимания плюс с протяжкой лопаток",
+      "movementPatterns": [
+        "push_horizontal"
+      ],
+      "targetMuscles": [
+        "pectorals"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "jCBOdh0": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.04"
+        ]
+      ],
+      "nameEn": "rough cable decline fly",
+      "nameRu": "Сведение в кроссовере на отрицательном (жёстко)",
+      "movementPatterns": [
+        "push_horizontal",
+        "supported_back",
+        "isolation_upper"
+      ],
+      "targetMuscles": [
+        "pectorals"
+      ],
+      "equipments": [
+        "cable"
+      ]
+    },
+    "isAAZWA": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.65"
+        ]
+      ],
+      "nameEn": "side-to-side chin",
+      "nameRu": "Подтягивания обр. хватом из стороны в сторону",
+      "movementPatterns": [
+        "pull_vertical"
+      ],
+      "targetMuscles": [
+        "lats"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "HjdqmZa": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.40"
+        ]
+      ],
+      "nameEn": "one arm chin-up",
+      "nameRu": "Подтягивание одной рукой обр. хватом",
+      "movementPatterns": [
+        "pull_vertical"
+      ],
+      "targetMuscles": [
+        "lats"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "pM07UxU": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.12"
+        ]
+      ],
+      "nameEn": "kipping muscle up",
+      "nameRu": "Выход силой киппингом на перекладине",
+      "movementPatterns": [
+        "pull_vertical"
+      ],
+      "targetMuscles": [
+        "lats"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "MaMuGH6": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.09"
+        ]
+      ],
+      "nameEn": "lever assisted chin-up",
+      "nameRu": "Подтягивания обр. хватом в рычажном гравитроне",
+      "movementPatterns": [
+        "pull_vertical",
+        "supported_back"
+      ],
+      "targetMuscles": [
+        "lats"
+      ],
+      "equipments": [
+        "leverage machine"
+      ]
+    },
+    "CbFSYC1": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 3.00"
+        ]
+      ],
+      "nameEn": "rear pull-up",
+      "nameRu": "Подтягивания хватом сверху за голову",
+      "movementPatterns": [
+        "pull_vertical"
+      ],
+      "targetMuscles": [
+        "lats"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "RVwzP10": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.21"
+        ]
+      ],
+      "nameEn": "cable pulldown",
+      "nameRu": "Тяга сверху на блоке (классика)",
+      "movementPatterns": [
+        "pull_vertical"
+      ],
+      "targetMuscles": [
+        "lats"
+      ],
+      "equipments": [
+        "cable"
+      ]
+    },
+    "IU4QNJ6": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.58"
+        ]
+      ],
+      "nameEn": "pure chin-up",
+      "nameRu": "Чистые подтягивания обр. хватом",
+      "movementPatterns": [
+        "pull_vertical"
+      ],
+      "targetMuscles": [
+        "lats"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "dVeWXf2": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.31"
+        ]
+      ],
+      "nameEn": "chin-up diagonal",
+      "nameRu": "Подтягивания обр. хватом по диагонали",
+      "movementPatterns": [
+        "pull_vertical"
+      ],
+      "targetMuscles": [
+        "lats"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "v7p5bYl": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.50"
+        ]
+      ],
+      "nameEn": "kick out sit",
+      "nameRu": "Подъём корпуса с выбросом ноги",
+      "movementPatterns": [
+        "isolation_lower"
+      ],
+      "targetMuscles": [
+        "hamstrings"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "SiWCcTN": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.55"
+        ]
+      ],
+      "nameEn": "power clean",
+      "nameRu": "Взятие штанги на грудь в сед",
+      "movementPatterns": [
+        "isolation_lower"
+      ],
+      "targetMuscles": [
+        "hamstrings"
+      ],
+      "equipments": [
+        "barbell"
+      ]
+    },
+    "d5bTEPV": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.92"
+        ]
+      ],
+      "nameEn": "band step-up",
+      "nameRu": "Зашагивание на возвышение с резиной",
+      "movementPatterns": [
+        "lunge"
+      ],
+      "targetMuscles": [
+        "glutes"
+      ],
+      "equipments": [
+        "band"
+      ]
+    },
+    "t8iSghb": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.15"
+        ]
+      ],
+      "nameEn": "barbell lunge",
+      "nameRu": "Выпады со штангой (шагающие)",
+      "movementPatterns": [
+        "lunge"
+      ],
+      "targetMuscles": [
+        "glutes"
+      ],
+      "equipments": [
+        "barbell"
+      ]
+    },
+    "aXtJhlg": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.31"
+        ]
+      ],
+      "nameEn": "dumbbell step-up",
+      "nameRu": "Зашагивание с гантелями на возвышение",
+      "movementPatterns": [
+        "lunge"
+      ],
+      "targetMuscles": [
+        "glutes"
+      ],
+      "equipments": [
+        "dumbbell"
+      ]
+    },
+    "Kxquu2E": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.40"
+        ]
+      ],
+      "nameEn": "barbell step-up",
+      "nameRu": "Зашагивание на возвышение со штангой",
+      "movementPatterns": [
+        "lunge"
+      ],
+      "targetMuscles": [
+        "glutes"
+      ],
+      "equipments": [
+        "barbell"
+      ]
+    },
+    "9n2149Z": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.06"
+        ]
+      ],
+      "nameEn": "sled lying squat",
+      "nameRu": "Приседания в наклонных санях лёжа",
+      "movementPatterns": [
+        "axial_load",
+        "squat",
+        "supported_back"
+      ],
+      "targetMuscles": [
+        "glutes"
+      ],
+      "equipments": [
+        "sled machine"
+      ]
+    },
+    "O95afRA": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.17"
+        ]
+      ],
+      "nameEn": "monster walk",
+      "nameRu": "Ходьба «монстра» с резиной",
+      "movementPatterns": [
+        "hip_hinge"
+      ],
+      "targetMuscles": [
+        "glutes"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "awG04cF": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.25"
+        ]
+      ],
+      "nameEn": "finger curls",
+      "nameRu": "Сгибание пальцев со штангой",
+      "movementPatterns": [
+        "isolation_upper"
+      ],
+      "targetMuscles": [
+        "forearms"
+      ],
+      "equipments": [
+        "barbell"
+      ]
+    },
+    "VLYXo8S": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.06"
+        ]
+      ],
+      "nameEn": "weighted round arm",
+      "nameRu": "Круговое движение рукой с отягощением",
+      "movementPatterns": [
+        "isolation_upper"
+      ],
+      "targetMuscles": [
+        "delts"
+      ],
+      "equipments": [
+        "weighted"
+      ]
+    },
+    "RJa4tCo": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.43"
+        ]
+      ],
+      "nameEn": "battling ropes",
+      "nameRu": "Работа с канатами (battling ropes)",
+      "movementPatterns": [
+        "isolation_upper"
+      ],
+      "targetMuscles": [
+        "delts"
+      ],
+      "equipments": [
+        "rope"
+      ]
+    },
+    "4Leypho": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.62"
+        ]
+      ],
+      "nameEn": "barbell skier",
+      "nameRu": "Подъём штанги перед собой (лыжник)",
+      "movementPatterns": [
+        "isolation_upper"
+      ],
+      "targetMuscles": [
+        "delts"
+      ],
+      "equipments": [
+        "barbell"
+      ]
+    },
+    "PrQbjvB": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.55"
+        ]
+      ],
+      "nameEn": "push to run",
+      "nameRu": "Бег с высоким подъёмом колен",
+      "movementPatterns": [
+        "cardio"
+      ],
+      "targetMuscles": [
+        "cardiovascular system"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "mr7pkqP": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.09"
+        ]
+      ],
+      "nameEn": "jack burpee",
+      "nameRu": "Бёрпи с разведением ног",
+      "movementPatterns": [
+        "impact",
+        "cardio"
+      ],
+      "targetMuscles": [
+        "cardiovascular system"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "0Yz8WdV": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.50"
+        ]
+      ],
+      "nameEn": "bear crawl",
+      "nameRu": "Медвежья походка классика",
+      "movementPatterns": [
+        "cardio"
+      ],
+      "targetMuscles": [
+        "cardiovascular system"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "MrgP9L6": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.29"
+        ]
+      ],
+      "nameEn": "lever rotary calf",
+      "nameRu": "Подъём на носки в ротационном тренажёре",
+      "movementPatterns": [
+        "supported_back"
+      ],
+      "targetMuscles": [
+        "calves"
+      ],
+      "equipments": [
+        "leverage machine"
+      ]
+    },
+    "2ORFMoR": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.13"
+        ]
+      ],
+      "nameEn": "hack calf raise",
+      "nameRu": "Подъём на носки в хакк-тренажёре",
+      "movementPatterns": [
+        "isolation_lower"
+      ],
+      "targetMuscles": [
+        "calves"
+      ],
+      "equipments": [
+        "sled machine"
+      ]
+    },
+    "uL9CsKm": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.92"
+        ]
+      ],
+      "nameEn": "ankle circles",
+      "nameRu": "Круговые вращения стопой (мобильность)",
+      "movementPatterns": [
+        "isolation_lower"
+      ],
+      "targetMuscles": [
+        "calves"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "q6y3OhV": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.31"
+        ]
+      ],
+      "nameEn": "lever bicep curl",
+      "nameRu": "Подъём на бицепс в рычажном тренажёре",
+      "movementPatterns": [
+        "supported_back",
+        "isolation_upper"
+      ],
+      "targetMuscles": [
+        "biceps"
+      ],
+      "equipments": [
+        "leverage machine"
+      ]
+    },
+    "b6hQYMb": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.16"
+        ]
+      ],
+      "nameEn": "lever preacher curl",
+      "nameRu": "Сгибание рук в тренажёре Скотта (базовый)",
+      "movementPatterns": [
+        "supported_back",
+        "isolation_upper"
+      ],
+      "targetMuscles": [
+        "biceps"
+      ],
+      "equipments": [
+        "leverage machine"
+      ]
+    },
+    "IENzBdA": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.18"
+        ]
+      ],
+      "nameEn": "barbell drag curl",
+      "nameRu": "Сгибание штанги с протяжкой у корпуса",
+      "movementPatterns": [
+        "isolation_upper"
+      ],
+      "targetMuscles": [
+        "biceps"
+      ],
+      "equipments": [
+        "barbell"
+      ]
+    },
+    "TiaZTxx": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.25"
+        ]
+      ],
+      "nameEn": "dumbbell seated curl",
+      "nameRu": "Подъём гантелей на бицепс сидя (изолированно)",
+      "movementPatterns": [
+        "supported_back",
+        "isolation_upper"
+      ],
+      "targetMuscles": [
+        "biceps"
+      ],
+      "equipments": [
+        "dumbbell"
+      ]
+    },
+    "YTur5nR": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.06"
+        ]
+      ],
+      "nameEn": "cable one arm curl",
+      "nameRu": "Подъём на блоке на бицепс одной рукой",
+      "movementPatterns": [
+        "isolation_upper"
+      ],
+      "targetMuscles": [
+        "biceps"
+      ],
+      "equipments": [
+        "cable"
+      ]
+    },
+    "dXz8zjF": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.47"
+        ]
+      ],
+      "nameEn": "cable drag curl",
+      "nameRu": "Подъём на блоке с протяжкой у корпуса",
+      "movementPatterns": [
+        "isolation_upper"
+      ],
+      "targetMuscles": [
+        "biceps"
+      ],
+      "equipments": [
+        "cable"
+      ]
+    },
+    "G08RZcQ": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.20"
+        ]
+      ],
+      "nameEn": "cable curl",
+      "nameRu": "Подъём на нижнем блоке",
+      "movementPatterns": [
+        "isolation_upper"
+      ],
+      "targetMuscles": [
+        "biceps"
+      ],
+      "equipments": [
+        "cable"
+      ]
+    },
+    "CI6baTY": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 3.10"
+        ]
+      ],
+      "nameEn": "bottoms-up",
+      "nameRu": "Подъём таза лёжа «вверх ногами»",
+      "movementPatterns": [
+        "back_flexion"
+      ],
+      "targetMuscles": [
+        "abs"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "BMMolZ3": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 3.00"
+        ]
+      ],
+      "nameEn": "tuck crunch",
+      "nameRu": "Скручивание с подтягиванием колен",
+      "movementPatterns": [
+        "back_flexion"
+      ],
+      "targetMuscles": [
+        "abs"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "fhZQPlV": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.19"
+        ]
+      ],
+      "nameEn": "cable twist (up-down)",
+      "nameRu": "Скручивание с поворотом на блоке (сверху вниз)",
+      "movementPatterns": [
+        "rotation_under_load"
+      ],
+      "targetMuscles": [
+        "abs"
+      ],
+      "equipments": [
+        "cable"
+      ]
+    },
+    "TXtXc84": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.04"
+        ]
+      ],
+      "nameEn": "cable tuck reverse crunch",
+      "nameRu": "Обратное скручивание с подтягиванием колен на блоке",
+      "movementPatterns": [
+        "back_flexion"
+      ],
+      "targetMuscles": [
+        "abs"
+      ],
+      "equipments": [
+        "cable"
+      ]
+    },
+    "Bn6TXyO": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.45"
+        ]
+      ],
+      "nameEn": "sit-up v. 2",
+      "nameRu": "Подъём туловища (вариант 2)",
+      "movementPatterns": [
+        "back_flexion"
+      ],
+      "targetMuscles": [
+        "abs"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "2jl9K55": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 3.27"
+        ]
+      ],
+      "nameEn": "spine twist",
+      "nameRu": "Скручивание позвоночника с поворотом",
+      "movementPatterns": [
+        "rotation_under_load"
+      ],
+      "targetMuscles": [
+        "abs"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "UEjSrKI": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.06"
+        ]
+      ],
+      "nameEn": "cable seated twist",
+      "nameRu": "Скручивание с поворотом сидя на блоке",
+      "movementPatterns": [
+        "supported_back",
+        "rotation_under_load"
+      ],
+      "targetMuscles": [
+        "abs"
+      ],
+      "equipments": [
+        "cable"
+      ]
+    },
+    "MvQPqVW": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.67"
+        ]
+      ],
+      "nameEn": "cable judo flip",
+      "nameRu": "Диагональный бросок на блоке (judo flip)",
+      "movementPatterns": [
+        "back_flexion"
+      ],
+      "targetMuscles": [
+        "abs"
+      ],
+      "equipments": [
+        "cable"
+      ]
+    },
+    "hCjGsRQ": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.12"
+        ]
+      ],
+      "nameEn": "power point plank",
+      "nameRu": "Планка с точками опоры (power point)",
+      "movementPatterns": [
+        "plank_static"
+      ],
+      "targetMuscles": [
+        "abs"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "mWppALS": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.75"
+        ]
+      ],
+      "nameEn": "groin crunch",
+      "nameRu": "Скручивание на приводящие (groin)",
+      "movementPatterns": [
+        "back_flexion"
+      ],
+      "targetMuscles": [
+        "abs"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "p9cCe2r": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 3.17"
+        ]
+      ],
+      "nameEn": "spell caster",
+      "nameRu": "Заклинатель с гантелями (spell caster)",
+      "movementPatterns": [
+        "back_flexion"
+      ],
+      "targetMuscles": [
+        "abs"
+      ],
+      "equipments": [
+        "dumbbell"
+      ]
+    },
+    "S1JXDAG": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.18"
+        ]
+      ],
+      "nameEn": "band seated twist",
+      "nameRu": "Скручивание с поворотом сидя с лентой",
+      "movementPatterns": [
+        "supported_back",
+        "rotation_under_load"
+      ],
+      "targetMuscles": [
+        "abs"
+      ],
+      "equipments": [
+        "band"
+      ]
+    },
+    "TFqbd8t": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.50"
+        ]
+      ],
+      "nameEn": "crunch floor",
+      "nameRu": "Скручивание на полу (классика)",
+      "movementPatterns": [
+        "back_flexion"
+      ],
+      "targetMuscles": [
+        "abs"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "QLL2gdc": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 3.57"
+        ]
+      ],
+      "nameEn": "decline sit-up",
+      "nameRu": "Подъём туловища на скамье с отрицательным наклоном",
+      "movementPatterns": [
+        "supported_back",
+        "back_flexion"
+      ],
+      "targetMuscles": [
+        "abs"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "PkCN2lv": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.82"
+        ]
+      ],
+      "nameEn": "front lever",
+      "nameRu": "Передний горизонт (front lever)",
+      "movementPatterns": [
+        "supported_back"
+      ],
+      "targetMuscles": [
+        "abs"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "aVs3BR3": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 3.91"
+        ]
+      ],
+      "nameEn": "cable twist",
+      "nameRu": "Скручивание с поворотом на блоке (классика)",
+      "movementPatterns": [
+        "rotation_under_load"
+      ],
+      "targetMuscles": [
+        "abs"
+      ],
+      "equipments": [
+        "cable"
+      ]
+    },
+    "9Ap7miY": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 3.29"
+        ]
+      ],
+      "nameEn": "decline crunch",
+      "nameRu": "Скручивание на скамье с отрицательным наклоном",
+      "movementPatterns": [
+        "supported_back",
+        "back_flexion"
+      ],
+      "targetMuscles": [
+        "abs"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "iQ241UP": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.06"
+        ]
+      ],
+      "nameEn": "half sit-up (male)",
+      "nameRu": "Подъём туловища на половину амплитуды",
+      "movementPatterns": [
+        "back_flexion"
+      ],
+      "targetMuscles": [
+        "abs"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "2gPfomN": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.20"
+        ]
+      ],
+      "nameEn": "3/4 sit-up",
+      "nameRu": "Подъём туловища на 3/4",
+      "movementPatterns": [
+        "back_flexion"
+      ],
+      "targetMuscles": [
+        "abs"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "sZOR9EV": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.15"
+        ]
+      ],
+      "nameEn": "lever kneeling twist",
+      "nameRu": "Скручивание в тренажёре с колен с поворотом",
+      "movementPatterns": [
+        "supported_back",
+        "rotation_under_load"
+      ],
+      "targetMuscles": [
+        "abs"
+      ],
+      "equipments": [
+        "leverage machine"
+      ]
+    },
+    "enxnJcM": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.64"
+        ]
+      ],
+      "nameEn": "quarter sit-up",
+      "nameRu": "Подъём туловища на четверть амплитуды",
+      "movementPatterns": [
+        "back_flexion"
+      ],
+      "targetMuscles": [
+        "abs"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    },
+    "L68dTQj": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.05"
+        ]
+      ],
+      "nameEn": "band seated twist pure",
+      "nameRu": "Скручивание с поворотом сидя с лентой (чисто)",
+      "movementPatterns": [
+        "supported_back",
+        "rotation_under_load"
+      ],
+      "targetMuscles": [
+        "abs"
+      ],
+      "equipments": [
+        "band"
+      ]
+    },
+    "7WaDzyL": {
+      "issues": [
+        [
+          "Q8_bloated",
+          "ru/en ratio = 2.11"
+        ]
+      ],
+      "nameEn": "side hip abduction",
+      "nameRu": "Отведение бедра лёжа на боку (изолир.)",
+      "movementPatterns": [
+        "isolation_lower"
+      ],
+      "targetMuscles": [
+        "abductors"
+      ],
+      "equipments": [
+        "body weight"
+      ]
+    }
+  }
+}

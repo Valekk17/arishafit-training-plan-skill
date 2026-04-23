@@ -1,0 +1,169 @@
+{
+  "_meta": {
+    "schema_version": "1.0.0",
+    "description": "ArishaFit client intake contract. Передаётся Opus как вход на Phase 0 Pre-flight. Валидация через client_intake_schema.validation.json (JSON Schema draft 2020-12).",
+    "see_also": [
+      "training-skill/SKILL.md — Phase 0",
+      "training-skill/templates/example_andrey_intake.json — reference example"
+    ]
+  },
+
+  "personal": {
+    "name": "",
+    "age": null,
+    "gender": null,
+    "height_cm": null,
+    "weight_kg": null,
+    "date_of_birth": null
+  },
+
+  "goals": {
+    "primary": null,
+    "secondary": [],
+    "timeline_weeks": null,
+    "target_metric": {
+      "metric": null,
+      "current": null,
+      "target": null,
+      "unit": null
+    },
+    "notes": ""
+  },
+
+  "experience": {
+    "years_training": null,
+    "level": null,
+    "past_programs": [],
+    "self_rated_technique": null,
+    "familiar_lifts": []
+  },
+
+  "injuries": [],
+
+  "diseases": [],
+
+  "constraints": {
+    "training_days_per_week": null,
+    "session_max_duration_min": null,
+    "preferred_time": null,
+    "equipment_available": [],
+    "gym_location": null,
+    "travel_frequency": null
+  },
+
+  "lifestyle": {
+    "sleep_hours_avg": null,
+    "stress_level": null,
+    "dietary_preferences": {
+      "free_text": "",
+      "vegetarian": false,
+      "vegan": false,
+      "gluten_free": false,
+      "no_sugar": false,
+      "no_flour": false,
+      "lactose_free": false,
+      "allergies": []
+    },
+    "medications": [],
+    "alcohol_per_week": null,
+    "smoking": null,
+    "occupation_activity": null
+  },
+
+  "preferences": {
+    "disliked_exercises": [],
+    "favorite_movements": [],
+    "variety": null,
+    "communication_style": null,
+    "music_preferences": null,
+    "motivational_style": null
+  },
+
+  "contact": {
+    "email": null,
+    "telegram": null,
+    "phone": null,
+    "preferred_channel": null
+  },
+
+  "consent": {
+    "medical_disclaimer_accepted": false,
+    "data_processing_accepted": false,
+    "marketing_accepted": false,
+    "signed_at": null
+  },
+
+  "metadata": {
+    "intake_date": null,
+    "intake_source": null,
+    "trainer_notes": "",
+    "previous_plan_ref": null
+  },
+
+  "_reference": {
+    "gender_values": ["male", "female", "non_binary"],
+    "goal_primary_values": [
+      "hypertrophy",
+      "strength",
+      "weight_loss",
+      "recomposition",
+      "endurance",
+      "rehab",
+      "general_fitness",
+      "powerbuilding"
+    ],
+    "level_values": ["beginner", "intermediate", "advanced"],
+    "preferred_time_values": ["morning", "afternoon", "evening", "flexible"],
+    "gym_location_values": ["full_gym", "home_gym", "hybrid", "outdoor"],
+    "communication_style_values": ["detailed_tips", "minimal", "motivational"],
+    "variety_values": ["minimal", "moderate", "maximum"],
+    "motivational_style_values": ["strict", "supportive", "neutral"],
+    "preferred_channel_values": ["email", "telegram", "phone", "whatsapp"],
+
+    "injury_codes": [
+      "hernia_lumbar", "hernia_cervical", "hernia_thoracic", "protrusion_lumbar",
+      "shoulder_impingement", "rotator_cuff_tear", "shoulder_instability",
+      "knee_meniscus", "knee_acl", "knee_mcl", "knee_arthritis", "patellofemoral_pain",
+      "hip_arthritis", "hip_labral_tear", "hip_impingement",
+      "tennis_elbow", "golfers_elbow", "carpal_tunnel", "wrist_tfcc",
+      "ankle_sprain", "achilles_tendinitis", "plantar_fasciitis",
+      "scoliosis", "spondylolisthesis", "diastasis_recti",
+      "hypertension", "cvd_other", "obesity_severe", "pregnancy_t1", "pregnancy_t2", "pregnancy_t3",
+      "post_partum", "elderly_65plus"
+    ],
+    "severity_values": ["mild", "moderate", "severe", "post_op", "chronic"],
+
+    "equipment_available_values": [
+      "barbell", "dumbbell", "cable", "machine", "leverage_machine",
+      "smith_machine", "kettlebell", "band", "resistance_band",
+      "body_weight", "medicine_ball", "stability_ball", "bosu_ball",
+      "roller", "wheel_roller", "ez_barbell", "trap_bar",
+      "rope", "weighted", "assisted",
+      "elliptical", "stationary_bike", "stepmill", "skierg", "treadmill", "rower"
+    ],
+
+    "_injury_object_example": {
+      "code": "hernia_lumbar",
+      "location": "L4-L5",
+      "severity": "post_op",
+      "onset_date": "2024-03",
+      "surgery": {
+        "performed": true,
+        "date": "2024-08-15",
+        "improvement_after": false
+      },
+      "current_pain_level_vas": 4,
+      "doctor_restrictions": "исключить осевую нагрузку и сгибание под весом",
+      "medical_clearance_for_training": true,
+      "mri_or_imaging_date": "2025-01-10"
+    },
+
+    "_disease_object_example": {
+      "code": "hypertension",
+      "severity": "stage_1",
+      "medicated": true,
+      "last_bp_mmhg": "138/86",
+      "doctor_restrictions": "избегать Valsalva maneuver"
+    }
+  }
+}

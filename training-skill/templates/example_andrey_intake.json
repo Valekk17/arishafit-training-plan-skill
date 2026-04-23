@@ -1,0 +1,149 @@
+{
+  "_meta": {
+    "schema_version": "1.0.0",
+    "description": "Reference-пример заполненной анкеты: Андрей, v7-клиент. Фиксирует baseline data для proof-of-concept генерации."
+  },
+
+  "personal": {
+    "name": "Андрей",
+    "age": 36,
+    "gender": "male",
+    "height_cm": 176,
+    "weight_kg": 102.0,
+    "date_of_birth": null
+  },
+
+  "goals": {
+    "primary": "weight_loss",
+    "secondary": ["general_fitness"],
+    "timeline_weeks": 16,
+    "target_metric": {
+      "metric": "weight_kg",
+      "current": 102.0,
+      "target": 88.0,
+      "unit": "kg"
+    },
+    "notes": "Основная цель — снижение веса при сохранении мышечной массы. Учитывать ограничения по позвоночнику — без осевой нагрузки."
+  },
+
+  "experience": {
+    "years_training": 3,
+    "level": "intermediate",
+    "past_programs": [
+      "PPL home programs",
+      "full body beginner курс в зале"
+    ],
+    "self_rated_technique": 3,
+    "familiar_lifts": [
+      "leg press",
+      "lat pulldown",
+      "seated cable row",
+      "dumbbell bench press",
+      "glute bridge"
+    ]
+  },
+
+  "injuries": [
+    {
+      "code": "hernia_lumbar",
+      "location": "L4-L5",
+      "severity": "post_op",
+      "onset_date": "2023",
+      "surgery": {
+        "performed": true,
+        "date": "2024-08",
+        "improvement_after": false
+      },
+      "current_pain_level_vas": 4,
+      "doctor_restrictions": "исключить осевую нагрузку на позвоночник, сгибание поясницы под нагрузкой, ротацию корпуса с сопротивлением. Допустимы упражнения с опорой на спинку, в положении лёжа и в тренажёрах с фиксированной траекторией движения.",
+      "medical_clearance_for_training": true,
+      "mri_or_imaging_date": null
+    },
+    {
+      "code": "hernia_lumbar",
+      "location": "L4-L5",
+      "severity": "chronic",
+      "onset_date": "2022",
+      "surgery": {
+        "performed": false,
+        "date": null,
+        "improvement_after": null
+      },
+      "current_pain_level_vas": 3,
+      "doctor_restrictions": "те же ограничения что для post-op",
+      "medical_clearance_for_training": true,
+      "mri_or_imaging_date": null
+    }
+  ],
+
+  "diseases": [],
+
+  "constraints": {
+    "training_days_per_week": 3,
+    "session_max_duration_min": 90,
+    "preferred_time": "evening",
+    "equipment_available": [
+      "barbell", "dumbbell", "cable", "machine", "leverage_machine",
+      "smith_machine", "body_weight", "elliptical", "stationary_bike",
+      "treadmill", "stability_ball"
+    ],
+    "gym_location": "full_gym",
+    "travel_frequency": null
+  },
+
+  "lifestyle": {
+    "sleep_hours_avg": 7,
+    "stress_level": 5,
+    "dietary_preferences": {
+      "free_text": "Без муки и сахара. Белок, овощи, сложные углеводы утром.",
+      "vegetarian": false,
+      "vegan": false,
+      "gluten_free": false,
+      "no_sugar": true,
+      "no_flour": true,
+      "lactose_free": false,
+      "allergies": []
+    },
+    "medications": [],
+    "alcohol_per_week": 0,
+    "smoking": "no",
+    "occupation_activity": "сидячая"
+  },
+
+  "preferences": {
+    "disliked_exercises": [
+      "становая тяга",
+      "приседания со штангой на спине",
+      "любые рывковые движения"
+    ],
+    "favorite_movements": [
+      "жим гантелей сидя",
+      "тяга в Хаммере"
+    ],
+    "variety": "moderate",
+    "communication_style": "detailed_tips",
+    "music_preferences": null,
+    "motivational_style": "supportive"
+  },
+
+  "contact": {
+    "email": null,
+    "telegram": null,
+    "phone": null,
+    "preferred_channel": null
+  },
+
+  "consent": {
+    "medical_disclaimer_accepted": true,
+    "data_processing_accepted": true,
+    "marketing_accepted": false,
+    "signed_at": "2026-04-22"
+  },
+
+  "metadata": {
+    "intake_date": "2026-04-22",
+    "intake_source": "manual_trainer_interview",
+    "trainer_notes": "Клиент мотивирован, понимает ограничения по спине, готов к body-part split без штанги на плечах. Рекомендован Push / Cardio+Light / Pull+Legs сплит с упором на тренажёры и супинированные версии упражнений.",
+    "previous_plan_ref": "plan_andrey_v7.json (tag: andrey-v7-delivered)"
+  }
+}

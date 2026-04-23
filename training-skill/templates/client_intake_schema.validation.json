@@ -1,0 +1,247 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://arishafit/schemas/client_intake_schema/1.0.0",
+  "title": "ArishaFit Client Intake",
+  "description": "Validation schema для client_intake_schema.json. Используется в Phase 0 Pre-flight генерации плана.",
+  "type": "object",
+  "required": ["personal", "goals", "experience", "constraints", "consent"],
+
+  "$defs": {
+    "injury": {
+      "type": "object",
+      "required": ["code", "severity"],
+      "properties": {
+        "code": {
+          "type": "string",
+          "enum": [
+            "hernia_lumbar", "hernia_cervical", "hernia_thoracic", "protrusion_lumbar",
+            "shoulder_impingement", "rotator_cuff_tear", "shoulder_instability",
+            "knee_meniscus", "knee_acl", "knee_mcl", "knee_arthritis", "patellofemoral_pain",
+            "hip_arthritis", "hip_labral_tear", "hip_impingement",
+            "tennis_elbow", "golfers_elbow", "carpal_tunnel", "wrist_tfcc",
+            "ankle_sprain", "achilles_tendinitis", "plantar_fasciitis",
+            "scoliosis", "spondylolisthesis", "diastasis_recti",
+            "hypertension", "cvd_other", "obesity_severe",
+            "pregnancy_t1", "pregnancy_t2", "pregnancy_t3", "post_partum",
+            "elderly_65plus"
+          ]
+        },
+        "location": { "type": "string" },
+        "severity": {
+          "type": "string",
+          "enum": ["mild", "moderate", "severe", "post_op", "chronic"]
+        },
+        "onset_date": { "type": ["string", "null"] },
+        "surgery": {
+          "type": "object",
+          "properties": {
+            "performed": { "type": "boolean" },
+            "date": { "type": ["string", "null"] },
+            "improvement_after": { "type": ["boolean", "null"] }
+          }
+        },
+        "current_pain_level_vas": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "maximum": 10
+        },
+        "doctor_restrictions": { "type": "string" },
+        "medical_clearance_for_training": { "type": ["boolean", "null"] },
+        "mri_or_imaging_date": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "disease": {
+      "type": "object",
+      "required": ["code"],
+      "properties": {
+        "code": { "type": "string" },
+        "severity": { "type": ["string", "null"] },
+        "medicated": { "type": ["boolean", "null"] },
+        "last_bp_mmhg": { "type": ["string", "null"] },
+        "doctor_restrictions": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+
+  "properties": {
+    "_meta": { "type": "object" },
+
+    "personal": {
+      "type": "object",
+      "required": ["name", "age", "gender"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "age": { "type": "integer", "minimum": 14, "maximum": 100 },
+        "gender": { "type": "string", "enum": ["male", "female", "non_binary"] },
+        "height_cm": { "type": ["number", "null"], "minimum": 100, "maximum": 250 },
+        "weight_kg": { "type": ["number", "null"], "minimum": 30, "maximum": 300 },
+        "date_of_birth": { "type": ["string", "null"] }
+      }
+    },
+
+    "goals": {
+      "type": "object",
+      "required": ["primary"],
+      "properties": {
+        "primary": {
+          "type": "string",
+          "enum": [
+            "hypertrophy", "strength", "weight_loss", "recomposition",
+            "endurance", "rehab", "general_fitness", "powerbuilding"
+          ]
+        },
+        "secondary": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "timeline_weeks": { "type": ["integer", "null"], "minimum": 1, "maximum": 104 },
+        "target_metric": {
+          "type": "object",
+          "properties": {
+            "metric": { "type": ["string", "null"] },
+            "current": { "type": ["number", "null"] },
+            "target": { "type": ["number", "null"] },
+            "unit": { "type": ["string", "null"] }
+          }
+        },
+        "notes": { "type": "string" }
+      }
+    },
+
+    "experience": {
+      "type": "object",
+      "required": ["level"],
+      "properties": {
+        "years_training": { "type": ["number", "null"], "minimum": 0 },
+        "level": { "type": "string", "enum": ["beginner", "intermediate", "advanced"] },
+        "past_programs": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "self_rated_technique": { "type": ["integer", "null"], "minimum": 1, "maximum": 5 },
+        "familiar_lifts": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+
+    "injuries": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/injury" }
+    },
+
+    "diseases": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/disease" }
+    },
+
+    "constraints": {
+      "type": "object",
+      "required": ["training_days_per_week", "gym_location"],
+      "properties": {
+        "training_days_per_week": { "type": "integer", "minimum": 1, "maximum": 7 },
+        "session_max_duration_min": { "type": ["integer", "null"], "minimum": 15, "maximum": 240 },
+        "preferred_time": {
+          "type": ["string", "null"],
+          "enum": ["morning", "afternoon", "evening", "flexible", null]
+        },
+        "equipment_available": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "gym_location": {
+          "type": "string",
+          "enum": ["full_gym", "home_gym", "hybrid", "outdoor"]
+        },
+        "travel_frequency": { "type": ["string", "null"] }
+      }
+    },
+
+    "lifestyle": {
+      "type": "object",
+      "properties": {
+        "sleep_hours_avg": { "type": ["number", "null"], "minimum": 0, "maximum": 24 },
+        "stress_level": { "type": ["integer", "null"], "minimum": 1, "maximum": 10 },
+        "dietary_preferences": {
+          "type": "object",
+          "properties": {
+            "free_text": { "type": "string" },
+            "vegetarian": { "type": "boolean" },
+            "vegan": { "type": "boolean" },
+            "gluten_free": { "type": "boolean" },
+            "no_sugar": { "type": "boolean" },
+            "no_flour": { "type": "boolean" },
+            "lactose_free": { "type": "boolean" },
+            "allergies": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "medications": { "type": "array", "items": { "type": "string" } },
+        "alcohol_per_week": { "type": ["number", "null"], "minimum": 0 },
+        "smoking": { "type": ["string", "null"] },
+        "occupation_activity": { "type": ["string", "null"] }
+      }
+    },
+
+    "preferences": {
+      "type": "object",
+      "properties": {
+        "disliked_exercises": { "type": "array", "items": { "type": "string" } },
+        "favorite_movements": { "type": "array", "items": { "type": "string" } },
+        "variety": {
+          "type": ["string", "null"],
+          "enum": ["minimal", "moderate", "maximum", null]
+        },
+        "communication_style": {
+          "type": ["string", "null"],
+          "enum": ["detailed_tips", "minimal", "motivational", null]
+        },
+        "music_preferences": { "type": ["string", "null"] },
+        "motivational_style": {
+          "type": ["string", "null"],
+          "enum": ["strict", "supportive", "neutral", null]
+        }
+      }
+    },
+
+    "contact": {
+      "type": "object",
+      "properties": {
+        "email": { "type": ["string", "null"], "format": "email" },
+        "telegram": { "type": ["string", "null"] },
+        "phone": { "type": ["string", "null"] },
+        "preferred_channel": {
+          "type": ["string", "null"],
+          "enum": ["email", "telegram", "phone", "whatsapp", null]
+        }
+      }
+    },
+
+    "consent": {
+      "type": "object",
+      "required": ["medical_disclaimer_accepted", "data_processing_accepted"],
+      "properties": {
+        "medical_disclaimer_accepted": { "type": "boolean" },
+        "data_processing_accepted": { "type": "boolean" },
+        "marketing_accepted": { "type": "boolean" },
+        "signed_at": { "type": ["string", "null"] }
+      }
+    },
+
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "intake_date": { "type": ["string", "null"] },
+        "intake_source": { "type": ["string", "null"] },
+        "trainer_notes": { "type": "string" },
+        "previous_plan_ref": { "type": ["string", "null"] }
+      }
+    },
+
+    "_reference": { "type": "object" }
+  },
+
+  "additionalProperties": false
+}

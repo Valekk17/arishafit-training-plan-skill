@@ -752,9 +752,45 @@ COOLDOWN (8-12 min)
 
 # PART 4. Generation Process
 
-## Phase 0: Pre-flight
-- Read client from `clients` table (or passed JSON) — goal, injuries, experience, training_days, location
-- Read history (prior plan, recent weeks) — starting weights, adaptation state
+## Phase 0: Pre-flight (Client Intake)
+
+**Источник клиентских данных — canonical intake JSON** по схеме:
+- Template: `training-skill/templates/client_intake_schema.json`
+- JSON Schema validation: `training-skill/templates/client_intake_schema.validation.json`
+- Reference example: `training-skill/templates/example_andrey_intake.json`
+- Validator: `python scripts/validate_client_intake.py <intake.json>`
+
+**Шаги:**
+1. Получить intake JSON (заполненная анкета клиента либо из `clients` table через `db.queries`)
+2. Прогнать через валидатор — **отказать в генерации при ошибках** (required поля, enum violations)
+3. Прочитать sanity-warnings (VAS ≥7 → отложить; post-op без medical_clearance → стоп; возраст ≥65 без `elderly_65plus` → добавить)
+4. Read history (prior plan, recent weeks) из БД — starting weights, adaptation state
+
+**Intake содержит (контракт v1.0.0):**
+- `personal` — name, age, gender, height, weight
+- `goals` — primary archetype (маппится на 1.7 scaffold), timeline, target metric
+- `experience` — years, level, past_programs, self_rated_technique (1-5), familiar_lifts
+- `injuries[]` — array of objects: code (enum), location, severity, onset, surgery, VAS pain, doctor_restrictions, medical_clearance
+- `diseases[]` — объекты с code/severity/medicated/doctor_restrictions
+- `constraints` — training_days, session_duration, preferred_time, equipment_available[], gym_location
+- `lifestyle` — sleep, stress, dietary_preferences (с флагами no_sugar/no_flour/lactose_free/...), medications, alcohol, smoking
+- `preferences` — disliked/favorite exercises, variety, communication_style, motivational_style
+- `contact` + `consent` + `metadata`
+
+**Маппинг intake → SKILL:**
+| intake field | куда использовать |
+|---|---|
+| `goals.primary` | выбрать scaffold из 1.7 (hypertrophy/strength/weight_loss/...) |
+| `injuries[].code` | применить profile из 2.1-2.9 (hernia_lumbar→2.1, hernia_cervical→2.2, ...) |
+| `injuries[].severity=post_op` + `improvement_after=false` | консервативный протокол, никаких компромиссов |
+| `constraints.training_days_per_week` | число дней в split (см. 1.2 Split Selection) |
+| `constraints.equipment_available` | фильтр SQL-query на каталоге упражнений |
+| `experience.level` | intermediate/advanced → больше объёма; beginner → full body + technique focus |
+| `preferences.disliked_exercises` | исключить из подбора |
+| `lifestyle.sleep_hours_avg <6` + `stress_level ≥8` | снизить volume (recovery-limited) |
+| `consent.medical_disclaimer_accepted=false` | **не генерировать план**, вернуть ошибку |
+
+**Backward compat:** старый плоский `client_input.json` оставлен для существующих пайплайнов. Новые клиенты — через intake schema.
 
 ## Phase 1: Build context (data only, no generation)
 - SQL query по каталогу с фильтрами under client constraints
